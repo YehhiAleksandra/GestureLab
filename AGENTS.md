@@ -12,13 +12,15 @@
 - Python 3.11.9, `mediapipe==0.10.14` (точный пин: legacy `mp.solutions` удалён из
   сборок ≥0.10.30 — B21), opencv-python 5.0.0, numpy BSD-3-Clause.
 - В Git Bash всегда `PYTHONIOENCODING=utf-8`, иначе вывод кириллицей падает в cp1251.
+- Пути для Windows-программ — в формате `C:\...`: shell-вид `/c/...` или `/tmp/...` для
+  `cv2.VideoCapture` не существует (B26), `open_video` об этом прямо говорит.
 - `cv2.imwrite`/`imread` на кириллическом пути не работают — в `tools/` читают и пишут
   через `imdecode`/`imencode` + `tofile`.
 
 ## Гейт перед коммитом и пушем
 
 ```
-PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 34 passed
+PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 40 passed
 ```
 
 - Тесты — часть контракта: новый баг сначала воспроизводится тестом, потом чинится.

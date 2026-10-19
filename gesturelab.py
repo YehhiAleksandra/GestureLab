@@ -44,10 +44,20 @@ DEFAULT_CONFIG = {
 
 
 def load_config(path: Path) -> dict:
+    """TOML поверх значений по умолчанию. Пропущенный файл или неизвестный ключ —
+    предупреждение в stderr: молча игнорированная опция обесценивает записи (B27)."""
     conf = dict(DEFAULT_CONFIG)
-    if path.exists():
-        with open(path, "rb") as fh:
-            conf.update(tomllib.load(fh))
+    if not path.exists():
+        print(f"ВНИМАНИЕ: конфиг {path} не найден — работаю на значениях по умолчанию.",
+              file=sys.stderr)
+        return conf
+    with open(path, "rb") as fh:
+        loaded = tomllib.load(fh)
+    unknown = sorted(set(loaded) - set(DEFAULT_CONFIG))
+    if unknown:
+        print(f"ВНИМАНИЕ: неизвестные ключи конфига игнорируются: {', '.join(unknown)}",
+              file=sys.stderr)
+    conf.update({k: v for k, v in loaded.items() if k in DEFAULT_CONFIG})
     return conf
 
 

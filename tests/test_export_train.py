@@ -87,6 +87,19 @@ def test_train_learns_separable_synthetic_classes():
     assert res["val_top3"] >= res["val_top1"]
 
 
+def test_saved_model_round_trips(tmp_path):
+    """Веса, сохранённые --save, восстанавливаются и дают те же вероятности (B28)."""
+    X, y, is_val = synthetic_dataset(n_per_class=6, t=8, seed=11)
+    model = train.train_model(X, y, is_val, epochs=5, hidden=6, seed=1)["model"]
+    path = tmp_path / "m.npz"
+    np.savez(path, **model.p, names=np.array(["да", "нет"], np.object_), hidden=6)
+    loaded, names = train.load_model(path)
+    assert names == ["да", "нет"]
+    a, _ = model.forward(train.normalize(X))
+    b, _ = loaded.forward(train.normalize(X))
+    assert np.allclose(a, b)
+
+
 def test_export_then_train_pipeline(fixtures_dir, tmp_path, repo_python, utf8_env):
     """Связка export_dataset.py -> train.py проходит на фикстурах и печатает top-1/top-3."""
     ds = tmp_path / "ds.npz"

@@ -13,6 +13,23 @@ def test_missing_config_falls_back_to_defaults(tmp_path):
     assert conf == gesturelab.DEFAULT_CONFIG
 
 
+def test_missing_config_warns_on_stderr(tmp_path, capsys):
+    """Но молча: предупреждение в stderr видно, если файл ждали, а его нет (B27)."""
+    gesturelab.load_config(tmp_path / "нет.toml")
+    assert "не найден" in capsys.readouterr().err
+
+
+def test_unknown_config_key_is_not_ignored_silently(tmp_path, capsys):
+    """Опечатка в имени опции не должна превращаться в «всё по умолчанию без слова»."""
+    p = tmp_path / "g.toml"
+    p.write_text("max_session_second = 300\n", encoding="utf-8")
+    conf = gesturelab.load_config(p)
+    err = capsys.readouterr().err
+    assert "max_session_second" in err
+    assert "max_session_second" not in conf
+    assert conf["max_session_seconds"] == gesturelab.DEFAULT_CONFIG["max_session_seconds"]
+
+
 def test_toml_overrides_defaults(tmp_path):
     """TOML переопределяет свои ключи и не трогает остальные."""
     p = tmp_path / "gesturelab.toml"

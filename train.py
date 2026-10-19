@@ -8,9 +8,11 @@ ponytail: потолок — малые датасеты и короткие о�
 с тем же контрактом (X: n,t,126 -> top-1/top-3), зависимости не добавляем заранее.
 
 Пример: python train.py dataset.npz --epochs 40 --hidden 32 --save model.npz
+        python train.py dataset.npz --model model.npz    # проверить сохранённые веса
 """
 
 import argparse
+from pathlib import Path
 
 import numpy as np
 
@@ -130,6 +132,16 @@ def train_model(X, y, is_val, epochs=40, hidden=32, batch=32, lr=0.01, seed=0):
             "model": model}
 
 
+def load_model(path):
+    """Собрать GRU из сохранённых весов: без этого шага .npz модели — мёртвый артефакт (B28)."""
+    d = np.load(path, allow_pickle=True)
+    p = {k: d[k] for k in ("Wz", "bz", "Wr", "br", "Wh", "bh", "Wo", "bo")}
+    h, d_plus_h = p["Wz"].shape
+    model = GRU(d_plus_h - h, h, p["Wo"].shape[0])
+    model.p = p
+    return model, [str(n) for n in d["names"]]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("dataset", help="npz из export_dataset.py")
@@ -137,9 +149,20 @@ def main() -> None:
     ap.add_argument("--hidden", type=int, default=32)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--save", help="куда сохранить веса модели (.npz)")
+    ap.add_argument("--model", help="не обучать: проверить эти веса на датасете")
     args = ap.parse_args()
 
     d = np.load(args.dataset, allow_pickle=True)
+
+    if args.model:
+        model, names = load_model(args.model)
+        prob, _ = model.forward(normalize(d["X"]))
+        tr, va = ~d["is_val"], d["is_val"]
+        print(f"[{Path(args.model).name}] классов {len(names)} | "
+              f"train top-1 {topk(prob[tr], d['y'][tr], 1):5.1f}% | "
+              f"val   top-1 {topk(prob[va], d['y'][va], 1):5.1f}%")
+        return
+
     res = train_model(d["X"], d["y"], d["is_val"], epochs=args.epochs,
                       hidden=args.hidden, seed=args.seed)
     print(f"train top-1 {res['train_top1']:5.1f}%  top-3 {res['train_top3']:5.1f}%")

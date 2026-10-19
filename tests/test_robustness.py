@@ -5,6 +5,7 @@ import numpy as np
 import pytest
 
 import gesturelab
+import gl_capture
 import gl_session
 import session_schema
 
@@ -75,3 +76,21 @@ def test_save_session_rejects_invalid_payload(tmp_path):
         gl_session.save_session(tmp_path, session, frames,
                                 {"frames": 1, "both": 1, "face": 1})
     assert list(tmp_path.iterdir()) == []
+
+
+def test_open_video_missing_file_hints_at_path_style(tmp_path):
+    """Отсутствующее видео — отдельное сообщение с подсказкой про путь MSYS, а не «кодек» (B26)."""
+    with pytest.raises(SystemExit) as exc:
+        gl_capture.open_video(str(tmp_path / "нет.mp4"))
+    msg = str(exc.value)
+    assert "не найдено" in msg and "Git Bash" in msg
+
+
+def test_open_video_undecodable_file_is_not_missing(tmp_path):
+    """Файл есть, но не видео: ошибка про кодек, а не «не найдено»."""
+    fake = tmp_path / "not_video.mp4"
+    fake.write_text("не mp4", encoding="utf-8")
+    with pytest.raises(SystemExit) as exc:
+        gl_capture.open_video(str(fake))
+    msg = str(exc.value)
+    assert "не открыл" in msg and "не найдено" not in msg

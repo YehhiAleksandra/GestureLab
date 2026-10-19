@@ -3,6 +3,7 @@
 """Открытие источника кадров (камера/видео) и проверка окружения Windows."""
 
 import sys
+from pathlib import Path
 
 import cv2
 
@@ -18,9 +19,14 @@ def open_camera(index: int):
 
 
 def open_video(path: str):
+    """Различаем «файла нет» и «не открылся кодек»: в Git Bash путь /c/... существует
+    для shell, но не для Windows-программы (B26)."""
+    if not Path(path).exists():
+        sys.exit(f"Видео не найдено: {path}\n"
+                 f"В Git Bash передавай путь как C:\\... или D:\\..., а не /c/... или /tmp/...")
     cap = cv2.VideoCapture(path)
     if not cap.isOpened():
-        sys.exit(f"Не удалось открыть видео {path}.")
+        sys.exit(f"Файл {path} есть, но OpenCV его не открыл — проверь кодек/контейнер.")
     return cap
 
 
