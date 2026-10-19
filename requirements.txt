@@ -1,0 +1,3 @@
+# Python 3.10 или 3.11 рекомендуется (MediaPipe не поддерживает 3.13+)
+opencv-python>=4.8
+mediapipe>=0.10,<0.11
