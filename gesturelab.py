@@ -180,7 +180,8 @@ def calibrate_sessions(folder: str) -> None:
     lines, _ = render(stats, False)
     print("\n".join(lines))
     best = max(stats.items(), key=lambda kv: (kv[1][1] / kv[1][0] if kv[1][0] else 0.0))
-    print(f"Рекомендуемое положение по доле кадров с обеими кистями: {best[0]}")
+    # ключ aggregate — (положение, жест|None); в рекомендацию попадает только положение (B23)
+    print(f"Рекомендуемое положение по доле кадров с обеими кистями: {best[0][0]}")
     print("Подбор min_detection_confidence по JSON невозможен: видео не сохраняется "
           "намеренно. Запусти: python gesturelab.py --calibrate --input <видео>")
 

@@ -99,14 +99,18 @@ def main() -> None:
               "val собран по сессиям (риск утечки исполнителя).")
     is_val = np.isin(person, val_persons) if val_persons else (sess_id % 2 == 1)
 
-    np.savez(args.out, X=X, y=y, person=person, is_val=is_val,
+    # np.savez дописывает .npz, если расширения нет: печатаем реальное имя файла (B24)
+    dest = Path(args.out)
+    if dest.suffix != ".npz":
+        dest = dest.with_suffix(".npz")
+    np.savez(dest, X=X, y=y, person=person, is_val=is_val,
              names=np.array(names, np.object_), fps=args.fps, window=args.window)
     print(f"окон: {len(X)} ({args.window} с @ {args.fps} к/с) | классов: {len(names)}")
     for g in names:
         print(f"  {g:24s} {int((y == label[g]).sum()):5d}")
     print(f"train: {int((~is_val).sum())} окон, люди {sorted(set(person[~is_val]))}")
     print(f"val:   {int(is_val.sum())} окон, люди {sorted(set(person[is_val])) or '(по сессиям)'}")
-    print(f"датасет: {Path(args.out)}")
+    print(f"датасет: {dest}")
 
 
 if __name__ == "__main__":

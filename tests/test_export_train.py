@@ -32,6 +32,18 @@ def test_export_splits_by_person(fixtures_dir, tmp_path, repo_python, utf8_env):
     assert "телефон" not in [str(n) for n in d["names"]]
 
 
+def test_export_prints_the_file_it_wrote(fixtures_dir, tmp_path, repo_python, utf8_env):
+    """Без .npz в --out export печатает реальное имя файла: np.savez дописывает расширение (B24)."""
+    r = export(repo_python, utf8_env, fixtures_dir, tmp_path / "ds")
+    assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
+    printed = [line.split("датасет: ", 1)[1].strip()
+               for line in r.stdout.decode("utf-8").splitlines() if "датасет:" in line]
+    assert len(printed) == 1, r.stdout.decode("utf-8")
+    path = Path(printed[0])
+    assert path.exists(), f"напечатан путь, которого нет: {path}"
+    np.load(path, allow_pickle=True)
+
+
 def test_export_single_person_splits_by_session(fixtures_dir, tmp_path, repo_python, utf8_env):
     """При одном исполнителе сплит идёт по сессиям и печатает предупреждение об утечке."""
     folder = tmp_path / "one"

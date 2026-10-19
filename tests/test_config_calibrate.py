@@ -40,7 +40,7 @@ def test_calibrate_sessions_recommends_position(fixtures_dir, repo_python, utf8_
     r = run("gesturelab.py", repo_python, utf8_env, "--calibrate", fixtures_dir)
     assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
     out = r.stdout.decode("utf-8")
-    assert "Рекомендуемое положение" in out
+    assert "Рекомендуемое положение по доле кадров с обеими кистями: шнурок" in out
     assert "--calibrate --input" in out
 
 

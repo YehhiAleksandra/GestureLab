@@ -15,13 +15,20 @@ from pathlib import Path
 FIX = Path(__file__).parent / "tests" / "fixtures"
 
 
-def lm(seed: int) -> list:
-    return [round(((seed * 7 + i) % 100) / 100.0, 4) for i in range(63)]
+def lm(seed: int, hand: int = 0) -> list:
+    """21 точка в плоском виде [x,y,z,...]. Множители разные по осям и по кистям:
+    иначе фикстура даёт одну прямую, и две кисти на превью не отличить от одной."""
+    pts = []
+    for k in range(21):
+        pts.append(round(((seed * 7 + k * 13 + hand * 41) % 100) / 100.0, 4))
+        pts.append(round(((seed * 11 + k * 29 + hand * 67) % 100) / 100.0, 4))
+        pts.append(round(((seed * 3 + k * 5 + hand * 17) % 100) / 100.0, 4))
+    return pts
 
 
 def session(gesture, position, person, n_frames, hands, face):
     frames = [{"t_ms": i * 67, "hands": hands, "face": face,
-               "hand_landmarks": [lm(i + 1) for _ in range(hands)]}
+               "hand_landmarks": [lm(i + 1, k) for k in range(hands)]}
               for i in range(n_frames)]
     return {
         "version": 1,
