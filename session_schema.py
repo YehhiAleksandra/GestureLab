@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Схема JSON-сессии GestureLab v1: проверка структуры без тяжёлых зависимостей."""
+"""Схема JSON-сессии GestureLab (v1 и v2): проверка структуры без тяжёлых зависимостей."""
 
 import json
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
+SUPPORTED_VERSIONS = (1, 2)
 REQUIRED_TOP = ("version", "gesture", "position", "person", "frames", "summary")
 REQUIRED_FRAME = ("t_ms", "hands", "face", "hand_landmarks")
 REQUIRED_SUMMARY = ("frames", "both_hands_pct", "face_pct")
@@ -18,8 +19,10 @@ def validate_session(data) -> list:
     errs = [f"нет поля {k!r}" for k in REQUIRED_TOP if k not in data]
     if errs:
         return errs
-    if data["version"] != SCHEMA_VERSION:
-        errs.append(f"version={data['version']!r}, ожидалась {SCHEMA_VERSION}")
+    if data["version"] not in SUPPORTED_VERSIONS:
+        errs.append(f"version={data['version']!r}, поддерживаются {SUPPORTED_VERSIONS}")
+    if data["version"] >= 2 and "kind" not in data:
+        errs.append("нет поля 'kind' (обязательно с version 2)")
 
     frames = data["frames"]
     if not isinstance(frames, list):

@@ -4,8 +4,9 @@
 Генератор фиктур JSON-сессий GestureLab (детерминированный, без mediapipe).
 
 Пример: python make_fixture.py
-Кладёт 7 файлов в tests/fixtures/, включая граничные: 0 кадров, нет флага face,
-битый JSON. Перезапуск даёт байт-в-байт тот же результат (золотые файлы сводки).
+Кладёт 8 файлов в tests/fixtures/, включая граничные: 0 кадров, нет флага face,
+битый JSON, сессию «не жест» (схема v2). Перезапуск даёт байт-в-байт тот же
+результат (золотые файлы сводки).
 """
 
 import json
@@ -52,6 +53,11 @@ def main() -> None:
     for fr in no_face["frames"]:
         del fr["face"]
     dump("fix_no_face_flag.json", no_face)
+    noise = session("телефон", "грудь", "В", 15, 2, True)
+    noise["version"] = 2
+    noise["kind"] = "не жест"
+    noise["summary"]["recorded_frames"] = len(noise["frames"])
+    dump("fix_noise.json", noise)
     (FIX / "fix_broken.json").write_text("{ not json", encoding="utf-8")
     print(f"фикстуры: {FIX} — {len(list(FIX.glob('*.json')))} файлов")
 

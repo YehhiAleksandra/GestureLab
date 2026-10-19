@@ -1,4 +1,4 @@
-from gesturelab import safe_name
+from gl_session import safe_name
 
 
 def test_safe_name_strips_path_and_spaces():

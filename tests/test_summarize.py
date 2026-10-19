@@ -3,8 +3,6 @@ import shutil
 import subprocess
 from pathlib import Path
 
-import pytest
-
 REPO = Path(__file__).resolve().parent.parent
 
 
@@ -45,13 +43,28 @@ def test_summarize_csv_verdict_column(tmp_path, fixtures_dir, repo_python, utf8_
     assert {row["position"] for row in rows} == {"грудь", "шнурок", "подставка"}
 
 
-@pytest.mark.xfail(strict=True,
-                   reason="B1: ZeroDivisionError в summarize.py:58 на группе с 0 кадров; чинится в фазе 4")
 def test_summarize_zero_frames_group_no_crash(tmp_path, fixtures_dir, repo_python, utf8_env):
-    """Папка только из оборванных сессий (0 кадров) не роняет сводку."""
+    """B1 закрыт: папка только из оборванных сессий (0 кадров) не роняет сводку."""
     shutil.copy(fixtures_dir / "fix_zero_frames.json", tmp_path)
     r = run_summarize(repo_python, tmp_path, env=utf8_env)
     assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
+    assert "нет кадров" in r.stdout.decode("utf-8")
+
+
+def test_summarize_skips_noise_by_default(fixtures_dir, repo_python, utf8_env):
+    """Сессия «не жест» не входит в сводку этапа 0 и видна в stderr как пропуск."""
+    r = run_summarize(repo_python, fixtures_dir, env=utf8_env)
+    assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
+    err = r.stderr.decode("utf-8")
+    assert "fix_noise.json" in err and "не жест" in err
+    assert "телефон" not in r.stdout.decode("utf-8")
+
+
+def test_summarize_include_noise_adds_group(fixtures_dir, repo_python, utf8_env):
+    """С флагом --include-noise фон этапа 1 попадает в разрез по жестам."""
+    r = run_summarize(repo_python, fixtures_dir, "--by-gesture", "--include-noise", env=utf8_env)
+    assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
+    assert "телефон" in r.stdout.decode("utf-8")
 
 
 def test_summarize_empty_folder_fails(tmp_path, repo_python, utf8_env):

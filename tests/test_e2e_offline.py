@@ -27,38 +27,7 @@ def make_video(path: Path, n_frames=60, size=(320, 240)):
     w.release()
 
 
-class _Pt:
-    __slots__ = ("x", "y", "z")
-
-    def __init__(self, v):
-        self.x = self.y = v
-        self.z = 0.0
-
-
-class _Hand:
-    def __init__(self):
-        self.landmark = [_Pt(i / 63.0) for i in range(21)]
-
-
-class _ResH:
-    multi_hand_landmarks = [_Hand(), _Hand()]
-
-
-class _ResF:
-    detections = [object()]
-
-
-class FakeHands:
-    def process(self, rgb):
-        return _ResH()
-
-
-class FakeFace:
-    def process(self, rgb):
-        return _ResF()
-
-
-def stub_run(tmp_path, n_frames=40):
+def stub_run(tmp_path, fake_detectors, n_frames=40):
     vid = tmp_path / "stub.mp4"
     make_video(vid, n_frames=n_frames)
     out = tmp_path / "s"
@@ -67,7 +36,8 @@ def stub_run(tmp_path, n_frames=40):
     args = argparse.Namespace(input=str(vid), out=str(out), fps=15.0,
                               no_preview_landmarks=True, no_preview=True,
                               gesture="тест", person="Т", position="грудь", camera=0)
-    saved = gesturelab.run_loop(cap, args, out, (FakeHands(), FakeFace()), False)
+    saved = gesturelab.run_loop(cap, args, out, fake_detectors, False,
+                                dict(gesturelab.DEFAULT_CONFIG))
     return json.loads(saved.read_text(encoding="utf-8"))
 
 
@@ -93,9 +63,9 @@ def test_offline_video_produces_valid_session(tmp_path, repo_python, utf8_env):
         assert 0.0 <= data["summary"][key] <= 100.0
 
 
-def test_stubbed_detector_session_is_full_percent(tmp_path):
+def test_stubbed_detector_session_is_full_percent(tmp_path, fake_detectors):
     """На подставном детекторе сессия даёт 100% обеих кистей и лица, векторы по 63."""
-    data = stub_run(tmp_path)
+    data = stub_run(tmp_path, fake_detectors)
     assert data["summary"]["both_hands_pct"] == 100.0
     assert data["summary"]["face_pct"] == 100.0
     assert len(data["frames"]) >= 1
@@ -104,9 +74,10 @@ def test_stubbed_detector_session_is_full_percent(tmp_path):
     assert t == sorted(t)
 
 
-@pytest.mark.xfail(strict=True,
-                   reason="B3: summary.frames считает кадры камеры, frames[] — только прошедшие fps-гейт; чинится в фазе 4")
-def test_recorded_frames_match_summary_frames(tmp_path):
-    """Число записанных кадров равно summary.frames (сейчас расходится при fps камеры выше целевого)."""
-    data = stub_run(tmp_path)
-    assert len(data["frames"]) == data["summary"]["frames"]
+def test_recorded_frames_counted_separately(tmp_path, fake_detectors):
+    """B3 закрыт: summary.frames — кадры камеры, recorded_frames — сколько записано."""
+    data = stub_run(tmp_path, fake_detectors)
+    assert data["version"] == 2 and data["kind"] == "жест"
+    recorded = data["summary"]["recorded_frames"]
+    assert recorded == len(data["frames"])
+    assert recorded <= data["summary"]["frames"]

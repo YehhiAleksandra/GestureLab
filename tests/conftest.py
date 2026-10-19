@@ -28,3 +28,40 @@ def utf8_env() -> dict:
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"
     return env
+
+
+class _Pt:
+    __slots__ = ("x", "y", "z")
+
+    def __init__(self, v):
+        self.x = self.y = v
+        self.z = 0.0
+
+
+class _Hand:
+    def __init__(self):
+        self.landmark = [_Pt(i / 63.0) for i in range(21)]
+
+
+class _ResH:
+    multi_hand_landmarks = [_Hand(), _Hand()]
+
+
+class _ResF:
+    detections = [object()]
+
+
+class FakeHands:
+    def process(self, rgb):
+        return _ResH()
+
+
+class FakeFace:
+    def process(self, rgb):
+        return _ResF()
+
+
+@pytest.fixture
+def fake_detectors():
+    """Подставные детекторы: всегда две кисти и лицо, без mediapipe."""
+    return FakeHands(), FakeFace()
