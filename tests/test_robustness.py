@@ -55,13 +55,15 @@ def test_camera_drop_saves_session(tmp_path, fake_detectors, capsys):
     assert session_schema.validate_session(data) == []
 
 
-def test_long_session_auto_stops(tmp_path, fake_detectors):
-    """Лимит max_session_seconds сам закрывает сессию: список кадров не растёт вечно."""
+def test_long_session_auto_stops(tmp_path, fake_detectors, capsys):
+    """Лимит max_session_seconds предупреждает и сам закрывает сессию: кадры не копятся вечно."""
     cap = FakeCap([frame()] * 6)
     data = run_stub(cap, tmp_path, fake_detectors, {"max_session_seconds": -1.0})
     assert data["summary"]["recorded_frames"] == 1
     assert cap.frames == []                      # источник дочитан, запись больше не шла
     assert len(list((tmp_path / "sessions").glob("*.json"))) == 1
+    out = capsys.readouterr().out
+    assert "скоро авто-стоп" in out and "авто-стоп по лимиту" in out
 
 
 def test_save_session_rejects_invalid_payload(tmp_path):

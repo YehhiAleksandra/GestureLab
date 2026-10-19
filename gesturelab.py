@@ -64,6 +64,7 @@ def run_loop(cap, args, out_dir: Path, detectors, interactive: bool, conf: dict)
     win_start, win_frames, fps = time.time(), 0, 0.0
     show = not args.no_preview
     saved = None
+    limit_warned = False
 
     def stop_session(reason: str):
         nonlocal session, saved
@@ -74,7 +75,7 @@ def run_loop(cap, args, out_dir: Path, detectors, interactive: bool, conf: dict)
         session = None
 
     def start_session(kind: str):
-        nonlocal session, frames, totals, start, last_record
+        nonlocal session, frames, totals, start, last_record, limit_warned
         if kind == KIND_GESTURE:
             gesture = input("Жест (например: да): ").strip() or "жест"
         else:
@@ -86,6 +87,7 @@ def run_loop(cap, args, out_dir: Path, detectors, interactive: bool, conf: dict)
         totals = {"frames": 0, "both": 0, "face": 0}
         start = time.time()
         last_record = 0.0
+        limit_warned = False
         print(f"  -> запись «{kind}». Затем снова {('r' if kind == KIND_GESTURE else 'n')} — стоп.")
 
     if interactive:
@@ -150,6 +152,10 @@ def run_loop(cap, args, out_dir: Path, detectors, interactive: bool, conf: dict)
         elif key == ord("q"):
             break
 
+        if session and not limit_warned and session["elapsed"] > 0.8 * conf["max_session_seconds"]:
+            limit_warned = True
+            print(f"  ! сессия идёт {session['elapsed']:.0f} с из "
+                  f"{conf['max_session_seconds']:.0f} — скоро авто-стоп; нажми r/n, чтобы закрыть")
         if session and session["elapsed"] > conf["max_session_seconds"]:
             stop_session(f"авто-стоп по лимиту {conf['max_session_seconds']:.0f} с")
 

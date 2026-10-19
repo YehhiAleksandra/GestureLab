@@ -25,7 +25,7 @@
 
 - **Обрыв камеры / конец файла** — сессия сохраняется при выходе (`run_loop` → `stop_session("сохранено при выходе...")`), `cap.release()` вызывается всегда (B4). Тест `tests/test_robustness.py::test_camera_drop_saves_session`.
 - **Неконсистентный кадр** — `frame is None` и `frame.size == 0` пропускаются и не попадают в счётчики; раньше такой кадр ронял `cv2.cvtColor` (B4). Тест `test_broken_frames_are_skipped_not_counted`.
-- **Лимит памяти** — `max_session_seconds` (конфиг, по умолчанию 600 с) автоматически закрывает сессию; плюс fps-гейт ограничивает рост `frames[]` (B6). Тест `test_long_session_auto_stops`.
+- **Лимит памяти** — `max_session_seconds` (конфиг, по умолчанию 600 с) автоматически закрывает сессию, а за 20% до лимита печатается предупреждение «скоро авто-стоп»; плюс fps-гейт ограничивает рост `frames[]` (B6). Тест `test_long_session_auto_stops`.
 - **Валидация при записи** — `save_session` собирает payload, прогоняет `session_schema.validate_session`, пишет во временный файл и делает `os.replace`: битый или обрезанный JSON не может появиться в `sessions/` (B7). Тест `test_save_session_rejects_invalid_payload` (проверяет и что на диске не осталось ничего).
 
 ### 3. Закрытые баги
