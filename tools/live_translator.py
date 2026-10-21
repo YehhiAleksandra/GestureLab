@@ -21,21 +21,22 @@ import torch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
-from live_signs import SignSegmenter, hands_array  # noqa: E402
-from slovo_model import SignNet, features, resample  # noqa: E402
+from live_signs import SignSegmenter, hands_array, holistic_array  # noqa: E402
+from slovo_model import KINDS, SignNet, resample  # noqa: E402
 
 
 class Recognizer:
     def __init__(self, path, k=3):
         ck = torch.load(path)
-        self.names, self.k = ck['names'], k
-        self.model = SignNet(len(self.names))
+        self.names, self.k, self.kind = ck['names'], k, ck.get('kind', 'hands')
+        self.features, feat = KINDS[self.kind]
+        self.model = SignNet(len(self.names), feat=feat)
         self.model.load_state_dict(ck['model'])
         self.model.eval()
 
     @torch.no_grad()
     def __call__(self, seg):
-        p = self.model(torch.from_numpy(features(resample(seg)))[None]).softmax(1)[0]
+        p = self.model(torch.from_numpy(self.features(resample(seg)))[None]).softmax(1)[0]
         v, i = p.topk(self.k)
         return [(self.names[j], float(s)) for j, s in zip(i.tolist(), v.tolist())]
 
@@ -65,13 +66,14 @@ class Phrase:
     def translate(self, wait=False):
         if not self.signs or self.busy:
             return
-        lattice = [[s['cands'][s['pick']][0]] if s['pick'] is not None else [c[0] for c in s['cands']]
-                   for s in self.signs]
+        chosen = [[s['cands'][s['pick']]] if s['pick'] is not None else s['cands'] for s in self.signs]
+        lattice = [[n for n, _ in c] for c in chosen]
+        probs = [[1.0] if len(c) == 1 else [p for _, p in c] for c in chosen]
         self.busy, self.text = True, '…'
 
         def run():
             try:
-                self.text = self.translator().lattice(lattice)
+                self.text = self.translator().lattice(lattice, probs)
                 print('ФРАЗА:', self.text, flush=True)
                 if self.tts:
                     speak(self.text)
@@ -102,7 +104,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--camera', type=int, default=0)
     ap.add_argument('--video', help='видеофайл вместо камеры (без окна), путь в формате C:\\...')
-    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_signnet.pt'))
+    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_signnet_holistic.pt'))
     ap.add_argument('--no-tts', action='store_true')
     ap.add_argument('--gap', type=int, default=6, help='кадров без рук = конец жеста')
     a = ap.parse_args()
@@ -121,12 +123,27 @@ def main():
     cap = cv2.VideoCapture(a.video if a.video else a.camera)
     if not cap.isOpened():
         sys.exit(f'не открылся источник: {a.video or a.camera}')
-    hands = mp.solutions.hands.Hands(max_num_hands=2, min_detection_confidence=0.5,
-                                     min_tracking_confidence=0.5)
+    if rec.kind == 'holistic':  # модель учили на позе и лице — их и нужно видеть
+        det = mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
+
+        def detect(rgb):
+            res = det.process(rgb)
+            return holistic_array(res), [h for h in (res.left_hand_landmarks, res.right_hand_landmarks) if h]
+    else:
+        det = mp.solutions.hands.Hands(max_num_hands=2, min_detection_confidence=0.5,
+                                       min_tracking_confidence=0.5)
+
+        def detect(rgb):
+            res = det.process(rgb)
+            return hands_array(res.multi_hand_landmarks), res.multi_hand_landmarks or []
 
     def on_sign(s):
         if s is not None:
             cands = rec(s)
+            if cands[0][0] == 'no_event':  # руки в кадре, но это не жест
+                print('не жест:', ', '.join(f'{n} {p:.0%}' for n, p in cands), flush=True)
+                return
+            cands = [c for c in cands if c[0] != 'no_event']
             phrase.add(cands)
             print('жест:', ', '.join(f'{n} {p:.0%}' for n, p in cands), flush=True)
 
@@ -134,11 +151,11 @@ def main():
         ok, frame = cap.read()
         if not ok:
             break
-        res = hands.process(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-        on_sign(seg.push(hands_array(res.multi_hand_landmarks)))
+        pts, drawn = detect(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+        on_sign(seg.push(pts))
         if a.video:
             continue
-        for hl in res.multi_hand_landmarks or []:
+        for hl in drawn:
             mp.solutions.drawing_utils.draw_landmarks(frame, hl, mp.solutions.hands.HAND_CONNECTIONS)
         draw(frame, phrase, bool(seg.buf))
         cv2.imshow('GestureLab RSL -> speech', frame)

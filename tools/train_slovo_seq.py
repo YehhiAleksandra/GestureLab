@@ -13,7 +13,7 @@ import torch
 import torch.nn.functional as F
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from slovo_model import SignNet, T, augment, features, resample  # noqa: E402
+from slovo_model import KINDS, SignNet, T, augment, features, resample  # noqa: E402
 
 
 def load(path):
@@ -25,7 +25,7 @@ def load(path):
     return seqs, y, d['train'], d['users'], names
 
 
-def batch_feats(seqs, rng=None):
+def batch_feats(seqs, rng=None, fn=features):
     out = []
     for s in seqs:
         if rng is not None:
@@ -33,14 +33,14 @@ def batch_feats(seqs, rng=None):
             s = resample(augment(s, rng), T, a, 1 - rng.uniform(0, 0.15))
         else:
             s = resample(s, T)
-        out.append(features(s))
+        out.append(fn(s))
     return torch.from_numpy(np.stack(out))
 
 
 @torch.no_grad()
-def predict(model, seqs, dev, bs=512):
+def predict(model, seqs, dev, bs=512, fn=features):
     model.eval()
-    return torch.cat([model(batch_feats(seqs[i:i + bs]).to(dev)).float().cpu()
+    return torch.cat([model(batch_feats(seqs[i:i + bs], fn=fn).to(dev)).float().cpu()
                       for i in range(0, len(seqs), bs)])
 
 
@@ -55,6 +55,7 @@ def main():
     ap.add_argument('--epochs', type=int, default=120)
     ap.add_argument('--bs', type=int, default=128)
     ap.add_argument('--lr', type=float, default=1e-3)
+    ap.add_argument('--kind', choices=KINDS, default='hands')
     a = ap.parse_args()
 
     seqs, y, train, users, names = load(a.data)
@@ -64,7 +65,8 @@ def main():
     print(f'train {len(tr)}, test {len(te)} (из них {len(unseen)} от людей вне train), классов {len(names)}')
 
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = SignNet(len(names)).to(dev)
+    fn, feat = KINDS[a.kind]
+    model = SignNet(len(names), feat=feat).to(dev)
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.05)
     steps = a.epochs * (len(tr) // a.bs)
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, a.lr, total_steps=steps, pct_start=0.1)
@@ -78,7 +80,7 @@ def main():
         total = 0.0
         for b in range(len(tr) // a.bs):
             idx = perm[b * a.bs:(b + 1) * a.bs]
-            x = batch_feats([seqs[i] for i in idx], rng).to(dev)
+            x = batch_feats([seqs[i] for i in idx], rng, fn).to(dev)
             loss = F.cross_entropy(model(x), torch.as_tensor(y[idx], device=dev), label_smoothing=0.1)
             opt.zero_grad()
             loss.backward()
@@ -87,16 +89,16 @@ def main():
             sched.step()
             total += loss.item()
         if ep % 5 == 0 or ep == a.epochs:
-            logits = predict(model, te_seqs, dev)
+            logits = predict(model, te_seqs, dev, fn=fn)
             acc = topk(logits, y[te], 1)
             print(f'ep {ep:3d} loss {total / (len(tr) // a.bs):.3f} test top1 {acc:.3f} '
                   f'top5 {topk(logits, y[te], 5):.3f} [{time.time() - t0:.0f} с]', flush=True)
             if acc > best:
                 best = acc
-                torch.save({'model': model.state_dict(), 'names': names}, a.out)
+                torch.save({'model': model.state_dict(), 'names': names, 'kind': a.kind}, a.out)
 
     model.load_state_dict(torch.load(a.out)['model'])
-    logits = predict(model, te_seqs, dev)
+    logits = predict(model, te_seqs, dev, fn=fn)
     pos = {i: k for k, i in enumerate(te)}
     lu = logits[[pos[i] for i in unseen]]
     res = {'test_top1': topk(logits, y[te], 1), 'test_top5': topk(logits, y[te], 5),
@@ -104,7 +106,7 @@ def main():
            'n_test': len(te), 'n_unseen': len(unseen), 'classes': len(names)}
     print(json.dumps(res, ensure_ascii=False))
     Path('reports/evidence').mkdir(parents=True, exist_ok=True)
-    Path('reports/evidence/slovo_signnet_eval.json').write_text(json.dumps(res, indent=1), encoding='utf-8')
+    Path(f'reports/evidence/{Path(a.out).stem}_eval.json').write_text(json.dumps(res, indent=1), encoding='utf-8')
 
 
 if __name__ == '__main__':

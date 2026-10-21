@@ -3,7 +3,8 @@
 Фраза из тестовой части глоссового корпуса собирается из тестовых клипов Slovo, по клипу на
 глоссу (по возможности от людей, которых нет в train). Границы жестов известны — это
 соответствует живому режиму с паузой между жестами; коартикуляции в склейке нет.
-Сравниваются три входа LLM: эталонные глоссы, top-1 распознавателя, решётка top-3.
+Входы LLM: эталонные глоссы, top-1, решётка top-k (с вероятностями и без), исправленная
+человеком. Кроме chrF другая LLM судит, передан ли смысл эталона (0/1/2).
 """
 import argparse
 import json
@@ -19,7 +20,7 @@ import torch
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from gloss_coverage import norm, split_classes  # noqa: E402
 from gloss_to_text import Translator, chrf, load_corpus  # noqa: E402
-from slovo_model import SignNet  # noqa: E402
+from slovo_model import KINDS, SignNet  # noqa: E402
 from train_slovo_seq import load, predict  # noqa: E402
 
 
@@ -66,13 +67,16 @@ def main():
         gold.append(cls)
 
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = SignNet(len(names)).to(dev)
+    fn, feat = KINDS[ck.get('kind', 'hands')]
+    model = SignNet(len(names), feat=feat).to(dev)
     model.load_state_dict(ck['model'])
     flat = [i for ids in clips for i in ids]
-    probs = predict(model, [seqs[i] for i in flat], dev).softmax(1)
-    topk = probs.topk(a.k, 1).indices.tolist()
-    it = iter(topk)
-    cands = [[next(it) for _ in ids] for ids in clips]
+    probs = predict(model, [seqs[i] for i in flat], dev, fn=fn).softmax(1)
+    top = probs.topk(a.k, 1)
+    it = iter(zip(top.indices.tolist(), top.values.tolist()))
+    cp = [[next(it) for _ in ids] for ids in clips]
+    cands = [[c for c, _ in row] for row in cp]
+    conf = [[q for _, q in row] for row in cp]
 
     n_signs = len(flat)
     top1 = sum(c[0] == g for cs, gs in zip(cands, gold) for c, g in zip(cs, gs)) / n_signs
@@ -89,6 +93,7 @@ def main():
             return {'oracle': tr(pairs[j]['rsl']),
                     'top1': tr(' '.join(names[c[0]] for c in cands[j])),
                     'lattice': tr.lattice([[names[x] for x in c] for c in cands[j]]),
+                    'lattice_p': tr.lattice([[names[x] for x in c] for c in cands[j]], conf[j]),
                     'corrected': tr.lattice(fixed)}
         except Exception as e:  # один вызов без ретраев: ошибка в отчёт, не маскируется
             return {'error': str(e)}
@@ -96,11 +101,23 @@ def main():
     with ThreadPoolExecutor(8) as ex:
         hyps = list(ex.map(one, range(len(pairs))))
 
-    rows, score = [], {'oracle': [], 'top1': [], 'lattice': [], 'corrected': []}
-    for p, cs, gs, h in zip(pairs, cands, gold, hyps):
+    modes = ['oracle', 'top1', 'lattice', 'lattice_p', 'corrected']
+
+    def judged(h, ref):
+        try:
+            return {m: tr.judge(h[m], ref) for m in modes} if 'error' not in h else {}
+        except Exception as e:
+            return {'judge_error': str(e)}
+
+    with ThreadPoolExecutor(8) as ex:
+        verdicts = list(ex.map(judged, hyps, [p['russian'] for p in pairs]))
+
+    rows, score = [], {m: [] for m in modes}
+    for p, cs, gs, h, v in zip(pairs, cands, gold, hyps, verdicts):
         row = {'rsl': p['rsl'], 'ref': p['russian'],
                'recognized': [[names[x] for x in c] for c in cs],
-               'signs_ok': sum(c[0] == g for c, g in zip(cs, gs)), 'signs': len(gs), **h}
+               'signs_ok': sum(c[0] == g for c, g in zip(cs, gs)), 'signs': len(gs), **h,
+               **{f'meaning_{m}': x for m, x in v.items()}}
         if 'error' not in h:
             for m in score:
                 row[f'chrf_{m}'] = round(chrf(h[m], p['russian']), 1)
@@ -111,6 +128,11 @@ def main():
            'sign_top1': top1, f'sign_top{a.k}': topk_hit,
            'exact_phrases_top1': sum(r['signs_ok'] == r['signs'] for r in rows) / len(rows),
            **{f'chrf_{m}': sum(v) / max(len(v), 1) for m, v in score.items()},
+           # доля фраз, где судья поставил 2 («смысл передан») и хотя бы 1; без ответа судьи — не в счёт
+           **{f'meaning_{lvl}_{m}': sum(v >= t for v in vs) / max(len(vs), 1)
+              for m in modes for vs in [[r[f'meaning_{m}'] for r in rows if r.get(f'meaning_{m}') is not None]]
+              for lvl, t in (('ok', 2), ('gist', 1))},
+           'judge_missing': sum(r.get(f'meaning_{m}') is None for r in rows for m in modes),
            'copy_baseline': sum(chrf(p['rsl'], p['russian']) for p in pairs) / len(pairs),
            'llm_errors': errors, 'cost_usd': tr.cost, 'seconds': round(time.time() - t0)}
     print(json.dumps(res, ensure_ascii=False, indent=1))
@@ -119,7 +141,7 @@ def main():
         if 'error' in r:
             continue
         print(f"\n  жесты:   {r['rsl']}\n  увидел:  {' '.join(c[0] for c in r['recognized'])}"
-              f"\n  решётка → {r['lattice']}\n  эталон:  {r['ref']}")
+              f"\n  решётка → {r['lattice_p']}\n  эталон:  {r['ref']}")
 
 
 if __name__ == '__main__':

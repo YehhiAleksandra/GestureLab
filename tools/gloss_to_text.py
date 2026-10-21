@@ -6,6 +6,7 @@ Few-shot: в промпт идут пары из обучающего корпу
 import argparse
 import json
 import random
+import re
 import sys
 import time
 import urllib.request
@@ -25,6 +26,11 @@ SYSTEM = ('Ты переводчик с русского жестового яз
 LATTICE = (' Распознаватель жестов ошибается, поэтому на месте каждого жеста в квадратных скобках '
            'даны варианты через «|», первый — самый вероятный. Выбери по одному варианту на место '
            'так, чтобы вышла осмысленная бытовая фраза.')
+PROBS = (' Рядом с вариантом — уверенность распознавателя. Маловероятный вариант бери, только если '
+         'он явно лучше вписывается в смысл; если на месте ни один вариант не подходит, пропусти его.')
+JUDGE_MODEL = 'Qwen/Qwen3-235B-A22B-Instruct-2507'
+JUDGE = ('Сравни перевод с эталоном. Ответь одной цифрой: 2 — смысл передан (слова могут отличаться), '
+         '1 — суть угадывается, но есть искажения, 0 — смысл не передан или искажён.')
 
 
 def load_corpus(split):
@@ -46,10 +52,21 @@ class Translator:
                         key=lambda i: -len(q & self.train_sets[i]) / (len(q | self.train_sets[i]) or 1))
         return [self.train[i] for i in ranked[:self.shots]][::-1]
 
-    def lattice(self, cands):
-        """cands: на каждое место список вариантов глоссы, от самого вероятного."""
-        query = ' '.join('[' + ' | '.join(c) + ']' for c in cands)
-        return self(' '.join(w for c in cands for w in c), SYSTEM + LATTICE, query)
+    def lattice(self, cands, probs=None):
+        """cands: на каждое место список вариантов глоссы, от самого вероятного; probs — их вероятности."""
+        if probs is None:
+            query = ' '.join('[' + ' | '.join(c) + ']' for c in cands)
+            return self(' '.join(w for c in cands for w in c), SYSTEM + LATTICE, query)
+        query = ' '.join('[' + ' | '.join(f'{w} {100 * q:.0f}%' for w, q in zip(c, ps)) + ']'
+                         for c, ps in zip(cands, probs))
+        return self(' '.join(w for c in cands for w in c), SYSTEM + LATTICE + PROBS, query)
+
+    def judge(self, hyp, ref):
+        """0/1/2 — передан ли смысл эталона; судит другая модель, не переводчик."""
+        msg = [{'role': 'system', 'content': JUDGE},
+               {'role': 'user', 'content': f'Эталон: {ref}\nПеревод: {hyp}'}]
+        m = re.search(r'[012]', self.chat(msg, 8, JUDGE_MODEL))
+        return int(m.group()) if m else None
 
     def __call__(self, glosses, system=SYSTEM, query=None):
         messages = [{'role': 'system', 'content': system}]
@@ -57,8 +74,11 @@ class Translator:
             messages += [{'role': 'user', 'content': ex['rsl']},
                          {'role': 'assistant', 'content': ex['russian']}]
         messages.append({'role': 'user', 'content': query or glosses})
-        body = json.dumps({'model': self.model, 'messages': messages,
-                           'max_tokens': 80, 'temperature': 0}).encode()
+        return self.chat(messages, 80)
+
+    def chat(self, messages, max_tokens, model=None):
+        body = json.dumps({'model': model or self.model, 'messages': messages,
+                           'max_tokens': max_tokens, 'temperature': 0}).encode()
         req = urllib.request.Request(ROUTER, body, {'Authorization': f'Bearer {self.token}',
                                                     'Content-Type': 'application/json'})
         with urllib.request.urlopen(req, timeout=60) as r:
