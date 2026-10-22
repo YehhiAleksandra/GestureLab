@@ -1,0 +1,13 @@
+{
+ "base_top1": 0.6388235092163086,
+ "final_top1": 0.6192156672477722,
+ "final_top5": 0.8305882215499878,
+ "best_top1": 0.6388235092163086,
+ "yt_samples": 2729,
+ "yt_matched_words": 119,
+ "yt_total_words": 1142,
+ "new_classes": 1017,
+ "total_classes": 2018,
+ "yt_top1": 1.0,
+ "yt_top5": 1.0
+}

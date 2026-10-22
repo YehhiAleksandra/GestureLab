@@ -104,7 +104,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--camera', type=int, default=0)
     ap.add_argument('--video', help='видеофайл вместо камеры (без окна), путь в формате C:\\...')
-    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_signnet_holistic.pt'))
+    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_signnet_holistic_yt.pt'))
     ap.add_argument('--no-tts', action='store_true')
     ap.add_argument('--gap', type=int, default=6, help='кадров без рук = конец жеста')
     a = ap.parse_args()
