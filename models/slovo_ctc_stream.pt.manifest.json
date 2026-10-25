@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "kind": "ctc_holistic",
+ "dataset": "datasets/slovo/slovo_holistic.npz",
+ "dataset_sha256": "83c5574e8beded6a8a0143a572c059f4840047aaf809319fe548e8f4df38f513",
+ "checkpoint_sha256": "c633a18bc4a8ff5a1d29a7d82fb5c51fadc0dd70c23919d93d8d4f4a4ddd71a3",
+ "names_sha256": "6ca56a7bfedc8af944e1c2873edf240bb398907c7fd991475c1b6af02c6b08c9",
+ "config": {
+  "data": "datasets/slovo/slovo_holistic.npz",
+  "epochs": 60,
+  "steps": 200,
+  "bs": 64,
+  "lr": 0.0003,
+  "seed": 0,
+  "n_train": 15000,
+  "n_classes": 1000
+ },
+ "arch": {
+  "d": 256,
+  "layers": 4,
+  "heads": 4,
+  "dropout": 0.15
+ },
+ "git_commit": "5c2634884e639cbc858f9ac23c874fb606446023",
+ "created_utc": "2026-10-25T18:07:20+00:00"
+}

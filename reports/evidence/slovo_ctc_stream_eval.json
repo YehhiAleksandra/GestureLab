@@ -1,0 +1,18 @@
+{
+ "clean": {
+  "gloss_acc": 0.3453145057766367,
+  "exact_acc": 0.05,
+  "edit_rate": 0.5738125802310655,
+  "n_streams": 200,
+  "n_glosses": 779
+ },
+ "with_pauses": {
+  "gloss_acc": 0.3508997429305913,
+  "exact_acc": 0.05,
+  "edit_rate": 0.5642673521850899,
+  "n_streams": 200,
+  "n_glosses": 778
+ },
+ "checkpoint": "slovo_ctc_stream.pt",
+ "checkpoint_sha256": "c633a18bc4a8ff5a1d29a7d82fb5c51fadc0dd70c23919d93d8d4f4a4ddd71a3"
+}

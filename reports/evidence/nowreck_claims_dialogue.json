@@ -1,0 +1,655 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "_nearest_valid",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: покадровые признаки потока РЖЯ и нарезка реплик (numpy, CI)"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "stream_features",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: покадровые признаки потока РЖЯ и нарезка реплик (numpy, CI)"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "motion_signal",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: скорость запястий для выбора спокойного кадра при нарезке"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "split_utterances",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: границы реплик по паузам без рук и max_len"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "CTCSignNet",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: покадровый энкодер → CTC-логиты"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "out_lengths",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: длина выхода CTC после прореживания ×2"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "greedy_decode",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: жадное CTC-декодирование с уверенностью по токену"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "load_ctc",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: загрузка CTC-checkpoint"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "Dialogue",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: состояние диалога с атомарным сохранением (stdlib, CI)"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "translate_in_context",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: перевод реплики с контекстом прошлых реплик"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "file_sha256",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: обучение CTC на синтетических потоках, манифест с хешами"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "git_commit",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: фиксация коммита в манифесте обученной модели"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "make_stream",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: склейка клипов Slovo в непрерывный поток с переходами и паузами"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "batch_features",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: батч покадровых признаков с padding"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "edit_counts",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: расстояние Левенштейна между последовательностями глосс"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "evaluate",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: оценка gloss/exact/edit на тестовых потоках"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "warm_start",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: перенос энкодера и формы кистей из изолированной модели"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: CLI обучения CTC с фиксированным протоколом и манифестом"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "make_stream",
+   "file_path": "tools/train_ctc_slovo.py",
+   "caller_name": "main",
+   "called_name": "make_stream",
+   "confidence": 0.95,
+   "explanation": "этап 7: обучение собирает потоки в цикле эпох"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "evaluate",
+   "file_path": "tools/train_ctc_slovo.py",
+   "caller_name": "main",
+   "called_name": "evaluate",
+   "confidence": 0.95,
+   "explanation": "этап 7: промежуточная и финальная оценка"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "warm_start",
+   "file_path": "tools/train_ctc_slovo.py",
+   "caller_name": "main",
+   "called_name": "warm_start",
+   "confidence": 0.95,
+   "explanation": "этап 7: опциональный перенос из изолированной модели"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "frame_of",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: CLI непрерывного перевода с диалогом"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "Recognizer",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: обёртка CTC-модели для кадров холistic"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "Worker",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: фоновый перевод и озвучка, чтобы камера не замирала"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "Mic",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: микрофон слышащей стороны через faster-whisper"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "process_video",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: офлайн-прогон видеофайла по репликам"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "live",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: живой режим камеры с нарезкой реплик и HUD"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "hud",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: HUD с буфером, глоссами и последней репликой"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.98,
+   "explanation": "этап 7: CLI диалогового переводчика"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "process_video",
+   "file_path": "tools/dialogue_translator.py",
+   "caller_name": "main",
+   "called_name": "process_video",
+   "confidence": 0.95,
+   "explanation": "этап 7: офлайн-ветка CLI"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "live",
+   "file_path": "tools/dialogue_translator.py",
+   "caller_name": "main",
+   "called_name": "live",
+   "confidence": 0.95,
+   "explanation": "этап 7: живая ветка CLI"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "flush",
+   "file_path": "tools/dialogue_translator.py",
+   "caller_name": "live",
+   "called_name": "flush",
+   "confidence": 0.95,
+   "explanation": "этап 7: закрытие реплики по паузе и max_len"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "hud",
+   "file_path": "tools/dialogue_translator.py",
+   "caller_name": "live",
+   "called_name": "hud",
+   "confidence": 0.95,
+   "explanation": "этап 7: отрисовка состояния в живом режиме"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_stream_features_shape_and_finite",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тесты признаков и нарезки без torch"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_split_utterances_cuts_on_hand_absence",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тест границ реплик по отсутствию рук"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_split_utterances_cuts_long_span_by_max_len",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тест разрезания длинной реплики"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_ctc_targets_index_logits_directly",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: регресс-тест сдвига целей CTC"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_ctc_model_is_trainable",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тест обучаемости CTC-модели"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_history_goes_into_prompt_with_speakers",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тест контекста диалога в промпте"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_dialogue_keeps_last_turns_and_saves_atomically",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: тест атомарного сохранения диалога"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "plan_timeline",
+   "file_path": "tools/make_dialogue_demo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: детерминированная сборка демо-диалога из клипов Slovo"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "fit",
+   "file_path": "tools/make_dialogue_demo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: вписывание кадра в общий размер без искажения пропорций"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "pick_clips",
+   "file_path": "tools/make_dialogue_demo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: выбор тестовых клипов по глоссам и id из разметки"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/make_dialogue_demo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: CLI сборки демо с манифестом"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "pick_clips",
+   "file_path": "tools/make_dialogue_demo.py",
+   "caller_name": "main",
+   "called_name": "pick_clips",
+   "confidence": 0.95,
+   "explanation": "этап 7: сборка демо начинается с выбора клипов"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "plan_timeline",
+   "file_path": "tools/make_dialogue_demo.py",
+   "caller_name": "main",
+   "called_name": "plan_timeline",
+   "confidence": 0.95,
+   "explanation": "этап 7: границы клипов в общем видео"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Dialogue"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "add",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Dialogue"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "context",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Dialogue"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "save",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Dialogue"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "CTCSignNet"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "forward",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "CTCSignNet"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "FakeTranslator"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "chat",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "FakeTranslator"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "examples",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "FakeTranslator"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__call__",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "FakeTranslator"
+  },
+  {
+   "type": "ADD_CLASS",
+   "symbol_name": "FakeTranslator",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_context_limited_to_k",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_empty_history_uses_plain_translator",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_ctc_model_shape_and_masking",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_greedy_decode_all_blank_gives_empty",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_out_lengths_halves_time_ceil",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "_frame",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "_stream",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_motion_signal_grows_with_wrist_speed",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_motion_signal_zero_for_still_hands",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_split_utterances_drops_short_span",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_stream_features_body_coords_are_shift_invariant",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_stream_features_no_hands_marks_absence",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_stream_features_without_pose_or_face_falls_back",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Mic"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "start",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Mic"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Mic"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "transcribe",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Mic"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Recognizer"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "decode",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Recognizer"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "__init__",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Worker"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "submit",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Worker"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод",
+   "parent_class": "Worker"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/dialogue_translator.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/make_dialogue_demo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.99,
+   "explanation": "этап 7: непрерывное распознавание и диалоговый перевод"
+  }
+ ]
+}

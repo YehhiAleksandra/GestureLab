@@ -1,0 +1,3592 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 89,
+    "confirmed": 89,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 170
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_nearest_valid",
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_utils.py",
+        "symbol_name": "_nearest_valid",
+        "parent_class": null,
+        "line_number": 15,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "stream_features",
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_utils.py",
+        "symbol_name": "stream_features",
+        "parent_class": null,
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "motion_signal",
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_utils.py",
+        "symbol_name": "motion_signal",
+        "parent_class": null,
+        "line_number": 59,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "split_utterances",
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_utils.py",
+        "symbol_name": "split_utterances",
+        "parent_class": null,
+        "line_number": 74,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "CTCSignNet",
+        "file_path": "sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "sign_stream.py",
+        "symbol_name": "CTCSignNet",
+        "parent_class": null,
+        "line_number": 16,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "out_lengths",
+        "file_path": "sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "out_lengths",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "greedy_decode",
+        "file_path": "sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "greedy_decode",
+        "parent_class": null,
+        "line_number": 48,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "load_ctc",
+        "file_path": "sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "load_ctc",
+        "parent_class": null,
+        "line_number": 63,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "Dialogue",
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "Dialogue",
+        "parent_class": null,
+        "line_number": 15,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "translate_in_context",
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "translate_in_context",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "file_sha256",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "file_sha256",
+        "parent_class": null,
+        "line_number": 31,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "git_commit",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "git_commit",
+        "parent_class": null,
+        "line_number": 39,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "make_stream",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "make_stream",
+        "parent_class": null,
+        "line_number": 47,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "batch_features",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "batch_features",
+        "parent_class": null,
+        "line_number": 75,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "edit_counts",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "edit_counts",
+        "parent_class": null,
+        "line_number": 84,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "evaluate",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "evaluate",
+        "parent_class": null,
+        "line_number": 97,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "warm_start",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "warm_start",
+        "parent_class": null,
+        "line_number": 113,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 135,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "make_stream",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "make_stream",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "make_stream"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "evaluate",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "evaluate",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "evaluate"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "warm_start",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "warm_start",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "warm_start"
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "frame_of",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "frame_of",
+        "parent_class": null,
+        "line_number": 42,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "Recognizer",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "Recognizer",
+        "parent_class": null,
+        "line_number": 52,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "Worker",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "Worker",
+        "parent_class": null,
+        "line_number": 70,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "Mic",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "Mic",
+        "parent_class": null,
+        "line_number": 112,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "process_video",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "process_video",
+        "parent_class": null,
+        "line_number": 182,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "live",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "live",
+        "parent_class": null,
+        "line_number": 218,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "hud",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "hud",
+        "parent_class": null,
+        "line_number": 276,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.98
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 293,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "process_video",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "process_video",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "process_video"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "live",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "live",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "live"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "flush",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "flush",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "flush"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "hud",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "hud",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "hud"
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_stream_features_shape_and_finite",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_stream_features_shape_and_finite",
+        "parent_class": null,
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_split_utterances_cuts_on_hand_absence",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_split_utterances_cuts_on_hand_absence",
+        "parent_class": null,
+        "line_number": 68,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_split_utterances_cuts_long_span_by_max_len",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_split_utterances_cuts_long_span_by_max_len",
+        "parent_class": null,
+        "line_number": 80,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_ctc_targets_index_logits_directly",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_ctc_targets_index_logits_directly",
+        "parent_class": null,
+        "line_number": 38,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_ctc_model_is_trainable",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_ctc_model_is_trainable",
+        "parent_class": null,
+        "line_number": 49,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_history_goes_into_prompt_with_speakers",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_history_goes_into_prompt_with_speakers",
+        "parent_class": null,
+        "line_number": 47,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_dialogue_keeps_last_turns_and_saves_atomically",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_dialogue_keeps_last_turns_and_saves_atomically",
+        "parent_class": null,
+        "line_number": 22,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "plan_timeline",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": "plan_timeline",
+        "parent_class": null,
+        "line_number": 23,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "fit",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": "fit",
+        "parent_class": null,
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "pick_clips",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": "pick_clips",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 60,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "pick_clips",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "pick_clips",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "pick_clips"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "plan_timeline",
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "plan_timeline",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "plan_timeline"
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "dialogue_state.py",
+        "parent_class": "Dialogue",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "__init__",
+        "parent_class": "Dialogue",
+        "line_number": 16,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "add",
+        "file_path": "dialogue_state.py",
+        "parent_class": "Dialogue",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "add",
+        "parent_class": "Dialogue",
+        "line_number": 20,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "context",
+        "file_path": "dialogue_state.py",
+        "parent_class": "Dialogue",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "context",
+        "parent_class": "Dialogue",
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "save",
+        "file_path": "dialogue_state.py",
+        "parent_class": "Dialogue",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "save",
+        "parent_class": "Dialogue",
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "sign_stream.py",
+        "parent_class": "CTCSignNet",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "__init__",
+        "parent_class": "CTCSignNet",
+        "line_number": 19,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "forward",
+        "file_path": "sign_stream.py",
+        "parent_class": "CTCSignNet",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "forward",
+        "parent_class": "CTCSignNet",
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": "FakeTranslator",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "__init__",
+        "parent_class": "FakeTranslator",
+        "line_number": 7,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "chat",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": "FakeTranslator",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "chat",
+        "parent_class": "FakeTranslator",
+        "line_number": 17,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "examples",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": "FakeTranslator",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "examples",
+        "parent_class": "FakeTranslator",
+        "line_number": 14,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__call__",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": "FakeTranslator",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "__call__",
+        "parent_class": "FakeTranslator",
+        "line_number": 10,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "FakeTranslator",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "FakeTranslator",
+        "parent_class": null,
+        "line_number": 6,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_context_limited_to_k",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_context_limited_to_k",
+        "parent_class": null,
+        "line_number": 34,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_empty_history_uses_plain_translator",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_empty_history_uses_plain_translator",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_ctc_model_shape_and_masking",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_ctc_model_shape_and_masking",
+        "parent_class": null,
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_greedy_decode_all_blank_gives_empty",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_greedy_decode_all_blank_gives_empty",
+        "parent_class": null,
+        "line_number": 23,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+        "parent_class": null,
+        "line_number": 13,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_out_lengths_halves_time_ceil",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_out_lengths_halves_time_ceil",
+        "parent_class": null,
+        "line_number": 9,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_frame",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "_frame",
+        "parent_class": null,
+        "line_number": 9,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_stream",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "_stream",
+        "parent_class": null,
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_motion_signal_grows_with_wrist_speed",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_motion_signal_grows_with_wrist_speed",
+        "parent_class": null,
+        "line_number": 62,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_motion_signal_zero_for_still_hands",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_motion_signal_zero_for_still_hands",
+        "parent_class": null,
+        "line_number": 58,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_split_utterances_drops_short_span",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_split_utterances_drops_short_span",
+        "parent_class": null,
+        "line_number": 75,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_stream_features_body_coords_are_shift_invariant",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_stream_features_body_coords_are_shift_invariant",
+        "parent_class": null,
+        "line_number": 37,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_stream_features_no_hands_marks_absence",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_stream_features_no_hands_marks_absence",
+        "parent_class": null,
+        "line_number": 51,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_stream_features_without_pose_or_face_falls_back",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_stream_features_without_pose_or_face_falls_back",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Mic",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "__init__",
+        "parent_class": "Mic",
+        "line_number": 117,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "start",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Mic",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "start",
+        "parent_class": "Mic",
+        "line_number": 125,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Mic",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "run",
+        "parent_class": "Mic",
+        "line_number": 136,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "transcribe",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Mic",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "transcribe",
+        "parent_class": "Mic",
+        "line_number": 168,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Recognizer",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "__init__",
+        "parent_class": "Recognizer",
+        "line_number": 53,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "decode",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Recognizer",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "decode",
+        "parent_class": "Recognizer",
+        "line_number": 59,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Worker",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "__init__",
+        "parent_class": "Worker",
+        "line_number": 73,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "submit",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Worker",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "submit",
+        "parent_class": "Worker",
+        "line_number": 79,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": "Worker",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": "run",
+        "parent_class": "Worker",
+        "line_number": 82,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "dialogue_state.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "sign_stream.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "sign_utils.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/dialogue_translator.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\dialogue_translator.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/make_dialogue_demo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\make_dialogue_demo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "save",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "save",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate_in_context",
+      "called_name": "translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "super"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_decode",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_ctc",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_ctc",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_nearest_valid",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "motion_signal",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "motion_signal"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "split_utterances",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "stream_features",
+      "called_name": "_nearest_valid"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "stream_features",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_context_limited_to_k",
+      "called_name": "Dialogue"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_context_limited_to_k",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_dialogue_keeps_last_turns_and_saves_atomically",
+      "called_name": "Dialogue"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_dialogue_keeps_last_turns_and_saves_atomically",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_empty_history_uses_plain_translator",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_empty_history_uses_plain_translator",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_history_goes_into_prompt_with_speakers",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_history_goes_into_prompt_with_speakers",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_model_is_trainable",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_model_is_trainable",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_model_shape_and_masking",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_model_shape_and_masking",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_greedy_decode_all_blank_gives_empty",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_greedy_decode_collapses_repeats_and_drops_blank",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_out_lengths_halves_time_ceil",
+      "called_name": "out_lengths"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_frame",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_stream",
+      "called_name": "_frame"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_stream",
+      "called_name": "left"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_stream",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_stream",
+      "called_name": "right"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_motion_signal_grows_with_wrist_speed",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_motion_signal_grows_with_wrist_speed",
+      "called_name": "motion_signal"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_motion_signal_zero_for_still_hands",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_motion_signal_zero_for_still_hands",
+      "called_name": "motion_signal"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_long_span_by_max_len",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_long_span_by_max_len",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_long_span_by_max_len",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_long_span_by_max_len",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_long_span_by_max_len",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_on_hand_absence",
+      "called_name": "_frame"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_on_hand_absence",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_cuts_on_hand_absence",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_drops_short_span",
+      "called_name": "_frame"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_drops_short_span",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_split_utterances_drops_short_span",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_body_coords_are_shift_invariant",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_body_coords_are_shift_invariant",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_no_hands_marks_absence",
+      "called_name": "_frame"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_no_hands_marks_absence",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_shape_and_finite",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_shape_and_finite",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_without_pose_or_face_falls_back",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_stream_features_without_pose_or_face_falls_back",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "flush",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "frame_of",
+      "called_name": "holistic_frame"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "frame_of",
+      "called_name": "pts"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "hud",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "frame_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "input"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "open_camera"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "ord"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "speak"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Dialogue"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Mic"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Recognizer"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Worker"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "frame_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "open_video"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "ord"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "pts",
+      "called_name": "slice"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "speak"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "start",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "transcribe",
+      "called_name": "WhisperModel"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "transcribe",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "fit",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "fit",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "fit",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "SystemExit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "fit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "open_video"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "pick_clips",
+      "called_name": "SystemExit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "pick_clips",
+      "called_name": "next"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "pick_clips",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "pick_clips",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "plan_timeline",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\make_dialogue_demo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "plan_timeline",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "batch_features",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "batch_features",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "batch_features",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edit_counts",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edit_counts",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edit_counts",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edit_counts",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "edit_counts"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "make_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_sha256",
+      "called_name": "iter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_sha256",
+      "called_name": "open"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "file_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "git_commit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "out_lengths"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_stream",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_stream",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_stream",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_stream",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "warm_start",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "warm_start",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "warm_start",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "warm_start",
+      "called_name": "sum"
+    }
+  ]
+}
