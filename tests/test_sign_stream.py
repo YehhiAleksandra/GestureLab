@@ -56,3 +56,11 @@ def test_ctc_model_is_trainable():
     loss.backward()
     assert np.isfinite(loss.item()) and loss.item() >= 0
     assert model.head.weight.grad is not None
+
+
+def test_ctc_aux_head_pools_only_valid_steps():
+    model = CTCSignNet(7, d=32, layers=1, heads=2, dropout=0.0, aux=7)
+    x = torch.randn(3, 41, 248)
+    logits, aux = model(x, torch.tensor([41, 20, 1]), aux=True)
+    assert logits.shape[:2] == (3, 21) and aux.shape == (3, 7)
+    assert torch.isfinite(aux).all()

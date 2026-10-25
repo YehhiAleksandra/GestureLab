@@ -14,10 +14,14 @@ MAX_STEPS = 1024  # позиционное кодирование: 1024 шага
 
 
 class CTCSignNet(nn.Module):
-    """Покадровый энкодер → CTC-логиты. Прореживает время вдвое (25 → 12.5 шагов/с)."""
+    """Покадровый энкодер → CTC-логиты. Прореживает время вдвое (25 → 12.5 шагов/с).
+
+    aux > 0 добавляет голову классификации изолированного клипа по среднему скрытому
+    состоянию: вспомогательная CE-задача, которая не меняет CTC-выход.
+    """
 
     def __init__(self, n_classes, d=256, layers=4, heads=4, dropout=0.15, feat=FEAT,
-                 max_steps=MAX_STEPS):
+                 max_steps=MAX_STEPS, aux=0):
         super().__init__()
         self.inp = nn.Sequential(nn.Linear(feat, d), nn.LayerNorm(d), nn.GELU(),
                                  nn.Dropout(dropout))
@@ -28,8 +32,9 @@ class CTCSignNet(nn.Module):
                                          norm_first=True)
         self.enc = nn.TransformerEncoder(enc, layers)
         self.head = nn.Linear(d, n_classes + 1)
+        self.aux = nn.Linear(d, aux) if aux else None
 
-    def forward(self, x, lengths=None):
+    def encode(self, x, lengths=None):
         h = self.inp(x)
         h = h + self.conv(h.transpose(1, 2)).transpose(1, 2)
         h = self.down(h.transpose(1, 2)).transpose(1, 2)
@@ -38,7 +43,16 @@ class CTCSignNet(nn.Module):
         if lengths is not None:
             steps = (lengths + 1) // 2
             mask = torch.arange(h.shape[1], device=x.device)[None] >= steps[:, None]
-        return self.head(self.enc(h, src_key_padding_mask=mask))
+        return self.enc(h, src_key_padding_mask=mask), mask
+
+    def forward(self, x, lengths=None, aux=False):
+        h, mask = self.encode(x, lengths)
+        logits = self.head(h)
+        if not aux:
+            return logits
+        w = (~mask).float() if mask is not None else torch.ones(h.shape[:2], device=h.device)
+        pooled = (h * w[..., None]).sum(1) / w.sum(1, keepdim=True).clamp(min=1.0)
+        return logits, self.aux(pooled)
 
 
 def out_lengths(lengths):
@@ -62,6 +76,8 @@ def greedy_decode(logits):
 
 def load_ctc(path, device='cpu'):
     ck = torch.load(path, map_location=device)
-    model = CTCSignNet(len(ck['names']), feat=ck.get('feat', FEAT), **ck.get('arch', {}))
+    aux = ck.get('aux', 0) or (len(ck['names']) if 'aux.weight' in ck['model'] else 0)
+    model = CTCSignNet(len(ck['names']), feat=ck.get('feat', FEAT), aux=aux,
+                       **ck.get('arch', {}))
     model.load_state_dict(ck['model'])
     return model.to(device).eval(), ck['names'], ck

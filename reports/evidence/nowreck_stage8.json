@@ -1,0 +1,2312 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 31,
+    "confirmed": 31,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 176
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "sign_beam.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/eval_decoders.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\eval_decoders.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_CLASS",
+        "symbol_name": "GlossLM",
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_CLASS",
+        "file_path": "sign_beam.py",
+        "symbol_name": "GlossLM",
+        "parent_class": null,
+        "line_number": 25,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "__init__",
+        "file_path": "sign_beam.py",
+        "parent_class": "GlossLM",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "__init__",
+        "parent_class": "GlossLM",
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "logp",
+        "file_path": "sign_beam.py",
+        "parent_class": "GlossLM",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "logp",
+        "parent_class": "GlossLM",
+        "line_number": 46,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_logp",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "_logp",
+        "parent_class": null,
+        "line_number": 6,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "smooth_log_probs",
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "smooth_log_probs",
+        "parent_class": null,
+        "line_number": 11,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "ctc_beam_search",
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "ctc_beam_search",
+        "parent_class": null,
+        "line_number": 56,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "nbest_to_lattice",
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "nbest_to_lattice",
+        "parent_class": null,
+        "line_number": 106,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "encode",
+        "file_path": "sign_stream.py",
+        "parent_class": "CTCSignNet",
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_stream.py",
+        "symbol_name": "encode",
+        "parent_class": "CTCSignNet",
+        "line_number": 37,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_transition",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "_transition",
+        "parent_class": null,
+        "line_number": 52,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "corpus_phrases",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "corpus_phrases",
+        "parent_class": null,
+        "line_number": 87,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "make_corpus_stream",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "make_corpus_stream",
+        "parent_class": null,
+        "line_number": 97,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "spec_augment",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "spec_augment",
+        "parent_class": null,
+        "line_number": 114,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "aux_batch",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "aux_batch",
+        "parent_class": null,
+        "line_number": 133,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "prepare_slovo",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "prepare_slovo",
+        "parent_class": null,
+        "line_number": 167,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "samples_random",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "samples_random",
+        "parent_class": null,
+        "line_number": 186,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "samples_corpus",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "samples_corpus",
+        "parent_class": null,
+        "line_number": 191,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "metrics_of",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "metrics_of",
+        "parent_class": null,
+        "line_number": 198,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "evaluate_corpus",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "evaluate_corpus",
+        "parent_class": null,
+        "line_number": 217,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "greedy",
+        "file_path": "tools/eval_decoders.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_decoders.py",
+        "symbol_name": "greedy",
+        "parent_class": null,
+        "line_number": 31,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "collect",
+        "file_path": "tools/eval_decoders.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_decoders.py",
+        "symbol_name": "collect",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "score",
+        "file_path": "tools/eval_decoders.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_decoders.py",
+        "symbol_name": "score",
+        "parent_class": null,
+        "line_number": 51,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/eval_decoders.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_decoders.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 69,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_smooth_log_probs_keeps_shape_and_normalization",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_smooth_log_probs_keeps_shape_and_normalization",
+        "parent_class": null,
+        "line_number": 14,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_beam_search_matches_clear_path",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_beam_search_matches_clear_path",
+        "parent_class": null,
+        "line_number": 21,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_lm_breaks_tie_between_words",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_lm_breaks_tie_between_words",
+        "parent_class": null,
+        "line_number": 28,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_gloss_lm_prefers_frequent_bigram",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_gloss_lm_prefers_frequent_bigram",
+        "parent_class": null,
+        "line_number": 38,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_nbest_to_lattice_groups_positions",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_nbest_to_lattice_groups_positions",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_ctc_aux_head_pools_only_valid_steps",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_ctc_aux_head_pools_only_valid_steps",
+        "parent_class": null,
+        "line_number": 61,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "class_aliases",
+      "parent_class": null,
+      "line_number": 53,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "file_sha256",
+      "parent_class": null,
+      "line_number": 107,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "file_words",
+      "parent_class": null,
+      "line_number": 75,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "load_samples",
+      "parent_class": null,
+      "line_number": 80,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "sample_sha256",
+      "parent_class": null,
+      "line_number": 112,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": "merge",
+      "parent_class": null,
+      "line_number": 110,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_beam_search",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logp",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_to_lattice",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_to_lattice",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_to_lattice",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "smooth_log_probs",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_logp",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_logp",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_beam_search_matches_clear_path",
+      "called_name": "_logp"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_beam_search_matches_clear_path",
+      "called_name": "ctc_beam_search"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_beam_search_matches_clear_path",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_gloss_lm_prefers_frequent_bigram",
+      "called_name": "GlossLM"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_lm_breaks_tie_between_words",
+      "called_name": "GlossLM"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_lm_breaks_tie_between_words",
+      "called_name": "ctc_beam_search"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_nbest_to_lattice_groups_positions",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_smooth_log_probs_keeps_shape_and_normalization",
+      "called_name": "_logp"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_smooth_log_probs_keeps_shape_and_normalization",
+      "called_name": "smooth_log_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_aux_head_pools_only_valid_steps",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ctc_aux_head_pools_only_valid_steps",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "GlossLM"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "__init__",
+      "called_name": "load_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "ctc_beam_search"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "smooth_log_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "beam_hyps",
+      "called_name": "ctc_beam_search"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "collect",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "collect",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "GlossLM"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "beam_hyps"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "collect"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "corpus_phrases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "greedy"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "prepare_slovo"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "samples_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "samples_random"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "score"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "smooth_log_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "tuple"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "any"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "edit_counts"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "isinstance"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_decoders.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "score",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_aliases",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_aliases",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_sha256",
+      "called_name": "open"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_words",
+      "called_name": "normalize"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_words",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "file_words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_slovo",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "load_samples"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "class_aliases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "file_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_samples"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sample_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_sha256",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "merge"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_transition",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "aux_batch",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "corpus_phrases",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "corpus_phrases",
+      "called_name": "load_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "metrics_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "samples_random"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate_corpus",
+      "called_name": "metrics_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate_corpus",
+      "called_name": "samples_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "aux_batch"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "corpus_phrases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "evaluate_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "metrics_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "prepare_slovo"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "samples_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "samples_random"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "spec_augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "_transition"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_corpus_stream",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_stream",
+      "called_name": "_transition"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "edit_counts"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "metrics_of",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "load"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "prepare_slovo",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "samples_corpus",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "samples_corpus",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "samples_random",
+      "called_name": "make_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "samples_random",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "spec_augment",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "spec_augment",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "spec_augment",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "norm_ocr"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "norm_ocr"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "edit_counts"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "make_stream"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "evaluate",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sorted"
+    }
+  ]
+}

@@ -10,6 +10,8 @@
   --camera 0         живой режим с камерой
   --mic              слушать слышащую сторону микрофоном (faster-whisper), иначе клавиша H
   --hearing "..."    реплика слышащего до начала записи (контекст для первого перевода)
+  --decoder beam     beam search с LM глоссов вместо greedy (--lm-weight — сила LM,
+                     --word-bonus — бонус за слово, иначе LM режет короткие реплики)
   --no-tts           не озвучивать перевод
 Клавиши: Q/Esc — выход, H — ввести реплику слышащего, S — повторить озвучку, C — очистить.
 
@@ -35,6 +37,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 from dialogue_state import Dialogue, translate_in_context  # noqa: E402
 from gl_capture import open_camera, open_video  # noqa: E402
 from live_signs import FACE_IDX, POSE_IDX, holistic_frame  # noqa: E402
+from sign_beam import GlossLM, ctc_beam_search, smooth_log_probs  # noqa: E402
 from sign_stream import greedy_decode, load_ctc  # noqa: E402
 from sign_utils import split_utterances, stream_features  # noqa: E402
 
@@ -50,10 +53,25 @@ def frame_of(res):
 
 
 class Recognizer:
-    def __init__(self, path, device=None):
+    def __init__(self, path, device=None, decoder='greedy', beam=8, lm_weight=0.0,
+                 word_bonus=0.0, smooth=1):
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.model, self.names, _ = load_ctc(path, self.device)
-        print(f'CTC-модель: {Path(path).name}, классов {len(self.names)}, {self.device}', flush=True)
+        self.decoder, self.beam = decoder, beam
+        self.lm_weight, self.word_bonus = lm_weight, word_bonus
+        self.smooth, self.lm = smooth, None
+        if decoder == 'beam' and lm_weight > 0:
+            try:
+                from gloss_to_text import load_corpus
+                index = {n.lower(): i for i, n in enumerate(self.names)}
+                seqs = [[index[w.lower()] for w in p['rsl'].split()] for p in load_corpus('train')
+                        if all(w.lower() in index for w in p['rsl'].split())]
+                self.lm = GlossLM(seqs, len(self.names))
+                print(f'LM глоссов: {len(seqs)} фраз корпуса', flush=True)
+            except Exception as e:  # noqa: BLE001 — без корпуса beam работает без LM
+                print(f'LM недоступна ({e}) — beam без языковой модели', flush=True)
+        print(f'CTC-модель: {Path(path).name}, классов {len(self.names)}, {self.device}, '
+              f'декодер {decoder}', flush=True)
 
     @torch.no_grad()
     def decode(self, frames):
@@ -62,8 +80,18 @@ class Recognizer:
             return []
         x = torch.from_numpy(stream_features(frames))[None].to(self.device)
         lengths = torch.tensor([len(frames)], device=self.device)
-        logits = self.model(x, lengths)[0]
-        ids, scores = greedy_decode(logits.cpu())
+        logits = self.model(x, lengths)[0].cpu()
+        if self.decoder != 'beam':
+            ids, scores = greedy_decode(logits)
+            return [(self.names[i], c) for i, c in zip(ids, scores)]
+        logp = logits.log_softmax(-1).numpy()
+        if self.smooth > 1:
+            logp = smooth_log_probs(logp, self.smooth)
+        ids = ctc_beam_search(logp, beam=self.beam, topk=32, nbest=1,
+                              lm=self.lm, lm_weight=self.lm_weight,
+                              word_bonus=self.word_bonus)[0][0]
+        p = np.exp(logp)
+        scores = [float(p[:, i + 1].max()) for i in ids]  # верхняя оценка, не калибровка
         return [(self.names[i], c) for i, c in zip(ids, scores)]
 
 
@@ -294,7 +322,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--camera', type=int)
     ap.add_argument('--video', help='видеофайл вместо камеры; путь в формате C:\\...')
-    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_ctc_stream.pt'))
+    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_ctc_corpus.pt'))
     ap.add_argument('--pause', type=float, default=0.7, help='секунд без рук = конец реплики')
     ap.add_argument('--max-utterance', type=float, default=15.0)
     ap.add_argument('--dialogue-out', help='JSON с репликами диалога')
@@ -304,6 +332,14 @@ def main():
     ap.add_argument('--mic', action='store_true', help='слушать слышащего микрофоном')
     ap.add_argument('--whisper', default='small')
     ap.add_argument('--hearing', help='реплика слышащего до начала записи (контекст перевода)')
+    ap.add_argument('--decoder', choices=('greedy', 'beam'), default='beam')
+    ap.add_argument('--beam', type=int, default=8)
+    ap.add_argument('--lm-weight', type=float, default=0.1,
+                    help='вес LM глоссов в beam search (0 — без LM)')
+    ap.add_argument('--word-bonus', type=float, default=2.0,
+                    help='бонус за каждое слово: без него LM схлопывает короткие реплики')
+    ap.add_argument('--smooth', type=int, default=1,
+                    help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
     a = ap.parse_args()
     if not a.video and a.camera is None:
         sys.exit('нужен --video или --camera')
@@ -311,7 +347,8 @@ def main():
     dialogue = Dialogue(a.dialogue_out)
     if a.hearing:
         dialogue.add('hearing', a.hearing)
-    rec = Recognizer(a.model)
+    rec = Recognizer(a.model, decoder=a.decoder, beam=a.beam, lm_weight=a.lm_weight,
+                     word_bonus=a.word_bonus, smooth=a.smooth)
     worker = Worker(dialogue, tts=not a.no_tts, translator=not a.no_translate)
     mic = None
     if a.mic:
