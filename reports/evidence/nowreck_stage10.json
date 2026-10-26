@@ -1,0 +1,566 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 4,
+    "confirmed": 4,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 51
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\eval_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_eval_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_load_rows_rejects_rows_without_candidates",
+        "file_path": "tests/test_eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_translation.py",
+        "symbol_name": "test_load_rows_rejects_rows_without_candidates",
+        "parent_class": null,
+        "line_number": 23,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_lattice_variant_reads_candidates_not_translation",
+        "file_path": "tests/test_eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_translation.py",
+        "symbol_name": "test_lattice_variant_reads_candidates_not_translation",
+        "parent_class": null,
+        "line_number": 33,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": "ev",
+      "parent_class": null,
+      "line_number": 7,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": "test_load_rows_dedups_by_glosses_and_ref",
+      "parent_class": null,
+      "line_number": 13,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": "test_paired_compares_only_judged_rows",
+      "parent_class": null,
+      "line_number": 60,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": "test_summarize_counts_meaning_and_chrf",
+      "parent_class": null,
+      "line_number": 50,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "bracketed",
+      "parent_class": null,
+      "line_number": 46,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "flat",
+      "parent_class": null,
+      "line_number": 50,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "load_rows",
+      "parent_class": null,
+      "line_number": 32,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "main",
+      "parent_class": null,
+      "line_number": 104,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "paired",
+      "parent_class": null,
+      "line_number": 88,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "run_variant",
+      "parent_class": null,
+      "line_number": 64,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "summarize",
+      "parent_class": null,
+      "line_number": 77,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "translate",
+      "parent_class": null,
+      "line_number": 54,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_lattice_variant_reads_candidates_not_translation",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_rows",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_rows",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_rows",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_rows"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "paired"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run_variant"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "summarize"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "one",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "one",
+      "called_name": "translate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "abs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "erfc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "isinstance"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "sqrt"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "paired",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run_variant",
+      "called_name": "ThreadPoolExecutor"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run_variant",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run_variant",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "chrf"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "isinstance"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate",
+      "called_name": "bracketed"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate",
+      "called_name": "flat"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate",
+      "called_name": "tr"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 10: замер перевода без распознавания — вариант промпта и модель"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 10: тесты дедупликации строк, сводки, парного сравнения и схемы B40"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_load_rows_rejects_rows_without_candidates",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 10: строка без кандидатов (артефакт B40) не проходит молча"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_lattice_variant_reads_candidates_not_translation",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 10: вариант lattice берёт кандидатов из cands, а не перевод из ключа lattice"
+  }
+ ]
+}

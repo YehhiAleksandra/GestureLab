@@ -138,6 +138,10 @@ top-1. Поэтому на демо выигрыша нет — это огра�
 - `reports/evidence/demo_dialog_lattice.json`, `demo_dialog_top1.json`
 - `reports/evidence/nowreck_claims_stage9.json`, `nowreck_stage9.json`
 
+Поправка от этапа 10 (B40): в этих JSON ключ `lattice` перезаписан переводом, списка
+кандидатов там нет. Сводные числа этапа 9 считались до перезаписи и верны; строки
+с кандидатами — `lattice_rows_111.json`, `lattice_rows_130.json` (см. `reports/15_prompt_model.md`).
+
 ## 10. Следующие шаги (решение за Вадимом)
 
 1. **Данные**: реальные непрерывные записи с разметкой границ — главный ограничитель;

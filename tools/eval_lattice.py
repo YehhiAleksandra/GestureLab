@@ -91,6 +91,8 @@ def main():
     ap.add_argument('--holdout-seed', type=int, default=2027,
                     help='сид разбиения уникальных фраз: другой сид — другой независимый набор')
     ap.add_argument('--workers', type=int, default=8)
+    ap.add_argument('--no-llm', action='store_true',
+                    help='только распознавание и кандидаты, без переводчика и судьи')
     ap.add_argument('--out', default='reports/evidence/lattice_eval.json')
     a = ap.parse_args()
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -114,7 +116,7 @@ def main():
         cands = nbest_to_lattice([h for h, _ in hyps], a.max_cands)
         rows.append({'ref': phrase['russian'], 'oracle_text': phrase['rsl'], 'labels': labels,
                      'greedy': greedy(logp), 'beam': hyps[0][0],
-                     'nbest': [h for h, _ in hyps], 'lattice': cands})
+                     'nbest': [h for h, _ in hyps], 'cands': cands})
 
     def rec_acc(key):
         pos = sum(sum(x == y for x, y in zip(r[key], r['labels'])) for r in rows)
@@ -124,13 +126,33 @@ def main():
         return {'gloss_acc': round(pos / total, 4), 'exact_acc': round(exact, 4),
                 'edit_rate': round(edit, 4)}
 
+    if a.no_llm:
+        res_rows = [{'ref': r['ref'], 'glosses_ref': r['oracle_text'],
+                     'glosses_greedy': ' '.join(names[i] for i in r['greedy']),
+                     'glosses_beam': ' '.join(names[i] for i in r['beam']),
+                     'cands': [[names[i] for i in c] for c in r['cands']],
+                     'oracle_exact_nbest': int(r['labels'] in r['nbest'])} for r in rows]
+        summary = {'model': a.model, 'phrases': len(rows), 'beam': a.beam,
+                   'nbest': a.nbest, 'lm_weight': a.lm_weight,
+                   'word_bonus': a.word_bonus, 'holdout_seed': a.holdout_seed,
+                   'dev_size': a.dev_size,
+                   'recognition': {'greedy': rec_acc('greedy'), 'beam': rec_acc('beam')},
+                   'nbest_oracle_exact': round(sum(r['oracle_exact_nbest'] for r in res_rows)
+                                               / len(res_rows), 4),
+                   'llm': None}
+        print(json.dumps(summary, ensure_ascii=False, indent=1), flush=True)
+        Path(a.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(a.out).write_text(json.dumps({**summary, 'rows': res_rows}, ensure_ascii=False,
+                                         indent=1), encoding='utf-8')
+        return
+
     tr = Translator(a.llm)
     t0 = time.time()
 
     def one(r):
         g = ' '.join(names[i] for i in r['greedy'])
         b = ' '.join(names[i] for i in r['beam'])
-        lt = [[names[i] for i in c] for c in r['lattice']]
+        lt = [[names[i] for i in c] for c in r['cands']]
         try:
             out = {'greedy': tr(g), 'beam': tr(b), 'lattice': tr.lattice(lt),
                    'oracle': tr(r['oracle_text'])}
@@ -152,7 +174,7 @@ def main():
         row = {'ref': r['ref'], 'glosses_ref': r['oracle_text'],
                'glosses_greedy': ' '.join(names[i] for i in r['greedy']),
                'glosses_beam': ' '.join(names[i] for i in r['beam']),
-               'lattice': [[names[i] for i in c] for c in r['lattice']],
+               'cands': [[names[i] for i in c] for c in r['cands']],
                'oracle_exact_nbest': int(r['labels'] in r['nbest']), **h}
         res_rows.append(row)
 
