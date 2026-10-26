@@ -1,0 +1,650 @@
+{
+ "checkpoint": "slovo_signnet_holistic_repaired_e20.pt",
+ "checkpoint_sha256": "247d42d00b250b5115757c7d9868f98929f41bcde380a2b1d16837272941360a",
+ "classes": 1564,
+ "scope": "new",
+ "train_sources": [
+  "ark_partial.npz",
+  "course_partial.npz"
+ ],
+ "test_source": "rutube_partial.npz",
+ "test_source_sha256": "c395f550e7148ff93e3f8ee0298b1fabea05a8fd0ada52945746f18d23ca7cd6",
+ "evaluated_words": [
+  "авария",
+  "автобус",
+  "адвокат",
+  "акт",
+  "апрель",
+  "арест",
+  "банк",
+  "бегать",
+  "безработица",
+  "бензин",
+  "беременность",
+  "брать",
+  "валюта",
+  "вместе",
+  "вокзал",
+  "врач",
+  "выбрать",
+  "выходной",
+  "где",
+  "государство",
+  "давно",
+  "депутат",
+  "должность",
+  "жест",
+  "завод",
+  "запомнить",
+  "зарплата",
+  "заставить",
+  "зачем",
+  "коллектив",
+  "конституция",
+  "ловить",
+  "медленно",
+  "месть",
+  "метро",
+  "миллиард",
+  "мотор",
+  "музей",
+  "область",
+  "обращение",
+  "общежитие",
+  "общество",
+  "одинаковый",
+  "окно",
+  "откуда",
+  "парк",
+  "переход",
+  "площадь",
+  "поезд",
+  "поликлиника",
+  "потерять",
+  "президент",
+  "проблема",
+  "работа",
+  "разрешить",
+  "регулярно",
+  "республика",
+  "самолет",
+  "свобода",
+  "сигнал",
+  "справка",
+  "срок",
+  "статистика",
+  "стол",
+  "страна",
+  "стул",
+  "телеграмма",
+  "телефон",
+  "трактор",
+  "трамвай",
+  "туалет",
+  "тюрьма",
+  "чиновник",
+  "шоссе",
+  "шофер",
+  "шутка"
+ ],
+ "evaluated_word_count": 76,
+ "test_samples": 78,
+ "source_samples": 893,
+ "cohort_sha256": "ffde9046ecefceb7dc68d912538cf7f2deec1935f6e0cf600acabf66d47591a8",
+ "top1": 0.0,
+ "top3": 0.0,
+ "provenance": {
+  "finetune_holdout_verified": true,
+  "base_provenance_verified": false,
+  "exact_overlap_samples": 0,
+  "limitation": "Хеши исключают точные копии, но не другие обрезки одного видео; независимость исполнителей и происхождение базовой модели не доказаны."
+ },
+ "per_sample": [
+  {
+   "word": "авария",
+   "sample_sha256": "743904b11d718d389ee2931ff77b40fd6d05550d76596b0f5c356a75c74723ef",
+   "top1": false,
+   "top3": false,
+   "pred": "жадно есть"
+  },
+  {
+   "word": "автобус",
+   "sample_sha256": "5ebd4f4b61f5d03d40a67d8433d5569a4b7f3b62fd63a72c9fd74897ebfc139b",
+   "top1": false,
+   "top3": false,
+   "pred": "восемьсот"
+  },
+  {
+   "word": "адвокат",
+   "sample_sha256": "898b5f5756262dc9db7d7209fb3dd019bc136e32b6e72ad825a607c913ada135",
+   "top1": false,
+   "top3": false,
+   "pred": "испуг"
+  },
+  {
+   "word": "акт",
+   "sample_sha256": "3e1359e093c757b35f6406c3ea0f7a30b7a941b24578dbc6812d80a043674106",
+   "top1": false,
+   "top3": false,
+   "pred": "причина"
+  },
+  {
+   "word": "апрель",
+   "sample_sha256": "16e3fa485dd8f6bcab32e5b8184031618dae0ac502ff8f853c685cc151280ea4",
+   "top1": false,
+   "top3": false,
+   "pred": "заказывать"
+  },
+  {
+   "word": "арест",
+   "sample_sha256": "59f5d5e1336a7f07163bb178423422135032c8946f16220b33d0b5d6b758d2d3",
+   "top1": false,
+   "top3": false,
+   "pred": "магазин"
+  },
+  {
+   "word": "банк",
+   "sample_sha256": "a0527b60a13cb9d3aaabe1e48cf0821c8b097932a0f42835228f215307466871",
+   "top1": false,
+   "top3": false,
+   "pred": "постепенно"
+  },
+  {
+   "word": "бегать",
+   "sample_sha256": "2af0f792121386e1217fc42ceb34a7fa7a4641e9760511f599d1b315625062dc",
+   "top1": false,
+   "top3": false,
+   "pred": "медведь"
+  },
+  {
+   "word": "безработица",
+   "sample_sha256": "fba76b4104d2a55f0407e2dd7f15dddc7cff8404e4cee70fd142f4dc6f7111f7",
+   "top1": false,
+   "top3": false,
+   "pred": "поздний"
+  },
+  {
+   "word": "бензин",
+   "sample_sha256": "858e5574e03ec079e292b8ed916e55ee04cde48a57b1c18e9172bcfb6c07b377",
+   "top1": false,
+   "top3": false,
+   "pred": "охотно"
+  },
+  {
+   "word": "бензин",
+   "sample_sha256": "28c90ac736af90c78da2dc933a280febfff3f26ad2548568810421a748fa7055",
+   "top1": false,
+   "top3": false,
+   "pred": "Ы"
+  },
+  {
+   "word": "беременность",
+   "sample_sha256": "7bb77f545e949ced0b00d905edca3053a0c2102e27754baa5983f9930deddd96",
+   "top1": false,
+   "top3": false,
+   "pred": "помочь"
+  },
+  {
+   "word": "брать",
+   "sample_sha256": "a87d2d5c6464b1d2dbeccc81c68754aa3a553c219c4dbf8bc58ff3ef0efa23fe",
+   "top1": false,
+   "top3": false,
+   "pred": "да"
+  },
+  {
+   "word": "валюта",
+   "sample_sha256": "a230d08c85499741edd8bf5bb634c494aab676b45cc1e28e940e57abde5d1844",
+   "top1": false,
+   "top3": false,
+   "pred": "который"
+  },
+  {
+   "word": "вместе",
+   "sample_sha256": "3afb5d2d6273078269d35a6fa43a2a9cf7a6d778ca185759e3e1cbdd48bcdb2a",
+   "top1": false,
+   "top3": false,
+   "pred": "обещать"
+  },
+  {
+   "word": "вокзал",
+   "sample_sha256": "a5e31a9cc48beff8fc22295a42748ec8094a8cb30aff4d3b83d4bfed84d28e31",
+   "top1": false,
+   "top3": false,
+   "pred": "креветка"
+  },
+  {
+   "word": "врач",
+   "sample_sha256": "032e2cd139192e37a8b368138b4a77e25cd38427d28c991823d12275512cb9b1",
+   "top1": false,
+   "top3": false,
+   "pred": "прирученный"
+  },
+  {
+   "word": "выбрать",
+   "sample_sha256": "af7d70bf5f3cb42bf66ae14baf0db1e4008a66df39c43974a98dad325e9955c2",
+   "top1": false,
+   "top3": false,
+   "pred": "срочный"
+  },
+  {
+   "word": "выходной",
+   "sample_sha256": "6b2c222eff0e2e334e8affae3e7509d7efa7588a53bfbae05d96ccc7a4885a94",
+   "top1": false,
+   "top3": false,
+   "pred": "выходные"
+  },
+  {
+   "word": "где",
+   "sample_sha256": "076c4aae2a74659fdd224ab03b6f158b11bfb2d6e2539cc6aee8a24311a4f977",
+   "top1": false,
+   "top3": false,
+   "pred": "хорошо"
+  },
+  {
+   "word": "государство",
+   "sample_sha256": "60fe0a3982b1f3cc5b8f09c720fbfddd53aefb96f83c944661693a99f860c6fd",
+   "top1": false,
+   "top3": false,
+   "pred": "козел"
+  },
+  {
+   "word": "давно",
+   "sample_sha256": "d8de5f5c8326474682c3064db4043e36c325c6625d63904da255c87ac1e75561",
+   "top1": false,
+   "top3": false,
+   "pred": "цвет"
+  },
+  {
+   "word": "депутат",
+   "sample_sha256": "d8c3ece8925a2a871a3b865f7a2fb2dd08bf08a4fc20abe379fd98697419ef37",
+   "top1": false,
+   "top3": false,
+   "pred": "активный"
+  },
+  {
+   "word": "должность",
+   "sample_sha256": "24d528592534dad0ad0365e70c022df226f46cccd3cb6323bbd628d1f3fd0d25",
+   "top1": false,
+   "top3": false,
+   "pred": "направление"
+  },
+  {
+   "word": "жест",
+   "sample_sha256": "0d4681dd169ac71f2894db49cc5566cf0ff3e0d4f01132e356f748aa96f23603",
+   "top1": false,
+   "top3": false,
+   "pred": "Жарить"
+  },
+  {
+   "word": "завод",
+   "sample_sha256": "b781dbcc262f73835e103c29b166ea39f566da72c520674b7b210f6b55f66b18",
+   "top1": false,
+   "top3": false,
+   "pred": "недобрый"
+  },
+  {
+   "word": "запомнить",
+   "sample_sha256": "5c4a055566955485bd1dc80c50502409a4650bf93e4c32cdea98c4cf2a9e1539",
+   "top1": false,
+   "top3": false,
+   "pred": "глупый"
+  },
+  {
+   "word": "зарплата",
+   "sample_sha256": "8de2070d1c49cb0160e8b14f0e821813f4bc52dd25bb465d622e8e4b54156d3e",
+   "top1": false,
+   "top3": false,
+   "pred": "охотно"
+  },
+  {
+   "word": "заставить",
+   "sample_sha256": "34ab798503d15b9dd143c0477d35d9a9d15b64049b22015c6783796b125b78af",
+   "top1": false,
+   "top3": false,
+   "pred": "коричневый"
+  },
+  {
+   "word": "зачем",
+   "sample_sha256": "b5fe3816ca04f2910dca9f6d021658602e91c232ff8e37b743df2625d925af23",
+   "top1": false,
+   "top3": false,
+   "pred": "еще"
+  },
+  {
+   "word": "зачем",
+   "sample_sha256": "f7b36442d1765be4848e1e4e1bd4525785132adf22e044e7b6826e1ecc96f709",
+   "top1": false,
+   "top3": false,
+   "pred": "беспокоящий"
+  },
+  {
+   "word": "коллектив",
+   "sample_sha256": "19a1be5a8530243d9e0e7ff5908153777be2df951db91185b32e0fed275387e7",
+   "top1": false,
+   "top3": false,
+   "pred": "недобрый"
+  },
+  {
+   "word": "конституция",
+   "sample_sha256": "56d7ba054aae5303e16489f486c9e9e4306a9ad3fc3801356334b81e0557981c",
+   "top1": false,
+   "top3": false,
+   "pred": "кусок; тонкими слоями"
+  },
+  {
+   "word": "ловить",
+   "sample_sha256": "ed3f164d60eacfcf443c9faf85228f446dd24222a24b5cad5bc6c5a0b673501e",
+   "top1": false,
+   "top3": false,
+   "pred": "Выручить"
+  },
+  {
+   "word": "медленно",
+   "sample_sha256": "faeaa7fa76d99a7c70ca4b8dd881b4ea091fda366c6fe096c299f41f7101e997",
+   "top1": false,
+   "top3": false,
+   "pred": "поздний"
+  },
+  {
+   "word": "месть",
+   "sample_sha256": "1f648bd92af176a7423bfba91d247072aa8258deef6813aec260979f4ec29d56",
+   "top1": false,
+   "top3": false,
+   "pred": "который"
+  },
+  {
+   "word": "метро",
+   "sample_sha256": "dbf288e9b04445f2c81e3ec00d678e3b908de2107269ebaf139833d73e189ac4",
+   "top1": false,
+   "top3": false,
+   "pred": "над"
+  },
+  {
+   "word": "миллиард",
+   "sample_sha256": "d65d9ca7346864b023aa4264b9bff898eb22a98c2368341859ed241fda6579fb",
+   "top1": false,
+   "top3": false,
+   "pred": "минута"
+  },
+  {
+   "word": "мотор",
+   "sample_sha256": "0469527d9a63b245e72ec19746d9ac9aaef7d04eddc58a37d9dc31896f5b3967",
+   "top1": false,
+   "top3": false,
+   "pred": "выходные"
+  },
+  {
+   "word": "музей",
+   "sample_sha256": "8a78ff49cca70c6ac8a3c98e74718fd18150ae5a9dab0cc8af325350dc1ea743",
+   "top1": false,
+   "top3": false,
+   "pred": "петь"
+  },
+  {
+   "word": "область",
+   "sample_sha256": "a7642375dd51eb24962e1c4ff4615d9dfc4688518b0965730994c9c142019c01",
+   "top1": false,
+   "top3": false,
+   "pred": "между"
+  },
+  {
+   "word": "обращение",
+   "sample_sha256": "03cb07f4ddfc979b0d5c0b9aca74dfb85c01f4a8096192360f2d31bd870862c4",
+   "top1": false,
+   "top3": false,
+   "pred": "довольный"
+  },
+  {
+   "word": "общежитие",
+   "sample_sha256": "f4464cb3e16caf318c66da6b30ef8be67076d7c36ac8ec2ff46e01c46a506643",
+   "top1": false,
+   "top3": false,
+   "pred": "дешёвый"
+  },
+  {
+   "word": "общество",
+   "sample_sha256": "4edede53ab39d6ec28e0b286fbe9255a8bd9fb5956bfab21fea000dd746a7350",
+   "top1": false,
+   "top3": false,
+   "pred": "недобрый"
+  },
+  {
+   "word": "одинаковый",
+   "sample_sha256": "a026954595532d8662ae806377a008eebc9204b187f534e86c2264bea8c022f1",
+   "top1": false,
+   "top3": false,
+   "pred": "тоже"
+  },
+  {
+   "word": "окно",
+   "sample_sha256": "e9f50e10bd8d1b6f87b4473e18aada610b13b0eb817c1f11bf5a10fdbc5adcb1",
+   "top1": false,
+   "top3": false,
+   "pred": "Ы"
+  },
+  {
+   "word": "откуда",
+   "sample_sha256": "fa7791eae8932f0d8df8108af17ea5b4dedfc605edcf0c9e76843686591872bc",
+   "top1": false,
+   "top3": false,
+   "pred": "переваривание"
+  },
+  {
+   "word": "парк",
+   "sample_sha256": "2372638f177622190b924e63e071da29c80ce98bce905086bed0c3882d173d7f",
+   "top1": false,
+   "top3": false,
+   "pred": "легкий"
+  },
+  {
+   "word": "переход",
+   "sample_sha256": "4f0b734de330d825358d3d507e13bbe065bc4369b5e56270f75418d49cce8c86",
+   "top1": false,
+   "top3": false,
+   "pred": "замужем"
+  },
+  {
+   "word": "площадь",
+   "sample_sha256": "911774df5c5960ac15461e7d3499f004e074976e60aa67dd21ebd1a2c4200b1d",
+   "top1": false,
+   "top3": false,
+   "pred": "быть"
+  },
+  {
+   "word": "поезд",
+   "sample_sha256": "fdf7fe6a54343580a27d14505652e8b73dd7a05a7f0596dbc7195eb0479e5a3e",
+   "top1": false,
+   "top3": false,
+   "pred": "кормить"
+  },
+  {
+   "word": "поликлиника",
+   "sample_sha256": "263ba0d5bd7e07d35fcbe8bde06f8a6033d15b4b8a11e65d39fcd4e0b110dd7c",
+   "top1": false,
+   "top3": false,
+   "pred": "слишком"
+  },
+  {
+   "word": "потерять",
+   "sample_sha256": "584857a6984b94891693ab6d427e4a54c7d9da4da76566feeb5a3ab73279ade6",
+   "top1": false,
+   "top3": false,
+   "pred": "терять"
+  },
+  {
+   "word": "президент",
+   "sample_sha256": "9f02e1697b89c2cf957097f0c362818e43a44702651d46dfbd89a8e25a43d203",
+   "top1": false,
+   "top3": false,
+   "pred": "рад"
+  },
+  {
+   "word": "проблема",
+   "sample_sha256": "d9fcbce7165a54635ac550936ff84b6f46485829ef335d373ef4f01c7b96aaea",
+   "top1": false,
+   "top3": false,
+   "pred": "вкус"
+  },
+  {
+   "word": "работа",
+   "sample_sha256": "d565bec2aed6eebc31c1c36a8209e0c6e66444fbbb9054dd347667f5cbfbcd8c",
+   "top1": false,
+   "top3": false,
+   "pred": "делать"
+  },
+  {
+   "word": "разрешить",
+   "sample_sha256": "8dc055890c9909706b4ce7e92b0c024945a1bf282cbec5b676da6baabff97c4c",
+   "top1": false,
+   "top3": false,
+   "pred": "свободный"
+  },
+  {
+   "word": "регулярно",
+   "sample_sha256": "d123d814e00943744e64d8f6d535fa4bab6e30dabf1bfac053d4d3a137bf62ba",
+   "top1": false,
+   "top3": false,
+   "pred": "мыть"
+  },
+  {
+   "word": "республика",
+   "sample_sha256": "a913ab71e4b8d4d0d608da953fb3f83aaf8fccf40ae14f56320c68ff0eb3cc2e",
+   "top1": false,
+   "top3": false,
+   "pred": "быть"
+  },
+  {
+   "word": "самолет",
+   "sample_sha256": "9a5ff65706e7a7e2245b77313aad2635201cb48eadf4147dc9a1d0e5929f453d",
+   "top1": false,
+   "top3": false,
+   "pred": "временный"
+  },
+  {
+   "word": "свобода",
+   "sample_sha256": "47ddb37218fd832d527448ec7ae6aec7d00f1910ca0c3c31397b05fc351e9708",
+   "top1": false,
+   "top3": false,
+   "pred": "ресторан"
+  },
+  {
+   "word": "сигнал",
+   "sample_sha256": "bad1ed7ee0ae98f2901e6699487bab85388c1ca84fd24d023323729738c1abd6",
+   "top1": false,
+   "top3": false,
+   "pred": "думать"
+  },
+  {
+   "word": "справка",
+   "sample_sha256": "00ceb3c038fa298e9c965097e6f03a314eb42d485d03797738971a92c321f1d3",
+   "top1": false,
+   "top3": false,
+   "pred": "купить"
+  },
+  {
+   "word": "срок",
+   "sample_sha256": "4923182c4db702634dcd15024ab1b6004f73f9a0554c8bee8f6932b03bc14a6f",
+   "top1": false,
+   "top3": false,
+   "pred": "ей"
+  },
+  {
+   "word": "статистика",
+   "sample_sha256": "e7fba89dab312a5730fa62d4d6015587bb885ff77c5db88438dde3804d971736",
+   "top1": false,
+   "top3": false,
+   "pred": "резервирование; бронирование"
+  },
+  {
+   "word": "стол",
+   "sample_sha256": "94f9dc850087cb60cfb26d78a70fa591fdfa901f6fc85f473a5006a12e73872c",
+   "top1": false,
+   "top3": false,
+   "pred": "нервный"
+  },
+  {
+   "word": "страна",
+   "sample_sha256": "b31d6ed8475037d4ebff35397b76d45993ef5f8df66353353b1d51f032f8630f",
+   "top1": false,
+   "top3": false,
+   "pred": "серый"
+  },
+  {
+   "word": "стул",
+   "sample_sha256": "17614c817d4463b72bcf819fd71aab0da07c562a98b44f191f67c7ac2fa19857",
+   "top1": false,
+   "top3": false,
+   "pred": "Рубль"
+  },
+  {
+   "word": "телеграмма",
+   "sample_sha256": "be9591383003c92bff72a4865503b7b7701728795bc0895fbbc6d2ac688fbf9d",
+   "top1": false,
+   "top3": false,
+   "pred": "город"
+  },
+  {
+   "word": "телефон",
+   "sample_sha256": "ce5c6455c3532174087b39c96f08604296b09ed8fb8a5a006147c8652ce88d89",
+   "top1": false,
+   "top3": false,
+   "pred": "лучше"
+  },
+  {
+   "word": "трактор",
+   "sample_sha256": "d76b89ca0d1fe676d648baae34f3197d01d878a6ab686ff97023a63e134bc69f",
+   "top1": false,
+   "top3": false,
+   "pred": "сквозь"
+  },
+  {
+   "word": "трамвай",
+   "sample_sha256": "3207221a2229ac26aedf077cf7ab0763ffa5474bfc14d966a061412600aadd36",
+   "top1": false,
+   "top3": false,
+   "pred": "Смех"
+  },
+  {
+   "word": "туалет",
+   "sample_sha256": "d63fd0d0363de904eb7d2075d04b8614952bda2402702cf6f6a7933027cbcd35",
+   "top1": false,
+   "top3": false,
+   "pred": "так себе"
+  },
+  {
+   "word": "тюрьма",
+   "sample_sha256": "3bf96ea3873fa44e8c979bd2901166c4ffe7405f2ac74e2c9cec86a6c3c27a59",
+   "top1": false,
+   "top3": false,
+   "pred": "недобрый"
+  },
+  {
+   "word": "чиновник",
+   "sample_sha256": "0397b08a669f77a34cbd899a92aa417f6d4c5315ab78cf4a01359635f78c0b08",
+   "top1": false,
+   "top3": false,
+   "pred": "иметь"
+  },
+  {
+   "word": "шоссе",
+   "sample_sha256": "ef538009ca86c87f49c6d97c3a39c057af48a7ca02508306ed552c766697b5f3",
+   "top1": false,
+   "top3": false,
+   "pred": "изношенный"
+  },
+  {
+   "word": "шофер",
+   "sample_sha256": "4c9841a09d3fbd47bc6807ab1436d767046bbd53fea1cc581f57d4b239d0bfdb",
+   "top1": false,
+   "top3": false,
+   "pred": "короткий"
+  },
+  {
+   "word": "шутка",
+   "sample_sha256": "b985d0a5ed6d3027016a3d925334ce3fc080f731abb03c859b868e93566fa8dc",
+   "top1": false,
+   "top3": false,
+   "pred": "играть"
+  }
+ ]
+}

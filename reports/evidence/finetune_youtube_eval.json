@@ -1,13 +1,14 @@
 {
  "base_top1": 0.6388235092163086,
- "final_top1": 0.6192156672477722,
- "final_top5": 0.8305882215499878,
+ "final_top1": 0.6127451062202454,
+ "final_top5": 0.8296078443527222,
  "best_top1": 0.6388235092163086,
- "yt_samples": 2729,
- "yt_matched_words": 119,
- "yt_total_words": 1142,
- "new_classes": 1017,
- "total_classes": 2018,
+ "yt_samples": 3214,
+ "yt_matched_words": 315,
+ "yt_total_words": 2187,
+ "new_classes": 561,
+ "min_samples": 3,
+ "total_classes": 1562,
  "yt_top1": 1.0,
  "yt_top5": 1.0
 }

@@ -6,3 +6,4 @@ mediapipe==0.10.14
 # numpy приходит с mediapipe, но export_dataset.py и train.py импортируют его явно.
 # Лицензия BSD-3-Clause. Проверено на numpy 2.4.6 + mediapipe 0.10.14 (Python 3.11.9).
 numpy>=1.24
+requests>=2.28

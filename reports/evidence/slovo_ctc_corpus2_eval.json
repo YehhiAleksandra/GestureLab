@@ -1,0 +1,32 @@
+{
+ "clean": {
+  "gloss_acc": 0.3940949935815148,
+  "exact_acc": 0.095,
+  "edit_rate": 0.5147625160462131,
+  "n_streams": 200,
+  "n_glosses": 779
+ },
+ "with_pauses": {
+  "gloss_acc": 0.38688946015424164,
+  "exact_acc": 0.1,
+  "edit_rate": 0.5449871465295629,
+  "n_streams": 200,
+  "n_glosses": 778
+ },
+ "checkpoint": "slovo_ctc_corpus2.pt",
+ "checkpoint_sha256": "3004546788c765ed312f5bd5f22e4dc2ded782b3b642601eca91583dcce85c56",
+ "corpus": {
+  "gloss_acc": 0.4623243933588761,
+  "exact_acc": 0.07,
+  "edit_rate": 0.4725415070242657,
+  "n_streams": 200,
+  "n_glosses": 783
+ },
+ "corpus_with_pauses": {
+  "gloss_acc": 0.4880450070323488,
+  "exact_acc": 0.16,
+  "edit_rate": 0.4613220815752461,
+  "n_streams": 200,
+  "n_glosses": 711
+ }
+}

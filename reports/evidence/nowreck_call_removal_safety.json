@@ -1,0 +1,44 @@
+{
+  "verifier": "NoWreck 0.12.0 with isolated REMOVES_CALL extension",
+  "installed_package_modified": false,
+  "unit_tests": 12,
+  "lint": "passed",
+  "full": {
+    "total_claims": 109,
+    "confirmed": 109,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 0
+  },
+  "false_removal": {
+    "total_claims": 109,
+    "confirmed": 108,
+    "contradicted": 0,
+    "unverifiable": 1,
+    "unexplained_count": 1
+  },
+  "omitted_removal": {
+    "total_claims": 108,
+    "confirmed": 108,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 1
+  },
+  "files": [
+    {
+      "path": "nowreck/claims/models.py",
+      "installed_sha256": "159f18dbeaa583b7050eec840c1f717edc860c23a3f8e57457e1f198cdd77375",
+      "local_sha256": "5fad8a52e0ca98abccc00fe70b16677a05457f4206b35a57893ab42afd621bdc"
+    },
+    {
+      "path": "nowreck/verifier/verifier.py",
+      "installed_sha256": "845e793fd918c3175fae935118b6288e6d0e397d66ab72857a1ffa648e46b4eb",
+      "local_sha256": "198b38ddfcdf8c6c38bca68b2590499d5f736a6189265dc18a259ce255082789"
+    },
+    {
+      "path": "test_call_removal.py",
+      "installed_sha256": null,
+      "local_sha256": "c351264f245e0c126576f2c7aef856ec958fb333e399d1f90146103c456530f7"
+    }
+  ]
+}

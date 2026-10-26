@@ -42,7 +42,7 @@ def collect(model, samples, dev):
     model.eval()
     out = []
     for stream, labels in samples:
-        x, lens = batch_features([stream])
+        x, lens = batch_features([stream], model.inp[0].in_features)
         logits = model(x.to(dev), lens.to(dev))[0].cpu()
         out.append((logits.log_softmax(-1).numpy(), labels))
     return out

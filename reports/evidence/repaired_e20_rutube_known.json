@@ -1,0 +1,891 @@
+{
+ "checkpoint": "slovo_signnet_holistic_repaired_e20.pt",
+ "checkpoint_sha256": "247d42d00b250b5115757c7d9868f98929f41bcde380a2b1d16837272941360a",
+ "classes": 1564,
+ "scope": "known",
+ "train_sources": [
+  "ark_partial.npz",
+  "course_partial.npz"
+ ],
+ "test_source": "rutube_partial.npz",
+ "test_source_sha256": "c395f550e7148ff93e3f8ee0298b1fabea05a8fd0ada52945746f18d23ca7cd6",
+ "evaluated_words": [
+  "август",
+  "белый",
+  "близко",
+  "быстро",
+  "быть",
+  "ваш",
+  "вверх",
+  "везде",
+  "верить",
+  "вина",
+  "вниз",
+  "вопрос",
+  "воскресенье",
+  "время",
+  "вспомнить",
+  "вторник",
+  "вы",
+  "говорить",
+  "год",
+  "город",
+  "да",
+  "два",
+  "декабрь",
+  "дорога",
+  "дочь",
+  "друг",
+  "если",
+  "есть",
+  "ехать",
+  "еще",
+  "зависть",
+  "завтра",
+  "зеленый",
+  "знать",
+  "иностранный",
+  "использовать",
+  "когда",
+  "коричневый",
+  "который",
+  "красный",
+  "кто",
+  "лицо",
+  "любить",
+  "магазин",
+  "между",
+  "месяц",
+  "миллион",
+  "мой",
+  "мужчина",
+  "мы",
+  "назад",
+  "найти",
+  "налог",
+  "народ",
+  "начало",
+  "неделя",
+  "новый",
+  "ночь",
+  "ноябрь",
+  "обещать",
+  "октябрь",
+  "опять",
+  "оранжевый",
+  "очень",
+  "ошибка",
+  "плохо",
+  "поздно",
+  "потом",
+  "почему",
+  "причина",
+  "против",
+  "пятница",
+  "рано",
+  "ребенок",
+  "редко",
+  "ресторан",
+  "сегодня",
+  "серый",
+  "сестра",
+  "синий",
+  "сколько",
+  "слабый",
+  "слово",
+  "слушать",
+  "смотреть",
+  "сомнение",
+  "сразу",
+  "среда",
+  "суббота",
+  "сын",
+  "твой",
+  "темный",
+  "только",
+  "ты",
+  "утро",
+  "хорошо",
+  "цена",
+  "час",
+  "часы",
+  "человек",
+  "черный",
+  "четверг",
+  "что",
+  "чувствовать",
+  "школа",
+  "шум",
+  "язык"
+ ],
+ "evaluated_word_count": 107,
+ "test_samples": 108,
+ "source_samples": 893,
+ "cohort_sha256": "4335a36efab70b0814a0f97409664aa81388a02752f36bb0a3d8d3951d8912b0",
+ "top1": 0.2962962962962963,
+ "top3": 0.5185185185185185,
+ "provenance": {
+  "finetune_holdout_verified": true,
+  "base_provenance_verified": false,
+  "exact_overlap_samples": 0,
+  "limitation": "Хеши исключают точные копии, но не другие обрезки одного видео; независимость исполнителей и происхождение базовой модели не доказаны."
+ },
+ "per_sample": [
+  {
+   "word": "август",
+   "sample_sha256": "e97805ef0f51f84f0dbfacd6c7c574c77b36fef480ac3b61a51a3679189f4138",
+   "top1": true,
+   "top3": true,
+   "pred": "август"
+  },
+  {
+   "word": "белый",
+   "sample_sha256": "5d20527429775b4902630d1dfa055835304ad36033f08f1324287f0880566006",
+   "top1": false,
+   "top3": true,
+   "pred": "почему"
+  },
+  {
+   "word": "близко",
+   "sample_sha256": "37393ea23d66faa461d15daaea31ecdf35808104d571776d2ceb963dd2a2400d",
+   "top1": false,
+   "top3": true,
+   "pred": "вкус"
+  },
+  {
+   "word": "быстро",
+   "sample_sha256": "305f01aef84131695a7e2c53dac5e9b16fec04fd9188ce90ccf55928449f5437",
+   "top1": false,
+   "top3": false,
+   "pred": "скоро"
+  },
+  {
+   "word": "быть",
+   "sample_sha256": "e478ded2546b1358bcb0f2aeaba288a3da077ae2273cfa890b6aaddc61a6eb85",
+   "top1": true,
+   "top3": true,
+   "pred": "быть"
+  },
+  {
+   "word": "ваш",
+   "sample_sha256": "8e4b486539687763729bbe9f38805ae2f604a1738aa8308ad138c9428e82225c",
+   "top1": false,
+   "top3": false,
+   "pred": "еще"
+  },
+  {
+   "word": "вверх",
+   "sample_sha256": "17c455ef03e7603a00150ad380215c6a0b4fd3e011cf36ca181920b68ad115b0",
+   "top1": true,
+   "top3": true,
+   "pred": "вверх"
+  },
+  {
+   "word": "везде",
+   "sample_sha256": "d0f4017025e4c9fcb3830c8cfd4dec8e134177357ef27f58c9a49ac305af3588",
+   "top1": false,
+   "top3": false,
+   "pred": "им"
+  },
+  {
+   "word": "верить",
+   "sample_sha256": "ec700e340e28097618bb17f5b5dbada1673273e16ba470d3b225268948e5e386",
+   "top1": false,
+   "top3": false,
+   "pred": "уверен"
+  },
+  {
+   "word": "вина",
+   "sample_sha256": "26eaaf055323e25957f760be5dd69940437454059dc67d28631a19245bc3a18f",
+   "top1": false,
+   "top3": false,
+   "pred": "низкий"
+  },
+  {
+   "word": "вниз",
+   "sample_sha256": "9f393e0b27b9393f291e48a175b55e7c79d2454172331ccb736c9c8ddc7412d6",
+   "top1": false,
+   "top3": false,
+   "pred": "низкий"
+  },
+  {
+   "word": "вопрос",
+   "sample_sha256": "3235d70eea76d1e63567f538ab22b70510253fdfac5ecdbae1a6334af5e3e586",
+   "top1": false,
+   "top3": true,
+   "pred": "З"
+  },
+  {
+   "word": "воскресенье",
+   "sample_sha256": "16e53c8e8caf1216fb5745c5d89fef9a2523408ebf13a785ca7c6fd98e2d51e8",
+   "top1": true,
+   "top3": true,
+   "pred": "воскресенье"
+  },
+  {
+   "word": "время",
+   "sample_sha256": "1aee79a775c1bd5379f41018fcb6d8ffa336a8ae53553c6d1c738485fcc9de61",
+   "top1": false,
+   "top3": true,
+   "pred": "девочка"
+  },
+  {
+   "word": "вспомнить",
+   "sample_sha256": "d3ce9b1a54545b4fb5316bc03848d3870123f6b2ddb6534a09cb66f437026f09",
+   "top1": true,
+   "top3": true,
+   "pred": "вспомнить"
+  },
+  {
+   "word": "вторник",
+   "sample_sha256": "a8ddb4ce079557701799f25cf219e559b8f3376f0851a5b035338f89699fa5c6",
+   "top1": false,
+   "top3": true,
+   "pred": "мать"
+  },
+  {
+   "word": "вы",
+   "sample_sha256": "96e777ac94ec6fa117bb7367665cc0aefbdba8a0c7ddbc54dba4858c70bbe1e0",
+   "top1": true,
+   "top3": true,
+   "pred": "вы"
+  },
+  {
+   "word": "говорить",
+   "sample_sha256": "a092377e812930282fdbbe30352bce4194a06a3cddbcdbcb5011f46acaa46df0",
+   "top1": false,
+   "top3": true,
+   "pred": "двадцать"
+  },
+  {
+   "word": "год",
+   "sample_sha256": "451bcd7a063816411e7037dfbe5009e46146319d01d49209503b88cc20718343",
+   "top1": true,
+   "top3": true,
+   "pred": "год"
+  },
+  {
+   "word": "город",
+   "sample_sha256": "be76fff6a4e0da61d0f5d7d42cf4d096a73da48d18c8f7883e0baf26a2b6a70f",
+   "top1": false,
+   "top3": false,
+   "pred": "боюсь"
+  },
+  {
+   "word": "да",
+   "sample_sha256": "8b104067986b39ce8e621b5efe3825458eb52a5258520d50f4c8f19e79f4316f",
+   "top1": false,
+   "top3": false,
+   "pred": "играть"
+  },
+  {
+   "word": "два",
+   "sample_sha256": "90ebcc579977efaacc71c8760ad18d40cac9a1b16d617594b9ea78557d3c27b8",
+   "top1": true,
+   "top3": true,
+   "pred": "два"
+  },
+  {
+   "word": "декабрь",
+   "sample_sha256": "2a5775ce9d87c3a1314c0cff0c28f34b502d9ec811b8b5c075473d8d66992618",
+   "top1": false,
+   "top3": false,
+   "pred": "коза"
+  },
+  {
+   "word": "дорога",
+   "sample_sha256": "85c726dcb3973e9194877cbc581205e1118589e7553c7b982dc3f69d3526489c",
+   "top1": false,
+   "top3": false,
+   "pred": "мотивация"
+  },
+  {
+   "word": "дочь",
+   "sample_sha256": "a14cb1e7acd49a95158115c30011608a45c742d23aaa968063067031ced95e7e",
+   "top1": false,
+   "top3": false,
+   "pred": "две тысячи"
+  },
+  {
+   "word": "друг",
+   "sample_sha256": "522d910d4f375e544b00e75f9143fd506a5bdf81e3825a9dc3ceb56e0452685a",
+   "top1": false,
+   "top3": false,
+   "pred": "ключ"
+  },
+  {
+   "word": "если",
+   "sample_sha256": "b78c41768add6654920ef83d88f08ec9ceab0fcf880aa6974343c1ae4bdf68f6",
+   "top1": false,
+   "top3": false,
+   "pred": "прийти"
+  },
+  {
+   "word": "есть",
+   "sample_sha256": "cadea5ed7e91a4b50528c096ef3af504113500384f6d93c011b05c32ffcabc22",
+   "top1": false,
+   "top3": true,
+   "pred": "иметь"
+  },
+  {
+   "word": "есть",
+   "sample_sha256": "3c627d89e5745cac0f5d7532fc335d345aa755864103361138c8a6f37fd82d9c",
+   "top1": false,
+   "top3": true,
+   "pred": "еще"
+  },
+  {
+   "word": "ехать",
+   "sample_sha256": "967972ad47bf5c7bbbe9d98e71784cba104d216715a1d0c084632815ebb5a86d",
+   "top1": false,
+   "top3": false,
+   "pred": "Лопата"
+  },
+  {
+   "word": "еще",
+   "sample_sha256": "59cb717743be4f40e1504d03ba7edb0a2d447a06f5997ddd715726dde4a7e47c",
+   "top1": false,
+   "top3": true,
+   "pred": "нежный, мягкий"
+  },
+  {
+   "word": "зависть",
+   "sample_sha256": "e4f928e4140eb924a0cd079be66a9d71b8bfcae5096d911bd4fca27750115100",
+   "top1": false,
+   "top3": false,
+   "pred": "рвеность"
+  },
+  {
+   "word": "завтра",
+   "sample_sha256": "a8984782d95f865c5922097d8f3310bfb349e0bdc51891863d057518127f5dd0",
+   "top1": false,
+   "top3": true,
+   "pred": "август"
+  },
+  {
+   "word": "зеленый",
+   "sample_sha256": "7f9ca09b5347ae5e9a041545ed5f98fae885d28b20f324c5d0e4559a8a9bc4c6",
+   "top1": false,
+   "top3": true,
+   "pred": "молодой"
+  },
+  {
+   "word": "знать",
+   "sample_sha256": "f62a1711a8a3e39c53610d5e1d4999228f5f66a2a7ee9e4c8e68412367ad6e5a",
+   "top1": true,
+   "top3": true,
+   "pred": "знать"
+  },
+  {
+   "word": "иностранный",
+   "sample_sha256": "7b8fb67916446894f9568f42ebc2e68ce6b8f7f46664ee149d2ab04435c8e059",
+   "top1": false,
+   "top3": true,
+   "pred": "правый"
+  },
+  {
+   "word": "использовать",
+   "sample_sha256": "30198f70dd8f537749e4d27c391e9121eed88d382383e44b4f64e453839857ee",
+   "top1": true,
+   "top3": true,
+   "pred": "использовать"
+  },
+  {
+   "word": "когда",
+   "sample_sha256": "c996994b5cead80921c411086db890336c4c669204e3ab14078fc4a86824d7c4",
+   "top1": false,
+   "top3": false,
+   "pred": "цвет"
+  },
+  {
+   "word": "коричневый",
+   "sample_sha256": "a4b3f28c124e9a93299dd4729a4f25892437cf5f4ce70ebc71715d139fd047d6",
+   "top1": true,
+   "top3": true,
+   "pred": "коричневый"
+  },
+  {
+   "word": "который",
+   "sample_sha256": "d46b70bb44e31045352b6e581c6593b2205279ecbc0de1ea64d36e2f4f7d3ba3",
+   "top1": false,
+   "top3": false,
+   "pred": "сколько"
+  },
+  {
+   "word": "красный",
+   "sample_sha256": "16170c8d69f49234142b2e3c2b4425c83089900ec2c5960e12f3ba4de4e1c325",
+   "top1": false,
+   "top3": false,
+   "pred": "вкус"
+  },
+  {
+   "word": "кто",
+   "sample_sha256": "60a96699af624ddf715f611c657cafbee61fc4d1905d7c0251c524be8337ec15",
+   "top1": false,
+   "top3": true,
+   "pred": "декабрь"
+  },
+  {
+   "word": "лицо",
+   "sample_sha256": "74db033481127ecc30840baf3842b59e98be8d1281bccad96d4c2f3785b4d2e6",
+   "top1": true,
+   "top3": true,
+   "pred": "Лицо"
+  },
+  {
+   "word": "любить",
+   "sample_sha256": "3d43a2ac80837ce1187d217e24346542c1c575b5609fcdd6f7a8ce0a5c99cb4f",
+   "top1": false,
+   "top3": false,
+   "pred": "ранний"
+  },
+  {
+   "word": "магазин",
+   "sample_sha256": "3bddba8e4e14982ec13bc60796ebc838c71de369a435d74086c86bf1684a7c2a",
+   "top1": false,
+   "top3": false,
+   "pred": "продать"
+  },
+  {
+   "word": "между",
+   "sample_sha256": "4b8d98d9af724d33888ff4ae7fe4aac1ec8f593ac520515e29a30c873a32a3e8",
+   "top1": false,
+   "top3": false,
+   "pred": "или"
+  },
+  {
+   "word": "месяц",
+   "sample_sha256": "6ce2ba9825e8d58d1d95b3eb619866a922d0d0955335a67f0939a585710c1fb5",
+   "top1": true,
+   "top3": true,
+   "pred": "месяц"
+  },
+  {
+   "word": "миллион",
+   "sample_sha256": "08fd3c67abf87bac0d9e407d1f42c3b07feab27eaf70d7a4febf28e824e14d62",
+   "top1": false,
+   "top3": true,
+   "pred": "минута"
+  },
+  {
+   "word": "мой",
+   "sample_sha256": "350b2ff8d65203588cbe79bddf4dae6fb3fa3a2e812ae88076f25004035cb71f",
+   "top1": true,
+   "top3": true,
+   "pred": "мой"
+  },
+  {
+   "word": "мужчина",
+   "sample_sha256": "363dca135c273260af7d16b2fdfbe7352fc5f037283c1dca558b27af88da65ff",
+   "top1": false,
+   "top3": false,
+   "pred": "сверху"
+  },
+  {
+   "word": "мы",
+   "sample_sha256": "1aeb45dc5d81ef88c4e85eae263d228d8a9f2275baefd8e2687694f55574ee76",
+   "top1": false,
+   "top3": false,
+   "pred": "миллион"
+  },
+  {
+   "word": "назад",
+   "sample_sha256": "c36c20f6816b2964d7aba4d15076c677f026bc75f503c6254869953b110831e4",
+   "top1": false,
+   "top3": false,
+   "pred": "этот"
+  },
+  {
+   "word": "найти",
+   "sample_sha256": "b91f6434e4b857d534c2a7a765e4db956c21e522b1557012882b8792be4735b8",
+   "top1": true,
+   "top3": true,
+   "pred": "найти"
+  },
+  {
+   "word": "налог",
+   "sample_sha256": "643ccca3ef12d66cd5f45d7560520c1f768d96d2b6ba3b03a6497da4c14a5e91",
+   "top1": false,
+   "top3": false,
+   "pred": "Чашка"
+  },
+  {
+   "word": "народ",
+   "sample_sha256": "1e8fe506250a855ddd34046e6fc59e6b38588f48518761f3ff8277117678a699",
+   "top1": false,
+   "top3": false,
+   "pred": "доброта"
+  },
+  {
+   "word": "начало",
+   "sample_sha256": "fbde2d682c8f39188f129b42f1ad8788d821985eb3bf5aa19225226123ad79dc",
+   "top1": true,
+   "top3": true,
+   "pred": "начало"
+  },
+  {
+   "word": "неделя",
+   "sample_sha256": "ed13191ecc6c31bacd08bc3ce47db7a50d929214dd0e3e32a16fd6f88a0bd0fc",
+   "top1": false,
+   "top3": false,
+   "pred": "сухой"
+  },
+  {
+   "word": "новый",
+   "sample_sha256": "8efa55c88c657214ac57743f273020f3498c39fa970b9743545df7ec2b36c0bb",
+   "top1": false,
+   "top3": false,
+   "pred": "Жарить"
+  },
+  {
+   "word": "ночь",
+   "sample_sha256": "f9feb3ccfd992e2e2593a569897273f11ce2149b4321c47428518d3b56f71f69",
+   "top1": false,
+   "top3": true,
+   "pred": "темнота"
+  },
+  {
+   "word": "ноябрь",
+   "sample_sha256": "72a98eb1610268f7931b6b152f00891a7632dbc229c23288a878482ae702bf69",
+   "top1": true,
+   "top3": true,
+   "pred": "ноябрь"
+  },
+  {
+   "word": "обещать",
+   "sample_sha256": "ea98897e418ef1b66667353cdaf81b67b9ad09b80bfa810bf2fbb4ae79f3c13e",
+   "top1": true,
+   "top3": true,
+   "pred": "обещать"
+  },
+  {
+   "word": "октябрь",
+   "sample_sha256": "ee77ad28a1f288205526a1267b3ac99793e1bc27a52a16161d5ccadfc4da8885",
+   "top1": false,
+   "top3": true,
+   "pred": "ноль"
+  },
+  {
+   "word": "опять",
+   "sample_sha256": "7304ca7c8ad8b2365cc14ff1eac7b38d51511b09a7396e57a09286f632cb84a8",
+   "top1": true,
+   "top3": true,
+   "pred": "опять"
+  },
+  {
+   "word": "оранжевый",
+   "sample_sha256": "67898c9990f203d5c3772cfda9002fbc918be32fb3288e4354799bab60a94777",
+   "top1": false,
+   "top3": false,
+   "pred": "есть"
+  },
+  {
+   "word": "очень",
+   "sample_sha256": "ba09081515e195b1e908e42bfe5e37eedf3b3c55a9259707ade19b3a5d7a6de6",
+   "top1": true,
+   "top3": true,
+   "pred": "очень"
+  },
+  {
+   "word": "ошибка",
+   "sample_sha256": "9ffec2f7412be4ee215a5aafbbcf409e62fb9c243852aa62f04448a86ebb3b27",
+   "top1": false,
+   "top3": false,
+   "pred": "коза"
+  },
+  {
+   "word": "плохо",
+   "sample_sha256": "430e13ee244f290b17c167249b2c8680ca4ef36b5364bf9bc44fd2a838eadf55",
+   "top1": false,
+   "top3": false,
+   "pred": "вкусный"
+  },
+  {
+   "word": "поздно",
+   "sample_sha256": "9393a1b50676013386809a86f913353cf99604f5e89841d9958ffc8ae49add3c",
+   "top1": false,
+   "top3": false,
+   "pred": "Жарить"
+  },
+  {
+   "word": "потом",
+   "sample_sha256": "43c497ecec489f6c27daad86e5a1d07882b7c0c75cbfe3d083974f2af5f9acb2",
+   "top1": false,
+   "top3": true,
+   "pred": "затем; потом"
+  },
+  {
+   "word": "почему",
+   "sample_sha256": "53bb266c2587909a0639b791ab2c67c8ee2b9ead1e88452425442e0786ec23f6",
+   "top1": false,
+   "top3": true,
+   "pred": "друг"
+  },
+  {
+   "word": "причина",
+   "sample_sha256": "1583487cfa6061b643591c0a05fa53c2a5bbeb177dc30bafd8c953185c696e31",
+   "top1": false,
+   "top3": false,
+   "pred": "мотивировать"
+  },
+  {
+   "word": "против",
+   "sample_sha256": "5f8ba42b615966a351f13e3e5994bed3722fa7766fb610d37540a1171093fee6",
+   "top1": false,
+   "top3": false,
+   "pred": "холодный"
+  },
+  {
+   "word": "пятница",
+   "sample_sha256": "6cd9a26278c5d986993f45ff00a1dbd267df9fd535d767d5fcb1e20def66b8d3",
+   "top1": false,
+   "top3": true,
+   "pred": "тщеславный"
+  },
+  {
+   "word": "рано",
+   "sample_sha256": "67bbd93b0f6762275b6603e8b2ffe69e4127fc6786fac887f214bfab99bda177",
+   "top1": false,
+   "top3": true,
+   "pred": "ранний"
+  },
+  {
+   "word": "ребенок",
+   "sample_sha256": "875093398fc1b80ef796eaaf7829e9e0a0a9613eb6af45c4f94b8686d5ca5df8",
+   "top1": false,
+   "top3": false,
+   "pred": "фиолетовый"
+  },
+  {
+   "word": "редко",
+   "sample_sha256": "8c805877a4352930d98c282913281b5c0698ff5ecd1c5c1c3b621b8079ab9c26",
+   "top1": false,
+   "top3": false,
+   "pred": "магазин"
+  },
+  {
+   "word": "ресторан",
+   "sample_sha256": "8db97622b5445b4d11d076c71948387d1b602de5c9e02cf88db4a60065bfaf6e",
+   "top1": true,
+   "top3": true,
+   "pred": "ресторан"
+  },
+  {
+   "word": "сегодня",
+   "sample_sha256": "aaae93c1a37c4ca682963039bb4d87a7ba1c10befadb7ff9d88544e36bc50018",
+   "top1": false,
+   "top3": true,
+   "pred": "да"
+  },
+  {
+   "word": "серый",
+   "sample_sha256": "c02468ec97a5cedb066d4168e5e30378f2f54939f2fad386ba14fc59fa750b39",
+   "top1": true,
+   "top3": true,
+   "pred": "серый"
+  },
+  {
+   "word": "сестра",
+   "sample_sha256": "c4177b0842836c85082958c59211a8e430b07f305c8a0dfb486862f871f7d99a",
+   "top1": false,
+   "top3": false,
+   "pred": "тогда"
+  },
+  {
+   "word": "синий",
+   "sample_sha256": "3b56653c81474d048a0738542e686ef509bbc9ef82f57b3fbdecf38406c52bcb",
+   "top1": true,
+   "top3": true,
+   "pred": "синий"
+  },
+  {
+   "word": "сколько",
+   "sample_sha256": "e5a51c94d9f5a846d6bad730f8f647eb14f235cf77a54ac9b6439adba502cbb8",
+   "top1": false,
+   "top3": false,
+   "pred": "несколько"
+  },
+  {
+   "word": "слабый",
+   "sample_sha256": "8a1e0382022319390e04ccef56086b1cad9644f95f55b42448504bc41ba47f9a",
+   "top1": true,
+   "top3": true,
+   "pred": "слабый"
+  },
+  {
+   "word": "слово",
+   "sample_sha256": "97a8f828e9b559fc0f0fae774358c04bac7288dad0b3756f6859be8cccb1c34d",
+   "top1": false,
+   "top3": false,
+   "pred": "магазин"
+  },
+  {
+   "word": "слушать",
+   "sample_sha256": "d6501547a561d5dd27a2421d87e9e7eb0431de017c1b9974177ed23ac40dc891",
+   "top1": true,
+   "top3": true,
+   "pred": "слушать"
+  },
+  {
+   "word": "смотреть",
+   "sample_sha256": "208d8a6478eba43f4a122989f2df1bdd8aecee66678baa0d724de86f3360d4b2",
+   "top1": true,
+   "top3": true,
+   "pred": "смотреть"
+  },
+  {
+   "word": "сомнение",
+   "sample_sha256": "d5fca14f1b824b7af6a98d2e1d92f4b2c4cfe21f9e6de8999110e784a5bf6825",
+   "top1": false,
+   "top3": false,
+   "pred": "логичный"
+  },
+  {
+   "word": "сразу",
+   "sample_sha256": "14115ab9088de68f1cd7b84b6b1f8ba86f2eff6720a1418073695982e895751e",
+   "top1": false,
+   "top3": false,
+   "pred": "срочный"
+  },
+  {
+   "word": "среда",
+   "sample_sha256": "731eaf3aec52fb7549d08f8c73c0a1dc71e4d5c7b5d7d1c2505007011cd5a343",
+   "top1": false,
+   "top3": false,
+   "pred": "серебро"
+  },
+  {
+   "word": "суббота",
+   "sample_sha256": "60fb5cc4c417328aea623b50f8a54642f0081b6fe1c5e7c751b656a51b3a9695",
+   "top1": true,
+   "top3": true,
+   "pred": "суббота"
+  },
+  {
+   "word": "сын",
+   "sample_sha256": "cae72f5ee65f3dfc30510a7a9d88981b8ddb5b7e8951325c11abd495d789ab35",
+   "top1": false,
+   "top3": false,
+   "pred": "безразличие"
+  },
+  {
+   "word": "твой",
+   "sample_sha256": "153c47a8342cfb991af8dbce5680ded8529d610bccab290a18106dad84cf2cee",
+   "top1": false,
+   "top3": false,
+   "pred": "кусок"
+  },
+  {
+   "word": "темный",
+   "sample_sha256": "bcb30d39980cc920b91a8f55c76a1eba58e2edbd168d3322c1cbddccd1891e8f",
+   "top1": false,
+   "top3": false,
+   "pred": "оттенок"
+  },
+  {
+   "word": "только",
+   "sample_sha256": "e51383ae0b36fce4fdb628ba427a954fe60bbd030c0a74b2d60a2f3957cb57f7",
+   "top1": false,
+   "top3": false,
+   "pred": "объективный"
+  },
+  {
+   "word": "ты",
+   "sample_sha256": "eb54799eadf86ccf045db2d95ed1dbf06d70f825b847fdd2e561a4a8de606526",
+   "top1": false,
+   "top3": true,
+   "pred": "коза"
+  },
+  {
+   "word": "утро",
+   "sample_sha256": "96079e17f0a717a4b6ddeb26005d30a6ba0055c1b56cd07a26245c31dabb5d61",
+   "top1": false,
+   "top3": true,
+   "pred": "девочка"
+  },
+  {
+   "word": "хорошо",
+   "sample_sha256": "26056a97a2cfbd24d3c245aaf6ff12853f6d996c71317e8eae297ca4824ee04d",
+   "top1": false,
+   "top3": false,
+   "pred": "аппетит"
+  },
+  {
+   "word": "цена",
+   "sample_sha256": "2501862ae8478b6efc117415a95e9546c240e06c25712faa1fb9d90682677b6f",
+   "top1": false,
+   "top3": false,
+   "pred": "опять"
+  },
+  {
+   "word": "час",
+   "sample_sha256": "6433c27d4774b3bb8d74ed2e77ba1424c413b70a5f9bbf6e8991d6a9b7868dcd",
+   "top1": false,
+   "top3": false,
+   "pred": "хорошо"
+  },
+  {
+   "word": "часы",
+   "sample_sha256": "17a97b35bd3f55e376033ced28524d711790b8e188f2796771179ad43d9bfdc7",
+   "top1": false,
+   "top3": false,
+   "pred": "чувствовать"
+  },
+  {
+   "word": "человек",
+   "sample_sha256": "aafc17bfa764e5e12d3c2e52f9ba80546a21f484fe0496327edff9b24086fa3a",
+   "top1": false,
+   "top3": true,
+   "pred": "бутылка"
+  },
+  {
+   "word": "черный",
+   "sample_sha256": "b252fc0edb4b05d78fbeb7332cd36de5c1467579ab02b98f0115c2dce3fc59cb",
+   "top1": true,
+   "top3": true,
+   "pred": "черный"
+  },
+  {
+   "word": "четверг",
+   "sample_sha256": "07a8aefd06541ec6f96c4944ddac27005b1da5f2c156194cd931c2a0c9ab3950",
+   "top1": true,
+   "top3": true,
+   "pred": "четверг"
+  },
+  {
+   "word": "что",
+   "sample_sha256": "721e304b4435a451327a8a7b8ed81b7f15f13fe1b847e484ddf7cf42b33fb55a",
+   "top1": true,
+   "top3": true,
+   "pred": "что"
+  },
+  {
+   "word": "чувствовать",
+   "sample_sha256": "34b8fe00530402459e52eece28ee2cf2a800b90f0684e319598c259656de39a1",
+   "top1": true,
+   "top3": true,
+   "pred": "чувствовать"
+  },
+  {
+   "word": "школа",
+   "sample_sha256": "53f3bcf47f729c74b5378525ad7da09b93ba2a337e03b48e67c8aef4535bcb8d",
+   "top1": false,
+   "top3": false,
+   "pred": "бутылка"
+  },
+  {
+   "word": "шум",
+   "sample_sha256": "f79dcd1ada488326d184eef43e6b549b8273de85f5d4426e57d10cdf317a0453",
+   "top1": true,
+   "top3": true,
+   "pred": "шум"
+  },
+  {
+   "word": "язык",
+   "sample_sha256": "f4fe9ddf5745ec2f2d37fb847426c2a552e0912b8b331d97dfa16cc9231c29b9",
+   "top1": false,
+   "top3": false,
+   "pred": "вкус"
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+{
+ "evaluation_status": "not_independent",
+ "quality_warning": "Checkpoint training included Rutube samples; overlap was not controlled. new_words_in_both is a legacy training-candidate count, not the test intersection. Scores must not be used as held-out accuracy.",
+ "checkpoint": "slovo_signnet_holistic_yt.pt",
+ "classes": 2018,
+ "train_source": "ark_partial.npz",
+ "test_source": "rutube_partial.npz",
+ "new_words_in_both": 921,
+ "test_samples": 48,
+ "top1": 0.5833333333333334,
+ "top3": 0.6041666666666666,
+ "per_word": [
+  {
+   "word": "валюта",
+   "top1": true,
+   "top3": true,
+   "pred": "валюта"
+  },
+  {
+   "word": "контракт",
+   "top1": false,
+   "top3": false,
+   "pred": "брак"
+  },
+  {
+   "word": "выходной",
+   "top1": false,
+   "top3": false,
+   "pred": "выходные"
+  },
+  {
+   "word": "адрес",
+   "top1": true,
+   "top3": true,
+   "pred": "адрес"
+  },
+  {
+   "word": "задержать",
+   "top1": true,
+   "top3": true,
+   "pred": "задержать"
+  },
+  {
+   "word": "бизнес",
+   "top1": true,
+   "top3": true,
+   "pred": "бизнес"
+  },
+  {
+   "word": "грабить",
+   "top1": false,
+   "top3": false,
+   "pred": "наступление"
+  },
+  {
+   "word": "депутат",
+   "top1": true,
+   "top3": true,
+   "pred": "депутат"
+  },
+  {
+   "word": "командир",
+   "top1": false,
+   "top3": false,
+   "pred": "агрессия"
+  },
+  {
+   "word": "коллектив",
+   "top1": false,
+   "top3": false,
+   "pred": "команда"
+  },
+  {
+   "word": "врач",
+   "top1": false,
+   "top3": false,
+   "pred": "прирученный"
+  },
+  {
+   "word": "авария",
+   "top1": true,
+   "top3": true,
+   "pred": "авария"
+  },
+  {
+   "word": "водка",
+   "top1": true,
+   "top3": true,
+   "pred": "водка"
+  },
+  {
+   "word": "брак",
+   "top1": true,
+   "top3": true,
+   "pred": "брак"
+  },
+  {
+   "word": "конституция",
+   "top1": false,
+   "top3": false,
+   "pred": "панда"
+  },
+  {
+   "word": "беременность",
+   "top1": true,
+   "top3": true,
+   "pred": "беременность"
+  },
+  {
+   "word": "бензин",
+   "top1": true,
+   "top3": true,
+   "pred": "бензин"
+  },
+  {
+   "word": "музей",
+   "top1": false,
+   "top3": false,
+   "pred": "больше"
+  },
+  {
+   "word": "безработица",
+   "top1": true,
+   "top3": true,
+   "pred": "безработица"
+  },
+  {
+   "word": "миллиард",
+   "top1": false,
+   "top3": false,
+   "pred": "минута"
+  },
+  {
+   "word": "взятка",
+   "top1": true,
+   "top3": true,
+   "pred": "взятка"
+  },
+  {
+   "word": "верно",
+   "top1": true,
+   "top3": true,
+   "pred": "верно"
+  },
+  {
+   "word": "житель",
+   "top1": true,
+   "top3": true,
+   "pred": "житель"
+  },
+  {
+   "word": "банк",
+   "top1": true,
+   "top3": true,
+   "pred": "банк"
+  },
+  {
+   "word": "обращение",
+   "top1": true,
+   "top3": true,
+   "pred": "обращение"
+  },
+  {
+   "word": "бензин",
+   "top1": true,
+   "top3": true,
+   "pred": "бензин"
+  },
+  {
+   "word": "авиация",
+   "top1": true,
+   "top3": true,
+   "pred": "авиация"
+  },
+  {
+   "word": "будет",
+   "top1": true,
+   "top3": true,
+   "pred": "будет"
+  },
+  {
+   "word": "арест",
+   "top1": true,
+   "top3": true,
+   "pred": "арест"
+  },
+  {
+   "word": "беседа",
+   "top1": true,
+   "top3": true,
+   "pred": "беседа"
+  },
+  {
+   "word": "акт",
+   "top1": true,
+   "top3": true,
+   "pred": "акт"
+  },
+  {
+   "word": "вариант",
+   "top1": true,
+   "top3": true,
+   "pred": "вариант"
+  },
+  {
+   "word": "мост",
+   "top1": false,
+   "top3": true,
+   "pred": "ариант"
+  },
+  {
+   "word": "надзор",
+   "top1": false,
+   "top3": false,
+   "pred": "охота"
+  },
+  {
+   "word": "апрель",
+   "top1": true,
+   "top3": true,
+   "pred": "апрель"
+  },
+  {
+   "word": "область",
+   "top1": false,
+   "top3": false,
+   "pred": "между"
+  },
+  {
+   "word": "доллар",
+   "top1": false,
+   "top3": false,
+   "pred": "клятва"
+  },
+  {
+   "word": "вместе",
+   "top1": true,
+   "top3": true,
+   "pred": "вместе"
+  },
+  {
+   "word": "метро",
+   "top1": false,
+   "top3": false,
+   "pred": "над"
+  },
+  {
+   "word": "адвокат",
+   "top1": true,
+   "top3": true,
+   "pred": "адвокат"
+  },
+  {
+   "word": "милиция",
+   "top1": false,
+   "top3": false,
+   "pred": "женат"
+  },
+  {
+   "word": "капитан",
+   "top1": false,
+   "top3": false,
+   "pred": "парк"
+  },
+  {
+   "word": "брать",
+   "top1": true,
+   "top3": true,
+   "pred": "брать"
+  },
+  {
+   "word": "вокзал",
+   "top1": false,
+   "top3": false,
+   "pred": "креветка"
+  },
+  {
+   "word": "ловить",
+   "top1": false,
+   "top3": false,
+   "pred": "помесь"
+  },
+  {
+   "word": "автобус",
+   "top1": true,
+   "top3": true,
+   "pred": "автобус"
+  },
+  {
+   "word": "гостиница",
+   "top1": false,
+   "top3": false,
+   "pred": "банкет"
+  },
+  {
+   "word": "государство",
+   "top1": false,
+   "top3": false,
+   "pred": "козел"
+  }
+ ]
+}

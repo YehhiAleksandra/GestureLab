@@ -5,9 +5,11 @@
 с низким LR на смеси Slovo + YouTube. Слова без совпадения в Slovo пропускаются.
 """
 import argparse
+import hashlib
 import json
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -15,11 +17,21 @@ import torch
 import torch.nn.functional as F
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from slovo_model import HFEAT, SignNet, T, augment, holistic_features, resample  # noqa: E402
+from slovo_model import (
+    HFEAT,
+    SignNet,
+    T,
+    augment,
+    holistic_features,
+    resample,
+)
 
 
 def norm(w):
     return w.lower().replace('ё', 'е').strip().strip('.,!?')
+
+
+OCR_JUNK = {'арк', 'зы'}
 
 
 def norm_ocr(w):
@@ -30,7 +42,7 @@ def norm_ocr(w):
     w = re.sub(r'^[а-яе]\s+', '', w)       # «г бабочка» → «бабочка»
     w = re.sub(r'\s+[а-яе]$', '', w)
     w = re.sub(r'[^а-яе\- ]', '', w).strip().strip('-').strip()
-    if len(w) < 2:
+    if len(w) < 2 or w in OCR_JUNK:
         return ''
     vowels = sum(1 for c in w if c in 'аеиоуыэюя')
     if vowels == 0 and len(w) > 3:
@@ -38,36 +50,69 @@ def norm_ocr(w):
     return w
 
 
+def class_aliases(names):
+    mapping = {}
+    for i, name in enumerate(names):
+        for word in name.split('/'):
+            word = norm(word)
+            if word:
+                mapping[word] = i if word not in mapping or mapping[word] == i else -1
+    return mapping
+
+
 def load_slovo(path):
-    d = np.load(path)
-    o, frames = d['offsets'], d['frames']
-    seqs = [frames[o[i]:o[i + 1]] for i in range(len(o) - 1)]
-    names = sorted({str(t) for t in d['texts']})
-    y = np.array([names.index(t) for t in d['texts']])
-    return seqs, y, d['train'], d['users'], names
+    with np.load(path) as d:
+        offsets, frames, texts = d['offsets'], d['frames'], d['texts']
+        train, users = d['train'], d['users']
+    if train.ndim != 1 or len(train) != len(texts) or not np.isin(train, [0, 1]).all():
+        raise ValueError(f'Неверная маска train/test: {path}')
+    seqs = [frames[offsets[i]:offsets[i + 1]] for i in range(len(offsets) - 1)]
+    names = sorted({str(text) for text in texts})
+    y = np.array([names.index(text) for text in texts])
+    return seqs, y, train.astype(bool), users, names
 
 
-def load_youtube(path, name2idx, add_new=False):
-    """Загрузка YouTube npz. Если add_new=True, добавляет новые слова в name2idx."""
-    d = np.load(path)
-    if len(d['words']) == 0:
-        return [], np.array([], dtype=int)
-    o = d['offsets'] if 'offsets' in d else np.cumsum(np.r_[0, d['lens']])
-    frames = d['frames']
-    has_variants = 'variants' in d  # ARK data has OCR labels
+def file_words(d):
+    normalize = norm_ocr if 'variants' in d else norm
+    return [normalize(str(w)) for w in d['words']]
+
+
+def load_samples(path):
+    with np.load(path) as d:
+        words = file_words(d)
+        offsets = d['offsets'] if 'offsets' in d else np.cumsum(np.r_[0, d['lens']])
+        frames = d['frames']
+    if (offsets.ndim != 1 or len(offsets) != len(words) + 1
+            or not np.issubdtype(offsets.dtype, np.integer) or offsets[0] != 0
+            or offsets[-1] != len(frames) or np.any(offsets[1:] < offsets[:-1])
+            or np.any(offsets > len(frames))):
+        raise ValueError(f'Неверные границы образцов: {path}')
+    return [(word, frames[offsets[i]:offsets[i + 1]]) for i, word in enumerate(words)
+            if word and offsets[i + 1] - offsets[i] >= 4]
+
+
+def load_youtube(path, name2idx, add_new=False, allow_new=None, first_new_index=0):
+    next_index = max(first_new_index, max(name2idx.values(), default=-1) + 1)
     seqs, labels = [], []
-    for i, w in enumerate(d['words']):
-        w = norm_ocr(str(w)) if has_variants else norm(str(w))
-        if not w:
-            continue
-        if w not in name2idx and add_new:
-            name2idx[w] = len(name2idx)
-        if w in name2idx:
-            seg = frames[o[i]:o[i + 1]]
-            if len(seg) >= 4:
-                seqs.append(seg)
-                labels.append(name2idx[w])
+    for word, seq in load_samples(path):
+        if word not in name2idx and add_new and (allow_new is None or word in allow_new):
+            name2idx[word] = next_index
+            next_index += 1
+        if word in name2idx and name2idx[word] >= 0:
+            seqs.append(seq)
+            labels.append(name2idx[word])
     return seqs, np.array(labels, dtype=int)
+
+
+def file_sha256(path):
+    with open(path, 'rb') as stream:
+        return hashlib.file_digest(stream, 'sha256').hexdigest()
+
+
+def sample_sha256(seq):
+    data = np.nan_to_num(np.asarray(seq, dtype='<f4'), copy=True)
+    data[data == 0] = 0
+    return hashlib.sha256(str(data.shape).encode() + data.tobytes()).hexdigest()
 
 
 def batch_feats(seqs, rng=None):
@@ -98,7 +143,8 @@ def main():
     ap.add_argument('--slovo', default='datasets/slovo/slovo_holistic.npz')
     ap.add_argument('--youtube', nargs='+', help='npz файлы YouTube (ark_dict.npz, course.npz)')
     ap.add_argument('--checkpoint', default='models/slovo_signnet_holistic.pt')
-    ap.add_argument('--out', default='models/slovo_signnet_holistic_yt.pt')
+    ap.add_argument('--out', required=True, help='новый файл экспериментального checkpoint')
+    ap.add_argument('--seed', type=int, default=42)
     ap.add_argument('--epochs', type=int, default=40)
     ap.add_argument('--bs', type=int, default=128)
     ap.add_argument('--lr', type=float, default=2e-4)
@@ -106,42 +152,40 @@ def main():
                     help='повтор YouTube-сэмплов (upsampling minority)')
     ap.add_argument('--add-new', action='store_true',
                     help='добавить YouTube-слова, которых нет в Slovo, как новые классы')
+    ap.add_argument('--min-samples', type=int, default=3,
+                    help='минимум образцов, чтобы завести новый класс (действует с --add-new)')
     a = ap.parse_args()
-
-    slovo_seqs, slovo_y, slovo_train, slovo_users, names = load_slovo(a.slovo)
-
-    ckpt = torch.load(a.checkpoint, map_location='cpu')
-    ckpt_names = ckpt['names']
-    if len(ckpt_names) != len(names):
-        names = ckpt_names
-        name_set = sorted({str(t) for t in np.load(a.slovo, allow_pickle=True)['texts']})
-        remap = {name_set.index(t): names.index(t) for t in name_set if t in names}
-        slovo_y = np.array([remap.get(int(y), -1) for y in slovo_y])
-        keep = slovo_y >= 0
-        slovo_seqs = [slovo_seqs[i] for i in range(len(slovo_seqs)) if keep[i]]
-        slovo_y = slovo_y[keep]
-        slovo_train = slovo_train[keep]
-        slovo_users = slovo_users[keep]
-
-    name2idx = {}
-    for i, n in enumerate(names):
-        for w in n.lower().replace('ё', 'е').strip().split('/'):
-            name2idx[w.strip()] = i
-    n_slovo_classes = len(ckpt_names)
+    if a.epochs < 1 or a.bs < 1 or a.min_samples < 1 or a.lr <= 0 or a.yt_weight < 1:
+        ap.error('epochs, bs, min-samples, lr и yt-weight должны быть положительными')
+    out_path = Path(a.out)
+    eval_path = out_path.with_suffix('.eval.json')
+    if out_path.exists() or eval_path.exists():
+        ap.error('Выберите новый --out: существующие результаты не перезаписываются')
+    torch.manual_seed(a.seed)
+    slovo_seqs, slovo_y, slovo_train, _, slovo_names = load_slovo(a.slovo)
+    ckpt = torch.load(a.checkpoint, map_location='cpu', weights_only=False)
+    if ckpt.get('kind') != 'holistic':
+        ap.error('Для этих данных нужен holistic checkpoint')
+    names = list(ckpt['names'])
+    name_indices = {name: i for i, name in enumerate(names)}
+    if not set(slovo_names) <= name_indices.keys():
+        ap.error('В checkpoint отсутствуют классы Slovo')
+    remap = np.array([name_indices[name] for name in slovo_names])
+    slovo_y = remap[slovo_y]
+    name2idx = class_aliases(names)
+    n_slovo_classes = len(names)
+    sources = [{'path': str(Path(path).resolve()), 'sha256': file_sha256(path)}
+               for path in (a.youtube or [])]
 
     yt_seqs, yt_y = [], np.array([], dtype=int)
-    total_words = set()
-    for path in (a.youtube or []):
-        d = np.load(path)
-        has_variants = 'variants' in d
-        for w in d['words']:
-            cleaned = norm_ocr(str(w)) if has_variants else norm(str(w))
-            if cleaned:
-                total_words.add(cleaned)
-    matched_words = {w for w in total_words if w in name2idx}
+    word_counts = Counter(word for path in (a.youtube or []) for word, _ in load_samples(path))
+    total_words = set(word_counts)
+    matched_words = {word for word in total_words if name2idx.get(word, -1) >= 0}
+    allow_new = {word for word, count in word_counts.items() if count >= a.min_samples} if a.add_new else set()
 
     for path in (a.youtube or []):
-        s, y = load_youtube(path, name2idx, add_new=a.add_new)
+        s, y = load_youtube(path, name2idx, add_new=a.add_new, allow_new=allow_new,
+                            first_new_index=n_slovo_classes)
         if len(s):
             yt_seqs.extend(s)
             yt_y = np.concatenate([yt_y, y])
@@ -157,8 +201,9 @@ def main():
         print(f'  новых классов: {n_new} (всего теперь {len(names)})')
     not_matched = total_words - matched_words - set(new_classes.values())
     if not_matched:
+        why = f'ниже порога {a.min_samples} обр.' if a.add_new else 'нет в Slovo'
         missing = sorted(not_matched)[:30]
-        print(f'  нет в Slovo ({len(not_matched)}): {", ".join(missing)}...')
+        print(f'  пропущено ({len(not_matched)}, {why}): {", ".join(missing)}...')
 
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = SignNet(len(names), feat=HFEAT).to(dev)
@@ -187,11 +232,13 @@ def main():
         tr_y = np.concatenate([tr_y, yt_y])
     print(f'обучающая выборка: {len(tr_seqs)} ({sum(slovo_train)} slovo + {len(yt_seqs)}×{yt_repeat} yt)')
 
+    if len(tr_seqs) < a.bs:
+        ap.error('Размер batch превышает обучающую выборку: обновлений весов не будет')
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.05)
     steps = a.epochs * (len(tr_seqs) // a.bs)
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, a.lr, total_steps=max(steps, 1), pct_start=0.1)
-    rng = np.random.default_rng(42)
-    best, t0 = base_acc, time.time()
+    rng = np.random.default_rng(a.seed)
+    t0 = time.time()
 
     for ep in range(1, a.epochs + 1):
         model.train()
@@ -210,40 +257,50 @@ def main():
             total_loss += loss.item()
             nb += 1
         if ep % 5 == 0 or ep == a.epochs:
-            logits = predict(model, te_seqs, dev)
-            acc = topk(logits, slovo_y[slovo_te], 1)
-            t5 = topk(logits, slovo_y[slovo_te], 5)
-            print(f'ep {ep:3d} loss {total_loss / max(nb, 1):.3f} test top1 {acc:.3f} '
-                  f'top5 {t5:.3f} [{time.time() - t0:.0f}с]', flush=True)
-            if acc > best:
-                best = acc
-                torch.save({'model': model.state_dict(), 'names': names, 'kind': 'holistic'}, a.out)
-                print(f'  сохранено {a.out} (лучший top-1 {best:.3f})')
+            print(f'ep {ep:3d} loss {total_loss / max(nb, 1):.3f} '
+                  f'[{time.time() - t0:.0f}с]', flush=True)
 
-    if best <= base_acc:
-        print(f'дообучение не улучшило модель ({base_acc:.3f} → {best:.3f}), сохраняю последнюю')
-        torch.save({'model': model.state_dict(), 'names': names, 'kind': 'holistic'}, a.out)
-
+    inherited = ckpt.get('training', {})
+    training = {
+        'schema_version': 1,
+        'sources': inherited.get('sources', []) + sources,
+        'slovo': {'sha256': file_sha256(a.slovo), 'split': 'train'},
+        'sample_sha256': sorted(set(inherited.get('sample_sha256', []))
+                                | {sample_sha256(seq) for seq in tr_seqs}),
+        'base_checkpoint_sha256': file_sha256(a.checkpoint),
+        'base_provenance_verified': inherited.get('base_provenance_verified', False),
+        'selection': 'fixed_epochs',
+        'epochs': a.epochs, 'seed': a.seed, 'lr': a.lr, 'yt_weight': yt_repeat,
+        'min_samples': a.min_samples,
+    }
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    torch.save({'model': model.state_dict(), 'names': names, 'kind': 'holistic',
+                'training': training}, out_path)
+    saved = torch.load(out_path, map_location=dev, weights_only=False)
+    model.load_state_dict(saved['model'])
+    print(f'сохранено {out_path}; оценка сохранённой модели, без выбора эпох по test')
     logits = predict(model, te_seqs, dev)
     yt_logits = predict(model, yt_seqs, dev) if yt_seqs else None
     res = {
         'base_top1': base_acc,
         'final_top1': topk(logits, slovo_y[slovo_te], 1),
         'final_top5': topk(logits, slovo_y[slovo_te], 5),
-        'best_top1': best,
+        'checkpoint_sha256': file_sha256(out_path),
+        'checkpoint_selection': 'fixed_epochs',
+        'epochs': a.epochs,
+        'seed': a.seed,
         'yt_samples': len(yt_seqs),
         'yt_matched_words': len(matched_words),
         'yt_total_words': len(total_words),
         'new_classes': n_new,
+        'min_samples': a.min_samples,
         'total_classes': len(names),
     }
     if yt_logits is not None:
-        res['yt_top1'] = topk(yt_logits, yt_y, 1)
-        res['yt_top5'] = topk(yt_logits, yt_y, 5)
+        res['yt_train_top1'] = topk(yt_logits, yt_y, 1)
+        res['yt_train_top5'] = topk(yt_logits, yt_y, 5)
     print(json.dumps(res, ensure_ascii=False, indent=1))
-    Path('reports/evidence').mkdir(parents=True, exist_ok=True)
-    Path('reports/evidence/finetune_youtube_eval.json').write_text(
-        json.dumps(res, indent=1), encoding='utf-8')
+    eval_path.write_text(json.dumps(res, indent=1), encoding='utf-8')
 
 
 if __name__ == '__main__':

@@ -5,3 +5,25 @@ venv/
 sessions/
 .pytest_cache/
 reports/*.csv
+
+# Веса моделей, данные и медиа живут только на диске D: в git они не нужны
+models/*
+*.pt
+*.npz
+datasets/
+slovo_repo/
+step_frames/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.wav
+
+# Кадры и сегменты реальных людей в репозиторий не кладём
+reports/ref/
+reports/segments/
+reports/img/demo/
+
+# Логи прогонов инструментов
+tools/*.log
