@@ -10,8 +10,9 @@
 непонятно, кто виноват: повтор или модель.
 
 Клавиши: Space — записать повтор (повторное нажатие — остановить раньше), 0 — контроль
-без жеста (руки в кадре, не двигаешь: модель должна молчать), N/P — следующее/предыдущее
-слово, R — проиграть эталон заново, Q/Esc — выход.
+без жеста (руки в кадре, не двигаешь: модель должна молчать), →/↓ — следующее слово,
+←/↑ — предыдущее (N/P тоже работают; в русской раскладке — т/з), R — проиграть эталон
+заново, Q/Esc — выход.
 
   python tools/sign_trainer.py --camera 0
   python tools/sign_trainer.py --dry-run          # проверить первые 5 слов без камеры
@@ -49,6 +50,27 @@ TALLY_COLOR = (190, 190, 190)
 STATE_COLORS = {'watch': (230, 230, 230), 'record': (0, 255, 255),
                 'match': (80, 230, 80), 'near': (0, 255, 255),
                 'miss': (80, 80, 255), 'empty': (160, 160, 160)}
+
+# Коды стрелок в cv2.waitKey на Windows (полный код, маску 0xFF не применять)
+ARROW_LEFT, ARROW_RIGHT, ARROW_UP, ARROW_DOWN = 2424832, 2555904, 2490368, 2621440
+
+
+def key_action(key):
+    """Код waitKey → действие. В русской раскладке N/P приходят как т/з, поэтому
+    есть ещё стрелки и Enter — они от раскладки не зависят."""
+    if key in (ord('q'), ord('й'), 27):
+        return 'quit'
+    if key == 32:
+        return 'record'
+    if key == ord('0'):
+        return 'control'
+    if key in (ord('n'), ord('т'), ARROW_RIGHT, ARROW_DOWN, 13):
+        return 'next'
+    if key in (ord('p'), ord('з'), ARROW_LEFT, ARROW_UP):
+        return 'prev'
+    if key in (ord('r'), ord('к')):
+        return 'replay'
+    return None
 
 
 def norm(word):
@@ -221,7 +243,8 @@ def set_reference(state, entries, k, videos):
     """Переключить слово: загрузить эталон и вернуть (кадры, момент старта цикла)."""
     ref = load_reference(Path(videos) / f"{entries[k]['id']}.mp4")
     state['kind'], state['glosses'] = 'watch', []
-    state['text'] = 'смотри эталон · Space — повторить · 0 — контроль без жеста'
+    state['text'] = 'смотри эталон · Space — повторить · → — дальше · 0 — контроль'
+    print(f"[{k + 1}/{len(entries)}] {entries[k]['word']} (p={entries[k]['p']})", flush=True)
     return ref, time.time()
 
 
@@ -267,7 +290,9 @@ def live(camera, rec, roster, videos, seconds=4.0):
     st = {'attempt': None, 'kind': 'watch', 'glosses': [], 'text': ''}
     seen_hist = []
     ref, ref_t0 = set_reference(st, entries, 0, videos)
-    print('Space — повтор, 0 — контроль без жеста, N/P — слово, R — эталон, Q — выход',
+    print('Space — повтор, 0 — контроль без жеста, →/↓ — дальше, ←/↑ — назад, '
+          'R — эталон, Q — выход', flush=True)
+    print('Если клавиши не доходят — кликни по окну тренажёра (фокус уходит в консоль)',
           flush=True)
     try:
         while True:
@@ -304,10 +329,10 @@ def live(camera, rec, roster, videos, seconds=4.0):
             out = panel(comp, rows_for(entry['word'], entry['p'], st['kind'], st['text'],
                                        st['glosses'], stats), height=BAR)
             cv2.imshow('GestureLab sign trainer', out)
-            key = cv2.waitKey(1) & 0xFF
-            if key in (ord('q'), 27):
+            act = key_action(cv2.waitKey(1))
+            if act == 'quit':
                 break
-            if key == 32:
+            if act == 'record':
                 if st['attempt'] is None:
                     st['attempt'] = {'mode': 'repeat', 'buf': [], 'started': time.time()}
                     st['glosses'] = []
@@ -315,16 +340,16 @@ def live(camera, rec, roster, videos, seconds=4.0):
                     st['kind'], st['text'], st['glosses'] = attempt_result(
                         entries[idx], st['attempt'], fps, rec, stats)
                     st['attempt'] = None
-            elif key == ord('0') and st['attempt'] is None:
+            elif act == 'control' and st['attempt'] is None:
                 st['attempt'] = {'mode': 'control', 'buf': [], 'started': time.time()}
                 st['glosses'] = []
-            elif key == ord('n') and st['attempt'] is None:
+            elif act == 'next' and st['attempt'] is None:
                 idx = (idx + 1) % len(entries)
                 ref, ref_t0 = set_reference(st, entries, idx, videos)
-            elif key == ord('p') and st['attempt'] is None:
+            elif act == 'prev' and st['attempt'] is None:
                 idx = (idx - 1) % len(entries)
                 ref, ref_t0 = set_reference(st, entries, idx, videos)
-            elif key == ord('r'):
+            elif act == 'replay':
                 ref_t0 = time.time()
     finally:
         cap.release()

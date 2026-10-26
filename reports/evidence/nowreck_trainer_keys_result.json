@@ -1,0 +1,138 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 3,
+    "confirmed": 3,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 6
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "key_action",
+        "file_path": "tools/sign_trainer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\sign_trainer.py",
+        "symbol_name": "key_action",
+        "parent_class": null,
+        "line_number": 58,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": null,
+        "file_path": "tools/sign_trainer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "key_action",
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\sign_trainer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "live",
+        "called_name": "key_action"
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_key_action_works_in_russian_layout",
+        "file_path": "tests/test_sign_trainer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_trainer.py",
+        "symbol_name": "test_key_action_works_in_russian_layout",
+        "parent_class": null,
+        "line_number": 57,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_key_action_works_in_russian_layout",
+      "called_name": "key_action"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_key_action_works_in_russian_layout",
+      "called_name": "ord"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "key_action",
+      "called_name": "ord"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "set_reference",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "set_reference",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\sign_trainer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "ord"
+    }
+  ]
+}

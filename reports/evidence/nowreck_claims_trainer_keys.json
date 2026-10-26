@@ -1,0 +1,26 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "key_action",
+   "file_path": "tools/sign_trainer.py",
+   "confidence": 0.99,
+   "explanation": "код waitKey → действие; русская раскладка даёт т/з, стрелки — полные коды"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "file_path": "tools/sign_trainer.py",
+   "caller_name": "live",
+   "called_name": "key_action",
+   "confidence": 0.99,
+   "explanation": "живой цикл перешёл с & 0xFF на key_action"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_key_action_works_in_russian_layout",
+   "file_path": "tests/test_sign_trainer.py",
+   "confidence": 0.99,
+   "explanation": "тест клавиш: латиница, кириллица, стрелки, Enter, Esc"
+  }
+ ]
+}

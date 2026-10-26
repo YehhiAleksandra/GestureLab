@@ -4,8 +4,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from tools.sign_trainer import (attempt_result, hands_ratio, norm, rows_for, trim,
-                               verdict)
+from tools.sign_trainer import (ARROW_DOWN, ARROW_LEFT, ARROW_RIGHT, ARROW_UP,
+                               attempt_result, hands_ratio, key_action, norm, rows_for,
+                               trim, verdict)
 
 REPO = Path(__file__).resolve().parent.parent
 
@@ -51,6 +52,27 @@ def test_verdict_separates_match_near_miss_empty():
 def test_norm_collapses_case_and_yo():
     assert norm('  ВОДА ') == 'вода'
     assert norm('Ёлка') == 'елка'
+
+
+def test_key_action_works_in_russian_layout():
+    """Русская раскладка отдаёт т/з вместо N/P, стрелки — полными кодами."""
+    assert key_action(ord('n')) == 'next'
+    assert key_action(ord('т')) == 'next'
+    assert key_action(ARROW_RIGHT) == 'next'
+    assert key_action(ARROW_DOWN) == 'next'
+    assert key_action(13) == 'next'
+    assert key_action(ord('p')) == 'prev'
+    assert key_action(ord('з')) == 'prev'
+    assert key_action(ARROW_LEFT) == 'prev'
+    assert key_action(ARROW_UP) == 'prev'
+    assert key_action(32) == 'record'
+    assert key_action(ord('0')) == 'control'
+    assert key_action(ord('r')) == 'replay'
+    assert key_action(ord('к')) == 'replay'
+    assert key_action(ord('q')) == 'quit'
+    assert key_action(ord('й')) == 'quit'
+    assert key_action(27) == 'quit'
+    assert key_action(-1) is None
 
 
 def test_trim_cuts_frames_without_hands():
