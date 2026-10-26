@@ -1,0 +1,30 @@
+{
+ "checkpoint": "slovo_ctc_motion_signer.pt",
+ "checkpoint_sha256": "40c81dfc0868448b5895d4a343f69e14a25078c9b66e8d5c7c78a37d4f424bd4",
+ "slovo_clean": {
+  "gloss_acc": 0.34334763948497854,
+  "exact_acc": 0.03333333333333333,
+  "edit_rate": 0.5793991416309013,
+  "n_streams": 60,
+  "n_glosses": 233
+ },
+ "signer_dev": {
+  "clips": 33,
+  "hit": 0.152,
+  "single": 0.152,
+  "empty": 0.727
+ },
+ "signer_train": {
+  "clips": 170,
+  "hit": 0.806,
+  "single": 0.794,
+  "empty": 0.194
+ },
+ "slovo_corpus": {
+  "gloss_acc": 0.516260162601626,
+  "exact_acc": 0.18333333333333332,
+  "edit_rate": 0.3821138211382114,
+  "n_streams": 60,
+  "n_glosses": 246
+ }
+}

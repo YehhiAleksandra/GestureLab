@@ -1,0 +1,1148 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 34,
+    "confirmed": 34,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 39
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "class_index",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "class_index",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "load_signer",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "load_signer",
+        "parent_class": null,
+        "line_number": 50,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "mix_item",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "mix_item",
+        "parent_class": null,
+        "line_number": 84,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "mix_aux",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "mix_aux",
+        "parent_class": null,
+        "line_number": 101,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "signer_metrics",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "signer_metrics",
+        "parent_class": null,
+        "line_number": 119,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 134,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 260,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 291,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "class_index",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "load_signer",
+        "called_name": "class_index",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "load_signer",
+        "called_name": "class_index"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "make_corpus_stream",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "make_corpus_stream",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "make_corpus_stream"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "make_stream",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "make_stream",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "make_stream"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "augment",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "augment",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "augment"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "resample",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "resample",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_item",
+        "called_name": "resample"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "batch_features",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_aux",
+        "called_name": "batch_features",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_aux",
+        "called_name": "batch_features"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "batch_features",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "signer_metrics",
+        "called_name": "batch_features",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "signer_metrics",
+        "called_name": "batch_features"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "greedy_decode",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "signer_metrics",
+        "called_name": "greedy_decode",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "signer_metrics",
+        "called_name": "greedy_decode"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "prepare_slovo",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "prepare_slovo",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "prepare_slovo"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "load_signer",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "load_signer",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "load_signer"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "corpus_phrases",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "corpus_phrases",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "corpus_phrases"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "warm_start",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "warm_start",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "warm_start"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "mix_item",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mix_item",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mix_item"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "mix_aux",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mix_aux",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mix_aux"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "spec_augment",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "spec_augment",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "spec_augment"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "out_lengths",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "out_lengths",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "out_lengths"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "evaluate",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "evaluate",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "evaluate"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "signer_metrics",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "signer_metrics",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "signer_metrics"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "evaluate_corpus",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "evaluate_corpus",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "evaluate_corpus"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "load_ctc",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "load_ctc",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "load_ctc"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "file_sha256",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "file_sha256",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "file_sha256"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "git_commit",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "git_commit",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "git_commit"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "load_signer",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "load_signer",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "load_signer"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "mix_item",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "mix_item",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "mix_item"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "run",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "run"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/finetune_ctc_signer.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "selftest",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_signer.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "selftest"
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_index",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_index",
+      "called_name": "split_classes"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_signer",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_aux",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_aux",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_aux",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_aux",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_aux",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_item",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_item",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "class_index"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "signer_metrics",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "signer_metrics",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "signer_metrics",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "signer_metrics",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_signer.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "signer_metrics",
+      "called_name": "round"
+    }
+  ]
+}

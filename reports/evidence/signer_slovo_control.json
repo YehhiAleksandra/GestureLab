@@ -1,0 +1,50 @@
+{
+ "slovo_ctc_motion.pt": {
+  "clean": {
+   "gloss_acc": 0.3324775353016688,
+   "exact_acc": 0.06,
+   "edit_rate": 0.5892169448010269,
+   "n_streams": 200,
+   "n_glosses": 779
+  },
+  "corpus": {
+   "gloss_acc": 0.4789272030651341,
+   "exact_acc": 0.15,
+   "edit_rate": 0.4329501915708812,
+   "n_streams": 200,
+   "n_glosses": 783
+  }
+ },
+ "slovo_ctc_motion_signer.pt": {
+  "clean": {
+   "gloss_acc": 0.3055198973042362,
+   "exact_acc": 0.045,
+   "edit_rate": 0.6020539152759948,
+   "n_streams": 200,
+   "n_glosses": 779
+  },
+  "corpus": {
+   "gloss_acc": 0.5146871008939975,
+   "exact_acc": 0.19,
+   "edit_rate": 0.39208173690932313,
+   "n_streams": 200,
+   "n_glosses": 783
+  }
+ },
+ "slovo_ctc_motion_signer_all.pt": {
+  "clean": {
+   "gloss_acc": 0.32220795892169446,
+   "exact_acc": 0.05,
+   "edit_rate": 0.5866495507060334,
+   "n_streams": 200,
+   "n_glosses": 779
+  },
+  "corpus": {
+   "gloss_acc": 0.5312899106002554,
+   "exact_acc": 0.18,
+   "edit_rate": 0.384418901660281,
+   "n_streams": 200,
+   "n_glosses": 783
+  }
+ }
+}
