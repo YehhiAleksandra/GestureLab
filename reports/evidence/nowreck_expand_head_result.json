@@ -1,0 +1,538 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 11,
+    "confirmed": 11,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 30
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "extend_names",
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": "extend_names",
+        "parent_class": null,
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "expand_rows",
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": "expand_rows",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "expand_checkpoint",
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": "expand_checkpoint",
+        "parent_class": null,
+        "line_number": 48,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 67,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 89,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": null,
+        "file_path": "tools/expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "expand_checkpoint",
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\expand_ctc_head.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "expand_checkpoint"
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_expand_ctc_head.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_extend_names_dedups_synonyms_and_yo",
+        "file_path": "tests/test_expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_expand_ctc_head.py",
+        "symbol_name": "test_extend_names_dedups_synonyms_and_yo",
+        "parent_class": null,
+        "line_number": 6,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_expand_rows_keeps_old_rows",
+        "file_path": "tests/test_expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_expand_ctc_head.py",
+        "symbol_name": "test_expand_rows_keeps_old_rows",
+        "parent_class": null,
+        "line_number": 12,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_expand_checkpoint_keeps_encoder_and_old_head",
+        "file_path": "tests/test_expand_ctc_head.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_expand_ctc_head.py",
+        "symbol_name": "test_expand_checkpoint_keeps_encoder_and_old_head",
+        "parent_class": null,
+        "line_number": 20,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_expand_checkpoint_keeps_encoder_and_old_head",
+      "called_name": "expand_checkpoint"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_expand_checkpoint_keeps_encoder_and_old_head",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_expand_rows_keeps_old_rows",
+      "called_name": "expand_rows"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_expand_rows_keeps_old_rows",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_extend_names_dedups_synonyms_and_yo",
+      "called_name": "extend_names"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "expand_rows"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "extend_names"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "expand_checkpoint",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "extend_names",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "extend_names",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "extend_names",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "extend_names",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "extend_names",
+      "called_name": "split_classes"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "split_classes"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "expand_checkpoint"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "expand_rows"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "extend_names"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\expand_ctc_head.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    }
+  ]
+}

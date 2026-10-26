@@ -1,0 +1,34 @@
+{
+ "slovo_ctc_motion.pt": {
+  "slovo_clean": {
+   "gloss_acc": 0.37339055793991416,
+   "exact_acc": 0.06666666666666667,
+   "edit_rate": 0.5536480686695279,
+   "n_streams": 60,
+   "n_glosses": 233
+  },
+  "slovo_corpus": {
+   "gloss_acc": 0.4959349593495935,
+   "exact_acc": 0.15,
+   "edit_rate": 0.42276422764227645,
+   "n_streams": 60,
+   "n_glosses": 246
+  }
+ },
+ "slovo_ctc_motion_head_all.pt": {
+  "slovo_clean": {
+   "gloss_acc": 0.41201716738197425,
+   "exact_acc": 0.05,
+   "edit_rate": 0.5321888412017167,
+   "n_streams": 60,
+   "n_glosses": 233
+  },
+  "slovo_corpus": {
+   "gloss_acc": 0.4796747967479675,
+   "exact_acc": 0.15,
+   "edit_rate": 0.4024390243902439,
+   "n_streams": 60,
+   "n_glosses": 246
+  }
+ }
+}

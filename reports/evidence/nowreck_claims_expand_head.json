@@ -1,0 +1,80 @@
+{
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "новый инструмент расширения головы CTC 1000 → 1676"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "extend_names",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "имена классов + новые слова канала без синонимов и ё-дублей"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "expand_rows",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "старые строки головы сохраняются, новые нулевые"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "expand_checkpoint",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "чекпойнт с расширенной головой и aux; энкодер не меняется"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "самопроверка дедупликации и форм головы"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "CLI: слова из npz → новый чекпойнт + покрытие клипов"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "file_path": "tools/expand_ctc_head.py",
+   "caller_name": "main",
+   "called_name": "expand_checkpoint",
+   "confidence": 0.99,
+   "explanation": "CLI сохраняет результат expand_checkpoint"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "три теста расширения головы"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_extend_names_dedups_synonyms_and_yo",
+   "file_path": "tests/test_expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "синонимы через / и ё не создают новых классов"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_expand_rows_keeps_old_rows",
+   "file_path": "tests/test_expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "старые строки байт в байт, новые нулевые"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_expand_checkpoint_keeps_encoder_and_old_head",
+   "file_path": "tests/test_expand_ctc_head.py",
+   "confidence": 0.99,
+   "explanation": "энкодер и старые строки не меняются, aux растёт, чекпойнт читается"
+  }
+ ]
+}

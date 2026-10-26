@@ -1,0 +1,19 @@
+{
+ "slovo20": {
+  "clips": 20,
+  "same": 20,
+  "new_class_outputs": 0,
+  "words": 12
+ },
+ "channel23": {
+  "clips": 23,
+  "same": 23,
+  "new_class_outputs": 0,
+  "words": 0
+ },
+ "checkpoint": "slovo_ctc_motion_head.pt",
+ "classes": [
+  1000,
+  1676
+ ]
+}

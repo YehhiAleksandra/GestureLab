@@ -1,0 +1,57 @@
+{
+ "cut": 1000,
+ "n_classes": 1676,
+ "date": "2026-10-26",
+ "seed": 2026,
+ "dev_frac": 0.2,
+ "splits": {
+  "slovo_ctc_motion.pt|dev|old": {
+   "clips": 33,
+   "hit": 0.091,
+   "single": 0.091,
+   "empty": 0.818
+  },
+  "slovo_ctc_motion.pt|dev|new": {
+   "clips": 131,
+   "hit": 0.0,
+   "single": 0.0,
+   "empty": 0.924
+  },
+  "slovo_ctc_motion.pt|train|old": {
+   "clips": 170,
+   "hit": 0.035,
+   "single": 0.035,
+   "empty": 0.906
+  },
+  "slovo_ctc_motion.pt|train|new": {
+   "clips": 559,
+   "hit": 0.0,
+   "single": 0.0,
+   "empty": 0.9
+  },
+  "slovo_ctc_motion_head_all.pt|dev|old": {
+   "clips": 33,
+   "hit": 0.091,
+   "single": 0.091,
+   "empty": 0.818
+  },
+  "slovo_ctc_motion_head_all.pt|dev|new": {
+   "clips": 131,
+   "hit": 0.0,
+   "single": 0.0,
+   "empty": 0.954
+  },
+  "slovo_ctc_motion_head_all.pt|train|old": {
+   "clips": 170,
+   "hit": 0.441,
+   "single": 0.429,
+   "empty": 0.553
+  },
+  "slovo_ctc_motion_head_all.pt|train|new": {
+   "clips": 559,
+   "hit": 0.277,
+   "single": 0.277,
+   "empty": 0.721
+  }
+ }
+}
