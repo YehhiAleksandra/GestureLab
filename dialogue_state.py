@@ -52,7 +52,7 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
         # модуль тянет huggingface_hub: импорт по факту; путь от корня репо — как в тестах
         from tools.gloss_to_text import chain_list
         flat = ' '.join(w for c in chains for w in c)
-        query = chain_list(chains)
+        query = chain_list(chains, len(chains))
     elif candidates:
         flat = ' '.join(w for c in candidates for w in c)
         query = ' '.join('[' + ' | '.join(c) + ']' for c in candidates)

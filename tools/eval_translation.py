@@ -6,6 +6,7 @@ GPU и CTC не нужны: меняется только текст промп�
 """
 import argparse
 import json
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -16,8 +17,8 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gloss_to_text import (LATTICE, NBEST, PROBS, SYSTEM, SYSTEM_RULES, Translator, chain_list,
-                           chrf)
+from gloss_to_text import (COT, LATTICE, NBEST, PROBS, REPAIR, SELECT, SYSTEM, SYSTEM_RULES,
+                           Translator, chain_list, chrf)
 
 PROMPTS = {
     'base': {'system': SYSTEM, 'source': 'beam'},
@@ -28,6 +29,14 @@ PROMPTS = {
     'lattice_probs': {'system': SYSTEM + LATTICE + PROBS, 'source': 'lattice_probs'},
     # целые цепочки вместо позиций: решётка теряет гипотезы другой длины
     'nbest_lines': {'system': SYSTEM + NBEST, 'source': 'nbest'},
+    # выбор цепочки отдельным вызовом: выбирать и переводить одновременно модели труднее
+    'select_then_translate': {'system': SYSTEM, 'source': 'select'},
+    # то же в одном вызове: сначала номер выбранной цепочки, потом перевод
+    'chains_cot': {'system': SYSTEM + NBEST + COT, 'source': 'cot'},
+    # все цепочки вместо первых восьми: не теряются ли верные варианты в хвосте
+    'nbest20': {'system': SYSTEM + NBEST, 'source': 'nbest20'},
+    # явное разрешение менять неподходящие глоссы, а не держаться цепочки дословно
+    'nbest_repair': {'system': SYSTEM + NBEST + REPAIR, 'source': 'nbest'},
     'rules': {'system': SYSTEM_RULES, 'source': 'beam'},
     'rules_noshot': {'system': SYSTEM_RULES, 'source': 'beam', 'shots': 0},
     'rules_lattice': {'system': SYSTEM_RULES + LATTICE, 'source': 'lattice'},
@@ -61,6 +70,21 @@ def flat(cands):
     return ' '.join(w for c in cands for w in c)
 
 
+def pick_index(answer, n):
+    """Номер из ответа модели → индекс цепочки; всё непонятное уходит в top-1."""
+    m = re.search(r'\d+', answer or '')
+    if not m:
+        return None
+    i = int(m.group()) - 1
+    return i if 0 <= i < n else None
+
+
+def cot_text(answer):
+    """«Вариант: 3. Перевод: фраза» → фраза; если формат не соблюдён — ответ целиком."""
+    m = re.search(r'Перевод:\s*(.+)', answer or '')
+    return (m.group(1) if m else answer or '').strip().strip('«»"').strip()
+
+
 def translate(tr, row, variant):
     p = PROMPTS[variant]
     src = p['source']
@@ -69,8 +93,24 @@ def translate(tr, row, variant):
     if src == 'lattice_probs':
         query = bracketed_probs(row['cands'], row['cands_probs'])
         return tr(flat(row['cands']), p['system'], query)
-    if src == 'nbest':
-        return tr(flat(row['cands']), p['system'], chain_list(row['nbest']))
+    if src in ('nbest', 'nbest20'):
+        k = len(row['nbest']) if src == 'nbest20' else 8
+        return tr(flat(row['cands']), p['system'], chain_list(row['nbest'], k))
+    if src == 'select':
+        chains = row['nbest']
+        answer = tr.chat([{'role': 'system', 'content': SELECT},
+                          {'role': 'user', 'content': chain_list(chains, len(chains))}], 8)
+        pick = pick_index(answer, len(chains))
+        chain = chains[pick if pick is not None else 0]
+        return {'text': tr(' '.join(chain), p['system']),
+                'pick': pick, 'chain': chain}
+    if src == 'cot':
+        chains = row['nbest']
+        answer = tr.chat([{'role': 'system', 'content': p['system']},
+                          {'role': 'user', 'content': chain_list(chains, len(chains))}], 120)
+        pick = pick_index(answer, len(chains))
+        return {'text': cot_text(answer), 'pick': pick,
+                'chain': chains[pick] if pick is not None else None}
     if p.get('shots', 1) == 0:
         return tr.chat([{'role': 'system', 'content': p['system']},
                         {'role': 'user', 'content': row['glosses_beam']}], 80)
@@ -80,14 +120,32 @@ def translate(tr, row, variant):
 def run_variant(tr, rows, variant, workers):
     def one(r):
         try:
-            text = translate(tr, r, variant)
-            return {'hyp': text, 'judge': tr.judge(text, r['ref'])}
+            out = translate(tr, r, variant)
+            if isinstance(out, dict):
+                text, extra = out['text'], {'pick': out.get('pick'), 'chain': out.get('chain')}
+            else:
+                text, extra = out, {}
+            return {'hyp': text, 'judge': tr.judge(text, r['ref']), **extra}
         except Exception as e:  # один вызов без ретраев: ошибка идёт в отчёт
             return {'error': str(e)}
     t0 = time.time()
     with ThreadPoolExecutor(workers) as ex:
         res = list(ex.map(one, rows))
     return res, round(time.time() - t0)
+
+
+def pick_stats(res, rows):
+    """Насколько выбор цепочки совпал с эталоном и как часто модель оставляла top-1."""
+    picks = [(r, o) for r, o in zip(rows, res) if 'pick' in o and not o.get('error')]
+    if not picks:
+        return None
+    have = [(r, o) for r, o in picks if r.get('oracle_exact_nbest')]
+    return {'pick_asked': len(picks),
+            'pick_missing': sum(o.get('pick') is None for _, o in picks),
+            'pick_top1': round(sum(o.get('pick') == 0 for _, o in picks) / len(picks), 3),
+            'pick_correct_when_present': (
+                round(sum(o.get('chain') == r['glosses_ref'].split() for r, o in have)
+                      / len(have), 3) if have else None)}
 
 
 def summarize(res, refs):
@@ -137,7 +195,8 @@ def main():
             'cands_probs' in r for r in rows):
         raise SystemExit('вариант с процентами: у строк нет cands_probs — '
                          'перегенерируйте eval_lattice --no-llm')
-    if any(PROMPTS[v]['source'] == 'nbest' for v in variants) and not all(
+    if any(PROMPTS[v]['source'] in ('nbest', 'nbest20', 'select', 'cot')
+           for v in variants) and not all(
             'nbest' in r for r in rows):
         raise SystemExit('вариант с цепочками: у строк нет nbest — '
                          'перегенерируйте eval_lattice --no-llm')
@@ -153,8 +212,9 @@ def main():
         res, sec = run_variant(tr, rows, variant, a.workers)
         runs[variant], seconds[variant] = res, sec
         sc = summarize(res, refs)
-        out['results'][variant] = {**sc, 'seconds': sec}
-        print(variant, sc, f'{sec} с', flush=True)
+        ps = pick_stats(res, rows)
+        out['results'][variant] = {**sc, **({'pick': ps} if ps else {}), 'seconds': sec}
+        print(variant, sc, ps or '', f'{sec} с', flush=True)
     out['cost_usd'] += tr.cost
 
     for model in out['alt_models']:

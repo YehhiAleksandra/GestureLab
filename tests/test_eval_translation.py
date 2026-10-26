@@ -98,3 +98,50 @@ def test_paired_compares_only_judged_rows(ev):
     p = ev.paired(a, b, n=200)
     assert (p['wins'], p['losses'], p['ties']) == (1, 0, 2)
     assert p['mean_diff'] == 0.333
+
+
+def test_pick_index_maps_answer_to_chain_and_falls_back(ev):
+    assert ev.pick_index('3', 20) == 2
+    assert ev.pick_index('Вариант: 12.', 20) == 11
+    assert ev.pick_index('не знаю', 20) is None
+    assert ev.pick_index('25', 20) is None          # вне списка — не выдумывать цепочку
+    assert ev.pick_index('', 20) is None
+
+
+def test_cot_text_strips_format_and_keeps_plain_answer(ev):
+    assert ev.cot_text('Вариант: 2. Перевод: «Мама мыла посуду.»') == 'Мама мыла посуду.'
+    assert ev.cot_text('Мама мыла посуду.') == 'Мама мыла посуду.'
+
+
+def test_select_variant_asks_for_number_then_translates_chosen_chain(ev):
+    class FakeTranslator:
+        def __init__(self):
+            self.calls = []
+
+        def chat(self, messages, max_tokens, model=None):
+            self.calls.append(('chat', messages, max_tokens))
+            return '2'
+
+        def __call__(self, glosses, system=None, query=None):
+            self.calls.append(('plain', glosses, system, query))
+            return 'Мама мыла посуду.'
+
+    tr = FakeTranslator()
+    row = {'glosses_beam': 'мама мыть', 'ref': 'Мама мыла посуду.',
+           'cands': [['мама'], ['мыть']],
+           'nbest': [['мама', 'мыть'], ['мама', 'мыть', 'посуда']]}
+    out = ev.translate(tr, row, 'select_then_translate')
+    assert tr.calls[0][0] == 'chat' and 'только номер' in tr.calls[0][1][0]['content']
+    assert tr.calls[0][1][1]['content'].startswith('1. мама мыть')
+    assert tr.calls[1][1] == 'мама мыть посуда'      # переводим выбранную цепочку
+    assert out['pick'] == 1 and out['text'] == 'Мама мыла посуду.'
+
+
+def test_pick_stats_counts_choice_against_reference(ev):
+    rows = [{'glosses_ref': 'мама мыть', 'oracle_exact_nbest': 0},
+            {'glosses_ref': 'пить вода', 'oracle_exact_nbest': 1}]
+    res = [{'pick': 0, 'chain': ['мама', 'мыть'], 'judge': 2},
+           {'pick': 1, 'chain': ['пить', 'вода'], 'judge': 2}]
+    ps = ev.pick_stats(res, rows)
+    assert ps['pick_asked'] == 2 and ps['pick_top1'] == 0.5
+    assert ps['pick_correct_when_present'] == 1.0

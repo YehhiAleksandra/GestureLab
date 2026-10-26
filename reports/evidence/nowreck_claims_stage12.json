@@ -1,0 +1,53 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "pick_index",
+   "file_path": "tools/eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: номер из ответа модели переводится в индекс цепочки, непонятный ответ уходит в top-1"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "cot_text",
+   "file_path": "tools/eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: из строки «Вариант: N. Перевод: …» достаётся только перевод"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "pick_stats",
+   "file_path": "tools/eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: как часто выбор модели совпал с эталонной цепочкой"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_pick_index_maps_answer_to_chain_and_falls_back",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: индекс цепочки из номера и фолбэк на top-1"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_cot_text_strips_format_and_keeps_plain_answer",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: перевод из формата CoT достаётся без префикса"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_select_variant_asks_for_number_then_translates_chosen_chain",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: select_then_translate — номер выбора, затем перевод выбранной цепочки"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_pick_stats_counts_choice_against_reference",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 12: статистика выбора считается против эталона"
+  }
+ ]
+}

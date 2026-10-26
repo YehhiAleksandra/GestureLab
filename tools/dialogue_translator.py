@@ -348,7 +348,8 @@ def main():
     ap.add_argument('--whisper', default='small')
     ap.add_argument('--hearing', help='реплика слышащего до начала записи (контекст перевода)')
     ap.add_argument('--decoder', choices=('greedy', 'beam'), default='beam')
-    ap.add_argument('--beam', type=int, default=16)
+    ap.add_argument('--beam', type=int, default=24,
+                    help='ширина beam: 24 даёт 20 цепочек за 0.38 с на реплику 90 кадров')
     ap.add_argument('--lm-weight', type=float, default=0.1,
                     help='вес LM глоссов в beam search (0 — без LM)')
     ap.add_argument('--word-bonus', type=float, default=2.0,
@@ -357,7 +358,8 @@ def main():
                     help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
     ap.add_argument('--variants', choices=('chains', 'lattice', 'none'), default='chains',
                     help='что из n-best видит переводчик: цепочки, варианты по местам или ничего')
-    ap.add_argument('--nbest', type=int, default=8, help='сколько гипотез отдавать переводчику')
+    ap.add_argument('--nbest', type=int, default=20,
+                    help='сколько гипотез отдавать переводчику')
     a = ap.parse_args()
     if not a.video and a.camera is None:
         sys.exit('нужен --video или --camera')
