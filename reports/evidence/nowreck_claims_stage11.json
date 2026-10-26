@@ -1,0 +1,95 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "features",
+   "file_path": "sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: признаки нужной ширины — кадр (248) или кадр плюс дельта (496)"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "nbest_lattice_probs",
+   "file_path": "sign_beam.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: решётка с маргинальными вероятностями вариантов на каждой позиции"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "ensemble_logp",
+   "file_path": "tools/eval_lattice.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: ансамбль усредняет вероятности, а не логиты"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "chain_list",
+   "file_path": "tools/gloss_to_text.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: цепочки n-best в нумерованный список для промпта переводчика"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "sample_item",
+   "file_path": "tools/train_ctc_slovo.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: один обучающий пример — корпусная цепочка, одиночный клип или случайный поток"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_features_motion_appends_frame_delta",
+   "file_path": "tests/test_sign_utils.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: 496 признаков = кадр + дельта к прошлому кадру"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_nbest_lattice_probs_marginalizes_scores_per_position",
+   "file_path": "tests/test_sign_beam.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: вероятности решётки суммируются по гипотезам одной длины"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_ensemble_logp_averages_probabilities_not_logits",
+   "file_path": "tests/test_eval_lattice.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: ансамбль разных калибровок даёт среднее вероятностей"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_chains_become_numbered_query",
+   "file_path": "tests/test_dialogue_state.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: цепочки n-best попадают в запрос нумерованным списком"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_lattice_probs_variant_puts_confidence_next_to_each_word",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: вариант lattice_probs пишет проценты рядом с каждым вариантом"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_nbest_lines_variant_lists_whole_chains",
+   "file_path": "tests/test_eval_translation.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: вариант nbest_lines перечисляет целые цепочки гипотез"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: --single-frac отдаёт одиночные клипы одним глоссом"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+   "file_path": "tests/test_sign_stream.py",
+   "confidence": 0.99,
+   "explanation": "этап 11: без --single-frac доля одиночных клипов нулевая"
+  }
+ ]
+}

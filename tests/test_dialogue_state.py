@@ -67,6 +67,19 @@ def test_candidates_with_history_use_flat_glosses_for_examples():
     assert 'Текущие глоссы: [мама | папа]' in fake.calls[1][1][-1]['content']
 
 
+def test_chains_become_numbered_query():
+    import pytest
+
+    pytest.importorskip('huggingface_hub')
+    fake = FakeTranslator()
+    chains = [['мама', 'мыть'], ['мама', 'мыть', 'посуда']]
+    translate_in_context(fake, [('мама', 0.9)], [], 'СИСТЕМА', chains=chains)
+    kind, flat, system, query = fake.calls[0]
+    assert kind == 'plain' and system == 'СИСТЕМА'
+    assert flat == 'мама мыть мама мыть посуда'
+    assert query == '1. мама мыть\n2. мама мыть посуда'
+
+
 def test_history_goes_into_prompt_with_speakers():
     fake = FakeTranslator()
     history = [{'speaker': 'hearing', 'text': 'Ты придёшь?'},

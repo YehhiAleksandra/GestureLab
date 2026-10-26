@@ -64,3 +64,31 @@ def test_ctc_aux_head_pools_only_valid_steps():
     logits, aux = model(x, torch.tensor([41, 20, 1]), aux=True)
     assert logits.shape[:2] == (3, 21) and aux.shape == (3, 7)
     assert torch.isfinite(aux).all()
+
+
+def _fake_clips(n_classes=6, clips_per_class=3):
+    rng = np.random.default_rng(0)
+    return {c: [rng.normal(size=(30, 59, 3)).astype(np.float32) for _ in range(clips_per_class)]
+            for c in range(n_classes)}
+
+
+def test_sample_item_single_frac_gives_one_gloss_streams():
+    pytest.importorskip('huggingface_hub')
+    from tools.train_ctc_slovo import sample_item
+
+    seqs, classes = _fake_clips(), list(range(6))
+    rng = np.random.default_rng(1)
+    singles = [sample_item(seqs, classes, [], rng, corpus_frac=0.0, single_frac=1.0)
+               for _ in range(10)]
+    assert all(len(lab) == 1 for _, lab in singles)
+    assert all(len(frames) > 0 for frames, _ in singles)
+
+
+def test_sample_item_without_single_frac_keeps_multi_gloss_streams():
+    pytest.importorskip('huggingface_hub')
+    from tools.train_ctc_slovo import sample_item
+
+    seqs, classes = _fake_clips(), list(range(6))
+    rng = np.random.default_rng(2)
+    multi = [sample_item(seqs, classes, [], rng, corpus_frac=0.0) for _ in range(10)]
+    assert all(2 <= len(lab) <= 6 for _, lab in multi)

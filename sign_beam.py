@@ -124,3 +124,26 @@ def nbest_to_lattice(hyps, max_cands=4):
                 cands.append(w)
         out.append(cands[:max_cands])
     return out
+
+
+def nbest_lattice_probs(hyps, scores, max_cands=4):
+    """Решётка с вероятностями: масса каждого варианта по гипотезам одной длины.
+
+    Порядок вариантов — по маргинальной вероятности, а не по первому появлению:
+    промпт с процентами обещает, что первый вариант самый вероятный.
+    """
+    if not hyps:
+        return [], []
+    best_len = len(hyps[0])
+    idx = [i for i, h in enumerate(hyps) if len(h) == best_len]
+    w = np.exp(np.asarray([scores[i] for i in idx], np.float64))
+    w /= w.sum()
+    cands, probs = [], []
+    for pos in range(best_len):
+        acc = {}
+        for i, wi in zip(idx, w):
+            acc[hyps[i][pos]] = acc.get(hyps[i][pos], 0.0) + float(wi)
+        top = sorted(acc.items(), key=lambda kv: -kv[1])[:max_cands]
+        cands.append([c for c, _ in top])
+        probs.append([round(p, 4) for _, p in top])
+    return cands, probs

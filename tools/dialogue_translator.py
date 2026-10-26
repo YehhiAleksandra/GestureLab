@@ -12,7 +12,8 @@
   --hearing "..."    реплика слышащего до начала записи (контекст для первого перевода)
   --decoder beam     beam search с LM глоссов вместо greedy (--lm-weight — сила LM,
                      --word-bonus — бонус за слово, иначе LM режет короткие реплики)
-  --lattice          в промпт перевода идут варианты n-best на каждое место (--nbest)
+  --variants chains  что видит переводчик из n-best: целые цепочки (по умолчанию), варианты
+                     на каждое место (lattice) или ничего (none)
   --no-tts           не озвучивать перевод
 Клавиши: Q/Esc — выход, H — ввести реплику слышащего, S — повторить озвучку, C — очистить.
 
@@ -40,7 +41,7 @@ from gl_capture import open_camera, open_video  # noqa: E402
 from live_signs import FACE_IDX, POSE_IDX, holistic_frame  # noqa: E402
 from sign_beam import GlossLM, ctc_beam_search, nbest_to_lattice, smooth_log_probs  # noqa: E402
 from sign_stream import greedy_decode, load_ctc  # noqa: E402
-from sign_utils import split_utterances, stream_features  # noqa: E402
+from sign_utils import FEAT, features, split_utterances  # noqa: E402
 
 
 def frame_of(res):
@@ -57,7 +58,8 @@ class Recognizer:
     def __init__(self, path, device=None, decoder='greedy', beam=8, lm_weight=0.0,
                  word_bonus=0.0, smooth=1, nbest=1):
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
-        self.model, self.names, _ = load_ctc(path, self.device)
+        self.model, self.names, ck = load_ctc(path, self.device)
+        self.feat = ck.get('feat', FEAT)
         self.decoder, self.beam = decoder, beam
         self.lm_weight, self.word_bonus = lm_weight, word_bonus
         self.smooth, self.lm = smooth, None
@@ -80,7 +82,7 @@ class Recognizer:
         """[T, NPTS, 3] → ([(глосса, уверенность)], варианты n-best или None)."""
         if not len(frames):
             return [], None
-        x = torch.from_numpy(stream_features(frames))[None].to(self.device)
+        x = torch.from_numpy(features(frames, self.feat))[None].to(self.device)
         lengths = torch.tensor([len(frames)], device=self.device)
         logits = self.model(x, lengths)[0].cpu()
         if self.decoder != 'beam':
@@ -95,18 +97,18 @@ class Recognizer:
         ids = hyps[0][0]
         p = np.exp(logp)
         scores = [float(p[:, i + 1].max()) for i in ids]  # верхняя оценка, не калибровка
-        cands = None
+        chains = None
         if self.nbest > 1:
-            cands = [[self.names[i] for i in cand] for cand in
-                     nbest_to_lattice([h for h, _ in hyps])]
-        return [(self.names[i], c) for i, c in zip(ids, scores)], cands
+            chains = [[self.names[i] for i in h] for h, _ in hyps]
+        return [(self.names[i], c) for i, c in zip(ids, scores)], chains
 
 
 class Worker:
     """Перевод и озвучка в фоне, чтобы камера не замирала на время ответа LLM."""
 
-    def __init__(self, dialogue, tts=True, translator=True):
+    def __init__(self, dialogue, tts=True, translator=True, variants='chains'):
         self.dialogue, self.tts, self.use_translator = dialogue, tts, translator
+        self.variants = variants
         self.q, self.tr, self.system, self.stop = queue.Queue(), None, None, False
         self.thread = threading.Thread(target=self.run, daemon=True)
         self.thread.start()
@@ -125,12 +127,16 @@ class Worker:
                 try:
                     if self.use_translator:
                         if self.tr is None:
-                            from gloss_to_text import LATTICE, SYSTEM, Translator
+                            from gloss_to_text import LATTICE, NBEST, SYSTEM, Translator
                             self.tr, self.system = Translator(), SYSTEM
-                            self.lattice_prompt = LATTICE
-                        system = self.system + (self.lattice_prompt if candidates else '')
-                        text = translate_in_context(self.tr, glosses, self.dialogue.context(),
-                                                    system, candidates=candidates)
+                            self.prompts = {'chains': NBEST, 'lattice': LATTICE}
+                        variant = self.variants if candidates else None
+                        system = self.system + (self.prompts[variant] if variant else '')
+                        text = translate_in_context(
+                            self.tr, glosses, self.dialogue.context(), system,
+                            chains=candidates if variant == 'chains' else None,
+                            candidates=(nbest_to_lattice(candidates)
+                                        if variant == 'lattice' else None))
                 except Exception as e:  # сеть/квота: оставить глоссы, но не портить контекст
                     print(f'перевод недоступен: {e}', flush=True)
                 self.dialogue.add('deaf', text, [g for g, _ in glosses],
@@ -331,7 +337,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--camera', type=int)
     ap.add_argument('--video', help='видеофайл вместо камеры; путь в формате C:\\...')
-    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_ctc_corpus.pt'))
+    ap.add_argument('--model', default=str(ROOT / 'models' / 'slovo_ctc_motion.pt'))
     ap.add_argument('--pause', type=float, default=0.7, help='секунд без рук = конец реплики')
     ap.add_argument('--max-utterance', type=float, default=15.0)
     ap.add_argument('--dialogue-out', help='JSON с репликами диалога')
@@ -342,16 +348,16 @@ def main():
     ap.add_argument('--whisper', default='small')
     ap.add_argument('--hearing', help='реплика слышащего до начала записи (контекст перевода)')
     ap.add_argument('--decoder', choices=('greedy', 'beam'), default='beam')
-    ap.add_argument('--beam', type=int, default=8)
+    ap.add_argument('--beam', type=int, default=16)
     ap.add_argument('--lm-weight', type=float, default=0.1,
                     help='вес LM глоссов в beam search (0 — без LM)')
     ap.add_argument('--word-bonus', type=float, default=2.0,
                     help='бонус за каждое слово: без него LM схлопывает короткие реплики')
     ap.add_argument('--smooth', type=int, default=1,
                     help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
-    ap.add_argument('--no-lattice', dest='lattice', action='store_false',
-                    help='не передавать переводчику варианты n-best (по умолчанию передаются)')
-    ap.add_argument('--nbest', type=int, default=5, help='сколько гипотез собирать в варианты')
+    ap.add_argument('--variants', choices=('chains', 'lattice', 'none'), default='chains',
+                    help='что из n-best видит переводчик: цепочки, варианты по местам или ничего')
+    ap.add_argument('--nbest', type=int, default=8, help='сколько гипотез отдавать переводчику')
     a = ap.parse_args()
     if not a.video and a.camera is None:
         sys.exit('нужен --video или --camera')
@@ -361,8 +367,9 @@ def main():
         dialogue.add('hearing', a.hearing)
     rec = Recognizer(a.model, decoder=a.decoder, beam=a.beam, lm_weight=a.lm_weight,
                      word_bonus=a.word_bonus, smooth=a.smooth,
-                     nbest=a.nbest if a.lattice else 1)
-    worker = Worker(dialogue, tts=not a.no_tts, translator=not a.no_translate)
+                     nbest=a.nbest if a.variants != 'none' else 1)
+    worker = Worker(dialogue, tts=not a.no_tts, translator=not a.no_translate,
+                    variants=a.variants)
     mic = None
     if a.mic:
         mic = Mic(dialogue, a.whisper)

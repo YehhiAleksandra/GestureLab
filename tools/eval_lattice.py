@@ -20,7 +20,7 @@ import torch
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from gloss_to_text import Translator, chrf, load_corpus
-from sign_beam import GlossLM, ctc_beam_search, nbest_to_lattice
+from sign_beam import GlossLM, ctc_beam_search, nbest_lattice_probs, smooth_log_probs
 from sign_stream import load_ctc
 from train_ctc_slovo import (
     batch_features,
@@ -60,10 +60,10 @@ def greedy(logp):
     return out
 
 
-@torch.no_grad()
-def logits_of(model, stream, dev):
-    x, lens = batch_features([stream])
-    return model(x.to(dev), lens.to(dev))[0].cpu().log_softmax(-1).numpy()
+def ensemble_logp(outputs):
+    """Усредняем вероятности, а не логиты: у разных моделей своя калибровка."""
+    probs = torch.stack([o.float().softmax(-1) for o in outputs]).mean(0)
+    return probs.clamp_min(1e-12).log().numpy()
 
 
 def bootstrap_ci(diffs, n=2000, seed=0):
@@ -77,13 +77,16 @@ def bootstrap_ci(diffs, n=2000, seed=0):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--data', default='datasets/slovo/slovo_holistic.npz')
-    ap.add_argument('--model', default='models/slovo_ctc_corpus.pt')
+    ap.add_argument('--model', default='models/slovo_ctc_corpus.pt',
+                    help='чекпойнт(ы) через запятую: вероятности усредняются (ансамбль)')
     ap.add_argument('--beam', type=int, default=8)
     ap.add_argument('--topk', type=int, default=32)
     ap.add_argument('--nbest', type=int, default=5)
     ap.add_argument('--max-cands', type=int, default=4)
     ap.add_argument('--lm-weight', type=float, default=0.1)
     ap.add_argument('--word-bonus', type=float, default=2.0)
+    ap.add_argument('--smooth', type=int, default=1,
+                    help='ширина сглаживания покадровых логитов (1 — без сглаживания)')
     ap.add_argument('--llm', default='google/gemma-4-31B-it')
     ap.add_argument('--stream-seed', type=int, default=4242)
     ap.add_argument('--dev-size', type=int, default=60,
@@ -98,25 +101,45 @@ def main():
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     d = prepare_slovo(a.data)
-    model, names, _ = load_ctc(a.model, dev)
+    paths = [p.strip() for p in a.model.split(',') if p.strip()]
+    models, names, feats = [], None, None
+    for p in paths:
+        m, nm, ck = load_ctc(p, dev)
+        if names is not None and nm != names:
+            raise SystemExit(f'{p}: другой словарь классов — ансамбль невозможен')
+        f = ck.get('feat')
+        if feats is not None and f != feats:
+            raise SystemExit(f'{p}: другая ширина признаков — ансамбль невозможен')
+        models.append(m)
+        names, feats = nm, f
     lm_seqs, phrases = heldout_phrases(names, d, dev_size=a.dev_size,
                                        holdout_seed=a.holdout_seed)
     lm = GlossLM(lm_seqs, n_classes=len(names))
     rng = np.random.default_rng(a.stream_seed)
-    print(f'модель {Path(a.model).name}; фраз {len(phrases)}; LM по {len(lm_seqs)} фразам',
-          flush=True)
+    print(f'модель {", ".join(Path(p).name for p in paths)}; фраз {len(phrases)}; '
+          f'LM по {len(lm_seqs)} фразам', flush=True)
+
+    @torch.no_grad()
+    def logp_of(stream):
+        x, lens = batch_features([stream], feats)
+        outs = [m(x.to(dev), lens.to(dev))[0].cpu() for m in models]
+        return ensemble_logp(outs)
 
     rows = []
     for phrase in phrases:
         stream, labels = make_corpus_stream(d['te_by_class'], [phrase['ids']], rng,
                                             augment_clips=False, pause_prob=0.0, blend_prob=1.0)
-        logp = logits_of(model, stream, dev)
+        logp = logp_of(stream)
+        if a.smooth > 1:
+            logp = smooth_log_probs(logp, a.smooth)
         hyps = ctc_beam_search(logp, beam=a.beam, topk=a.topk, nbest=a.nbest, lm=lm,
                               lm_weight=a.lm_weight, word_bonus=a.word_bonus)
-        cands = nbest_to_lattice([h for h, _ in hyps], a.max_cands)
+        cands, cands_probs = nbest_lattice_probs([h for h, _ in hyps],
+                                                 [s for _, s in hyps], a.max_cands)
         rows.append({'ref': phrase['russian'], 'oracle_text': phrase['rsl'], 'labels': labels,
                      'greedy': greedy(logp), 'beam': hyps[0][0],
-                     'nbest': [h for h, _ in hyps], 'cands': cands})
+                     'nbest': [h for h, _ in hyps], 'cands': cands,
+                     'cands_probs': cands_probs})
 
     def rec_acc(key):
         pos = sum(sum(x == y for x, y in zip(r[key], r['labels'])) for r in rows)
@@ -131,6 +154,8 @@ def main():
                      'glosses_greedy': ' '.join(names[i] for i in r['greedy']),
                      'glosses_beam': ' '.join(names[i] for i in r['beam']),
                      'cands': [[names[i] for i in c] for c in r['cands']],
+                     'cands_probs': r['cands_probs'],
+                     'nbest': [[names[i] for i in h] for h in r['nbest']],
                      'oracle_exact_nbest': int(r['labels'] in r['nbest'])} for r in rows]
         summary = {'model': a.model, 'phrases': len(rows), 'beam': a.beam,
                    'nbest': a.nbest, 'lm_weight': a.lm_weight,
@@ -175,6 +200,8 @@ def main():
                'glosses_greedy': ' '.join(names[i] for i in r['greedy']),
                'glosses_beam': ' '.join(names[i] for i in r['beam']),
                'cands': [[names[i] for i in c] for c in r['cands']],
+               'cands_probs': r['cands_probs'],
+               'nbest': [[names[i] for i in h] for h in r['nbest']],
                'oracle_exact_nbest': int(r['labels'] in r['nbest']), **h}
         res_rows.append(row)
 

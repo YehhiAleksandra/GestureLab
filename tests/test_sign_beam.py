@@ -1,6 +1,12 @@
 import numpy as np
 
-from sign_beam import GlossLM, ctc_beam_search, nbest_to_lattice, smooth_log_probs
+from sign_beam import (
+    GlossLM,
+    ctc_beam_search,
+    nbest_lattice_probs,
+    nbest_to_lattice,
+    smooth_log_probs,
+)
 
 
 def _logp(rows):
@@ -45,3 +51,12 @@ def test_nbest_to_lattice_groups_positions():
     lat = nbest_to_lattice([[0, 1], [0, 2], [3, 4, 5]])
     assert lat == [[0], [1, 2]]
     assert nbest_to_lattice([]) == []
+
+
+def test_nbest_lattice_probs_marginalizes_scores_per_position():
+    hyps = [[0, 1], [0, 2], [3, 4, 5]]  # длины разные: третья гипотеза отброшена
+    scores = [np.log(0.8), np.log(0.2), 0.0]
+    cands, probs = nbest_lattice_probs(hyps, scores)
+    assert cands == [[0], [1, 2]]
+    assert np.allclose(probs[0], [1.0]) and np.allclose(probs[1], [0.8, 0.2], atol=1e-3)
+    assert nbest_lattice_probs([], []) == ([], [])

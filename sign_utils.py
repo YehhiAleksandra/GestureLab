@@ -10,6 +10,7 @@ import numpy as np
 from live_signs import NPTS
 
 FEAT = 2 * 21 * 3 + NPTS * 2 + 2 + 2  # 248
+FEAT_MOTION = 2 * FEAT  # 496: кадр + его изменение к прошлому кадру
 
 
 def _nearest_valid(ok, values):
@@ -54,6 +55,18 @@ def stream_features(seq):
     out = np.concatenate([local.reshape(t, -1), body.reshape(t, -1), mouth,
                           present.astype(np.float32)], 1)
     return np.nan_to_num(out, nan=0.0)
+
+
+def features(seq, feat=FEAT):
+    """Признаки нужной ширины: FEAT — кадр, FEAT_MOTION — кадр и дельта к прошлому кадру."""
+    base = stream_features(seq)
+    if feat == FEAT:
+        return base
+    if feat != FEAT_MOTION:
+        raise ValueError(f'неизвестная ширина признаков: {feat}')
+    delta = np.zeros_like(base)
+    delta[1:] = base[1:] - base[:-1]
+    return np.concatenate([base, delta], 1)
 
 
 def motion_signal(frames):

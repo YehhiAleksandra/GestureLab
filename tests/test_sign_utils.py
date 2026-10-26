@@ -1,7 +1,8 @@
 import numpy as np
 
 from live_signs import NPTS
-from sign_utils import FEAT, motion_signal, split_utterances, stream_features
+from sign_utils import (FEAT, FEAT_MOTION, features, motion_signal, split_utterances,
+                        stream_features)
 
 L_SHOULDER, R_SHOULDER = 43, 44  # POSE_IDX[1], POSE_IDX[2]
 
@@ -32,6 +33,22 @@ def _stream(t, left=lambda i: 0.35, right=lambda i: 0.65):
 def test_stream_features_shape_and_finite():
     out = stream_features(_stream(12))
     assert out.shape == (12, FEAT) and np.isfinite(out).all()
+
+
+def test_features_motion_appends_frame_delta():
+    seq = _stream(6, left=lambda i: 0.35 + 0.01 * i)
+    base = features(seq)
+    full = features(seq, FEAT_MOTION)
+    assert base.shape == (6, FEAT) and np.array_equal(base, stream_features(seq))
+    assert full.shape == (6, FEAT_MOTION)
+    assert np.allclose(full[0, FEAT:], 0)  # у первого кадра предыдущего нет
+    assert np.allclose(full[1:, FEAT:], base[1:] - base[:-1])
+    try:
+        features(seq, FEAT + 1)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('неизвестная ширина должна падать')
 
 
 def test_stream_features_body_coords_are_shift_invariant():

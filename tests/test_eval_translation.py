@@ -47,6 +47,41 @@ def test_lattice_variant_reads_candidates_not_translation(ev):
     assert tr.calls[0][2] == '[мама | папа] [мыть]'
 
 
+def test_lattice_probs_variant_puts_confidence_next_to_each_word(ev):
+    class FakeTranslator:
+        def __init__(self):
+            self.calls = []
+
+        def __call__(self, glosses, system=None, query=None):
+            self.calls.append((glosses, system, query))
+            return 'x'
+
+    tr = FakeTranslator()
+    row = {'glosses_beam': 'мама мыть', 'ref': 'Мама мыла.',
+           'cands': [['мама', 'папа'], ['мыть']], 'cands_probs': [[0.7, 0.3], [1.0]]}
+    ev.translate(tr, row, 'lattice_probs')
+    assert tr.calls[0][2] == '[мама 70% | папа 30%] [мыть 100%]'
+    assert 'уверенность' in tr.calls[0][1]
+
+
+def test_nbest_lines_variant_lists_whole_chains(ev):
+    class FakeTranslator:
+        def __init__(self):
+            self.calls = []
+
+        def __call__(self, glosses, system=None, query=None):
+            self.calls.append((glosses, system, query))
+            return 'x'
+
+    tr = FakeTranslator()
+    row = {'glosses_beam': 'мама мыть', 'ref': 'Мама мыла.',
+           'cands': [['мама'], ['мыть']],
+           'nbest': [['мама', 'мыть'], ['мама', 'мыть', 'посуда']]}
+    ev.translate(tr, row, 'nbest_lines')
+    assert tr.calls[0][2] == '1. мама мыть\n2. мама мыть посуда'
+    assert 'несколько вариантов' in tr.calls[0][1]
+
+
 def test_summarize_counts_meaning_and_chrf(ev):
     res = [{'hyp': 'Мама мыла раму.', 'judge': 2},
            {'hyp': 'что-то', 'judge': 1},

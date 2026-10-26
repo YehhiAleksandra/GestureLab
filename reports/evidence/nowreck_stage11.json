@@ -1,0 +1,1331 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 13,
+    "confirmed": 13,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 113
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "features",
+        "file_path": "sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_utils.py",
+        "symbol_name": "features",
+        "parent_class": null,
+        "line_number": 60,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "nbest_lattice_probs",
+        "file_path": "sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "sign_beam.py",
+        "symbol_name": "nbest_lattice_probs",
+        "parent_class": null,
+        "line_number": 129,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "ensemble_logp",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "ensemble_logp",
+        "parent_class": null,
+        "line_number": 63,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "chain_list",
+        "file_path": "tools/gloss_to_text.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\gloss_to_text.py",
+        "symbol_name": "chain_list",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "sample_item",
+        "file_path": "tools/train_ctc_slovo.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\train_ctc_slovo.py",
+        "symbol_name": "sample_item",
+        "parent_class": null,
+        "line_number": 197,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_features_motion_appends_frame_delta",
+        "file_path": "tests/test_sign_utils.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_utils.py",
+        "symbol_name": "test_features_motion_appends_frame_delta",
+        "parent_class": null,
+        "line_number": 38,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_nbest_lattice_probs_marginalizes_scores_per_position",
+        "file_path": "tests/test_sign_beam.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_beam.py",
+        "symbol_name": "test_nbest_lattice_probs_marginalizes_scores_per_position",
+        "parent_class": null,
+        "line_number": 56,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_ensemble_logp_averages_probabilities_not_logits",
+        "file_path": "tests/test_eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_lattice.py",
+        "symbol_name": "test_ensemble_logp_averages_probabilities_not_logits",
+        "parent_class": null,
+        "line_number": 29,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_chains_become_numbered_query",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_chains_become_numbered_query",
+        "parent_class": null,
+        "line_number": 70,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_lattice_probs_variant_puts_confidence_next_to_each_word",
+        "file_path": "tests/test_eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_translation.py",
+        "symbol_name": "test_lattice_probs_variant_puts_confidence_next_to_each_word",
+        "parent_class": null,
+        "line_number": 50,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_nbest_lines_variant_lists_whole_chains",
+        "file_path": "tests/test_eval_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_translation.py",
+        "symbol_name": "test_nbest_lines_variant_lists_whole_chains",
+        "parent_class": null,
+        "line_number": 67,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+        "parent_class": null,
+        "line_number": 75,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+        "file_path": "tests/test_sign_stream.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_sign_stream.py",
+        "symbol_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+        "parent_class": null,
+        "line_number": 87,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": "_fake_clips",
+      "parent_class": null,
+      "line_number": 69,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": "bracketed_probs",
+      "parent_class": null,
+      "line_number": 55,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "class_aliases",
+      "parent_class": null,
+      "line_number": 53,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "file_sha256",
+      "parent_class": null,
+      "line_number": 107,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "file_words",
+      "parent_class": null,
+      "line_number": 75,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "load_samples",
+      "parent_class": null,
+      "line_number": 80,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": "sample_sha256",
+      "parent_class": null,
+      "line_number": 112,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": "merge",
+      "parent_class": null,
+      "line_number": 110,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "REMOVE_FUNCTION",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": "logits_of",
+      "parent_class": null,
+      "line_number": 64,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate_in_context",
+      "called_name": "chain_list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "nbest_lattice_probs",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "features",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "features",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_chains_become_numbered_query",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_chains_become_numbered_query",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_ensemble_logp_averages_probabilities_not_logits",
+      "called_name": "ensemble_logp"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_lattice_probs_variant_puts_confidence_next_to_each_word",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_nbest_lines_variant_lists_whole_chains",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_beam.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_nbest_lattice_probs_marginalizes_scores_per_position",
+      "called_name": "nbest_lattice_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_fake_clips",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "_fake_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_single_frac_gives_one_gloss_streams",
+      "called_name": "sample_item"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "_fake_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_stream.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_sample_item_without_single_frac_keeps_multi_gloss_streams",
+      "called_name": "sample_item"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_features_motion_appends_frame_delta",
+      "called_name": "AssertionError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_features_motion_appends_frame_delta",
+      "called_name": "_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_features_motion_appends_frame_delta",
+      "called_name": "features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_sign_utils.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_features_motion_appends_frame_delta",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logp_of",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logp_of",
+      "called_name": "ensemble_logp"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logp_of",
+      "called_name": "m"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "SystemExit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "logp_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "nbest_lattice_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "smooth_log_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bracketed_probs",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "SystemExit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "any"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate",
+      "called_name": "bracketed_probs"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "translate",
+      "called_name": "chain_list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_aliases",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "class_aliases",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_sha256",
+      "called_name": "open"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_words",
+      "called_name": "normalize"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "file_words",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "file_words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_samples",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_slovo",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "load_samples"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "class_aliases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "file_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_samples"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sample_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_sha256",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\gloss_to_text.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chain_list",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "merge"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "batch_features",
+      "called_name": "features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sample_item"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "make_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "sample_item",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logits_of",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logits_of",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "logits_of"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "norm_ocr"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_youtube",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\finetune_youtube.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "norm_ocr"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\rt_dictionary.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "batch_features",
+      "called_name": "stream_features"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_REMOVED",
+      "file_path": "tools\\train_ctc_slovo.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "make_stream"
+    }
+  ]
+}

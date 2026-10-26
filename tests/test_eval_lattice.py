@@ -24,3 +24,14 @@ def test_heldout_phrases_do_not_leak_into_lm(monkeypatch):
     held = {tuple(p['ids']) for p in phrases}
     assert held.isdisjoint({tuple(s) for s in lm_seqs})
     assert len(held) + len(lm_seqs) == len(seqs)
+
+
+def test_ensemble_logp_averages_probabilities_not_logits():
+    torch = pytest.importorskip('torch')
+    from tools.eval_lattice import ensemble_logp
+
+    a = torch.tensor([[0.0, 0.0], [10.0, 0.0]])   # p = [.5, .5], [1, 0]
+    b = torch.tensor([[0.0, 0.0], [-10.0, 0.0]])  # p = [.5, .5], [0, 1]
+    out = torch.from_numpy(ensemble_logp([a, b])).exp()
+    assert torch.allclose(out[0], torch.full((2,), 0.5), atol=1e-6)
+    assert torch.allclose(out[1], torch.full((2,), 0.5), atol=1e-6)

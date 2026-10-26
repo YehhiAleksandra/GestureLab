@@ -29,7 +29,7 @@ from gloss_to_text import load_corpus
 from train_slovo_seq import load
 
 from sign_stream import CTCSignNet, greedy_decode, load_ctc, out_lengths
-from sign_utils import FEAT, stream_features
+from sign_utils import FEAT, FEAT_MOTION, features
 from slovo_model import augment, resample
 
 
@@ -130,7 +130,7 @@ def spec_augment(x, lens, rng, n_time=2, n_feat=2, frac=0.08):
     return x
 
 
-def aux_batch(seqs_by_class, classes, rng, n):
+def aux_batch(seqs_by_class, classes, rng, n, feat=FEAT):
     """Случайные изолированные клипы для вспомогательной классификации."""
     streams, labels = [], []
     for _ in range(n):
@@ -139,14 +139,14 @@ def aux_batch(seqs_by_class, classes, rng, n):
         s = augment(pool[int(rng.integers(len(pool)))], rng)
         streams.append(resample(s, int(rng.integers(16, 49))))
         labels.append(c)
-    x, lens = batch_features(streams)
+    x, lens = batch_features(streams, feat)
     return x, lens, torch.tensor(labels, dtype=torch.long)
 
 
-def batch_features(streams):
-    feats = [stream_features(s) for s in streams]
+def batch_features(streams, feat=FEAT):
+    feats = [features(s, feat) for s in streams]
     lens = np.array([len(f) for f in feats])
-    x = np.zeros((len(feats), lens.max(), FEAT), np.float32)
+    x = np.zeros((len(feats), lens.max(), feat), np.float32)
     for i, f in enumerate(feats):
         x[i, :len(f)] = f
     return torch.from_numpy(x), torch.from_numpy(lens)
@@ -194,13 +194,25 @@ def samples_corpus(by_class, phrases, rng, n=200, pauses=False):
             for _ in range(n)]
 
 
+def sample_item(seqs_by_class, classes, corpus_train, rng, corpus_frac=0.6, single_frac=0.0):
+    """Один обучающий пример: цепочка корпуса, одиночный клип или случайный поток."""
+    r = rng.random()
+    if corpus_train and r < corpus_frac:
+        return make_corpus_stream(seqs_by_class, corpus_train, rng)
+    if single_frac > 0 and r < corpus_frac + single_frac:
+        c = int(rng.choice(classes))
+        s = augment(seqs_by_class[c][int(rng.integers(len(seqs_by_class[c])))], rng)
+        return resample(s, int(rng.integers(16, 49))), [c]
+    return make_stream(seqs_by_class, classes, rng)
+
+
 @torch.no_grad()
 def metrics_of(model, samples, dev='cpu'):
     """Greedy-метрики на готовом наборе «поток + эталонные классы»."""
     model.eval()
     pos_ok = total = exact = dist = 0
     for stream, labels in samples:
-        x, lengths = batch_features([stream])
+        x, lengths = batch_features([stream], model.inp[0].in_features)
         pred, _ = greedy_decode(model(x.to(dev), lengths.to(dev))[0].cpu())
         pos_ok += sum(a == b for a, b in zip(pred, labels))
         total += len(labels)
@@ -264,10 +276,17 @@ def main():
     ap.add_argument('--init', help='чекпойнт для тёплого старта или продолжения обучения')
     ap.add_argument('--corpus-frac', type=float, default=0.6,
                     help='доля потоков из цепочек корпуса (остальные — случайные классы)')
+    ap.add_argument('--single-frac', type=float, default=0.0,
+                    help='доля CTC-примеров из одиночных клипов (0 — как раньше)')
+    ap.add_argument('--d', type=int, default=256, help='ширина энкодера')
+    ap.add_argument('--layers', type=int, default=4)
+    ap.add_argument('--dropout', type=float, default=0.15)
     ap.add_argument('--aux-weight', type=float, default=0.3,
                     help='вес вспомогательной CE на изолированных клипах; 0 — выключить')
     ap.add_argument('--aux-bs', type=int, default=16)
     ap.add_argument('--specaug', action=argparse.BooleanOptionalAction, default=True)
+    ap.add_argument('--motion', action='store_true',
+                    help='добавить к признакам кадра его изменение (FEAT_MOTION вместо FEAT)')
     a = ap.parse_args()
     if Path(a.out).exists():
         sys.exit(f'{a.out} уже существует — выберите другое имя')
@@ -293,7 +312,9 @@ def main():
     torch.manual_seed(a.seed)
     rng = np.random.default_rng(a.seed)
     aux_n = len(names) if a.aux_weight > 0 else 0
-    model = CTCSignNet(len(names), aux=aux_n).to(dev)
+    feat_in = FEAT_MOTION if a.motion else FEAT
+    model = CTCSignNet(len(names), d=a.d, layers=a.layers, dropout=a.dropout, feat=feat_in,
+                       aux=aux_n).to(dev)
     if a.init:
         warm_start(model, a.init, names)
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.05)
@@ -308,13 +329,11 @@ def main():
         for _ in range(a.steps):
             streams, labels = [], []
             for _ in range(a.bs):
-                if corpus_train and rng.random() < a.corpus_frac:
-                    s, lab = make_corpus_stream(seqs_by_class, corpus_train, rng)
-                else:
-                    s, lab = make_stream(seqs_by_class, classes, rng)
+                s, lab = sample_item(seqs_by_class, classes, corpus_train, rng,
+                                     corpus_frac=a.corpus_frac, single_frac=a.single_frac)
                 streams.append(s)
                 labels.append(lab)
-            x, lens = batch_features(streams)
+            x, lens = batch_features(streams, feat_in)
             if a.specaug:
                 x = spec_augment(x, lens.numpy(), rng)
             # PyTorch CTCLoss берёт цели как индексы логитов напрямую (0 = blank), без сдвига
@@ -325,7 +344,7 @@ def main():
             loss = ctc(logp, targets.to(dev), torch.from_numpy(out_lengths(lens.numpy())).to(dev),
                        tlens.to(dev))
             if aux_n:
-                ax, alens, ay = aux_batch(seqs_by_class, classes, rng, a.aux_bs)
+                ax, alens, ay = aux_batch(seqs_by_class, classes, rng, a.aux_bs, feat_in)
                 if a.specaug:
                     ax = spec_augment(ax, alens.numpy(), rng)
                 loss = loss + a.aux_weight * F.cross_entropy(
@@ -347,13 +366,14 @@ def main():
                 line += f' | corpus gloss {ec["gloss_acc"]:.3f} edit {ec["edit_rate"]:.3f}'
             print(line + f' [{time.time() - t0:.0f} с]', flush=True)
 
-    arch = {'d': 256, 'layers': 4, 'heads': 4, 'dropout': 0.15}
+    arch = {'d': a.d, 'layers': a.layers, 'heads': 4, 'dropout': a.dropout}
     config = {'data': a.data, 'epochs': a.epochs, 'steps': a.steps, 'bs': a.bs, 'lr': a.lr,
               'seed': a.seed, 'n_train': d['n_train'], 'n_classes': len(names),
-              'corpus_frac': a.corpus_frac, 'aux_weight': a.aux_weight, 'aux_bs': a.aux_bs,
-              'specaug': a.specaug, 'n_corpus_train': len(corpus_train),
+              'corpus_frac': a.corpus_frac, 'single_frac': a.single_frac,
+              'aux_weight': a.aux_weight, 'aux_bs': a.aux_bs,
+              'specaug': a.specaug, 'motion': a.motion, 'n_corpus_train': len(corpus_train),
               'n_corpus_test': len(corpus_test), 'init': a.init}
-    torch.save({'model': model.state_dict(), 'names': names, 'feat': FEAT, 'arch': arch,
+    torch.save({'model': model.state_dict(), 'names': names, 'feat': feat_in, 'arch': arch,
                 'aux': aux_n, 'config': config, 'kind': 'ctc_holistic'}, a.out)
 
     model2, names2, _ = load_ctc(a.out, dev)

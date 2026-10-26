@@ -16,16 +16,21 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gloss_to_text import LATTICE, SYSTEM, SYSTEM_RULES, Translator, chrf
+from gloss_to_text import (LATTICE, NBEST, PROBS, SYSTEM, SYSTEM_RULES, Translator, chain_list,
+                           chrf)
 
 PROMPTS = {
-    'base': (SYSTEM, False, None),
-    'lattice': (SYSTEM + LATTICE, True, None),
+    'base': {'system': SYSTEM, 'source': 'beam'},
+    'lattice': {'system': SYSTEM + LATTICE, 'source': 'lattice'},
     # контроль: промпт про варианты без самих вариантов — вклад дают кандидаты или текст?
-    'lattice_nocands': (SYSTEM + LATTICE, False, None),
-    'rules': (SYSTEM_RULES, False, None),
-    'rules_noshot': (SYSTEM_RULES, False, 0),
-    'rules_lattice': (SYSTEM_RULES + LATTICE, True, None),
+    'lattice_nocands': {'system': SYSTEM + LATTICE, 'source': 'beam'},
+    # те же варианты, но с уверенностью распознавателя у каждого
+    'lattice_probs': {'system': SYSTEM + LATTICE + PROBS, 'source': 'lattice_probs'},
+    # целые цепочки вместо позиций: решётка теряет гипотезы другой длины
+    'nbest_lines': {'system': SYSTEM + NBEST, 'source': 'nbest'},
+    'rules': {'system': SYSTEM_RULES, 'source': 'beam'},
+    'rules_noshot': {'system': SYSTEM_RULES, 'source': 'beam', 'shots': 0},
+    'rules_lattice': {'system': SYSTEM_RULES + LATTICE, 'source': 'lattice'},
 }
 
 
@@ -47,18 +52,29 @@ def bracketed(cands):
     return ' '.join('[' + ' | '.join(c) + ']' for c in cands)
 
 
+def bracketed_probs(cands, probs):
+    return ' '.join('[' + ' | '.join(f'{w} {100 * q:.0f}%' for w, q in zip(c, ps)) + ']'
+                    for c, ps in zip(cands, probs))
+
+
 def flat(cands):
     return ' '.join(w for c in cands for w in c)
 
 
 def translate(tr, row, variant):
-    system, use_lattice, shots = PROMPTS[variant]
-    if use_lattice:
-        return tr(flat(row['cands']), system, bracketed(row['cands']))
-    if shots == 0:
-        return tr.chat([{'role': 'system', 'content': system},
+    p = PROMPTS[variant]
+    src = p['source']
+    if src == 'lattice':
+        return tr(flat(row['cands']), p['system'], bracketed(row['cands']))
+    if src == 'lattice_probs':
+        query = bracketed_probs(row['cands'], row['cands_probs'])
+        return tr(flat(row['cands']), p['system'], query)
+    if src == 'nbest':
+        return tr(flat(row['cands']), p['system'], chain_list(row['nbest']))
+    if p.get('shots', 1) == 0:
+        return tr.chat([{'role': 'system', 'content': p['system']},
                         {'role': 'user', 'content': row['glosses_beam']}], 80)
-    return tr(row['glosses_beam'], system)
+    return tr(row['glosses_beam'], p['system'])
 
 
 def run_variant(tr, rows, variant, workers):
@@ -116,6 +132,15 @@ def main():
     a = ap.parse_args()
 
     rows = load_rows(a.rows)
+    variants = [v for v in a.variants.split(',') if v]
+    if any(PROMPTS[v]['source'] == 'lattice_probs' for v in variants) and not all(
+            'cands_probs' in r for r in rows):
+        raise SystemExit('вариант с процентами: у строк нет cands_probs — '
+                         'перегенерируйте eval_lattice --no-llm')
+    if any(PROMPTS[v]['source'] == 'nbest' for v in variants) and not all(
+            'nbest' in r for r in rows):
+        raise SystemExit('вариант с цепочками: у строк нет nbest — '
+                         'перегенерируйте eval_lattice --no-llm')
     refs = [r['ref'] for r in rows]
     print(f'фраз {len(rows)}', flush=True)
     out = {'phrases': len(rows), 'rows': a.rows, 'model': a.model,
@@ -124,7 +149,7 @@ def main():
     runs, seconds = {}, {}
 
     tr = Translator(a.model)
-    for variant in [v for v in a.variants.split(',') if v]:
+    for variant in variants:
         res, sec = run_variant(tr, rows, variant, a.workers)
         runs[variant], seconds[variant] = res, sec
         sc = summarize(res, refs)

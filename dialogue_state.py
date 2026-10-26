@@ -38,16 +38,26 @@ class Dialogue:
         tmp.replace(self.out)
 
 
-def translate_in_context(translator, glosses, history, system, shots=6, candidates=None):
+def translate_in_context(translator, glosses, history, system, shots=6, candidates=None,
+                         chains=None):
     """Перевод реплики с учётом последних реплик; translator — gloss_to_text.Translator.
 
     candidates — варианты n-best на каждое место ([['мама', 'папа'], ...]). Тогда в запросе
     каждый жест в квадратных скобках, а few-shot ищется по всем вариантам сразу.
+    chains — целые цепочки глоссов из n-best ([['мама', 'мыть'], ...]): в запросе
+    нумерованный список, модели видно фразу целиком.
     """
     gloss_text = ' '.join(g for g, _ in glosses)
-    flat = ' '.join(w for c in candidates for w in c) if candidates else gloss_text
-    query = (' '.join('[' + ' | '.join(c) + ']' for c in candidates) if candidates
-             else gloss_text)
+    if chains:
+        # модуль тянет huggingface_hub: импорт по факту; путь от корня репо — как в тестах
+        from tools.gloss_to_text import chain_list
+        flat = ' '.join(w for c in chains for w in c)
+        query = chain_list(chains)
+    elif candidates:
+        flat = ' '.join(w for c in candidates for w in c)
+        query = ' '.join('[' + ' | '.join(c) + ']' for c in candidates)
+    else:
+        flat, query = gloss_text, gloss_text
     if not history:
         return translator(flat, system, query)
     ctx = '\n'.join(f"{'Слышащий' if t['speaker'] == 'hearing' else 'Глухой (перевод)'}: {t['text']}"
