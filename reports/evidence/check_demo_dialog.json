@@ -1,0 +1,50 @@
+{
+ "video": "demo_dialog.mp4",
+ "model": "slovo_ctc_motion.pt",
+ "config": {
+  "beam": 24,
+  "nbest": 20,
+  "pause": 0.7,
+  "fps": 30.0,
+  "tts": true,
+  "translate": true
+ },
+ "frames": 343,
+ "hands_ratio": 0.7,
+ "spans": [
+  {
+   "span": [
+    0.0,
+    6.0
+   ],
+   "reference": "друг прийти потом",
+   "glosses": [
+    "друг",
+    "прийти"
+   ],
+   "translation": "Друг пришёл.",
+   "word_hits": 2,
+   "word_recall": 0.667,
+   "word_precision": 1.0,
+   "chrf": 37.118
+  },
+  {
+   "span": [
+    7.0,
+    10.43
+   ],
+   "reference": "пить вода",
+   "glosses": [
+    "розовый",
+    "рассеянный"
+   ],
+   "translation": "Поскольку предоставленный список представляет собой набор разрозненных глосс (вероятно, упражнения или тест на распознавание), а не связное предложение, я перевожу их как список отдельных словосочетаний:",
+   "word_hits": 0,
+   "word_recall": 0.0,
+   "word_precision": 0.0,
+   "chrf": 4.375
+  }
+ ],
+ "cost_usd": 0.0003,
+ "out": "D:\\hfdata\\verify\\dialog_check.mp4"
+}

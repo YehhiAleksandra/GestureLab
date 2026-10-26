@@ -37,11 +37,12 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
 from dialogue_state import Dialogue, translate_in_context  # noqa: E402
-from gl_capture import open_camera, open_video  # noqa: E402
+from gl_capture import fps_of, open_camera, open_video  # noqa: E402
 from live_signs import FACE_IDX, POSE_IDX, holistic_frame  # noqa: E402
 from sign_beam import GlossLM, ctc_beam_search, nbest_to_lattice, smooth_log_probs  # noqa: E402
 from sign_stream import greedy_decode, load_ctc  # noqa: E402
 from sign_utils import FEAT, features, split_utterances  # noqa: E402
+from skeleton_overlay import draw_holistic  # noqa: E402
 
 
 def frame_of(res):
@@ -224,7 +225,7 @@ class Mic:
 
 def process_video(path, rec, dialogue, worker, fps=25.0, pause=0.7, max_len=15.0, show=False):
     cap = open_video(path)
-    fps = cap.get(cv2.CAP_PROP_FPS) or fps
+    fps = fps_of(cap, fps)
     frames, t0 = [], time.time()
     holistic = mp.solutions.holistic.Holistic(static_image_mode=False, model_complexity=1,
                                               smooth_landmarks=True)
@@ -260,7 +261,7 @@ def process_video(path, rec, dialogue, worker, fps=25.0, pause=0.7, max_len=15.0
 
 def live(camera, rec, dialogue, worker, pause=0.7, max_len=15.0):
     cap = open_camera(camera)
-    fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+    fps = fps_of(cap)
     holistic = mp.solutions.holistic.Holistic(static_image_mode=False, model_complexity=1,
                                               smooth_landmarks=True)
     buf, silent, state = [], 0, {'glosses': [], 'text': '…'}
@@ -283,7 +284,8 @@ def live(camera, rec, dialogue, worker, pause=0.7, max_len=15.0):
             break
         arr = frame_of(holistic.process(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)))
         buf.append(arr)
-        hands = arr[:42].reshape(2, 21, 3)[:, 0, 0]
+        hands = arr[:42].reshape(2, 21, 3)
+        draw_holistic(frame, hands[0], hands[1], arr[42:49], arr[49:])
         if np.isnan(hands).all():
             silent += 1
             if silent >= pause * fps:

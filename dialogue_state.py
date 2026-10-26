@@ -4,12 +4,23 @@
 поэтому логика, которую можно проверить без них, живёт здесь.
 """
 import json
+import re
 import threading
 from datetime import datetime
 from pathlib import Path
 
 DIALOGUE = (' Ниже — предыдущие реплики диалога. Переведи только текущую реплику глухого, '
             'используя контекст для местоимений и пропущенных слов. Новых фактов не добавляй.')
+
+_LIST = re.compile(r'^\s*(?:\d+[.)]|[-•*])\s+')
+
+
+def clean_reply(text):
+    """Одна реплика — одна строка: LLM иногда отвечает «1. Мама…» или списком (B42)."""
+    lines = [l.strip() for l in str(text).splitlines() if l.strip()]
+    if not lines:
+        return ''
+    return ' '.join(_LIST.sub('', l).strip() for l in lines)
 
 
 class Dialogue:
@@ -59,7 +70,7 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
     else:
         flat, query = gloss_text, gloss_text
     if not history:
-        return translator(flat, system, query)
+        return clean_reply(translator(flat, system, query))
     ctx = '\n'.join(f"{'Слышащий' if t['speaker'] == 'hearing' else 'Глухой (перевод)'}: {t['text']}"
                     for t in history)
     messages = [{'role': 'system', 'content': system + DIALOGUE}]
@@ -68,4 +79,4 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
                      {'role': 'assistant', 'content': ex['russian']}]
     messages.append({'role': 'user',
                      'content': f'Контекст диалога:\n{ctx}\n\nТекущие глоссы: {query}'})
-    return translator.chat(messages, 80)
+    return clean_reply(translator.chat(messages, 80))

@@ -1,6 +1,6 @@
 import json
 
-from dialogue_state import DIALOGUE, Dialogue, translate_in_context
+from dialogue_state import DIALOGUE, Dialogue, clean_reply, translate_in_context
 
 
 class FakeTranslator:
@@ -18,6 +18,15 @@ class FakeTranslator:
     def chat(self, messages, max_tokens, model=None):
         self.calls.append(('chat', messages, max_tokens))
         return 'С контекстом.'
+
+
+def test_clean_reply_strips_list_markers():
+    """B42: на одну реплику LLM иногда отвечает «1. Мама…»; перевод должен быть строкой."""
+    assert clean_reply('1. Мама, у меня есть их цветовой оттенок.') == \
+        'Мама, у меня есть их цветовой оттенок.'
+    assert clean_reply('1) Да.\n2) Нет.') == 'Да. Нет.'
+    assert clean_reply('- Привет.') == 'Привет.'
+    assert clean_reply('  \n ') == ''
 
 
 def test_dialogue_keeps_last_turns_and_saves_atomically(tmp_path):

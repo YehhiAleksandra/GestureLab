@@ -78,6 +78,21 @@ def test_save_session_rejects_invalid_payload(tmp_path):
     assert list(tmp_path.iterdir()) == []
 
 
+def test_fps_of_camera_negative_is_unknown():
+    """DSHOW-камера отдаёт -1.0 (B43): отрицательный fps делал все пороги реплики
+    отрицательными и ронял живой цикл на пустом буфере."""
+    class Cap:
+        def __init__(self, v):
+            self.v = v
+
+        def get(self, prop):
+            return self.v
+
+    assert gl_capture.fps_of(Cap(-1.0)) == 25.0
+    assert gl_capture.fps_of(Cap(0.0)) == 25.0
+    assert gl_capture.fps_of(Cap(30.0)) == 30.0
+
+
 def test_open_video_missing_file_hints_at_path_style(tmp_path):
     """Отсутствующее видео — отдельное сообщение с подсказкой про путь MSYS, а не «кодек» (B26)."""
     with pytest.raises(SystemExit) as exc:

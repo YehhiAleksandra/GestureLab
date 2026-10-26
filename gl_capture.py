@@ -18,6 +18,12 @@ def open_camera(index: int):
     return cap
 
 
+def fps_of(cap, default: float = 25.0) -> float:
+    """Частота кадров источника; DSHOW-камера отдаёт -1.0, поэтому «or» не годится."""
+    v = cap.get(cv2.CAP_PROP_FPS)
+    return float(v) if v and v > 0 else default
+
+
 def open_video(path: str):
     """Различаем «файла нет» и «не открылся кодек»: в Git Bash путь /c/... существует
     для shell, но не для Windows-программы (B26)."""

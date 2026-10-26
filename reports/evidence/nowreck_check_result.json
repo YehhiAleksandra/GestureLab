@@ -1,0 +1,1151 @@
+Scanning pre snapshot:  C:\Users\eggyv\AppData\Local\Temp\tmp.xvQYRPMRg8\gl_pre
+  \u2192 109 files parsed, 0 failed
+Scanning post snapshot: C:\Users\eggyv\AppData\Local\Temp\tmp.xvQYRPMRg8\gl_post
+  \u2192 110 files parsed, 0 failed
+Symbols: 629 pre \u2192 643 post
+Changes detected: 71
+Claims parsed: 35
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 35,
+    "confirmed": 34,
+    "contradicted": 0,
+    "unverifiable": 1,
+    "unexplained_count": 37
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "wrap",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "wrap",
+        "parent_class": null,
+        "line_number": 48,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "panel",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "panel",
+        "parent_class": null,
+        "line_number": 65,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "rows_for",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "rows_for",
+        "parent_class": null,
+        "line_number": 81,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "draw_source",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "draw_source",
+        "parent_class": null,
+        "line_number": 95,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "edges",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "edges",
+        "parent_class": null,
+        "line_number": 123,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "_tts",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "_tts",
+        "parent_class": null,
+        "line_number": 128,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "mux",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "mux",
+        "parent_class": null,
+        "line_number": 136,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 153,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 235,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 251,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "clean_reply",
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "dialogue_state.py",
+        "symbol_name": "clean_reply",
+        "parent_class": null,
+        "line_number": 18,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "fps_of",
+        "file_path": "gl_capture.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "gl_capture.py",
+        "symbol_name": "fps_of",
+        "parent_class": null,
+        "line_number": 21,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "fps_of",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "fps_of",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "fps_of"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "open_video",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "open_video",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "open_video"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "Recognizer",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "Recognizer",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "Recognizer"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "Translator",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "Translator",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "Translator"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "panel",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "panel",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "panel"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "rows_for",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "rows_for",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "rows_for"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "wrap",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "wrap",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "selftest",
+        "called_name": "wrap"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "run",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "run"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "selftest",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "main",
+        "called_name": "selftest"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "frame_of",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "frame_of",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "frame_of"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "draw_holistic",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "draw_holistic",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "draw_source",
+        "called_name": "draw_holistic"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "draw_source",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "draw_source",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "draw_source"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "split_utterances",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "split_utterances",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "split_utterances"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "hits",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "hits",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "hits"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "chrf",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "chrf",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "chrf"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "translate_in_context",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "translate_in_context",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "translate_in_context"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "rows_for",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "rows_for",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "rows_for"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "panel",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "panel",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "panel"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "edges",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "edges",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "edges"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "_tts",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "_tts",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "_tts"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "mux",
+        "file_path": "tools/check_translation.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mux",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\check_translation.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "mux"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "clean_reply",
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "translate_in_context",
+        "called_name": "clean_reply",
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "dialogue_state.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "translate_in_context",
+        "called_name": "clean_reply"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "clean_reply",
+        "file_path": "dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "translate_in_context",
+        "called_name": "clean_reply",
+        "confidence": 0.95
+      },
+      "verdict": "UNVERIFIABLE",
+      "verifier_confidence": 0.95
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": "test_clean_reply_strips_list_markers",
+      "parent_class": null,
+      "line_number": 23,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_robustness.py",
+      "symbol_name": "test_fps_of_camera_negative_is_unknown",
+      "parent_class": null,
+      "line_number": 81,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "clean_reply",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "gl_capture.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "fps_of",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_clean_reply_strips_list_markers",
+      "called_name": "clean_reply"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_robustness.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_fps_of_camera_negative_is_unknown",
+      "called_name": "Cap"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "_tts",
+      "called_name": "go"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "draw_source",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edges",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "edges",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "go",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mux",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mux",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mux",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mux",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mux",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "panel",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "panel",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "panel",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "panel",
+      "called_name": "wrap"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rows_for",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rows_for",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\check_translation.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "wrap",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "draw_holistic"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "live",
+      "called_name": "fps_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "process_video",
+      "called_name": "fps_of"
+    }
+  ]
+}

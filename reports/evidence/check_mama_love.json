@@ -1,0 +1,37 @@
+{
+ "video": "mama_love.mp4",
+ "model": "slovo_ctc_motion.pt",
+ "config": {
+  "beam": 24,
+  "nbest": 20,
+  "pause": 0.7,
+  "fps": 25.0,
+  "tts": true,
+  "translate": true
+ },
+ "frames": 429,
+ "hands_ratio": 0.375,
+ "spans": [
+  {
+   "span": [
+    5.64,
+    12.68
+   ],
+   "reference": "мама я тебя очень люблю",
+   "glosses": [
+    "мать",
+    "я",
+    "их",
+    "цветовой оттенок",
+    "иметь"
+   ],
+   "translation": "Мама, у меня есть их цветовой оттенок.",
+   "word_hits": 1,
+   "word_recall": 0.2,
+   "word_precision": 0.167,
+   "chrf": 15.131
+  }
+ ],
+ "cost_usd": 0.0001,
+ "out": "D:\\hfdata\\verify\\mama_check.mp4"
+}
