@@ -1,0 +1,59 @@
+{
+ "phrases": 230,
+ "sources": [
+  "lattice_eval.json",
+  "lattice_eval_111.json",
+  "lattice_eval_111b.json"
+ ],
+ "dedup": "glosses_ref + ref",
+ "recognition_metric": "позиционное совпадение глосс, как в eval_lattice",
+ "greedy_recognition": {
+  "gloss_acc": 0.4123,
+  "exact_acc": 0.1
+ },
+ "beam_recognition": {
+  "gloss_acc": 0.4681,
+  "exact_acc": 0.1261
+ },
+ "greedy": {
+  "meaning_ok": 0.226,
+  "meaning_gist": 0.548,
+  "meaning_mean": 0.774,
+  "chrf": 27.7,
+  "judged": 230
+ },
+ "beam": {
+  "meaning_ok": 0.257,
+  "meaning_gist": 0.552,
+  "meaning_mean": 0.809,
+  "chrf": 29.4,
+  "judged": 230
+ },
+ "lattice": {
+  "meaning_ok": 0.326,
+  "meaning_gist": 0.565,
+  "meaning_mean": 0.891,
+  "chrf": 32.9,
+  "judged": 230
+ },
+ "oracle": {
+  "meaning_ok": 0.943,
+  "meaning_gist": 0.987,
+  "meaning_mean": 1.93,
+  "chrf": 52.4,
+  "judged": 230
+ },
+ "lattice_vs_beam": {
+  "wins": 41,
+  "losses": 26,
+  "ties": 163,
+  "mean_diff": 0.083,
+  "mean_diff_ci95": [
+   -0.009,
+   0.174
+  ],
+  "sign_test_p": 0.067
+ },
+ "nbest_oracle_exact": 0.257,
+ "cost_usd": 0.1002
+}

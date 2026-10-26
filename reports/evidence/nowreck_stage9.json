@@ -1,0 +1,749 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 10,
+    "confirmed": 10,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 56
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "heldout_phrases",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "heldout_phrases",
+        "parent_class": null,
+        "line_number": 34,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "greedy",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "greedy",
+        "parent_class": null,
+        "line_number": 54,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "logits_of",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "logits_of",
+        "parent_class": null,
+        "line_number": 64,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "bootstrap_ci",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "bootstrap_ci",
+        "parent_class": null,
+        "line_number": 69,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\eval_lattice.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 77,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tests/test_eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "FILE_CREATED",
+        "file_path": "tests\\test_eval_lattice.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_heldout_phrases_do_not_leak_into_lm",
+        "file_path": "tests/test_eval_lattice.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_eval_lattice.py",
+        "symbol_name": "test_heldout_phrases_do_not_leak_into_lm",
+        "parent_class": null,
+        "line_number": 4,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_candidates_become_bracketed_query",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_candidates_become_bracketed_query",
+        "parent_class": null,
+        "line_number": 48,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_candidates_with_history_use_flat_glosses_for_examples",
+        "file_path": "tests/test_dialogue_state.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_dialogue_state.py",
+        "symbol_name": "test_candidates_with_history_use_flat_glosses_for_examples",
+        "parent_class": null,
+        "line_number": 59,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_candidates_become_bracketed_query",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_candidates_become_bracketed_query",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_candidates_with_history_use_flat_glosses_for_examples",
+      "called_name": "FakeTranslator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_dialogue_state.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_candidates_with_history_use_flat_glosses_for_examples",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_heldout_phrases_do_not_leak_into_lm",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_heldout_phrases_do_not_leak_into_lm",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_heldout_phrases_do_not_leak_into_lm",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_heldout_phrases_do_not_leak_into_lm",
+      "called_name": "tuple"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\dialogue_translator.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "decode",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bootstrap_ci",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bootstrap_ci",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bootstrap_ci",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bootstrap_ci",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "corpus_phrases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "load_corpus"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "heldout_phrases",
+      "called_name": "tuple"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logits_of",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "logits_of",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "GlossLM"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "ThreadPoolExecutor"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "Translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "bootstrap_ci"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "chrf"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "ctc_beam_search"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "greedy"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "heldout_phrases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "isinstance"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "logits_of"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "nbest_to_lattice"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "prepare_slovo"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "rec_acc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "scores"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "zip"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "one",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "one",
+      "called_name": "tr"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rec_acc",
+      "called_name": "edit_counts"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rec_acc",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rec_acc",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rec_acc",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\eval_lattice.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rec_acc",
+      "called_name": "zip"
+    }
+  ]
+}

@@ -12,6 +12,7 @@
   --hearing "..."    реплика слышащего до начала записи (контекст для первого перевода)
   --decoder beam     beam search с LM глоссов вместо greedy (--lm-weight — сила LM,
                      --word-bonus — бонус за слово, иначе LM режет короткие реплики)
+  --lattice          в промпт перевода идут варианты n-best на каждое место (--nbest)
   --no-tts           не озвучивать перевод
 Клавиши: Q/Esc — выход, H — ввести реплику слышащего, S — повторить озвучку, C — очистить.
 
@@ -37,7 +38,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 from dialogue_state import Dialogue, translate_in_context  # noqa: E402
 from gl_capture import open_camera, open_video  # noqa: E402
 from live_signs import FACE_IDX, POSE_IDX, holistic_frame  # noqa: E402
-from sign_beam import GlossLM, ctc_beam_search, smooth_log_probs  # noqa: E402
+from sign_beam import GlossLM, ctc_beam_search, nbest_to_lattice, smooth_log_probs  # noqa: E402
 from sign_stream import greedy_decode, load_ctc  # noqa: E402
 from sign_utils import split_utterances, stream_features  # noqa: E402
 
@@ -54,12 +55,13 @@ def frame_of(res):
 
 class Recognizer:
     def __init__(self, path, device=None, decoder='greedy', beam=8, lm_weight=0.0,
-                 word_bonus=0.0, smooth=1):
+                 word_bonus=0.0, smooth=1, nbest=1):
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.model, self.names, _ = load_ctc(path, self.device)
         self.decoder, self.beam = decoder, beam
         self.lm_weight, self.word_bonus = lm_weight, word_bonus
         self.smooth, self.lm = smooth, None
+        self.nbest = nbest if decoder == 'beam' else 1
         if decoder == 'beam' and lm_weight > 0:
             try:
                 from gloss_to_text import load_corpus
@@ -75,24 +77,29 @@ class Recognizer:
 
     @torch.no_grad()
     def decode(self, frames):
-        """[T, NPTS, 3] → [(глосса, уверенность)]."""
+        """[T, NPTS, 3] → ([(глосса, уверенность)], варианты n-best или None)."""
         if not len(frames):
-            return []
+            return [], None
         x = torch.from_numpy(stream_features(frames))[None].to(self.device)
         lengths = torch.tensor([len(frames)], device=self.device)
         logits = self.model(x, lengths)[0].cpu()
         if self.decoder != 'beam':
             ids, scores = greedy_decode(logits)
-            return [(self.names[i], c) for i, c in zip(ids, scores)]
+            return [(self.names[i], c) for i, c in zip(ids, scores)], None
         logp = logits.log_softmax(-1).numpy()
         if self.smooth > 1:
             logp = smooth_log_probs(logp, self.smooth)
-        ids = ctc_beam_search(logp, beam=self.beam, topk=32, nbest=1,
+        hyps = ctc_beam_search(logp, beam=self.beam, topk=32, nbest=self.nbest,
                               lm=self.lm, lm_weight=self.lm_weight,
-                              word_bonus=self.word_bonus)[0][0]
+                              word_bonus=self.word_bonus)
+        ids = hyps[0][0]
         p = np.exp(logp)
         scores = [float(p[:, i + 1].max()) for i in ids]  # верхняя оценка, не калибровка
-        return [(self.names[i], c) for i, c in zip(ids, scores)]
+        cands = None
+        if self.nbest > 1:
+            cands = [[self.names[i] for i in cand] for cand in
+                     nbest_to_lattice([h for h, _ in hyps])]
+        return [(self.names[i], c) for i, c in zip(ids, scores)], cands
 
 
 class Worker:
@@ -104,13 +111,13 @@ class Worker:
         self.thread = threading.Thread(target=self.run, daemon=True)
         self.thread.start()
 
-    def submit(self, glosses, at):
-        self.q.put((glosses, at))
+    def submit(self, glosses, at, candidates=None):
+        self.q.put((glosses, at, candidates))
 
     def run(self):
         while not self.stop:
             try:
-                glosses, at = self.q.get(timeout=0.2)
+                glosses, at, candidates = self.q.get(timeout=0.2)
             except queue.Empty:
                 continue
             try:
@@ -118,10 +125,12 @@ class Worker:
                 try:
                     if self.use_translator:
                         if self.tr is None:
-                            from gloss_to_text import SYSTEM, Translator
+                            from gloss_to_text import LATTICE, SYSTEM, Translator
                             self.tr, self.system = Translator(), SYSTEM
+                            self.lattice_prompt = LATTICE
+                        system = self.system + (self.lattice_prompt if candidates else '')
                         text = translate_in_context(self.tr, glosses, self.dialogue.context(),
-                                                    self.system)
+                                                    system, candidates=candidates)
                 except Exception as e:  # сеть/квота: оставить глоссы, но не портить контекст
                     print(f'перевод недоступен: {e}', flush=True)
                 self.dialogue.add('deaf', text, [g for g, _ in glosses],
@@ -233,10 +242,10 @@ def process_video(path, rec, dialogue, worker, fps=25.0, pause=0.7, max_len=15.0
     spans = split_utterances(arr, fps, pause=pause, max_len=max_len)
     print(f'реплик: {len(spans)}', flush=True)
     for a, b in spans:
-        glosses = rec.decode(arr[a:b])
+        glosses, cands = rec.decode(arr[a:b])
         if glosses:
             print(f'{a / fps:.1f}–{b / fps:.1f} с:', ' '.join(g for g, _ in glosses), flush=True)
-            worker.submit(glosses, f'{a / fps:.1f}–{b / fps:.1f} с')
+            worker.submit(glosses, f'{a / fps:.1f}–{b / fps:.1f} с', cands)
     worker.q.join()
     if show:
         cv2.destroyAllWindows()
@@ -255,11 +264,11 @@ def live(camera, rec, dialogue, worker, pause=0.7, max_len=15.0):
         if len(buf) < 0.6 * fps:
             buf = []
             return
-        glosses = rec.decode(np.stack(buf))
+        glosses, cands = rec.decode(np.stack(buf))
         buf = []
         if glosses:
             state['glosses'] = [g for g, _ in glosses]
-            worker.submit(glosses, datetime.now().strftime('%H:%M:%S'))
+            worker.submit(glosses, datetime.now().strftime('%H:%M:%S'), cands)
 
     print('Q/Esc — выход, H — реплика слышащего, S — повторить, C — очистить', flush=True)
     while True:
@@ -340,6 +349,9 @@ def main():
                     help='бонус за каждое слово: без него LM схлопывает короткие реплики')
     ap.add_argument('--smooth', type=int, default=1,
                     help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
+    ap.add_argument('--lattice', action='store_true',
+                    help='передавать переводчику варианты n-best на каждое место')
+    ap.add_argument('--nbest', type=int, default=5, help='сколько гипотез собирать в варианты')
     a = ap.parse_args()
     if not a.video and a.camera is None:
         sys.exit('нужен --video или --camera')
@@ -348,7 +360,8 @@ def main():
     if a.hearing:
         dialogue.add('hearing', a.hearing)
     rec = Recognizer(a.model, decoder=a.decoder, beam=a.beam, lm_weight=a.lm_weight,
-                     word_bonus=a.word_bonus, smooth=a.smooth)
+                     word_bonus=a.word_bonus, smooth=a.smooth,
+                     nbest=a.nbest if a.lattice else 1)
     worker = Worker(dialogue, tts=not a.no_tts, translator=not a.no_translate)
     mic = None
     if a.mic:

@@ -8,10 +8,11 @@ class FakeTranslator:
         self.calls = []
 
     def __call__(self, glosses, system=None, query=None):
-        self.calls.append(('plain', glosses))
+        self.calls.append(('plain', glosses, system, query))
         return 'без контекста'
 
     def examples(self, glosses):
+        self.calls.append(('examples', glosses))
         return [{'rsl': 'привет', 'russian': 'Привет.'}]
 
     def chat(self, messages, max_tokens, model=None):
@@ -41,7 +42,29 @@ def test_context_limited_to_k():
 def test_empty_history_uses_plain_translator():
     fake = FakeTranslator()
     assert translate_in_context(fake, [('мама', 0.9)], [], 'СИСТЕМА') == 'без контекста'
-    assert fake.calls == [('plain', 'мама')]
+    assert fake.calls == [('plain', 'мама', 'СИСТЕМА', 'мама')]
+
+
+def test_candidates_become_bracketed_query():
+    fake = FakeTranslator()
+    cands = [['мама', 'папа'], ['мыть', 'мыла']]
+    translate_in_context(fake, [('мама', 0.9), ('мыть', 0.7)], [], 'СИСТЕМА',
+                         candidates=cands)
+    kind, flat, system, query = fake.calls[0]
+    assert kind == 'plain' and system == 'СИСТЕМА'
+    assert flat == 'мама папа мыть мыла'
+    assert query == '[мама | папа] [мыть | мыла]'
+
+
+def test_candidates_with_history_use_flat_glosses_for_examples():
+    fake = FakeTranslator()
+    history = [{'speaker': 'hearing', 'text': 'Что делаешь?'}]
+    translate_in_context(fake, [('мама', 0.9)], history, 'СИСТЕМА',
+                         candidates=[['мама', 'папа']])
+    kinds = [c[0] for c in fake.calls]
+    assert kinds == ['examples', 'chat']
+    assert fake.calls[0][1] == 'мама папа'
+    assert 'Текущие глоссы: [мама | папа]' in fake.calls[1][1][-1]['content']
 
 
 def test_history_goes_into_prompt_with_speakers():
@@ -49,7 +72,7 @@ def test_history_goes_into_prompt_with_speakers():
     history = [{'speaker': 'hearing', 'text': 'Ты придёшь?'},
                {'speaker': 'deaf', 'text': 'Приду.'}]
     assert translate_in_context(fake, [('завтра', 0.8)], history, 'СИСТЕМА', shots=6) == 'С контекстом.'
-    kind, messages, max_tokens = fake.calls[0]
+    kind, messages, max_tokens = fake.calls[1]
     assert kind == 'chat' and max_tokens == 80
     assert messages[0] == {'role': 'system', 'content': 'СИСТЕМА' + DIALOGUE}
     assert messages[1] == {'role': 'user', 'content': 'привет'}

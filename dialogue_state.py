@@ -38,17 +38,24 @@ class Dialogue:
         tmp.replace(self.out)
 
 
-def translate_in_context(translator, glosses, history, system, shots=6):
-    """Перевод реплики с учётом последних реплик; translator — gloss_to_text.Translator."""
+def translate_in_context(translator, glosses, history, system, shots=6, candidates=None):
+    """Перевод реплики с учётом последних реплик; translator — gloss_to_text.Translator.
+
+    candidates — варианты n-best на каждое место ([['мама', 'папа'], ...]). Тогда в запросе
+    каждый жест в квадратных скобках, а few-shot ищется по всем вариантам сразу.
+    """
     gloss_text = ' '.join(g for g, _ in glosses)
+    flat = ' '.join(w for c in candidates for w in c) if candidates else gloss_text
+    query = (' '.join('[' + ' | '.join(c) + ']' for c in candidates) if candidates
+             else gloss_text)
     if not history:
-        return translator(gloss_text)
+        return translator(flat, system, query)
     ctx = '\n'.join(f"{'Слышащий' if t['speaker'] == 'hearing' else 'Глухой (перевод)'}: {t['text']}"
                     for t in history)
     messages = [{'role': 'system', 'content': system + DIALOGUE}]
-    for ex in translator.examples(gloss_text)[:shots]:
+    for ex in translator.examples(flat)[:shots]:
         messages += [{'role': 'user', 'content': ex['rsl']},
                      {'role': 'assistant', 'content': ex['russian']}]
     messages.append({'role': 'user',
-                     'content': f'Контекст диалога:\n{ctx}\n\nТекущие глоссы: {gloss_text}'})
+                     'content': f'Контекст диалога:\n{ctx}\n\nТекущие глоссы: {query}'})
     return translator.chat(messages, 80)
