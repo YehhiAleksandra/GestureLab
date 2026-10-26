@@ -1,0 +1,13 @@
+{"claims": [
+  {"type": "ADD_FUNCTION", "symbol_name": "_xy", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "скелет поверх видео: перевод долей кадра в пиксели"},
+  {"type": "ADD_FUNCTION", "symbol_name": "_line", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "скелет поверх видео: линия с тёмной обводкой, NaN пропускается"},
+  {"type": "ADD_FUNCTION", "symbol_name": "_dot", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "скелет поверх видео: точка с тёмной обводкой"},
+  {"type": "ADD_FUNCTION", "symbol_name": "draw_holistic", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "рисует 2x21 кистей, POSE_IDX и FACE_LINKS — вход CTC"},
+  {"type": "ADD_FUNCTION", "symbol_name": "_pts", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "mediapipe-прото → массив [n,3]"},
+  {"type": "ADD_FUNCTION", "symbol_name": "overlay", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "покадровый прогон Holistic и запись немого видео"},
+  {"type": "ADD_FUNCTION", "symbol_name": "selftest", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "проверка отрисовки на синтетике и NaN"},
+  {"type": "ADD_FUNCTION", "symbol_name": "main", "file_path": "tools/skeleton_overlay.py", "confidence": 0.99, "explanation": "CLI инструмента"},
+  {"type": "CALLS_FUNCTION", "symbol_name": "draw_holistic", "file_path": "tools/skeleton_overlay.py", "caller_name": "overlay", "called_name": "draw_holistic", "confidence": 0.95, "explanation": "покадровая отрисовка"},
+  {"type": "CALLS_FUNCTION", "symbol_name": "overlay", "file_path": "tools/skeleton_overlay.py", "caller_name": "main", "called_name": "overlay", "confidence": 0.95, "explanation": "CLI запускает прогон"},
+  {"type": "CALLS_FUNCTION", "symbol_name": "selftest", "file_path": "tools/skeleton_overlay.py", "caller_name": "main", "called_name": "selftest", "confidence": 0.95, "explanation": "CLI запускает самопроверку"}
+]}
