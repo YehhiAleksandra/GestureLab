@@ -1,0 +1,1570 @@
+[
+  {
+    "label": "О",
+    "start_frame": 2135,
+    "end_frame": 2362,
+    "confidence": "0.481",
+    "duration_frames": 227
+  },
+  {
+    "label": "О",
+    "start_frame": 2350,
+    "end_frame": 2407,
+    "confidence": "0.455",
+    "duration_frames": 57
+  },
+  {
+    "label": "воротник",
+    "start_frame": 2390,
+    "end_frame": 2417,
+    "confidence": "0.364",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 2440,
+    "end_frame": 2512,
+    "confidence": "0.481",
+    "duration_frames": 72
+  },
+  {
+    "label": "мышь",
+    "start_frame": 2495,
+    "end_frame": 2542,
+    "confidence": "0.756",
+    "duration_frames": 47
+  },
+  {
+    "label": "Т",
+    "start_frame": 2525,
+    "end_frame": 2567,
+    "confidence": "0.580",
+    "duration_frames": 42
+  },
+  {
+    "label": "лось",
+    "start_frame": 2550,
+    "end_frame": 2577,
+    "confidence": "0.274",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 2670,
+    "end_frame": 2792,
+    "confidence": "0.467",
+    "duration_frames": 122
+  },
+  {
+    "label": "воротник",
+    "start_frame": 2775,
+    "end_frame": 2807,
+    "confidence": "0.336",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 2790,
+    "end_frame": 2837,
+    "confidence": "0.364",
+    "duration_frames": 47
+  },
+  {
+    "label": "воротник",
+    "start_frame": 2820,
+    "end_frame": 2872,
+    "confidence": "0.320",
+    "duration_frames": 52
+  },
+  {
+    "label": "воротник",
+    "start_frame": 2860,
+    "end_frame": 2987,
+    "confidence": "0.410",
+    "duration_frames": 127
+  },
+  {
+    "label": "О",
+    "start_frame": 2970,
+    "end_frame": 3177,
+    "confidence": "0.539",
+    "duration_frames": 207
+  },
+  {
+    "label": "панда",
+    "start_frame": 3175,
+    "end_frame": 3202,
+    "confidence": "0.674",
+    "duration_frames": 27
+  },
+  {
+    "label": "Ь",
+    "start_frame": 3190,
+    "end_frame": 3217,
+    "confidence": "0.633",
+    "duration_frames": 27
+  },
+  {
+    "label": "Ч",
+    "start_frame": 3200,
+    "end_frame": 3237,
+    "confidence": "0.647",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 3220,
+    "end_frame": 3672,
+    "confidence": "0.516",
+    "duration_frames": 452
+  },
+  {
+    "label": "О",
+    "start_frame": 3670,
+    "end_frame": 3697,
+    "confidence": "0.349",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 3685,
+    "end_frame": 4587,
+    "confidence": "0.498",
+    "duration_frames": 902
+  },
+  {
+    "label": "Ч",
+    "start_frame": 4570,
+    "end_frame": 4597,
+    "confidence": "0.305",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 4580,
+    "end_frame": 4622,
+    "confidence": "0.462",
+    "duration_frames": 42
+  },
+  {
+    "label": "воротник",
+    "start_frame": 4605,
+    "end_frame": 4637,
+    "confidence": "0.356",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 4620,
+    "end_frame": 5107,
+    "confidence": "0.452",
+    "duration_frames": 487
+  },
+  {
+    "label": "лось",
+    "start_frame": 5090,
+    "end_frame": 5142,
+    "confidence": "0.626",
+    "duration_frames": 52
+  },
+  {
+    "label": "воротник",
+    "start_frame": 5130,
+    "end_frame": 5187,
+    "confidence": "0.710",
+    "duration_frames": 57
+  },
+  {
+    "label": "О",
+    "start_frame": 5170,
+    "end_frame": 5382,
+    "confidence": "0.513",
+    "duration_frames": 212
+  },
+  {
+    "label": "Ч",
+    "start_frame": 5370,
+    "end_frame": 5407,
+    "confidence": "0.458",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 5390,
+    "end_frame": 5737,
+    "confidence": "0.500",
+    "duration_frames": 347
+  },
+  {
+    "label": "коза",
+    "start_frame": 5920,
+    "end_frame": 5987,
+    "confidence": "0.604",
+    "duration_frames": 67
+  },
+  {
+    "label": "П",
+    "start_frame": 6230,
+    "end_frame": 6277,
+    "confidence": "0.605",
+    "duration_frames": 47
+  },
+  {
+    "label": "вой",
+    "start_frame": 6265,
+    "end_frame": 6302,
+    "confidence": "0.427",
+    "duration_frames": 37
+  },
+  {
+    "label": "Ч",
+    "start_frame": 6285,
+    "end_frame": 6317,
+    "confidence": "0.406",
+    "duration_frames": 32
+  },
+  {
+    "label": "лось",
+    "start_frame": 6300,
+    "end_frame": 6337,
+    "confidence": "0.648",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 6320,
+    "end_frame": 6507,
+    "confidence": "0.516",
+    "duration_frames": 187
+  },
+  {
+    "label": "лось",
+    "start_frame": 6490,
+    "end_frame": 6517,
+    "confidence": "0.278",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 6555,
+    "end_frame": 7072,
+    "confidence": "0.510",
+    "duration_frames": 517
+  },
+  {
+    "label": "О",
+    "start_frame": 7060,
+    "end_frame": 7132,
+    "confidence": "0.725",
+    "duration_frames": 72
+  },
+  {
+    "label": "Ч",
+    "start_frame": 7115,
+    "end_frame": 7142,
+    "confidence": "0.435",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 7145,
+    "end_frame": 7262,
+    "confidence": "0.462",
+    "duration_frames": 117
+  },
+  {
+    "label": "лось",
+    "start_frame": 7245,
+    "end_frame": 7277,
+    "confidence": "0.337",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 7260,
+    "end_frame": 7302,
+    "confidence": "0.645",
+    "duration_frames": 42
+  },
+  {
+    "label": "О",
+    "start_frame": 7290,
+    "end_frame": 7327,
+    "confidence": "0.579",
+    "duration_frames": 37
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 7315,
+    "end_frame": 7342,
+    "confidence": "0.210",
+    "duration_frames": 27
+  },
+  {
+    "label": "овца",
+    "start_frame": 7330,
+    "end_frame": 7362,
+    "confidence": "0.315",
+    "duration_frames": 32
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 7345,
+    "end_frame": 7382,
+    "confidence": "0.476",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 7375,
+    "end_frame": 7407,
+    "confidence": "0.359",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 7465,
+    "end_frame": 7547,
+    "confidence": "0.589",
+    "duration_frames": 82
+  },
+  {
+    "label": "Ч",
+    "start_frame": 7530,
+    "end_frame": 7557,
+    "confidence": "0.323",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 7540,
+    "end_frame": 7662,
+    "confidence": "0.445",
+    "duration_frames": 122
+  },
+  {
+    "label": "О",
+    "start_frame": 7650,
+    "end_frame": 7932,
+    "confidence": "0.464",
+    "duration_frames": 282
+  },
+  {
+    "label": "О",
+    "start_frame": 7920,
+    "end_frame": 8202,
+    "confidence": "0.505",
+    "duration_frames": 282
+  },
+  {
+    "label": "овца",
+    "start_frame": 8185,
+    "end_frame": 8212,
+    "confidence": "0.321",
+    "duration_frames": 27
+  },
+  {
+    "label": "панда",
+    "start_frame": 8205,
+    "end_frame": 8337,
+    "confidence": "0.547",
+    "duration_frames": 132
+  },
+  {
+    "label": "овца",
+    "start_frame": 8320,
+    "end_frame": 8347,
+    "confidence": "0.454",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 8355,
+    "end_frame": 8392,
+    "confidence": "0.698",
+    "duration_frames": 37
+  },
+  {
+    "label": "вой",
+    "start_frame": 8375,
+    "end_frame": 8402,
+    "confidence": "0.370",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 8405,
+    "end_frame": 8907,
+    "confidence": "0.513",
+    "duration_frames": 502
+  },
+  {
+    "label": "Ь",
+    "start_frame": 8900,
+    "end_frame": 8927,
+    "confidence": "0.163",
+    "duration_frames": 27
+  },
+  {
+    "label": "креветка",
+    "start_frame": 8910,
+    "end_frame": 8942,
+    "confidence": "0.161",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 8930,
+    "end_frame": 8992,
+    "confidence": "0.403",
+    "duration_frames": 62
+  },
+  {
+    "label": "О",
+    "start_frame": 8980,
+    "end_frame": 9072,
+    "confidence": "0.439",
+    "duration_frames": 92
+  },
+  {
+    "label": "креветка",
+    "start_frame": 9070,
+    "end_frame": 9097,
+    "confidence": "0.450",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 9080,
+    "end_frame": 9177,
+    "confidence": "0.406",
+    "duration_frames": 97
+  },
+  {
+    "label": "миграция",
+    "start_frame": 9165,
+    "end_frame": 9192,
+    "confidence": "0.425",
+    "duration_frames": 27
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 9175,
+    "end_frame": 9212,
+    "confidence": "0.371",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 9205,
+    "end_frame": 9242,
+    "confidence": "0.543",
+    "duration_frames": 37
+  },
+  {
+    "label": "лось",
+    "start_frame": 9230,
+    "end_frame": 9262,
+    "confidence": "0.845",
+    "duration_frames": 32
+  },
+  {
+    "label": "вой",
+    "start_frame": 9265,
+    "end_frame": 9337,
+    "confidence": "0.637",
+    "duration_frames": 72
+  },
+  {
+    "label": "воротник",
+    "start_frame": 9320,
+    "end_frame": 9352,
+    "confidence": "0.506",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 9335,
+    "end_frame": 9362,
+    "confidence": "0.401",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 9355,
+    "end_frame": 9382,
+    "confidence": "0.455",
+    "duration_frames": 27
+  },
+  {
+    "label": "коготь",
+    "start_frame": 9365,
+    "end_frame": 9392,
+    "confidence": "0.239",
+    "duration_frames": 27
+  },
+  {
+    "label": "верблюд",
+    "start_frame": 9380,
+    "end_frame": 9417,
+    "confidence": "0.741",
+    "duration_frames": 37
+  },
+  {
+    "label": "Ч",
+    "start_frame": 9415,
+    "end_frame": 9447,
+    "confidence": "0.404",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 9430,
+    "end_frame": 9532,
+    "confidence": "0.482",
+    "duration_frames": 102
+  },
+  {
+    "label": "животное",
+    "start_frame": 9515,
+    "end_frame": 9547,
+    "confidence": "0.303",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 9530,
+    "end_frame": 10192,
+    "confidence": "0.506",
+    "duration_frames": 662
+  },
+  {
+    "label": "воротник",
+    "start_frame": 10175,
+    "end_frame": 10207,
+    "confidence": "0.475",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 10190,
+    "end_frame": 10232,
+    "confidence": "0.349",
+    "duration_frames": 42
+  },
+  {
+    "label": "воротник",
+    "start_frame": 10215,
+    "end_frame": 10242,
+    "confidence": "0.347",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 10225,
+    "end_frame": 10477,
+    "confidence": "0.524",
+    "duration_frames": 252
+  },
+  {
+    "label": "О",
+    "start_frame": 10465,
+    "end_frame": 10822,
+    "confidence": "0.456",
+    "duration_frames": 357
+  },
+  {
+    "label": "В",
+    "start_frame": 10805,
+    "end_frame": 10832,
+    "confidence": "0.293",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 10815,
+    "end_frame": 11052,
+    "confidence": "0.523",
+    "duration_frames": 237
+  },
+  {
+    "label": "О",
+    "start_frame": 11040,
+    "end_frame": 11317,
+    "confidence": "0.460",
+    "duration_frames": 277
+  },
+  {
+    "label": "воротник",
+    "start_frame": 11300,
+    "end_frame": 11327,
+    "confidence": "0.343",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 11310,
+    "end_frame": 11522,
+    "confidence": "0.541",
+    "duration_frames": 212
+  },
+  {
+    "label": "дятел",
+    "start_frame": 11505,
+    "end_frame": 11542,
+    "confidence": "0.529",
+    "duration_frames": 37
+  },
+  {
+    "label": "лось",
+    "start_frame": 11525,
+    "end_frame": 11582,
+    "confidence": "0.609",
+    "duration_frames": 57
+  },
+  {
+    "label": "воротник",
+    "start_frame": 11575,
+    "end_frame": 11622,
+    "confidence": "0.504",
+    "duration_frames": 47
+  },
+  {
+    "label": "зубы",
+    "start_frame": 11605,
+    "end_frame": 11632,
+    "confidence": "0.452",
+    "duration_frames": 27
+  },
+  {
+    "label": "верблюд",
+    "start_frame": 11625,
+    "end_frame": 11652,
+    "confidence": "0.315",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 11645,
+    "end_frame": 11672,
+    "confidence": "0.540",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 11690,
+    "end_frame": 11722,
+    "confidence": "0.423",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 11710,
+    "end_frame": 11887,
+    "confidence": "0.469",
+    "duration_frames": 177
+  },
+  {
+    "label": "мышь",
+    "start_frame": 11870,
+    "end_frame": 11902,
+    "confidence": "0.496",
+    "duration_frames": 32
+  },
+  {
+    "label": "лось",
+    "start_frame": 11885,
+    "end_frame": 11912,
+    "confidence": "0.346",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 11895,
+    "end_frame": 12202,
+    "confidence": "0.554",
+    "duration_frames": 307
+  },
+  {
+    "label": "О",
+    "start_frame": 12190,
+    "end_frame": 12282,
+    "confidence": "0.638",
+    "duration_frames": 92
+  },
+  {
+    "label": "Ч",
+    "start_frame": 12355,
+    "end_frame": 12382,
+    "confidence": "0.373",
+    "duration_frames": 27
+  },
+  {
+    "label": "П",
+    "start_frame": 12365,
+    "end_frame": 12397,
+    "confidence": "0.550",
+    "duration_frames": 32
+  },
+  {
+    "label": "населять",
+    "start_frame": 12380,
+    "end_frame": 12427,
+    "confidence": "0.725",
+    "duration_frames": 47
+  },
+  {
+    "label": "кролик",
+    "start_frame": 12410,
+    "end_frame": 12447,
+    "confidence": "0.726",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 12665,
+    "end_frame": 12952,
+    "confidence": "0.458",
+    "duration_frames": 287
+  },
+  {
+    "label": "мышь",
+    "start_frame": 12935,
+    "end_frame": 12962,
+    "confidence": "0.478",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 12945,
+    "end_frame": 12972,
+    "confidence": "0.753",
+    "duration_frames": 27
+  },
+  {
+    "label": "дятел",
+    "start_frame": 12965,
+    "end_frame": 12997,
+    "confidence": "0.289",
+    "duration_frames": 32
+  },
+  {
+    "label": "овца",
+    "start_frame": 12995,
+    "end_frame": 13032,
+    "confidence": "0.852",
+    "duration_frames": 37
+  },
+  {
+    "label": "панда",
+    "start_frame": 13030,
+    "end_frame": 13062,
+    "confidence": "0.442",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 13050,
+    "end_frame": 13092,
+    "confidence": "0.440",
+    "duration_frames": 42
+  },
+  {
+    "label": "воротник",
+    "start_frame": 13100,
+    "end_frame": 13137,
+    "confidence": "0.744",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 13160,
+    "end_frame": 13332,
+    "confidence": "0.566",
+    "duration_frames": 172
+  },
+  {
+    "label": "вой",
+    "start_frame": 13315,
+    "end_frame": 13347,
+    "confidence": "0.629",
+    "duration_frames": 32
+  },
+  {
+    "label": "коза",
+    "start_frame": 13330,
+    "end_frame": 13407,
+    "confidence": "0.589",
+    "duration_frames": 77
+  },
+  {
+    "label": "Ь",
+    "start_frame": 13390,
+    "end_frame": 13417,
+    "confidence": "0.591",
+    "duration_frames": 27
+  },
+  {
+    "label": "волк",
+    "start_frame": 13420,
+    "end_frame": 13457,
+    "confidence": "0.381",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 13440,
+    "end_frame": 13472,
+    "confidence": "0.246",
+    "duration_frames": 32
+  },
+  {
+    "label": "овца",
+    "start_frame": 13480,
+    "end_frame": 13517,
+    "confidence": "0.631",
+    "duration_frames": 37
+  },
+  {
+    "label": "панда",
+    "start_frame": 13505,
+    "end_frame": 13532,
+    "confidence": "0.529",
+    "duration_frames": 27
+  },
+  {
+    "label": "Я",
+    "start_frame": 13515,
+    "end_frame": 13542,
+    "confidence": "0.493",
+    "duration_frames": 27
+  },
+  {
+    "label": "акула",
+    "start_frame": 13525,
+    "end_frame": 13562,
+    "confidence": "0.473",
+    "duration_frames": 37
+  },
+  {
+    "label": "Я",
+    "start_frame": 13545,
+    "end_frame": 13572,
+    "confidence": "0.512",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 13560,
+    "end_frame": 13587,
+    "confidence": "0.490",
+    "duration_frames": 27
+  },
+  {
+    "label": "вой",
+    "start_frame": 13570,
+    "end_frame": 13597,
+    "confidence": "0.388",
+    "duration_frames": 27
+  },
+  {
+    "label": "лось",
+    "start_frame": 13595,
+    "end_frame": 13627,
+    "confidence": "0.452",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 13610,
+    "end_frame": 13742,
+    "confidence": "0.444",
+    "duration_frames": 132
+  },
+  {
+    "label": "воротник",
+    "start_frame": 13725,
+    "end_frame": 13752,
+    "confidence": "0.323",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 13735,
+    "end_frame": 13792,
+    "confidence": "0.360",
+    "duration_frames": 57
+  },
+  {
+    "label": "воротник",
+    "start_frame": 13775,
+    "end_frame": 13812,
+    "confidence": "0.317",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 13795,
+    "end_frame": 13957,
+    "confidence": "0.395",
+    "duration_frames": 162
+  },
+  {
+    "label": "А",
+    "start_frame": 13950,
+    "end_frame": 13982,
+    "confidence": "0.750",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 14000,
+    "end_frame": 14312,
+    "confidence": "0.553",
+    "duration_frames": 312
+  },
+  {
+    "label": "воротник",
+    "start_frame": 14300,
+    "end_frame": 14337,
+    "confidence": "0.528",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 14320,
+    "end_frame": 14347,
+    "confidence": "0.405",
+    "duration_frames": 27
+  },
+  {
+    "label": "Л",
+    "start_frame": 14330,
+    "end_frame": 14357,
+    "confidence": "0.286",
+    "duration_frames": 27
+  },
+  {
+    "label": "клюв",
+    "start_frame": 14345,
+    "end_frame": 14372,
+    "confidence": "0.249",
+    "duration_frames": 27
+  },
+  {
+    "label": "И",
+    "start_frame": 14355,
+    "end_frame": 14382,
+    "confidence": "0.340",
+    "duration_frames": 27
+  },
+  {
+    "label": "Ц",
+    "start_frame": 14370,
+    "end_frame": 14397,
+    "confidence": "0.457",
+    "duration_frames": 27
+  },
+  {
+    "label": "гнездо",
+    "start_frame": 14380,
+    "end_frame": 14407,
+    "confidence": "0.590",
+    "duration_frames": 27
+  },
+  {
+    "label": "Ц",
+    "start_frame": 14390,
+    "end_frame": 14417,
+    "confidence": "0.540",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 14405,
+    "end_frame": 15132,
+    "confidence": "0.592",
+    "duration_frames": 727
+  },
+  {
+    "label": "О",
+    "start_frame": 15120,
+    "end_frame": 15192,
+    "confidence": "0.488",
+    "duration_frames": 72
+  },
+  {
+    "label": "вой",
+    "start_frame": 15175,
+    "end_frame": 15217,
+    "confidence": "0.722",
+    "duration_frames": 42
+  },
+  {
+    "label": "воротник",
+    "start_frame": 15205,
+    "end_frame": 15252,
+    "confidence": "0.820",
+    "duration_frames": 47
+  },
+  {
+    "label": "О",
+    "start_frame": 15235,
+    "end_frame": 15277,
+    "confidence": "0.649",
+    "duration_frames": 42
+  },
+  {
+    "label": "Л",
+    "start_frame": 15260,
+    "end_frame": 15292,
+    "confidence": "0.292",
+    "duration_frames": 32
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 15275,
+    "end_frame": 15362,
+    "confidence": "0.830",
+    "duration_frames": 87
+  },
+  {
+    "label": "дятел",
+    "start_frame": 15350,
+    "end_frame": 15382,
+    "confidence": "0.543",
+    "duration_frames": 32
+  },
+  {
+    "label": "А",
+    "start_frame": 15370,
+    "end_frame": 15407,
+    "confidence": "0.322",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 15420,
+    "end_frame": 15452,
+    "confidence": "0.643",
+    "duration_frames": 32
+  },
+  {
+    "label": "Ь",
+    "start_frame": 15435,
+    "end_frame": 15467,
+    "confidence": "0.803",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 15450,
+    "end_frame": 15557,
+    "confidence": "0.604",
+    "duration_frames": 107
+  },
+  {
+    "label": "животное",
+    "start_frame": 15545,
+    "end_frame": 15602,
+    "confidence": "0.468",
+    "duration_frames": 57
+  },
+  {
+    "label": "Ь",
+    "start_frame": 15625,
+    "end_frame": 15652,
+    "confidence": "0.710",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 15635,
+    "end_frame": 15692,
+    "confidence": "0.830",
+    "duration_frames": 57
+  },
+  {
+    "label": "О",
+    "start_frame": 15675,
+    "end_frame": 15702,
+    "confidence": "0.522",
+    "duration_frames": 27
+  },
+  {
+    "label": "Ь",
+    "start_frame": 15690,
+    "end_frame": 15732,
+    "confidence": "0.808",
+    "duration_frames": 42
+  },
+  {
+    "label": "вой",
+    "start_frame": 15715,
+    "end_frame": 15742,
+    "confidence": "0.627",
+    "duration_frames": 27
+  },
+  {
+    "label": "В",
+    "start_frame": 15725,
+    "end_frame": 15752,
+    "confidence": "0.396",
+    "duration_frames": 27
+  },
+  {
+    "label": "лось",
+    "start_frame": 15745,
+    "end_frame": 15772,
+    "confidence": "0.370",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 15755,
+    "end_frame": 15827,
+    "confidence": "0.860",
+    "duration_frames": 72
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 15810,
+    "end_frame": 15852,
+    "confidence": "0.350",
+    "duration_frames": 42
+  },
+  {
+    "label": "Л",
+    "start_frame": 15835,
+    "end_frame": 15862,
+    "confidence": "0.233",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 15845,
+    "end_frame": 15917,
+    "confidence": "0.583",
+    "duration_frames": 72
+  },
+  {
+    "label": "О",
+    "start_frame": 15940,
+    "end_frame": 15967,
+    "confidence": "0.695",
+    "duration_frames": 27
+  },
+  {
+    "label": "вой",
+    "start_frame": 15950,
+    "end_frame": 15987,
+    "confidence": "0.550",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 15970,
+    "end_frame": 16012,
+    "confidence": "0.908",
+    "duration_frames": 42
+  },
+  {
+    "label": "Ч",
+    "start_frame": 16005,
+    "end_frame": 16032,
+    "confidence": "0.514",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 16015,
+    "end_frame": 16057,
+    "confidence": "0.887",
+    "duration_frames": 42
+  },
+  {
+    "label": "лось",
+    "start_frame": 16040,
+    "end_frame": 16097,
+    "confidence": "0.605",
+    "duration_frames": 57
+  },
+  {
+    "label": "лев",
+    "start_frame": 16115,
+    "end_frame": 16142,
+    "confidence": "0.416",
+    "duration_frames": 27
+  },
+  {
+    "label": "кролик",
+    "start_frame": 16145,
+    "end_frame": 16177,
+    "confidence": "0.577",
+    "duration_frames": 32
+  },
+  {
+    "label": "воротник",
+    "start_frame": 16240,
+    "end_frame": 16347,
+    "confidence": "0.956",
+    "duration_frames": 107
+  },
+  {
+    "label": "П",
+    "start_frame": 16330,
+    "end_frame": 16402,
+    "confidence": "0.786",
+    "duration_frames": 72
+  },
+  {
+    "label": "мышь",
+    "start_frame": 16385,
+    "end_frame": 16412,
+    "confidence": "0.400",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 16415,
+    "end_frame": 16482,
+    "confidence": "0.371",
+    "duration_frames": 67
+  },
+  {
+    "label": "лось",
+    "start_frame": 16465,
+    "end_frame": 16502,
+    "confidence": "0.337",
+    "duration_frames": 37
+  },
+  {
+    "label": "О",
+    "start_frame": 16485,
+    "end_frame": 16697,
+    "confidence": "0.445",
+    "duration_frames": 212
+  },
+  {
+    "label": "Т",
+    "start_frame": 16705,
+    "end_frame": 16737,
+    "confidence": "0.663",
+    "duration_frames": 32
+  },
+  {
+    "label": "населять",
+    "start_frame": 16720,
+    "end_frame": 16747,
+    "confidence": "0.663",
+    "duration_frames": 27
+  },
+  {
+    "label": "населять",
+    "start_frame": 16735,
+    "end_frame": 16762,
+    "confidence": "0.883",
+    "duration_frames": 27
+  },
+  {
+    "label": "П",
+    "start_frame": 16745,
+    "end_frame": 16772,
+    "confidence": "0.842",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 16755,
+    "end_frame": 16787,
+    "confidence": "0.644",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 16770,
+    "end_frame": 17742,
+    "confidence": "0.507",
+    "duration_frames": 972
+  },
+  {
+    "label": "овца",
+    "start_frame": 17725,
+    "end_frame": 17752,
+    "confidence": "0.377",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 17735,
+    "end_frame": 17802,
+    "confidence": "0.343",
+    "duration_frames": 67
+  },
+  {
+    "label": "воротник",
+    "start_frame": 17795,
+    "end_frame": 17822,
+    "confidence": "0.283",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 17840,
+    "end_frame": 17867,
+    "confidence": "0.322",
+    "duration_frames": 27
+  },
+  {
+    "label": "воротник",
+    "start_frame": 17850,
+    "end_frame": 17892,
+    "confidence": "0.440",
+    "duration_frames": 42
+  },
+  {
+    "label": "О",
+    "start_frame": 17875,
+    "end_frame": 17922,
+    "confidence": "0.604",
+    "duration_frames": 47
+  },
+  {
+    "label": "В",
+    "start_frame": 17905,
+    "end_frame": 17947,
+    "confidence": "0.556",
+    "duration_frames": 42
+  },
+  {
+    "label": "О",
+    "start_frame": 17930,
+    "end_frame": 18402,
+    "confidence": "0.558",
+    "duration_frames": 472
+  },
+  {
+    "label": "воротник",
+    "start_frame": 18385,
+    "end_frame": 18417,
+    "confidence": "0.378",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 18400,
+    "end_frame": 18677,
+    "confidence": "0.552",
+    "duration_frames": 277
+  },
+  {
+    "label": "панда",
+    "start_frame": 18665,
+    "end_frame": 18692,
+    "confidence": "0.296",
+    "duration_frames": 27
+  },
+  {
+    "label": "панда",
+    "start_frame": 18680,
+    "end_frame": 18707,
+    "confidence": "0.394",
+    "duration_frames": 27
+  },
+  {
+    "label": "Л",
+    "start_frame": 18690,
+    "end_frame": 18717,
+    "confidence": "0.491",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 18700,
+    "end_frame": 19322,
+    "confidence": "0.558",
+    "duration_frames": 622
+  },
+  {
+    "label": "О",
+    "start_frame": 19310,
+    "end_frame": 19367,
+    "confidence": "0.427",
+    "duration_frames": 57
+  },
+  {
+    "label": "воротник",
+    "start_frame": 19350,
+    "end_frame": 19387,
+    "confidence": "0.599",
+    "duration_frames": 37
+  },
+  {
+    "label": "Ь",
+    "start_frame": 19370,
+    "end_frame": 19397,
+    "confidence": "0.537",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 19380,
+    "end_frame": 19407,
+    "confidence": "0.553",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 19395,
+    "end_frame": 19827,
+    "confidence": "0.563",
+    "duration_frames": 432
+  },
+  {
+    "label": "Л",
+    "start_frame": 19810,
+    "end_frame": 19857,
+    "confidence": "0.382",
+    "duration_frames": 47
+  },
+  {
+    "label": "О",
+    "start_frame": 19840,
+    "end_frame": 19892,
+    "confidence": "0.818",
+    "duration_frames": 52
+  },
+  {
+    "label": "вой",
+    "start_frame": 19875,
+    "end_frame": 19907,
+    "confidence": "0.497",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 19890,
+    "end_frame": 20162,
+    "confidence": "0.615",
+    "duration_frames": 272
+  },
+  {
+    "label": "динозавр",
+    "start_frame": 20150,
+    "end_frame": 20182,
+    "confidence": "0.338",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 20175,
+    "end_frame": 20342,
+    "confidence": "0.507",
+    "duration_frames": 167
+  },
+  {
+    "label": "О",
+    "start_frame": 20330,
+    "end_frame": 20402,
+    "confidence": "0.643",
+    "duration_frames": 72
+  },
+  {
+    "label": "волк",
+    "start_frame": 20390,
+    "end_frame": 20427,
+    "confidence": "0.407",
+    "duration_frames": 37
+  },
+  {
+    "label": "Л",
+    "start_frame": 20410,
+    "end_frame": 20457,
+    "confidence": "0.290",
+    "duration_frames": 47
+  },
+  {
+    "label": "волк",
+    "start_frame": 20445,
+    "end_frame": 20472,
+    "confidence": "0.297",
+    "duration_frames": 27
+  },
+  {
+    "label": "волк",
+    "start_frame": 20460,
+    "end_frame": 20487,
+    "confidence": "0.310",
+    "duration_frames": 27
+  },
+  {
+    "label": "В",
+    "start_frame": 20480,
+    "end_frame": 20512,
+    "confidence": "0.231",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 20495,
+    "end_frame": 20542,
+    "confidence": "0.645",
+    "duration_frames": 47
+  },
+  {
+    "label": "овца",
+    "start_frame": 20525,
+    "end_frame": 20552,
+    "confidence": "0.266",
+    "duration_frames": 27
+  },
+  {
+    "label": "О",
+    "start_frame": 20535,
+    "end_frame": 20622,
+    "confidence": "0.861",
+    "duration_frames": 87
+  },
+  {
+    "label": "Ч",
+    "start_frame": 20845,
+    "end_frame": 20882,
+    "confidence": "0.761",
+    "duration_frames": 37
+  },
+  {
+    "label": "В",
+    "start_frame": 20865,
+    "end_frame": 20897,
+    "confidence": "0.368",
+    "duration_frames": 32
+  },
+  {
+    "label": "О",
+    "start_frame": 20880,
+    "end_frame": 20967,
+    "confidence": "0.594",
+    "duration_frames": 87
+  },
+  {
+    "label": "Ш",
+    "start_frame": 21065,
+    "end_frame": 21167,
+    "confidence": "0.365",
+    "duration_frames": 102
+  },
+  {
+    "label": "П",
+    "start_frame": 21325,
+    "end_frame": 21397,
+    "confidence": "0.408",
+    "duration_frames": 72
+  },
+  {
+    "label": "Ч",
+    "start_frame": 21380,
+    "end_frame": 21417,
+    "confidence": "0.448",
+    "duration_frames": 37
+  }
+]

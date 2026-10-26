@@ -27,3 +27,12 @@ reports/img/demo/
 
 # Логи прогонов инструментов
 tools/*.log
+reports/evidence/*.log
+reports/evidence/*.err
+reports/evidence/*.patch
+
+# Черновики прогонов в корне (субтитры, списки файлов, отладочные срезы)
+/file_list.txt
+/predicted_*
+/step_by_step*
+/*.srt

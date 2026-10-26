@@ -1,0 +1,170 @@
+[
+  {
+    "label": "А",
+    "start_time": 615.4,
+    "duration": 1.88,
+    "confidence": 0.7142857142857143
+  },
+  {
+    "label": "В",
+    "start_time": 835.6,
+    "duration": 1.08,
+    "confidence": 0.42857142857142855
+  },
+  {
+    "label": "Л",
+    "start_time": 525.8,
+    "duration": 2.08,
+    "confidence": 0.7142857142857143
+  },
+  {
+    "label": "О",
+    "start_time": 638.8,
+    "duration": 3.0,
+    "confidence": 1.0
+  },
+  {
+    "label": "П",
+    "start_time": 654.2,
+    "duration": 2.88,
+    "confidence": 1.0
+  },
+  {
+    "label": "Т",
+    "start_time": 101.8,
+    "duration": 2.28,
+    "confidence": 1.0
+  },
+  {
+    "label": "Ц",
+    "start_time": 576.0,
+    "duration": 1.68,
+    "confidence": 0.5714285714285714
+  },
+  {
+    "label": "Ч",
+    "start_time": 833.8,
+    "duration": 2.48,
+    "confidence": 1.0
+  },
+  {
+    "label": "Ш",
+    "start_time": 842.8,
+    "duration": 3.0,
+    "confidence": 1.0
+  },
+  {
+    "label": "Ь",
+    "start_time": 626.2,
+    "duration": 2.68,
+    "confidence": 0.8571428571428571
+  },
+  {
+    "label": "акула",
+    "start_time": 541.6,
+    "duration": 2.08,
+    "confidence": 0.5714285714285714
+  },
+  {
+    "label": "верблюд",
+    "start_time": 376.0,
+    "duration": 2.08,
+    "confidence": 0.7142857142857143
+  },
+  {
+    "label": "вой",
+    "start_time": 370.6,
+    "duration": 3.0,
+    "confidence": 1.0
+  },
+  {
+    "label": "волк",
+    "start_time": 818.8,
+    "duration": 2.48,
+    "confidence": 1.0
+  },
+  {
+    "label": "воротник",
+    "start_time": 373.8,
+    "duration": 2.88,
+    "confidence": 0.7142857142857143
+  },
+  {
+    "label": "динозавр",
+    "start_time": 611.8,
+    "duration": 3.0,
+    "confidence": 1.0
+  },
+  {
+    "label": "дятел",
+    "start_time": 461.0,
+    "duration": 1.48,
+    "confidence": 0.5714285714285714
+  },
+  {
+    "label": "животное",
+    "start_time": 622.6,
+    "duration": 2.48,
+    "confidence": 1.0
+  },
+  {
+    "label": "зубы",
+    "start_time": 494.2,
+    "duration": 1.88,
+    "confidence": 0.7142857142857143
+  },
+  {
+    "label": "коза",
+    "start_time": 534.0,
+    "duration": 3.0,
+    "confidence": 1.0
+  },
+  {
+    "label": "кролик",
+    "start_time": 646.0,
+    "duration": 1.88,
+    "confidence": 0.8571428571428571
+  },
+  {
+    "label": "лев",
+    "start_time": 644.2,
+    "duration": 2.28,
+    "confidence": 0.8571428571428571
+  },
+  {
+    "label": "лось",
+    "start_time": 461.8,
+    "duration": 2.68,
+    "confidence": 1.0
+  },
+  {
+    "label": "миграция",
+    "start_time": 367.6,
+    "duration": 1.08,
+    "confidence": 0.42857142857142855
+  },
+  {
+    "label": "мышь",
+    "start_time": 518.6,
+    "duration": 2.28,
+    "confidence": 0.5714285714285714
+  },
+  {
+    "label": "населять",
+    "start_time": 496.0,
+    "duration": 2.08,
+    "confidence": 0.8571428571428571
+  },
+  {
+    "label": "овца",
+    "start_time": 520.6,
+    "duration": 1.88,
+    "confidence": 0.5714285714285714
+  },
+  {
+    "label": "панда",
+    "start_time": 537.8,
+    "duration": 2.28,
+    "confidence": 0.5714285714285714
+  }
+]
