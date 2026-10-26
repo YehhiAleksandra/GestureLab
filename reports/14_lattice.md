@@ -82,10 +82,11 @@
 
 ## 5. Живой переводчик
 
-Добавлено (по умолчанию выключено):
+Добавлено (по умолчанию выключено в этапе 9; с этапа 10 включено):
 
 ```
-python tools/dialogue_translator.py --video C:\path\to\video.mp4 --lattice --nbest 5 --no-tts
+python tools/dialogue_translator.py --video C:\path\to\video.mp4 --nbest 5 --no-tts
+# отключить: --no-lattice
 ```
 
 Демо `D:\hfdata\demo_dialog.mp4` (5 клипов Slovo, 2 реплики), эталон — «друг прийти

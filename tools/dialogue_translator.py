@@ -349,8 +349,8 @@ def main():
                     help='бонус за каждое слово: без него LM схлопывает короткие реплики')
     ap.add_argument('--smooth', type=int, default=1,
                     help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
-    ap.add_argument('--lattice', action='store_true',
-                    help='передавать переводчику варианты n-best на каждое место')
+    ap.add_argument('--no-lattice', dest='lattice', action='store_false',
+                    help='не передавать переводчику варианты n-best (по умолчанию передаются)')
     ap.add_argument('--nbest', type=int, default=5, help='сколько гипотез собирать в варианты')
     a = ap.parse_args()
     if not a.video and a.camera is None:
