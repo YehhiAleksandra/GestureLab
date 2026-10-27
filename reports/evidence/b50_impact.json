@@ -1,0 +1,35 @@
+{
+ "note": "сколько смысла в прошлых фразовых замерах давали пустые top-1 (B50)",
+ "date": "2026-10-27",
+ "models": {
+  "slovo_ctc_motion (1000)": {
+   "judged": 67,
+   "meaning_ge1": 0,
+   "empty_top1_hallucinated": 0,
+   "nonempty_top1": 0,
+   "examples": []
+  },
+  "slovo_ctc_motion_head_all (1676)": {
+   "judged": 66,
+   "meaning_ge1": 2,
+   "empty_top1_hallucinated": 1,
+   "nonempty_top1": 1,
+   "examples": [
+    {
+     "phrase": "Спокойной Ночи",
+     "pred": [],
+     "translation": "Темно, желто, ночь. Темнота наступила. Ясно. Ясная темнота, спокойствие, спокойная темнота. Немедленно желтый, миленький, милый. Темный оттенок, оттенок. Ясная ночь. Я удивлен. Спокойная ночь, наслаждайся.",
+     "meaning": 1
+    },
+    {
+     "phrase": "Счастливого Полета",
+     "pred": [
+      "удача"
+     ],
+     "translation": "Удача",
+     "meaning": 1
+    }
+   ]
+  }
+ }
+}

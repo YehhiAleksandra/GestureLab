@@ -1,0 +1,59 @@
+{
+ "base_slovo_n30": {
+  "gloss_acc": 0.425,
+  "exact_acc": 0.067,
+  "edit_rate": 0.531
+ },
+ "held_greedy": {
+  "hits": 21,
+  "tokens": 196,
+  "recall": 0.107,
+  "empty_mean": 0.272
+ },
+ "extra_hits": [
+  {
+   "id": "c1247e68fb40bf3e8426dc2452367dc4",
+   "phrase": "Добрый день",
+   "pred": [
+    "добрый",
+    "день"
+   ],
+   "conf": [
+    0.488,
+    0.392
+   ],
+   "glosses": 2,
+   "hits": 2,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Добрый день",
+   "meaning": 2,
+   "chrf": 100.0
+  },
+  {
+   "id": "8dfa0aeb0383895426f7b88ba04df085",
+   "phrase": "Добрый вечер",
+   "pred": [
+    "добрый",
+    "муж",
+    "вечер"
+   ],
+   "conf": [
+    0.175,
+    0.326,
+    0.309
+   ],
+   "glosses": 3,
+   "hits": 2,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Добрый вечер, муж",
+   "meaning": 2,
+   "chrf": 91.173
+  }
+ ],
+ "seen_tokens": 64,
+ "seen_hits": 27
+}

@@ -59,6 +59,10 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
     нумерованный список, модели видно фразу целиком.
     """
     gloss_text = ' '.join(g for g, _ in glosses)
+    if not gloss_text:
+        # B50: пустой top-1 — «ничего не распознано». Цепочки n-best тут только вредят:
+        # LLM сочиняет перевод по мусору, и замер смысла засчитывает галлюцинацию.
+        return ''
     if chains:
         # модуль тянет huggingface_hub: импорт по факту; путь от корня репо — как в тестах
         from tools.gloss_to_text import chain_list

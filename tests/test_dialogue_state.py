@@ -89,6 +89,15 @@ def test_chains_become_numbered_query():
     assert query == '1. мама мыть\n2. мама мыть посуда'
 
 
+def test_empty_glosses_do_not_reach_llm():
+    fake = FakeTranslator()
+    chains = [['мама', 'мыть'], ['мама']]
+    assert translate_in_context(fake, [], [], 'СИСТЕМА', chains=chains) == ''
+    assert translate_in_context(fake, [], [{'speaker': 'deaf', 'text': 'x'}], 'СИСТЕМА',
+                                candidates=[['мама', 'папа']]) == ''
+    assert fake.calls == []
+
+
 def test_history_goes_into_prompt_with_speakers():
     fake = FakeTranslator()
     history = [{'speaker': 'hearing', 'text': 'Ты придёшь?'},

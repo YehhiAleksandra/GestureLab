@@ -1,0 +1,22 @@
+{
+ "clips": 67,
+ "tokens": 196,
+ "unique": 146,
+ "tokens_in_head": 82,
+ "unique_in_head": 41,
+ "tokens_outside": 114,
+ "unique_outside": 105,
+ "clips_fully_covered": 5,
+ "repeated_words": 26,
+ "repeated_tokens": 76,
+ "top_repeated": {
+  "вас": 9,
+  "я": 6,
+  "вы": 5,
+  "в": 4,
+  "у": 4,
+  "как": 4,
+  "автомобиля": 3,
+  "где": 3
+ }
+}

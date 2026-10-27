@@ -1,0 +1,150 @@
+{
+ "version": "0.12.0",
+ "summary": {
+  "total_claims": 23,
+  "confirmed": 23,
+  "contradicted": 0,
+  "unverifiable": 0,
+  "unexplained_count": 105
+ },
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "symbol": null,
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "load_phrase_clips",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "folds",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "matched",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "mix_phrase",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "greedy_rows",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "summarize",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "train_fold",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "beam_rows",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "translate",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "attach_seen",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "run",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "selftest",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "main",
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol": null,
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol": null,
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol": null,
+   "file": "tools/finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "FILE_CREATED",
+   "symbol": null,
+   "file": "tests/test_finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "test_folds_cover_every_clip_once",
+   "file": "tests/test_finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "test_matched_counts_synonyms_as_words",
+   "file": "tests/test_finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "test_load_phrase_clips_uses_longest_span_and_skips_short",
+   "file": "tests/test_finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "test_summarize_seen_and_unseen_words",
+   "file": "tests/test_finetune_ctc_phrases.py",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol": "test_empty_glosses_do_not_reach_llm",
+   "file": "tests/test_dialogue_state.py",
+   "verdict": "CONFIRMED"
+  }
+ ]
+}

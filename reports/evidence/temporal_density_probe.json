@@ -1,0 +1,32 @@
+{
+ "device": "cuda",
+ "channel_x1": {
+  "clips": 893,
+  "hit": 0.001,
+  "empty": 0.901
+ },
+ "channel_x2": {
+  "clips": 893,
+  "hit": 0.001,
+  "empty": 0.709
+ },
+ "channel_x3": {
+  "clips": 893,
+  "hit": 0.001,
+  "empty": 0.681
+ },
+ "slovo_every1": {
+  "gloss_acc": 0.37339055793991416,
+  "exact_acc": 0.06666666666666667,
+  "edit_rate": 0.5536480686695279,
+  "n_streams": 60,
+  "n_glosses": 233
+ },
+ "slovo_every2": {
+  "gloss_acc": 0.3776824034334764,
+  "exact_acc": 0.06666666666666667,
+  "edit_rate": 0.5579399141630901,
+  "n_streams": 60,
+  "n_glosses": 233
+ }
+}

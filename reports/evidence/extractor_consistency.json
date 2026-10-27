@@ -1,0 +1,1095 @@
+{
+ "clips": 60,
+ "npz": {
+  "hit": 0.417,
+  "empty": 0.317
+ },
+ "our_mediapipe": {
+  "hit": 0.35,
+  "empty": 0.367
+ },
+ "feature_mae_mean": 0.1843,
+ "feature_corr_mean": 0.806,
+ "rows": [
+  {
+   "id": "2d5c670d-2058-4295-b2ef-ff1c9b256386",
+   "cls": 792,
+   "word": "рассердиться",
+   "npz_frames": 43,
+   "mp4_frames": 43,
+   "span": [
+    3,
+    43
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2834,
+   "feat_corr": 0.746
+  },
+  {
+   "id": "84f4a001-c17b-4cf3-8089-7fbf3f8d6c77",
+   "cls": 807,
+   "word": "розовый",
+   "npz_frames": 45,
+   "mp4_frames": 45,
+   "span": [
+    1,
+    45
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0524,
+   "feat_corr": 0.967
+  },
+  {
+   "id": "6cddec3b-fc17-4f5a-aab3-b35be16c2925",
+   "cls": 658,
+   "word": "отчаянный",
+   "npz_frames": 73,
+   "mp4_frames": 73,
+   "span": [
+    11,
+    73
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.1017,
+   "feat_corr": 0.862
+  },
+  {
+   "id": "0330d764-759a-4af4-bb47-a49caf520b0d",
+   "cls": 131,
+   "word": "в то время как",
+   "npz_frames": 65,
+   "mp4_frames": 65,
+   "span": [
+    0,
+    65
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.5448,
+   "feat_corr": 0.244
+  },
+  {
+   "id": "5dc986ce-be2f-4571-a9f4-a580bfad494a",
+   "cls": 962,
+   "word": "цвет",
+   "npz_frames": 32,
+   "mp4_frames": 32,
+   "span": [
+    1,
+    32
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.027,
+   "feat_corr": 0.965
+  },
+  {
+   "id": "1834eaf8-e9a6-4011-8e21-b6f0bd1728b1",
+   "cls": 13,
+   "word": "Д",
+   "npz_frames": 55,
+   "mp4_frames": 55,
+   "span": [
+    0,
+    55
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0033,
+   "feat_corr": 1.0
+  },
+  {
+   "id": "abd7b765-997d-4436-8d9d-6c12b6af0feb",
+   "cls": 520,
+   "word": "надежда",
+   "npz_frames": 59,
+   "mp4_frames": 59,
+   "span": [
+    0,
+    59
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0121,
+   "feat_corr": 0.997
+  },
+  {
+   "id": "70c3958d-5833-464c-b4ad-3c04366bf238",
+   "cls": 433,
+   "word": "крокодил",
+   "npz_frames": 65,
+   "mp4_frames": 65,
+   "span": [
+    0,
+    65
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2959,
+   "feat_corr": 0.697
+  },
+  {
+   "id": "d491bd65-7ecb-4654-bbc0-ff66226b5624",
+   "cls": 36,
+   "word": "Плохо",
+   "npz_frames": 47,
+   "mp4_frames": 47,
+   "span": [
+    0,
+    47
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0377,
+   "feat_corr": 0.943
+  },
+  {
+   "id": "38dc9ca4-7195-43ae-baf5-6a91795e3d07",
+   "cls": 207,
+   "word": "вспомнить",
+   "npz_frames": 73,
+   "mp4_frames": 73,
+   "span": [
+    0,
+    73
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0136,
+   "feat_corr": 0.991
+  },
+  {
+   "id": "f27dc084-9aab-45f3-8e31-ce152f63a558",
+   "cls": 517,
+   "word": "навсегда",
+   "npz_frames": 35,
+   "mp4_frames": 35,
+   "span": [
+    0,
+    35
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0218,
+   "feat_corr": 0.987
+  },
+  {
+   "id": "baaac1c4-49c3-4df3-98ff-2c31e90a7874",
+   "cls": 733,
+   "word": "преданный",
+   "npz_frames": 52,
+   "mp4_frames": 52,
+   "span": [
+    4,
+    52
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0508,
+   "feat_corr": 0.934
+  },
+  {
+   "id": "ac48cc3f-a403-4626-8833-77dafec5c074",
+   "cls": 262,
+   "word": "делать мелкий глоток",
+   "npz_frames": 52,
+   "mp4_frames": 52,
+   "span": [
+    6,
+    52
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1027,
+   "feat_corr": 0.815
+  },
+  {
+   "id": "53d8bd97-b812-46bd-9c8e-908304ef71b0",
+   "cls": 995,
+   "word": "этот",
+   "npz_frames": 73,
+   "mp4_frames": 73,
+   "span": [
+    0,
+    73
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0352,
+   "feat_corr": 0.97
+  },
+  {
+   "id": "cbabd2da-c092-42fa-b41b-a54fde250b1e",
+   "cls": 74,
+   "word": "агрессия",
+   "npz_frames": 42,
+   "mp4_frames": 42,
+   "span": [
+    0,
+    42
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2213,
+   "feat_corr": 0.334
+  },
+  {
+   "id": "31aad54f-1a95-4a88-98b7-46e1734509cb",
+   "cls": 278,
+   "word": "до",
+   "npz_frames": 42,
+   "mp4_frames": 42,
+   "span": [
+    0,
+    42
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.1388,
+   "feat_corr": 0.764
+  },
+  {
+   "id": "9c08f266-61bc-4c16-a5db-a7f618519f74",
+   "cls": 495,
+   "word": "минута",
+   "npz_frames": 38,
+   "mp4_frames": 38,
+   "span": [
+    0,
+    38
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.027,
+   "feat_corr": 0.994
+  },
+  {
+   "id": "cf671fa1-20dc-4f66-8648-e3c74bb02e90",
+   "cls": 370,
+   "word": "золотой",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    6,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0709,
+   "feat_corr": 0.893
+  },
+  {
+   "id": "78982879-6734-44e8-9c8e-4f1d403ed803",
+   "cls": 174,
+   "word": "возбуждение",
+   "npz_frames": 54,
+   "mp4_frames": 54,
+   "span": [
+    0,
+    54
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0581,
+   "feat_corr": 0.965
+  },
+  {
+   "id": "9342f8c1-1b72-4417-9cb7-feb316bf47a4",
+   "cls": 203,
+   "word": "время по Гринвичу",
+   "npz_frames": 81,
+   "mp4_frames": 81,
+   "span": [
+    0,
+    81
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1316,
+   "feat_corr": 0.886
+  },
+  {
+   "id": "a50d96d1-7806-4cf4-8b34-9ba30b1ffc66",
+   "cls": 744,
+   "word": "привезти",
+   "npz_frames": 77,
+   "mp4_frames": 77,
+   "span": [
+    0,
+    77
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1537,
+   "feat_corr": 0.763
+  },
+  {
+   "id": "bcae236f-c112-42c4-81eb-33428773d0dd",
+   "cls": 872,
+   "word": "согласно",
+   "npz_frames": 21,
+   "mp4_frames": 21,
+   "span": [
+    0,
+    21
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.4437,
+   "feat_corr": 0.525
+  },
+  {
+   "id": "7849ad1a-64fd-4ded-9897-d8b3b4f39d14",
+   "cls": 694,
+   "word": "под",
+   "npz_frames": 51,
+   "mp4_frames": 51,
+   "span": [
+    9,
+    51
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2085,
+   "feat_corr": 0.634
+  },
+  {
+   "id": "a6316281-41c8-4fec-9c45-4c52a0e97425",
+   "cls": 442,
+   "word": "кувшин",
+   "npz_frames": 27,
+   "mp4_frames": 27,
+   "span": [
+    0,
+    27
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.3565,
+   "feat_corr": 0.662
+  },
+  {
+   "id": "15101638-aa03-4dae-8136-3ee08207dea6",
+   "cls": 244,
+   "word": "дать",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    5,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.4291,
+   "feat_corr": 0.703
+  },
+  {
+   "id": "cfbf7dc8-a890-4e91-9990-da9af0b08451",
+   "cls": 177,
+   "word": "возможно",
+   "npz_frames": 52,
+   "mp4_frames": 52,
+   "span": [
+    0,
+    52
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.3469,
+   "feat_corr": 0.335
+  },
+  {
+   "id": "e3091661-5aff-4a16-a924-f75e82e97efc",
+   "cls": 91,
+   "word": "бежевый",
+   "npz_frames": 50,
+   "mp4_frames": 50,
+   "span": [
+    0,
+    50
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0086,
+   "feat_corr": 0.995
+  },
+  {
+   "id": "f5802b98-50ee-47da-a378-494191e609c6",
+   "cls": 594,
+   "word": "обеспокоенный",
+   "npz_frames": 47,
+   "mp4_frames": 47,
+   "span": [
+    0,
+    47
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.043,
+   "feat_corr": 0.968
+  },
+  {
+   "id": "e7fc749c-c530-49e9-b692-ea4ebb803783",
+   "cls": 984,
+   "word": "чувствовать",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    0,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0525,
+   "feat_corr": 0.923
+  },
+  {
+   "id": "5935833b-2fb3-4fbb-9e6b-fe9c75ba2c1b",
+   "cls": 649,
+   "word": "открыть",
+   "npz_frames": 59,
+   "mp4_frames": 59,
+   "span": [
+    0,
+    59
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0906,
+   "feat_corr": 0.89
+  },
+  {
+   "id": "7075f128-ec3e-4e39-bc13-e07e473cbbce",
+   "cls": 463,
+   "word": "логичный",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    3,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.3925,
+   "feat_corr": 0.423
+  },
+  {
+   "id": "a5447779-5b28-48aa-b484-c218d22275fb",
+   "cls": 986,
+   "word": "шестнадцать",
+   "npz_frames": 83,
+   "mp4_frames": 83,
+   "span": [
+    2,
+    83
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.2521,
+   "feat_corr": 0.484
+  },
+  {
+   "id": "d514e74f-6451-442d-b390-2b4d9749e344",
+   "cls": 750,
+   "word": "прирученный",
+   "npz_frames": 49,
+   "mp4_frames": 49,
+   "span": [
+    0,
+    49
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0536,
+   "feat_corr": 0.978
+  },
+  {
+   "id": "a8d1cee7-4233-490d-9fa3-81e1dd4c3dcc",
+   "cls": 855,
+   "word": "следовало",
+   "npz_frames": 54,
+   "mp4_frames": 54,
+   "span": [
+    0,
+    54
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0047,
+   "feat_corr": 0.995
+  },
+  {
+   "id": "2a67ffb2-9f3c-47f1-80d4-9451b2c86d15",
+   "cls": 98,
+   "word": "беспокоиться",
+   "npz_frames": 52,
+   "mp4_frames": 52,
+   "span": [
+    2,
+    52
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.4933,
+   "feat_corr": 0.57
+  },
+  {
+   "id": "f82c744e-cc17-4e38-9614-a4e23480db63",
+   "cls": 995,
+   "word": "этот",
+   "npz_frames": 53,
+   "mp4_frames": 53,
+   "span": [
+    0,
+    53
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0181,
+   "feat_corr": 0.997
+  },
+  {
+   "id": "1de6af8f-22a3-4ad6-b507-d34e3437c684",
+   "cls": 699,
+   "word": "подруга",
+   "npz_frames": 79,
+   "mp4_frames": 79,
+   "span": [
+    1,
+    79
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1165,
+   "feat_corr": 0.876
+  },
+  {
+   "id": "9b92b656-54f1-422e-bc18-aa91df839068",
+   "cls": 956,
+   "word": "хлеб",
+   "npz_frames": 54,
+   "mp4_frames": 54,
+   "span": [
+    0,
+    54
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.1876,
+   "feat_corr": 0.86
+  },
+  {
+   "id": "344ae2ca-6eab-4db1-950a-7ea67dcbed34",
+   "cls": 316,
+   "word": "жадный",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    3,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1272,
+   "feat_corr": 0.834
+  },
+  {
+   "id": "9e8f29ab-16c9-4adb-986b-b948e8f23183",
+   "cls": 293,
+   "word": "дорога",
+   "npz_frames": 39,
+   "mp4_frames": 39,
+   "span": [
+    0,
+    39
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 1.8497,
+   "feat_corr": 0.545
+  },
+  {
+   "id": "73318561-32bd-4876-b8fb-debd6bd867c3",
+   "cls": 697,
+   "word": "поднос",
+   "npz_frames": 73,
+   "mp4_frames": 73,
+   "span": [
+    0,
+    73
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.3178,
+   "feat_corr": 0.517
+  },
+  {
+   "id": "da3946e1-deae-464d-a933-ad081799e28f",
+   "cls": 597,
+   "word": "обманчивость",
+   "npz_frames": 60,
+   "mp4_frames": 60,
+   "span": [
+    0,
+    60
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0496,
+   "feat_corr": 0.959
+  },
+  {
+   "id": "56a67e9d-d384-439b-b132-6e718068baf8",
+   "cls": 692,
+   "word": "поверхностный",
+   "npz_frames": 35,
+   "mp4_frames": 35,
+   "span": [
+    0,
+    35
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0375,
+   "feat_corr": 0.972
+  },
+  {
+   "id": "1957ebcc-2e94-405d-ba6d-04963f2dbc1e",
+   "cls": 385,
+   "word": "импульс",
+   "npz_frames": 58,
+   "mp4_frames": 58,
+   "span": [
+    0,
+    58
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.3401,
+   "feat_corr": 0.578
+  },
+  {
+   "id": "6f58b8bf-1b02-48ef-afc3-74e23018bad3",
+   "cls": 849,
+   "word": "скоро",
+   "npz_frames": 42,
+   "mp4_frames": 42,
+   "span": [
+    5,
+    42
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2189,
+   "feat_corr": 0.765
+  },
+  {
+   "id": "4c14849c-68fb-450b-97a1-eb0b25ff3729",
+   "cls": 978,
+   "word": "четыреста",
+   "npz_frames": 40,
+   "mp4_frames": 40,
+   "span": [
+    6,
+    40
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0757,
+   "feat_corr": 0.874
+  },
+  {
+   "id": "8930aec0-11c2-4ec1-91da-67b792d305da",
+   "cls": 199,
+   "word": "время",
+   "npz_frames": 44,
+   "mp4_frames": 44,
+   "span": [
+    6,
+    44
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.0901,
+   "feat_corr": 0.86
+  },
+  {
+   "id": "34ec2960-17cc-419e-b7b7-590294ed39d9",
+   "cls": 277,
+   "word": "днем",
+   "npz_frames": 33,
+   "mp4_frames": 33,
+   "span": [
+    0,
+    33
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.2807,
+   "feat_corr": 0.738
+  },
+  {
+   "id": "2d9122b5-c6b6-40c4-9be2-157b6492af79",
+   "cls": 687,
+   "word": "плата за вход",
+   "npz_frames": 56,
+   "mp4_frames": 56,
+   "span": [
+    0,
+    56
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.4491,
+   "feat_corr": 0.807
+  },
+  {
+   "id": "0156554d-6258-4c64-b97d-a7ab75941b98",
+   "cls": 581,
+   "word": "новый",
+   "npz_frames": 74,
+   "mp4_frames": 74,
+   "span": [
+    0,
+    74
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.1259,
+   "feat_corr": 0.904
+  },
+  {
+   "id": "43e1f6f8-03b0-4d9c-a5a8-0811120dd865",
+   "cls": 665,
+   "word": "ошибка",
+   "npz_frames": 29,
+   "mp4_frames": 29,
+   "span": [
+    0,
+    29
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 0,
+   "feat_mae": 0.1147,
+   "feat_corr": 0.878
+  },
+  {
+   "id": "9cb7cb4e-6738-4b1e-aeb7-322eb8c79e21",
+   "cls": 89,
+   "word": "башенные часы",
+   "npz_frames": 98,
+   "mp4_frames": 98,
+   "span": [
+    0,
+    98
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0842,
+   "feat_corr": 0.872
+  },
+  {
+   "id": "dc968715-3c8d-40d6-bf97-2568716723f8",
+   "cls": 681,
+   "word": "писать",
+   "npz_frames": 24,
+   "mp4_frames": 24,
+   "span": [
+    2,
+    24
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0508,
+   "feat_corr": 0.933
+  },
+  {
+   "id": "ec389805-aad8-4dc8-aeea-efe729efa2ff",
+   "cls": 251,
+   "word": "двенадцать",
+   "npz_frames": 49,
+   "mp4_frames": 49,
+   "span": [
+    4,
+    49
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 0,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.1388,
+   "feat_corr": 0.57
+  },
+  {
+   "id": "2a4e8297-80e4-4adc-903b-b67e747bce67",
+   "cls": 541,
+   "word": "начало",
+   "npz_frames": 48,
+   "mp4_frames": 48,
+   "span": [
+    0,
+    48
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1214,
+   "feat_corr": 0.87
+  },
+  {
+   "id": "f8a879f8-41d2-4ae2-b4dd-522454f1c9dd",
+   "cls": 38,
+   "word": "Позвонить на сервис",
+   "npz_frames": 88,
+   "mp4_frames": 88,
+   "span": [
+    0,
+    88
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.2515,
+   "feat_corr": 0.91
+  },
+  {
+   "id": "0665f7f7-8ee1-4df0-95a8-5b75544e1234",
+   "cls": 309,
+   "word": "есть",
+   "npz_frames": 46,
+   "mp4_frames": 46,
+   "span": [
+    0,
+    46
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.2328,
+   "feat_corr": 0.728
+  },
+  {
+   "id": "28ba1096-37aa-4e24-8abe-ad1d32bffe07",
+   "cls": 711,
+   "word": "положить",
+   "npz_frames": 30,
+   "mp4_frames": 30,
+   "span": [
+    0,
+    30
+   ],
+   "spans": 1,
+   "hit_npz": 0,
+   "empty_npz": 1,
+   "hit_mp4": 0,
+   "empty_mp4": 1,
+   "feat_mae": 0.0543,
+   "feat_corr": 0.91
+  },
+  {
+   "id": "c2585107-ad81-4516-b7c9-ee72185dfb87",
+   "cls": 290,
+   "word": "доминантный",
+   "npz_frames": 63,
+   "mp4_frames": 63,
+   "span": [
+    8,
+    63
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.1342,
+   "feat_corr": 0.83
+  },
+  {
+   "id": "731a1362-d77e-435f-a530-bce448eafef0",
+   "cls": 940,
+   "word": "ты",
+   "npz_frames": 33,
+   "mp4_frames": 33,
+   "span": [
+    0,
+    33
+   ],
+   "spans": 1,
+   "hit_npz": 1,
+   "empty_npz": 0,
+   "hit_mp4": 1,
+   "empty_mp4": 0,
+   "feat_mae": 0.0334,
+   "feat_corr": 0.974
+  }
+ ]
+}

@@ -1,0 +1,800 @@
+{
+ "model": "init_expanded (head_all, без обучения)",
+ "decoder": "greedy",
+ "clips": 67,
+ "summary": {
+  "clips": 67,
+  "empty": 0.836,
+  "glosses_mean": 0.16,
+  "word_hits": 1,
+  "word_tokens": 196,
+  "word_recall": 0.005,
+  "seen_hits": 0,
+  "seen_tokens": 0,
+  "seen_recall": 0.0,
+  "phrase_exact": 0
+ },
+ "rows": [
+  {
+   "id": "a99a602c90df6a8c6819698c89ff2c76",
+   "phrase": "Будьте внимательны",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "89c5179147b8b7541691f297a30c7d26",
+   "phrase": "В обратном направлении",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "4a732944707feb4a3f875ac50481a5a7",
+   "phrase": "Всего хорошего",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "68bbbd74498de41ba6530e883dd8c1b3",
+   "phrase": "Вы меня понимаете?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "fca02bc70e883dd9314eda0899e0f348",
+   "phrase": "Вы нарушили правила",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "4cdca0988a6a95616f7aab4fd5066180",
+   "phrase": "Выходите из автомобиля",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "9c5a5826efbd0533319aae4442faa039",
+   "phrase": "Где вы живете?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+   "phrase": "Где можно купить сувенир?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+   "phrase": "Где это произошло?",
+   "pred": [
+    "этот"
+   ],
+   "conf": [
+    0.819
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "a947081df0a69175da94f49710cbab55",
+   "phrase": "Главная улица",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+   "phrase": "Движение запрещено",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "bdec82bdeaa92109dcda7283a2498287",
+   "phrase": "Доброе утро",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "8dfa0aeb0383895426f7b88ba04df085",
+   "phrase": "Добрый вечер",
+   "pred": [
+    "вечер"
+   ],
+   "conf": [
+    0.347
+   ],
+   "glosses": 1,
+   "hits": 1,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "c1247e68fb40bf3e8426dc2452367dc4",
+   "phrase": "Добрый день",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "f85f10456545114d8e791d9023ee3db9",
+   "phrase": "До свидания",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "a122a6b33a16298240aa0bb4b603a793",
+   "phrase": "До следующего перекрестка",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "a53fc8ec399010c4f2c00471e1d36987",
+   "phrase": "Есть ли у вас другие документы?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 6,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "1520e6e2d763df265cbae87f88916ac5",
+   "phrase": "Желаю вам успехов",
+   "pred": [
+    "Выигрыш"
+   ],
+   "conf": [
+    0.628
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+   "phrase": "Как был одет?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "264b94e11f413442c371c6bdf5979db6",
+   "phrase": "Как вы себя чувствуете?",
+   "pred": [
+    "женат"
+   ],
+   "conf": [
+    0.832
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "064619b3057118c247be3baba055c285",
+   "phrase": "Как доехать до центра?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "5cb720643832d004d94ab578f6aa02aa",
+   "phrase": "Как мне пройти?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "e702218b9b10fd7b2c093846230d7008",
+   "phrase": "Какого роста был преступник?",
+   "pred": [
+    "солнце"
+   ],
+   "conf": [
+    0.736
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "c179d389de588b66e7f9b7d0e13fef4f",
+   "phrase": "Какое название автомобиля?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "acfccad1199b648b18ec99977237aca4",
+   "phrase": "Когда это случилось?",
+   "pred": [
+    "этот"
+   ],
+   "conf": [
+    0.623
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "47be7e3be2cbddd660727de26fb368db",
+   "phrase": "Кого вы подозреваете?",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "35b0eab06883a680af23ff9a6bd28b4f",
+   "phrase": "Место жительства",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "51c921ee956059eced7f91c6632c8e62",
+   "phrase": "Можете Ли Давать Показания",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+   "phrase": "Назовите Вашу фамилию",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "83875a2ae97506f931365bde01a40c6d",
+   "phrase": "Ограничение Скорости",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+   "phrase": "Оплатите Штраф",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+   "phrase": "Особые приметы",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "9759554b45ed7c3b41bcc0d7682e3982",
+   "phrase": "очная ставка",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "93a77d516ab32697ab166922d3fcfbde",
+   "phrase": "Пешеходное Движение Запрешено",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "edff30c0dbe70c965bcda13c1ed687fc",
+   "phrase": "Права На Вождение Автомобиля",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+   "phrase": "Предъявите Ваш паспорт",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+   "phrase": "Пройдите К Начальнику",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "9af77ba34136246c8739169a490cc6bd",
+   "phrase": "Проникнуть В комнату",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "ed8c560f5583ca833781a18f85a0ea70",
+   "phrase": "Прошу Вас Объясните Мне",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "d13a300890d6898da0eeec7cd592b25c",
+   "phrase": "Прошу Следовать Со Мной",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "8e718ce195d9230241b74a4348a56ba9",
+   "phrase": "разрешите представиться",
+   "pred": [
+    "знакомство"
+   ],
+   "conf": [
+    0.477
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+   "phrase": "Ремонтные Работы",
+   "pred": [
+    "прирученный"
+   ],
+   "conf": [
+    0.35
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "e421a7b069753905c8c4094c001a4329",
+   "phrase": "Садитесь В Автомашину",
+   "pred": [
+    "теперь"
+   ],
+   "conf": [
+    0.499
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "469694e1d6795d7ab0d494c01f83d6e8",
+   "phrase": "Светлые волосы",
+   "pred": [
+    "вспомнить"
+   ],
+   "conf": [
+    0.963
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+   "phrase": "сержант милиции",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+   "phrase": "Сколько Было Преступников",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "fd68b03817381656cd5ce56cb6540128",
+   "phrase": "Сколько Времени Были Знакомы",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+   "phrase": "Слушаю Вас",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "937e504a28e7f69d4557852fe6daf236",
+   "phrase": "Спокойной Ночи",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "42a730dd03eb6e97bde576ec51e607ef",
+   "phrase": "Стоянка Запрещена",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "945e2edb8f2fb6088399e992fb1f6d68",
+   "phrase": "Счастливого Полета",
+   "pred": [
+    "удача"
+   ],
+   "conf": [
+    0.32
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+   "phrase": "Счастливого Пути",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "79752f97f16ee5c276079c99ea9fe635",
+   "phrase": "У Вас",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+   "phrase": "У меня",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "7f12803b38efdc702bfe500b7fa81d6d",
+   "phrase": "У Вас Есть Переводчик",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+   "phrase": "Центр Города",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "7c2711904f4373bc391a908e19c532cd",
+   "phrase": "Чем Вас Ударили",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "fe6f830b73c477f7c3ace2199782e4bf",
+   "phrase": "Через Дверь",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+   "phrase": "Через Окно",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "4f6636b795b1f3cddc887efbf46b489f",
+   "phrase": "Что Похищено",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+   "phrase": "Что Случилось",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "d2ce0817e5077558359e2bbddc4e5902",
+   "phrase": "Я Должен Вас Доставить В Отделение Милиции",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 7,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "2157c2060e7d68eacef53125d10f4fe1",
+   "phrase": "Я Должен Составить Протокол",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "1b955598ed37b728299e788623b5c2a1",
+   "phrase": "Я отстраняю вас от управления автомобилем",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 6,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+   "phrase": "Я Предупреждаю Вас",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "c4392806d376837c451bb284a6a768b6",
+   "phrase": "Я Сбился С Пути",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0
+  },
+  {
+   "id": "395776c19a023f224d89ac78b8e50e04",
+   "phrase": "Я сделаю все что смогу",
+   "pred": [],
+   "conf": [],
+   "glosses": 0,
+   "hits": 0,
+   "total": 5,
+   "seen_hits": 0,
+   "seen_total": 0
+  }
+ ]
+}
