@@ -58,6 +58,8 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 4
 | `python tools/demo_run.py --image фото.jpg` | детекция на одном кадре (своё фото, не коммитить) |
 | `python gesturelab.py --calibrate sessions` | статистика положений по записям |
 | `python summarize.py sessions --by-gesture` | сводка; «не жест» по умолчанию отдельно |
+| `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam) |
+| `python tools/finetune_ctc_phrases.py --train-all` | production-чекпойнт на всех фразовых клипах (CV-метрик у него нет, B54) |
 
 ## Решения, которые за Вадимом (не принимать самому)
 
@@ -79,7 +81,8 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 4
 ```bash
 S=$(mktemp -d) && mkdir -p $S/gl_pre $S/gl_post
 git archive HEAD | tar -x -C $S/gl_pre
-tar --exclude=./.git --exclude=__pycache__ --exclude=.pytest_cache -cf - . | tar -x -C $S/gl_post
+git ls-files -z | tar --null -T - -cf - | tar -x -C $S/gl_post   # только отслеживаемые файлы:
+# datasets/ вырос до десятков ГБ, tar всего дерева копирует 50 ГБ игнорируемых данных
 nowreck fix --pre $S/gl_pre --post $S/gl_post \
   --claims "$(cat reports/evidence/nowreck_claims_phase5.json)" --json
 ```

@@ -1,0 +1,114 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "stem",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "канонизация: стем слова для сопоставления словоформы с леммой"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "canon_map",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "канонизация: словоформа → единственный обученный класс-лемма"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "augment_hard",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "жёсткая аугментация: темп, пропуск кадров, dropout части тела"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "ctc_align",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "Viterbi-выравнивание меток на выходе CTC"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "align_clips",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "выравнивание обучающих клипов фолда для пула сегментов"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "build_pool",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "пул выровненных сегментов по классам глосс"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "recombine",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "склейка сегментов разных слов с паузами удержания"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "canon_map",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "caller_name": "run",
+   "called_name": "canon_map",
+   "confidence": 0.9,
+   "explanation": "конфигурация фолдов берёт канонизацию из инвентаря фраз"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "recombine",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "caller_name": "mix_phrase",
+   "called_name": "recombine",
+   "confidence": 0.9,
+   "explanation": "флаг --recombine-frac включает склейку сегментов в миксе"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "align_clips",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "caller_name": "train_fold",
+   "called_name": "align_clips",
+   "confidence": 0.9,
+   "explanation": "пул для склейки строится только при recombine_frac > 0"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/sweep_decode.py",
+   "confidence": 0.99,
+   "explanation": "перебор декодера без обучения на готовых фолдах"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "configs",
+   "file_path": "tools/sweep_decode.py",
+   "confidence": 0.95,
+   "explanation": "декартово произведение конфигураций без бессмысленных дублей"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "summarize_rows",
+   "file_path": "tools/sweep_decode.py",
+   "confidence": 0.95,
+   "explanation": "метрики свипа, включая канонические попадания"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_stem_keeps_short_words_and_strips_inflection",
+   "file_path": "tests/test_finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "тест стема: короткие слова не трогаются"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_canon_map_only_unique_lemma_candidate",
+   "file_path": "tests/test_finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "тест канонизации: только единственный кандидат"
+  }
+ ]
+}

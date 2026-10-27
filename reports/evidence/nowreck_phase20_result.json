@@ -1,0 +1,727 @@
+Scanning pre snapshot:  C:\Users\eggyv\AppData\Local\Temp\tmp.thJwwDsK0e\gl_pre
+  \u2192 116 files parsed, 0 failed
+Scanning post snapshot: C:\Users\eggyv\AppData\Local\Temp\tmp.thJwwDsK0e\gl_post
+  \u2192 116 files parsed, 0 failed
+Symbols: 702 pre \u2192 715 post
+Changes detected: 55
+Claims parsed: 15
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 15,
+    "confirmed": 12,
+    "contradicted": 0,
+    "unverifiable": 3,
+    "unexplained_count": 43
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "stem",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "stem",
+        "parent_class": null,
+        "line_number": 49,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "canon_map",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "canon_map",
+        "parent_class": null,
+        "line_number": 57,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "augment_hard",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "augment_hard",
+        "parent_class": null,
+        "line_number": 129,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "ctc_align",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "ctc_align",
+        "parent_class": null,
+        "line_number": 153,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "align_clips",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "align_clips",
+        "parent_class": null,
+        "line_number": 193,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "build_pool",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "build_pool",
+        "parent_class": null,
+        "line_number": 211,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "recombine",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": "recombine",
+        "parent_class": null,
+        "line_number": 220,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "canon_map",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "canon_map",
+        "confidence": 0.9
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "run",
+        "called_name": "canon_map"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "recombine",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_phrase",
+        "called_name": "recombine",
+        "confidence": 0.9
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "mix_phrase",
+        "called_name": "recombine"
+      }
+    },
+    {
+      "claim": {
+        "type": "CALLS_FUNCTION",
+        "symbol_name": "align_clips",
+        "file_path": "tools/finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "train_fold",
+        "called_name": "align_clips",
+        "confidence": 0.9
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "CALL_DETECTED",
+        "file_path": "tools\\finetune_ctc_phrases.py",
+        "symbol_name": null,
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": "train_fold",
+        "called_name": "align_clips"
+      }
+    },
+    {
+      "claim": {
+        "type": "FILE_CREATED",
+        "symbol_name": null,
+        "file_path": "tools/sweep_decode.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.99
+      },
+      "verdict": "UNVERIFIABLE",
+      "verifier_confidence": 0.99
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "configs",
+        "file_path": "tools/sweep_decode.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "UNVERIFIABLE",
+      "verifier_confidence": 0.95
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "summarize_rows",
+        "file_path": "tools/sweep_decode.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "UNVERIFIABLE",
+      "verifier_confidence": 0.95
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_stem_keeps_short_words_and_strips_inflection",
+        "file_path": "tests/test_finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_ctc_phrases.py",
+        "symbol_name": "test_stem_keeps_short_words_and_strips_inflection",
+        "parent_class": null,
+        "line_number": 81,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_canon_map_only_unique_lemma_candidate",
+        "file_path": "tests/test_finetune_ctc_phrases.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_ctc_phrases.py",
+        "symbol_name": "test_canon_map_only_unique_lemma_candidate",
+        "parent_class": null,
+        "line_number": 87,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": "test_ctc_align_finds_word_borders",
+      "parent_class": null,
+      "line_number": 37,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": "test_ctc_align_handles_repeated_labels",
+      "parent_class": null,
+      "line_number": 47,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": "test_mix_phrase_recombine_branch_keeps_labels",
+      "parent_class": null,
+      "line_number": 65,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "ADD_FUNCTION",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": "test_recombine_concatenates_segments_with_gaps",
+      "parent_class": null,
+      "line_number": 56,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_mix_phrase_recombine_branch_keeps_labels",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_mix_phrase_recombine_branch_keeps_labels",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_concatenates_segments_with_gaps",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_concatenates_segments_with_gaps",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "ctc_align"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "align_clips",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "augment_hard",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "canon_map",
+      "called_name": "iter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "canon_map",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "canon_map",
+      "called_name": "next"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "canon_map",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "canon_map",
+      "called_name": "stem"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_align",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_align",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_align",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_align",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "ctc_align",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_rows",
+      "called_name": "hits"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_phrase",
+      "called_name": "aug"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "ctc_align"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "recombine"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "stem",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "build_pool"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_ctc_phrases.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "sum"
+    }
+  ]
+}

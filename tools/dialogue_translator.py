@@ -57,7 +57,7 @@ def frame_of(res):
 
 class Recognizer:
     def __init__(self, path, device=None, decoder='greedy', beam=8, lm_weight=0.0,
-                 word_bonus=0.0, smooth=1, nbest=1):
+                 word_bonus=0.0, smooth=1, nbest=1, lm_seqs=None):
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.model, self.names, ck = load_ctc(path, self.device)
         self.feat = ck.get('feat', FEAT)
@@ -67,12 +67,14 @@ class Recognizer:
         self.nbest = nbest if decoder == 'beam' else 1
         if decoder == 'beam' and lm_weight > 0:
             try:
-                from gloss_to_text import load_corpus
                 index = {n.lower(): i for i, n in enumerate(self.names)}
-                seqs = [[index[w.lower()] for w in p['rsl'].split()] for p in load_corpus('train')
-                        if all(w.lower() in index for w in p['rsl'].split())]
+                if lm_seqs is None:
+                    from gloss_to_text import load_corpus
+                    lm_seqs = [p['rsl'].split() for p in load_corpus('train')]
+                seqs = [[index[w.lower()] for w in words] for words in lm_seqs
+                        if all(w.lower() in index for w in words)]
                 self.lm = GlossLM(seqs, len(self.names))
-                print(f'LM глоссов: {len(seqs)} фраз корпуса', flush=True)
+                print(f'LM глоссов: {len(seqs)} фраз', flush=True)
             except Exception as e:  # noqa: BLE001 — без корпуса beam работает без LM
                 print(f'LM недоступна ({e}) — beam без языковой модели', flush=True)
         print(f'CTC-модель: {Path(path).name}, классов {len(self.names)}, {self.device}, '

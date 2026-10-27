@@ -1,0 +1,9696 @@
+{
+ "tool": "sweep_decode",
+ "date": "2026-10-27",
+ "folds": 5,
+ "seed": 2026,
+ "clips": 67,
+ "config": {
+  "lm_src": "none,phrases",
+  "lm_weight": "0,0.05",
+  "word_bonus": "3,4,5",
+  "smooth": "1",
+  "beam": "24"
+ },
+ "seconds": 90.6,
+ "results": [
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 5.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 2,
+   "clips": 67,
+   "empty": 0.0,
+   "glosses_mean": 4.78,
+   "word_hits": 45,
+   "word_tokens": 196,
+   "word_recall": 0.23,
+   "word_precision": 0.141,
+   "word_hits_canon": 50,
+   "word_recall_canon": 0.255,
+   "word_precision_canon": 0.156,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 41,
+   "seen_tokens": 70,
+   "seen_recall": 0.586
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.0,
+   "word_bonus": 5.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 5,
+   "clips": 67,
+   "empty": 0.0,
+   "glosses_mean": 4.78,
+   "word_hits": 45,
+   "word_tokens": 196,
+   "word_recall": 0.23,
+   "word_precision": 0.141,
+   "word_hits_canon": 50,
+   "word_recall_canon": 0.255,
+   "word_precision_canon": 0.156,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 41,
+   "seen_tokens": 70,
+   "seen_recall": 0.586
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.05,
+   "word_bonus": 5.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 8,
+   "clips": 67,
+   "empty": 0.015,
+   "glosses_mean": 4.33,
+   "word_hits": 45,
+   "word_tokens": 196,
+   "word_recall": 0.23,
+   "word_precision": 0.155,
+   "word_hits_canon": 50,
+   "word_recall_canon": 0.255,
+   "word_precision_canon": 0.172,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 41,
+   "seen_tokens": 70,
+   "seen_recall": 0.586
+  },
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 4.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 1,
+   "clips": 67,
+   "empty": 0.015,
+   "glosses_mean": 3.69,
+   "word_hits": 43,
+   "word_tokens": 196,
+   "word_recall": 0.219,
+   "word_precision": 0.174,
+   "word_hits_canon": 47,
+   "word_recall_canon": 0.24,
+   "word_precision_canon": 0.19,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 39,
+   "seen_tokens": 70,
+   "seen_recall": 0.557
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.0,
+   "word_bonus": 4.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 4,
+   "clips": 67,
+   "empty": 0.015,
+   "glosses_mean": 3.69,
+   "word_hits": 43,
+   "word_tokens": 196,
+   "word_recall": 0.219,
+   "word_precision": 0.174,
+   "word_hits_canon": 47,
+   "word_recall_canon": 0.24,
+   "word_precision_canon": 0.19,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 39,
+   "seen_tokens": 70,
+   "seen_recall": 0.557
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.05,
+   "word_bonus": 4.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 7,
+   "clips": 67,
+   "empty": 0.015,
+   "glosses_mean": 3.45,
+   "word_hits": 43,
+   "word_tokens": 196,
+   "word_recall": 0.219,
+   "word_precision": 0.186,
+   "word_hits_canon": 47,
+   "word_recall_canon": 0.24,
+   "word_precision_canon": 0.203,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 39,
+   "seen_tokens": 70,
+   "seen_recall": 0.557
+  },
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 3.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 0,
+   "clips": 67,
+   "empty": 0.03,
+   "glosses_mean": 2.93,
+   "word_hits": 42,
+   "word_tokens": 196,
+   "word_recall": 0.214,
+   "word_precision": 0.214,
+   "word_hits_canon": 45,
+   "word_recall_canon": 0.23,
+   "word_precision_canon": 0.23,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 38,
+   "seen_tokens": 70,
+   "seen_recall": 0.543
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.0,
+   "word_bonus": 3.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 3,
+   "clips": 67,
+   "empty": 0.03,
+   "glosses_mean": 2.93,
+   "word_hits": 42,
+   "word_tokens": 196,
+   "word_recall": 0.214,
+   "word_precision": 0.214,
+   "word_hits_canon": 45,
+   "word_recall_canon": 0.23,
+   "word_precision_canon": 0.23,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 38,
+   "seen_tokens": 70,
+   "seen_recall": 0.543
+  },
+  {
+   "lm_src": "phrases",
+   "lm_weight": 0.05,
+   "word_bonus": 3.0,
+   "smooth": 1,
+   "beam": 24,
+   "config_index": 6,
+   "clips": 67,
+   "empty": 0.045,
+   "glosses_mean": 2.69,
+   "word_hits": 38,
+   "word_tokens": 196,
+   "word_recall": 0.194,
+   "word_precision": 0.211,
+   "word_hits_canon": 41,
+   "word_recall_canon": 0.209,
+   "word_precision_canon": 0.228,
+   "phrase_all_words": 2,
+   "phrase_all_words_canon": 2,
+   "seen_hits": 36,
+   "seen_tokens": 70,
+   "seen_recall": 0.514
+  }
+ ],
+ "rows": {
+  "0": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "особо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "В",
+     "через",
+     "через"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "как",
+     "К",
+     "как"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "вы",
+     "вы"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "В",
+     "С"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "был",
+     "был",
+     "все",
+     "преступник"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "произошло"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "диета",
+     "движение",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 7,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "Я",
+     "мне",
+     "вас"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "опасный",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "улица"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "объяснить"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "автомашину"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "желтый",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "преступник"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вы",
+     "вас",
+     "вас"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "вечер"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "перо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "1": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "следовать",
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "как",
+     "К",
+     "как"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "направление",
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 10,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "диета",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "помочь",
+     "вас"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "опасный",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 5,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "улица"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "кого",
+     "как",
+     "объяснить"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "свет",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "от",
+     "спокойный",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "жить"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "мне",
+     "думать"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "2": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "где",
+     "В",
+     "это",
+     "случилось"
+    ],
+    "glosses": 5,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "следовать",
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "женат"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "где",
+     "как",
+     "К",
+     "как",
+     "трусливо"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С",
+     "С"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "вас",
+     "голодный"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "сбился",
+     "Я",
+     "милиция"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого",
+     "всего",
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "направление",
+     "знакомый",
+     "несколько",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "прошу",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "вас",
+     "знакомый"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "пешеходное",
+     "теперь",
+     "движение",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "что",
+     "особо",
+     "ресторан",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 12,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "диета",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "вас",
+     "помочь",
+     "вас"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "счастливого",
+     "автомашину",
+     "автомашину"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "опасный",
+     "купить",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "назовите",
+     "улица"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "вождение",
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "кого",
+     "как",
+     "объяснить"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр",
+     "центр"
+    ],
+    "glosses": 8,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "сколько",
+     "высокий",
+     "свет",
+     "свет",
+     "солнце",
+     "было",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "остаться",
+     "автомашину"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "от",
+     "спокойный",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "другие",
+     "запрешено"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "сбился",
+     "Я",
+     "делать",
+     "делать",
+     "счастливого",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "какого",
+     "вас",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "движение",
+     "остаться",
+     "обезьяна",
+     "жить"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "свидания",
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 14,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушать",
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "есть",
+     "вас"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "ли",
+     "мне",
+     "думать"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "что",
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [
+     "месяц",
+     "продление"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "ли",
+     "вас",
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "что",
+     "вы",
+     "вторник"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "вы",
+     "вас",
+     "Выручить",
+     "до",
+     "автомобиль"
+    ],
+    "glosses": 11,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   }
+  ],
+  "3": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "особо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "В",
+     "через",
+     "через"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "как",
+     "К",
+     "как"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "вы",
+     "вы"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "В",
+     "С"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "был",
+     "был",
+     "все",
+     "преступник"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "произошло"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "диета",
+     "движение",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 7,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "Я",
+     "мне",
+     "вас"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "опасный",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "улица"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "объяснить"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "автомашину"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "желтый",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "преступник"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вы",
+     "вас",
+     "вас"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "вечер"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "перо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "4": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "следовать",
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "как",
+     "К",
+     "как"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "направление",
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 10,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "диета",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "помочь",
+     "вас"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "опасный",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 5,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "улица"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "кого",
+     "как",
+     "объяснить"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "свет",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "от",
+     "спокойный",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "жить"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "мне",
+     "думать"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "5": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "где",
+     "В",
+     "это",
+     "случилось"
+    ],
+    "glosses": 5,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "следовать",
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "женат"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "где",
+     "как",
+     "К",
+     "как",
+     "трусливо"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С",
+     "С"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "вас",
+     "голодный"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "сбился",
+     "Я",
+     "милиция"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого",
+     "всего",
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "направление",
+     "знакомый",
+     "несколько",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "прошу",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "вас",
+     "знакомый"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "прирученный",
+     "добрый",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "пешеходное",
+     "теперь",
+     "движение",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "что",
+     "особо",
+     "ресторан",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 12,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "диета",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "вас",
+     "помочь",
+     "вас"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "счастливого",
+     "автомашину",
+     "автомашину"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "опасный",
+     "купить",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "назовите",
+     "улица"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "вождение",
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "кого",
+     "как",
+     "объяснить"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр",
+     "центр"
+    ],
+    "glosses": 8,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "сколько",
+     "высокий",
+     "свет",
+     "свет",
+     "солнце",
+     "было",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "остаться",
+     "автомашину"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "от",
+     "спокойный",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "другие",
+     "запрешено"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "сбился",
+     "Я",
+     "делать",
+     "делать",
+     "счастливого",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "какого",
+     "вас",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "движение",
+     "остаться",
+     "обезьяна",
+     "жить"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "до",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "вашу",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "свидания",
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 14,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушать",
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "есть",
+     "вас"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "ли",
+     "мне",
+     "думать"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "что",
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [
+     "месяц",
+     "продление"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "ли",
+     "вас",
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "что",
+     "вы",
+     "вторник"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "вы",
+     "вас",
+     "Выручить",
+     "до",
+     "автомобиль"
+    ],
+    "glosses": 11,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   }
+  ],
+  "6": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "особо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "В",
+     "через",
+     "через"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "как"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "вы",
+     "вы"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "В",
+     "С"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "был",
+     "преступник",
+     "все"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "произошло"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "добрый",
+     "прирученный",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "движение",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "вас"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "опасный",
+     "сюрприз"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "объяснить"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "автомашину"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "желтый",
+     "ограничение"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "преступник"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "У"
+    ],
+    "glosses": 5,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "город"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "представиться",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "права",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вы",
+     "вас",
+     "вас"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "перо"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "весь"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "7": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "женат"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "как",
+     "К",
+     "как"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "голодный"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "знакомый",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "знакомый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "добрый",
+     "прирученный",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "произошло"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 10,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "вас"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "опасный",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "улица"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "объяснить"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "свет",
+     "солнце",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "желтый",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "жить"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "всего",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "представиться",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "права",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "думать"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "вечер"
+    ],
+    "glosses": 3,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "Выручить"
+    ],
+    "glosses": 5,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "мне",
+     "ли"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   }
+  ],
+  "8": [
+   {
+    "id": "fca02bc70e883dd9314eda0899e0f348",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вас",
+     "от",
+     "особо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+    "fold": 0,
+    "pred": [
+     "где",
+     "где",
+     "это",
+     "случилось"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "a122a6b33a16298240aa0bb4b603a793",
+    "fold": 0,
+    "pred": [
+     "следовать",
+     "В",
+     "через",
+     "В",
+     "через"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "264b94e11f413442c371c6bdf5979db6",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "женат"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "5cb720643832d004d94ab578f6aa02aa",
+    "fold": 0,
+    "pred": [
+     "чем",
+     "как",
+     "К",
+     "как",
+     "трусливо"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "47be7e3be2cbddd660727de26fb368db",
+    "fold": 0,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "вы",
+     "вы",
+     "вы"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+    "fold": 0,
+    "pred": [
+     "имя",
+     "имя",
+     "имя",
+     "светлый",
+     "В",
+     "С",
+     "С"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "ed8c560f5583ca833781a18f85a0ea70",
+    "fold": 0,
+    "pred": [
+     "прошу",
+     "ваш",
+     "вас",
+     "голодный"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "сбился",
+     "Я",
+     "милиция"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "вам",
+     "был",
+     "был",
+     "преступник",
+     "все",
+     "преступник"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "fd68b03817381656cd5ce56cb6540128",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "получить",
+     "вам",
+     "где",
+     "был",
+     "до"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+    "fold": 0,
+    "pred": [
+     "серый"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+    "fold": 0,
+    "pred": [
+     "обещать",
+     "счастливого",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+    "fold": 0,
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "9c5a5826efbd0533319aae4442faa039",
+    "fold": 1,
+    "pred": [
+     "где",
+     "вы"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "f85f10456545114d8e791d9023ee3db9",
+    "fold": 1,
+    "pred": [
+     "чем"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "acfccad1199b648b18ec99977237aca4",
+    "fold": 1,
+    "pred": [
+     "сержант",
+     "это",
+     "этот",
+     "это",
+     "произошло"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "83875a2ae97506f931365bde01a40c6d",
+    "fold": 1,
+    "pred": [
+     "всего",
+     "счастливого",
+     "счастливого"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+    "fold": 1,
+    "pred": [
+     "направление",
+     "знакомый",
+     "несколько",
+     "вас",
+     "кого",
+     "главный"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9af77ba34136246c8739169a490cc6bd",
+    "fold": 1,
+    "pred": [
+     "выходите",
+     "спокойной",
+     "следовать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8e718ce195d9230241b74a4348a56ba9",
+    "fold": 1,
+    "pred": [
+     "прекрасный",
+     "вас",
+     "знакомый"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+    "fold": 1,
+    "pred": [
+     "добрый",
+     "прирученный",
+     "работать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "e421a7b069753905c8c4094c001a4329",
+    "fold": 1,
+    "pred": [
+     "пешеходное",
+     "теперь",
+     "ли",
+     "автомобиль"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "79752f97f16ee5c276079c99ea9fe635",
+    "fold": 1,
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+    "fold": 1,
+    "pred": [
+     "что",
+     "особо",
+     "ресторан",
+     "произошло"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "d2ce0817e5077558359e2bbddc4e5902",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "диета",
+     "движение",
+     "движение",
+     "ставка",
+     "вас",
+     "ли",
+     "ехать",
+     "можно"
+    ],
+    "glosses": 11,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "2157c2060e7d68eacef53125d10f4fe1",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "диета",
+     "знакомый",
+     "ли"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c4392806d376837c451bb284a6a768b6",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "мне",
+     "Я",
+     "мне",
+     "помочь",
+     "вас"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "4cdca0988a6a95616f7aab4fd5066180",
+    "fold": 2,
+    "pred": [
+     "проникнуть",
+     "В",
+     "автомашину",
+     "автомашину"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "опасный",
+     "купить",
+     "купить",
+     "сюрприз"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a947081df0a69175da94f49710cbab55",
+    "fold": 2,
+    "pred": [
+     "назовите",
+     "улица"
+    ],
+    "glosses": 2,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+    "fold": 2,
+    "pred": [
+     "движение",
+     "вождение",
+     "движение",
+     "движение",
+     "движение"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+    "fold": 2,
+    "pred": [
+     "как",
+     "кого",
+     "как",
+     "объяснить"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "064619b3057118c247be3baba055c285",
+    "fold": 2,
+    "pred": [
+     "как",
+     "как",
+     "как",
+     "как",
+     "до",
+     "центр"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "e702218b9b10fd7b2c093846230d7008",
+    "fold": 2,
+    "pred": [
+     "сколько",
+     "сколько",
+     "сколько",
+     "сколько",
+     "высокий",
+     "свет",
+     "свет",
+     "солнце",
+     "было",
+     "преступник",
+     "преступник",
+     "преступник"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "c179d389de588b66e7f9b7d0e13fef4f",
+    "fold": 2,
+    "pred": [
+     "вам",
+     "от",
+     "автомашину"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "937e504a28e7f69d4557852fe6daf236",
+    "fold": 2,
+    "pred": [
+     "спокойный",
+     "от",
+     "спокойный",
+     "оттенок",
+     "ограничение"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "42a730dd03eb6e97bde576ec51e607ef",
+    "fold": 2,
+    "pred": [
+     "другие",
+     "документы",
+     "запрешено"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "7f12803b38efdc702bfe500b7fa81d6d",
+    "fold": 2,
+    "pred": [
+     "У",
+     "У",
+     "У",
+     "У",
+     "иметь",
+     "иметь",
+     "преступник",
+     "человек"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "fe6f830b73c477f7c3ace2199782e4bf",
+    "fold": 2,
+    "pred": [
+     "до",
+     "до",
+     "до",
+     "до"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "395776c19a023f224d89ac78b8e50e04",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "делать",
+     "делать",
+     "счастливого",
+     "можете",
+     "опасный"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "89c5179147b8b7541691f297a30c7d26",
+    "fold": 3,
+    "pred": [
+     "через",
+     "через",
+     "главный",
+     "главный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "c1247e68fb40bf3e8426dc2452367dc4",
+    "fold": 3,
+    "pred": [
+     "добрый",
+     "день"
+    ],
+    "glosses": 2,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a53fc8ec399010c4f2c00471e1d36987",
+    "fold": 3,
+    "pred": [
+     "вас",
+     "есть",
+     "вас",
+     "У",
+     "самоконтроль",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 3,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 3,
+    "seen_total": 3
+   },
+   {
+    "id": "1520e6e2d763df265cbae87f88916ac5",
+    "fold": 3,
+    "pred": [
+     "какого",
+     "вас",
+     "вы",
+     "вы",
+     "Выигрыш"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "35b0eab06883a680af23ff9a6bd28b4f",
+    "fold": 3,
+    "pred": [
+     "движение",
+     "жить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "51c921ee956059eced7f91c6632c8e62",
+    "fold": 3,
+    "pred": [
+     "остаться",
+     "вы",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+    "fold": 3,
+    "pred": [
+     "всего",
+     "город"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "93a77d516ab32697ab166922d3fcfbde",
+    "fold": 3,
+    "pred": [
+     "милиция",
+     "должен"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+    "fold": 3,
+    "pred": [
+     "тёмный",
+     "милиция"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "d13a300890d6898da0eeec7cd592b25c",
+    "fold": 3,
+    "pred": [
+     "прошу",
+     "вас",
+     "представиться",
+     "мне"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "469694e1d6795d7ab0d494c01f83d6e8",
+    "fold": 3,
+    "pred": [
+     "права",
+     "вспомнить"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "945e2edb8f2fb6088399e992fb1f6d68",
+    "fold": 3,
+    "pred": [
+     "счастливого"
+    ],
+    "glosses": 1,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "7c2711904f4373bc391a908e19c532cd",
+    "fold": 3,
+    "pred": [
+     "где",
+     "вы",
+     "вы",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "a99a602c90df6a8c6819698c89ff2c76",
+    "fold": 4,
+    "pred": [
+     "слушаю",
+     "белый"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "4a732944707feb4a3f875ac50481a5a7",
+    "fold": 4,
+    "pred": [
+     "прошу",
+     "вас"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "68bbbd74498de41ba6530e883dd8c1b3",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "ли",
+     "вы",
+     "мне",
+     "думать"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "bdec82bdeaa92109dcda7283a2498287",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "добрый",
+     "добрый",
+     "В"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "8dfa0aeb0383895426f7b88ba04df085",
+    "fold": 4,
+    "pred": [
+     "добрый",
+     "муж",
+     "добрый",
+     "вечер"
+    ],
+    "glosses": 4,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+    "fold": 4,
+    "pred": [
+     "что",
+     "отделение",
+     "через",
+     "перо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "9759554b45ed7c3b41bcc0d7682e3982",
+    "fold": 4,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "edff30c0dbe70c965bcda13c1ed687fc",
+    "fold": 4,
+    "pred": [
+     "вас",
+     "ли",
+     "вас",
+     "ли",
+     "вас",
+     "Выручить",
+     "теперь"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+    "fold": 4,
+    "pred": [
+     "центр",
+     "запрещено",
+     "запрещено"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+    "fold": 4,
+    "pred": [
+     "через",
+     "через",
+     "через",
+     "весь"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "4f6636b795b1f3cddc887efbf46b489f",
+    "fold": 4,
+    "pred": [
+     "что",
+     "что",
+     "что",
+     "что",
+     "вторник"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "1b955598ed37b728299e788623b5c2a1",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "вас",
+     "вас",
+     "вас",
+     "вы",
+     "вас",
+     "Выручить",
+     "до",
+     "автомобиль"
+    ],
+    "glosses": 11,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "ли"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   }
+  ]
+ }
+}

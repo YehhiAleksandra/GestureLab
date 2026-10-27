@@ -34,9 +34,58 @@ def test_load_phrase_clips_uses_longest_span_and_skips_short(tmp_path):
     assert skipped == [{'id': 'b', 'reason': 'кадров 4 < меток 3'}]
 
 
+def test_ctc_align_finds_word_borders():
+    logp = np.full((12, 3), -5.0)
+    logp[:4, 1] = 0.0    # метка 0
+    logp[4:6, 0] = 0.0   # blank
+    logp[6:10, 2] = 0.0  # метка 1
+    logp[10:, 0] = 0.0
+    spans = fp.ctc_align(logp, [0, 1])
+    assert spans == [(0, 0, 4), (1, 6, 10)]
+
+
+def test_ctc_align_handles_repeated_labels():
+    logp = np.full((14, 2), -5.0)
+    logp[1:4, 1] = 0.0
+    logp[5:8, 0] = 0.0
+    logp[9:12, 1] = 0.0
+    spans = fp.ctc_align(logp, [0, 0])
+    assert [s[0] for s in spans] == [0, 0] and spans[0][2] <= spans[1][1]
+
+
+def test_recombine_concatenates_segments_with_gaps():
+    seg = np.zeros((8, 59, 3), np.float32)
+    pool = {3: [(seg, 'a')], 7: [(seg + 1, 'b')]}
+    stream, labels = fp.recombine(pool, np.random.default_rng(0), 2, 2)
+    assert len(labels) == 2 and all(l in (3, 7) for l in labels)
+    assert stream.shape[1:] == (59, 3)
+    assert 14 <= len(stream) <= 16  # 6 + 6 кадров отрезков + пауза 2–4
+
+
+def test_mix_phrase_recombine_branch_keeps_labels():
+    pool = {0: [(np.zeros((8, 59, 3), np.float32), 'a')]}
+    s, labels = fp.mix_phrase({}, [], [], [], np.random.default_rng(0), 0.0, 0.0, 0.0,
+                              pool=pool, recombine_frac=1.0)
+    assert set(labels) == {0} and 2 <= len(labels) <= 4
+    assert s.shape[1:] == (59, 3)
+
+
 def test_summarize_seen_and_unseen_words():
     rows = [{'glosses': 0, 'hits': 0, 'total': 2, 'seen_hits': 0, 'seen_total': 1},
             {'glosses': 2, 'hits': 1, 'total': 2, 'seen_hits': 1, 'seen_total': 2}]
     s = fp.summarize(rows)
     assert s['empty'] == 0.5 and s['word_hits'] == 1 and s['word_tokens'] == 4
     assert s['seen_recall'] == round(1 / 3, 3) and s['phrase_all_words'] == 0
+
+
+def test_stem_keeps_short_words_and_strips_inflection():
+    assert fp.stem('автомобилем') == 'автомобил'
+    assert fp.stem('дом') == 'дом'
+    assert fp.stem('я') == 'я'
+
+
+def test_canon_map_only_unique_lemma_candidate():
+    assert fp.canon_map({'автомобилем', 'автомобиль'}, {'автомобиль'}) == {
+        'автомобиль': 'автомобиль', 'автомобилем': 'автомобиль'}
+    # два кандидата на один стем — не гадаем
+    assert fp.canon_map({'города'}, {'город', 'городу'}) == {}
