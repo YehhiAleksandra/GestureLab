@@ -1,0 +1,64 @@
+{
+ "partial": true,
+ "missing_folds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "fold_report": [
+  {
+   "fold": 0,
+   "train_clips": 1000,
+   "held_clips": 250,
+   "beam": {
+    "clips": 250,
+    "empty": 0.004,
+    "glosses_mean": 2.95,
+    "word_hits": 104,
+    "word_tokens": 907,
+    "word_recall": 0.115,
+    "word_hits_strict": 104,
+    "word_recall_strict": 0.115,
+    "seen_hits": 102,
+    "seen_tokens": 639,
+    "seen_recall": 0.16,
+    "phrase_all_words": 3
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 1.95,
+    "word_hits": 39,
+    "word_tokens": 59,
+    "word_recall": 0.661,
+    "word_hits_strict": 39,
+    "word_recall_strict": 0.661,
+    "seen_hits": 39,
+    "seen_tokens": 59,
+    "seen_recall": 0.661,
+    "phrase_all_words": 6
+   },
+   "held_greedy": {
+    "clips": 250,
+    "empty": 0.628,
+    "glosses_mean": 0.43,
+    "word_hits": 26,
+    "word_tokens": 907,
+    "word_recall": 0.029,
+    "word_hits_strict": 26,
+    "word_recall_strict": 0.029,
+    "seen_hits": 26,
+    "seen_tokens": 639,
+    "seen_recall": 0.041,
+    "phrase_all_words": 2
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.336,
+    "exact_acc": 0.067,
+    "edit_rate": 0.558
+   },
+   "checkpoint_sha256": "e777ee146dd12891b2b1c6f8d0cdbaf720d9c670c7cd11625e4c816560d1c8df"
+  }
+ ]
+}

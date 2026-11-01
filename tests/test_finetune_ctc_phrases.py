@@ -13,6 +13,21 @@ def test_folds_cover_every_clip_once():
     assert parts != fp.folds(10, 5, 1)
 
 
+def test_training_clips_filters_train_but_never_held():
+    clips = [{'id': x} for x in 'abcd']
+    train = fp.training_clips(clips, [1, 3], {'a', 'b', 'd'})
+    assert [c['id'] for c in train] == ['a']
+    # b и d исключены как held, даже если разрешены фильтром качества
+    assert fp.training_clips(clips, [], {'b'}) == [{'id': 'b'}]
+
+
+def test_production_counts_separate_loaded_and_filtered_training_clips():
+    clips = [{'id': x} for x in 'abcd']
+    prod_clips = fp.training_clips(clips, [], {'b', 'd'})
+    assert fp.production_counts(clips, prod_clips) == {
+        'clips': 4, 'train_clips': 2, 'held_clips': 0}
+
+
 def test_matched_counts_synonyms_as_words():
     assert fp.matched(['мать', 'я'], 'Мама я тебя') == {'я': 1}
     assert fp.matched(['там/туда'], 'туда') == {'туда': 1}
@@ -89,3 +104,30 @@ def test_canon_map_only_unique_lemma_candidate():
         'автомобиль': 'автомобиль', 'автомобилем': 'автомобиль'}
     # два кандидата на один стем — не гадаем
     assert fp.canon_map({'города'}, {'город', 'городу'}) == {}
+
+
+def test_beam_rows_resume_decodes_only_new_clips(tmp_path, monkeypatch):
+    import dialogue_translator
+
+    calls = []
+
+    class FakeRecognizer:
+        def __init__(self, *args, **kwargs):
+            pass
+
+        def decode(self, span):
+            calls.append(span)
+            return [('я', 0.9)], []
+
+    monkeypatch.setattr(dialogue_translator, 'Recognizer', FakeRecognizer)
+    state = tmp_path / 'base_rows.json'
+    saved = {'id': 'old', 'pred': ['сохранено']}
+    state.write_text(json.dumps([saved], ensure_ascii=False), encoding='utf-8')
+    clips = [{'id': 'old', 'phrase': 'старая', 'canon': 'старая',
+              'span': 'old-span', 'words': ['старая']},
+             {'id': 'new', 'phrase': 'я', 'canon': 'я',
+              'span': 'new-span', 'words': ['я']}]
+    rows = fp.beam_rows_resume('model.pt', clips, state)
+    assert calls == ['new-span']
+    assert rows[0] == saved and rows[1]['pred'] == ['я']
+    assert len(json.loads(state.read_text(encoding='utf-8'))) == 2

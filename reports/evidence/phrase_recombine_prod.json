@@ -1,0 +1,50 @@
+{
+ "tool": "finetune_ctc_phrases",
+ "date": "2026-10-28",
+ "init": "slovo_ctc_motion_head_all.pt",
+ "init_sha256": "1a741081792c7ab43558367d69f1bbfdf661d2fe6c22c55d11e1446b4bc56a53",
+ "expanded_classes": 1781,
+ "expanded_added": 105,
+ "train_all": true,
+ "clips": 67,
+ "skipped": [],
+ "seconds": 127.1,
+ "base_beam": {
+  "clips": 67,
+  "empty": 0.448,
+  "glosses_mean": 0.7,
+  "word_hits": 4,
+  "word_tokens": 196,
+  "word_recall": 0.02,
+  "word_hits_strict": 4,
+  "word_recall_strict": 0.02,
+  "seen_hits": 0,
+  "seen_tokens": 0,
+  "seen_recall": 0.0,
+  "phrase_all_words": 0
+ },
+ "slovo_clean": {
+  "gloss_acc": 0.262,
+  "exact_acc": 0.025,
+  "edit_rate": 0.63
+ },
+ "prod": "D:\\hfdata\\phrase_recombine\\prod.pt",
+ "prod_sha256": "e93e8de34741992a2e75c8541a4a098617680f120cd41cc262739843abec3306",
+ "canon_mapped": 0,
+ "config": {
+  "epochs": 30,
+  "steps": 60,
+  "bs": 24,
+  "lr": 0.0001,
+  "corpus_frac": 0.3,
+  "phrase_frac": 0.45,
+  "single_frac": 0.1,
+  "aug": "hard",
+  "freeze_encoder": false,
+  "canon": false,
+  "beam": 24,
+  "lm_weight": 0.0,
+  "word_bonus": 3.0,
+  "nbest": 20
+ }
+}

@@ -1,0 +1,371 @@
+{
+ "complete": true,
+ "method": "115 held-out VOGinfo, 23/fold, одно видео один раз",
+ "clips": 115,
+ "unique_videos": 115,
+ "shifts": [
+  -0.5,
+  -0.25,
+  0.0,
+  0.25,
+  0.5
+ ],
+ "pad_seconds": 0.8,
+ "decoder": {
+  "beam": 24,
+  "lm_weight": 0.0,
+  "word_bonus": 3.0,
+  "smooth": 1
+ },
+ "comparison": {
+  "by_shift": {
+   "-0.50": {
+    "clips": 115,
+    "hits": 46,
+    "tokens": 997,
+    "predicted_tokens": 459,
+    "recall": 0.046138,
+    "precision": 0.100218,
+    "f1": 0.063187,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 115,
+    "hits": 48,
+    "tokens": 997,
+    "predicted_tokens": 455,
+    "recall": 0.048144,
+    "precision": 0.105495,
+    "f1": 0.066116,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 115,
+    "hits": 46,
+    "tokens": 997,
+    "predicted_tokens": 458,
+    "recall": 0.046138,
+    "precision": 0.100437,
+    "f1": 0.06323,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 115,
+    "hits": 48,
+    "tokens": 997,
+    "predicted_tokens": 463,
+    "recall": 0.048144,
+    "precision": 0.103672,
+    "f1": 0.065753,
+    "empty": 0.008696
+   },
+   "+0.50": {
+    "clips": 115,
+    "hits": 48,
+    "tokens": 997,
+    "predicted_tokens": 465,
+    "recall": 0.048144,
+    "precision": 0.103226,
+    "f1": 0.065663,
+    "empty": 0.0
+   }
+  },
+  "paired_vs_zero": {
+   "-0.50": {
+    "improved": 3,
+    "worse": 3,
+    "same": 109
+   },
+   "-0.25": {
+    "improved": 6,
+    "worse": 3,
+    "same": 106
+   },
+   "+0.00": {
+    "improved": 0,
+    "worse": 0,
+    "same": 115
+   },
+   "+0.25": {
+    "improved": 3,
+    "worse": 1,
+    "same": 111
+   },
+   "+0.50": {
+    "improved": 4,
+    "worse": 2,
+    "same": 109
+   }
+  }
+ },
+ "per_fold": {
+  "0": {
+   "-0.50": {
+    "clips": 23,
+    "hits": 6,
+    "tokens": 184,
+    "predicted_tokens": 88,
+    "recall": 0.032609,
+    "precision": 0.068182,
+    "f1": 0.044118,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 184,
+    "predicted_tokens": 81,
+    "recall": 0.043478,
+    "precision": 0.098765,
+    "f1": 0.060377,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 184,
+    "predicted_tokens": 80,
+    "recall": 0.038043,
+    "precision": 0.0875,
+    "f1": 0.05303,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 184,
+    "predicted_tokens": 82,
+    "recall": 0.038043,
+    "precision": 0.085366,
+    "f1": 0.052632,
+    "empty": 0.0
+   },
+   "+0.50": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 184,
+    "predicted_tokens": 80,
+    "recall": 0.038043,
+    "precision": 0.0875,
+    "f1": 0.05303,
+    "empty": 0.0
+   }
+  },
+  "1": {
+   "-0.50": {
+    "clips": 23,
+    "hits": 9,
+    "tokens": 205,
+    "predicted_tokens": 84,
+    "recall": 0.043902,
+    "precision": 0.107143,
+    "f1": 0.062284,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 205,
+    "predicted_tokens": 89,
+    "recall": 0.039024,
+    "precision": 0.089888,
+    "f1": 0.054422,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 205,
+    "predicted_tokens": 87,
+    "recall": 0.039024,
+    "precision": 0.091954,
+    "f1": 0.054795,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 205,
+    "predicted_tokens": 88,
+    "recall": 0.039024,
+    "precision": 0.090909,
+    "f1": 0.054608,
+    "empty": 0.0
+   },
+   "+0.50": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 205,
+    "predicted_tokens": 86,
+    "recall": 0.039024,
+    "precision": 0.093023,
+    "f1": 0.054983,
+    "empty": 0.0
+   }
+  },
+  "2": {
+   "-0.50": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 178,
+    "predicted_tokens": 98,
+    "recall": 0.039326,
+    "precision": 0.071429,
+    "f1": 0.050725,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 178,
+    "predicted_tokens": 100,
+    "recall": 0.039326,
+    "precision": 0.07,
+    "f1": 0.05036,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 178,
+    "predicted_tokens": 96,
+    "recall": 0.044944,
+    "precision": 0.083333,
+    "f1": 0.058394,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 178,
+    "predicted_tokens": 99,
+    "recall": 0.044944,
+    "precision": 0.080808,
+    "f1": 0.057762,
+    "empty": 0.0
+   },
+   "+0.50": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 178,
+    "predicted_tokens": 101,
+    "recall": 0.044944,
+    "precision": 0.079208,
+    "f1": 0.057348,
+    "empty": 0.0
+   }
+  },
+  "3": {
+   "-0.50": {
+    "clips": 23,
+    "hits": 6,
+    "tokens": 196,
+    "predicted_tokens": 81,
+    "recall": 0.030612,
+    "precision": 0.074074,
+    "f1": 0.043321,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 196,
+    "predicted_tokens": 79,
+    "recall": 0.035714,
+    "precision": 0.088608,
+    "f1": 0.050909,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 23,
+    "hits": 6,
+    "tokens": 196,
+    "predicted_tokens": 87,
+    "recall": 0.030612,
+    "precision": 0.068966,
+    "f1": 0.042403,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 23,
+    "hits": 7,
+    "tokens": 196,
+    "predicted_tokens": 83,
+    "recall": 0.035714,
+    "precision": 0.084337,
+    "f1": 0.050179,
+    "empty": 0.043478
+   },
+   "+0.50": {
+    "clips": 23,
+    "hits": 8,
+    "tokens": 196,
+    "predicted_tokens": 81,
+    "recall": 0.040816,
+    "precision": 0.098765,
+    "f1": 0.057762,
+    "empty": 0.0
+   }
+  },
+  "4": {
+   "-0.50": {
+    "clips": 23,
+    "hits": 18,
+    "tokens": 234,
+    "predicted_tokens": 108,
+    "recall": 0.076923,
+    "precision": 0.166667,
+    "f1": 0.105263,
+    "empty": 0.0
+   },
+   "-0.25": {
+    "clips": 23,
+    "hits": 18,
+    "tokens": 234,
+    "predicted_tokens": 106,
+    "recall": 0.076923,
+    "precision": 0.169811,
+    "f1": 0.105882,
+    "empty": 0.0
+   },
+   "+0.00": {
+    "clips": 23,
+    "hits": 17,
+    "tokens": 234,
+    "predicted_tokens": 108,
+    "recall": 0.07265,
+    "precision": 0.157407,
+    "f1": 0.099415,
+    "empty": 0.0
+   },
+   "+0.25": {
+    "clips": 23,
+    "hits": 18,
+    "tokens": 234,
+    "predicted_tokens": 111,
+    "recall": 0.076923,
+    "precision": 0.162162,
+    "f1": 0.104348,
+    "empty": 0.0
+   },
+   "+0.50": {
+    "clips": 23,
+    "hits": 17,
+    "tokens": 234,
+    "predicted_tokens": 117,
+    "recall": 0.07265,
+    "precision": 0.145299,
+    "f1": 0.096866,
+    "empty": 0.0
+   }
+  }
+ },
+ "best_exploratory_shift": -0.25,
+ "decision": "только кандидат: нужен полный group-CV по видео, production не менять",
+ "limitations": [
+  "Разведочная выборка, а не полный CV",
+  "Фолды v4 разбиты по клипам, не по видео",
+  "Русские субтитры — слабые метки, не точная глосс-разметка"
+ ],
+ "production_changed": false
+}

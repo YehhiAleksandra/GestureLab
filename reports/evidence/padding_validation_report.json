@@ -1,0 +1,169 @@
+{
+ "complete": true,
+ "method": "все held-out VOGinfo v4, кроме 115 exploratory; общие ID pad 0/0.8",
+ "clips": 10033,
+ "unique_videos": 120,
+ "coverage_rejected": 7,
+ "exploratory_clips_excluded": 115,
+ "pads": [
+  0.0,
+  0.8
+ ],
+ "shift": 0.0,
+ "comparison": {
+  "by_pad": {
+   "0.00": {
+    "clips": 10033,
+    "hits": 3456,
+    "tokens": 84362,
+    "predicted_tokens": 25960,
+    "recall": 0.040966,
+    "precision": 0.133128,
+    "f1": 0.062653,
+    "empty": 0.046945
+   },
+   "0.80": {
+    "clips": 10033,
+    "hits": 3878,
+    "tokens": 84362,
+    "predicted_tokens": 33843,
+    "recall": 0.045969,
+    "precision": 0.114588,
+    "f1": 0.065615,
+    "empty": 0.014153
+   }
+  },
+  "paired_vs_0.80": {
+   "0.00": {
+    "improved": 273,
+    "worse": 688,
+    "same": 9072
+   },
+   "0.80": {
+    "improved": 0,
+    "worse": 0,
+    "same": 10033
+   }
+  }
+ },
+ "per_fold": {
+  "0": {
+   "0.00": {
+    "clips": 2010,
+    "hits": 706,
+    "tokens": 16938,
+    "predicted_tokens": 5103,
+    "recall": 0.041681,
+    "precision": 0.13835,
+    "f1": 0.064062,
+    "empty": 0.045274
+   },
+   "0.80": {
+    "clips": 2010,
+    "hits": 783,
+    "tokens": 16938,
+    "predicted_tokens": 6569,
+    "recall": 0.046227,
+    "precision": 0.119196,
+    "f1": 0.066618,
+    "empty": 0.016915
+   }
+  },
+  "1": {
+   "0.00": {
+    "clips": 1984,
+    "hits": 704,
+    "tokens": 16605,
+    "predicted_tokens": 5343,
+    "recall": 0.042397,
+    "precision": 0.131761,
+    "f1": 0.064152,
+    "empty": 0.037298
+   },
+   "0.80": {
+    "clips": 1984,
+    "hits": 802,
+    "tokens": 16605,
+    "predicted_tokens": 6998,
+    "recall": 0.048299,
+    "precision": 0.114604,
+    "f1": 0.067957,
+    "empty": 0.010081
+   }
+  },
+  "2": {
+   "0.00": {
+    "clips": 2025,
+    "hits": 725,
+    "tokens": 17328,
+    "predicted_tokens": 5441,
+    "recall": 0.04184,
+    "precision": 0.133248,
+    "f1": 0.063683,
+    "empty": 0.040494
+   },
+   "0.80": {
+    "clips": 2025,
+    "hits": 809,
+    "tokens": 17328,
+    "predicted_tokens": 7154,
+    "recall": 0.046687,
+    "precision": 0.113084,
+    "f1": 0.066089,
+    "empty": 0.01037
+   }
+  },
+  "3": {
+   "0.00": {
+    "clips": 2006,
+    "hits": 659,
+    "tokens": 16824,
+    "predicted_tokens": 5085,
+    "recall": 0.03917,
+    "precision": 0.129597,
+    "f1": 0.060158,
+    "empty": 0.054835
+   },
+   "0.80": {
+    "clips": 2006,
+    "hits": 745,
+    "tokens": 16824,
+    "predicted_tokens": 6615,
+    "recall": 0.044282,
+    "precision": 0.112623,
+    "f1": 0.063569,
+    "empty": 0.021934
+   }
+  },
+  "4": {
+   "0.00": {
+    "clips": 2008,
+    "hits": 662,
+    "tokens": 16667,
+    "predicted_tokens": 4988,
+    "recall": 0.039719,
+    "precision": 0.132719,
+    "f1": 0.061141,
+    "empty": 0.056773
+   },
+   "0.80": {
+    "clips": 2008,
+    "hits": 739,
+    "tokens": 16667,
+    "predicted_tokens": 6507,
+    "recall": 0.044339,
+    "precision": 0.11357,
+    "f1": 0.063778,
+    "empty": 0.011454
+   }
+  }
+ },
+ "candidate_confirmed": false,
+ "decision": "преимущество pad 0 не подтверждено; текущий рецепт не менять",
+ "limitations": [
+  "Клипные фолды v4, не group-CV по видео",
+  "Русские субтитры — слабые метки, не глоссы",
+  "Это проверка окон на готовых моделях, не результат переобучения"
+ ],
+ "production_changed": false
+}

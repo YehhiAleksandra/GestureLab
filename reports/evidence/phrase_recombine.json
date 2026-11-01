@@ -1,0 +1,2010 @@
+{
+ "tool": "finetune_ctc_phrases",
+ "date": "2026-10-28",
+ "init": "slovo_ctc_motion_head_all.pt",
+ "init_sha256": "1a741081792c7ab43558367d69f1bbfdf661d2fe6c22c55d11e1446b4bc56a53",
+ "expanded_classes": 1781,
+ "expanded_added": 105,
+ "folds": 5,
+ "seed": 2026,
+ "config": {
+  "epochs": 30,
+  "steps": 60,
+  "bs": 24,
+  "lr": 0.0001,
+  "corpus_frac": 0.3,
+  "phrase_frac": 0.45,
+  "single_frac": 0.1,
+  "aug": "hard",
+  "recombine_frac": 0.25,
+  "freeze_encoder": false,
+  "beam": 24,
+  "lm_weight": 0.0,
+  "word_bonus": 3.0,
+  "nbest": 20
+ },
+ "clips": 67,
+ "skipped": [],
+ "seconds": 198.4,
+ "base_beam": {
+  "clips": 67,
+  "empty": 0.448,
+  "glosses_mean": 0.7,
+  "word_hits": 4,
+  "word_tokens": 196,
+  "word_recall": 0.02,
+  "word_hits_strict": 4,
+  "word_recall_strict": 0.02,
+  "seen_hits": 0,
+  "seen_tokens": 0,
+  "seen_recall": 0.0,
+  "phrase_all_words": 0
+ },
+ "fold_report": [
+  {
+   "fold": 0,
+   "train_clips": 53,
+   "held_clips": 14,
+   "beam": {
+    "clips": 14,
+    "empty": 0.0,
+    "glosses_mean": 3.43,
+    "word_hits": 7,
+    "word_tokens": 41,
+    "word_recall": 0.171,
+    "word_hits_strict": 7,
+    "word_recall_strict": 0.171,
+    "seen_hits": 7,
+    "seen_tokens": 16,
+    "seen_recall": 0.438,
+    "phrase_all_words": 1
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 2.45,
+    "word_hits": 47,
+    "word_tokens": 58,
+    "word_recall": 0.81,
+    "word_hits_strict": 47,
+    "word_recall_strict": 0.81,
+    "seen_hits": 47,
+    "seen_tokens": 58,
+    "seen_recall": 0.81,
+    "phrase_all_words": 12
+   },
+   "held_greedy": {
+    "clips": 14,
+    "empty": 0.214,
+    "glosses_mean": 1.29,
+    "word_hits": 5,
+    "word_tokens": 41,
+    "word_recall": 0.122,
+    "word_hits_strict": 5,
+    "word_recall_strict": 0.122,
+    "seen_hits": 5,
+    "seen_tokens": 16,
+    "seen_recall": 0.312,
+    "phrase_all_words": 0
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.301,
+    "exact_acc": 0.033,
+    "edit_rate": 0.584
+   },
+   "checkpoint_sha256": "cc360b440a16453b7887f7a9bb705831f220b18ea8ba485c4477c206b6e662e4"
+  },
+  {
+   "fold": 1,
+   "train_clips": 53,
+   "held_clips": 14,
+   "beam": {
+    "clips": 14,
+    "empty": 0.0,
+    "glosses_mean": 2.93,
+    "word_hits": 7,
+    "word_tokens": 42,
+    "word_recall": 0.167,
+    "word_hits_strict": 7,
+    "word_recall_strict": 0.167,
+    "seen_hits": 7,
+    "seen_tokens": 16,
+    "seen_recall": 0.438,
+    "phrase_all_words": 0
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 2.5,
+    "word_hits": 47,
+    "word_tokens": 59,
+    "word_recall": 0.797,
+    "word_hits_strict": 47,
+    "word_recall_strict": 0.797,
+    "seen_hits": 47,
+    "seen_tokens": 59,
+    "seen_recall": 0.797,
+    "phrase_all_words": 11
+   },
+   "held_greedy": {
+    "clips": 14,
+    "empty": 0.071,
+    "glosses_mean": 1.57,
+    "word_hits": 6,
+    "word_tokens": 42,
+    "word_recall": 0.143,
+    "word_hits_strict": 6,
+    "word_recall_strict": 0.143,
+    "seen_hits": 6,
+    "seen_tokens": 16,
+    "seen_recall": 0.375,
+    "phrase_all_words": 0
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.31,
+    "exact_acc": 0.033,
+    "edit_rate": 0.575
+   },
+   "checkpoint_sha256": "7d939b464918614cf84c39921431868282410b9ddc046f2df184b05375d0fdfb"
+  },
+  {
+   "fold": 2,
+   "train_clips": 54,
+   "held_clips": 13,
+   "beam": {
+    "clips": 13,
+    "empty": 0.0,
+    "glosses_mean": 4.62,
+    "word_hits": 10,
+    "word_tokens": 40,
+    "word_recall": 0.25,
+    "word_hits_strict": 10,
+    "word_recall_strict": 0.25,
+    "seen_hits": 8,
+    "seen_tokens": 13,
+    "seen_recall": 0.615,
+    "phrase_all_words": 0
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 2.35,
+    "word_hits": 47,
+    "word_tokens": 58,
+    "word_recall": 0.81,
+    "word_hits_strict": 47,
+    "word_recall_strict": 0.81,
+    "seen_hits": 47,
+    "seen_tokens": 58,
+    "seen_recall": 0.81,
+    "phrase_all_words": 11
+   },
+   "held_greedy": {
+    "clips": 13,
+    "empty": 0.231,
+    "glosses_mean": 1.38,
+    "word_hits": 5,
+    "word_tokens": 40,
+    "word_recall": 0.125,
+    "word_hits_strict": 5,
+    "word_recall_strict": 0.125,
+    "seen_hits": 5,
+    "seen_tokens": 13,
+    "seen_recall": 0.385,
+    "phrase_all_words": 0
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.372,
+    "exact_acc": 0.067,
+    "edit_rate": 0.54
+   },
+   "checkpoint_sha256": "72f9c10c92a3d2b6c852bbd8bfaa0c5dc4e03af7b03a38cfc798b2fd1e428fb6"
+  },
+  {
+   "fold": 3,
+   "train_clips": 54,
+   "held_clips": 13,
+   "beam": {
+    "clips": 13,
+    "empty": 0.0,
+    "glosses_mean": 3.38,
+    "word_hits": 6,
+    "word_tokens": 39,
+    "word_recall": 0.154,
+    "word_hits_strict": 6,
+    "word_recall_strict": 0.154,
+    "seen_hits": 5,
+    "seen_tokens": 9,
+    "seen_recall": 0.556,
+    "phrase_all_words": 1
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 2.4,
+    "word_hits": 46,
+    "word_tokens": 57,
+    "word_recall": 0.807,
+    "word_hits_strict": 46,
+    "word_recall_strict": 0.807,
+    "seen_hits": 46,
+    "seen_tokens": 57,
+    "seen_recall": 0.807,
+    "phrase_all_words": 10
+   },
+   "held_greedy": {
+    "clips": 13,
+    "empty": 0.154,
+    "glosses_mean": 1.31,
+    "word_hits": 5,
+    "word_tokens": 39,
+    "word_recall": 0.128,
+    "word_hits_strict": 5,
+    "word_recall_strict": 0.128,
+    "seen_hits": 5,
+    "seen_tokens": 9,
+    "seen_recall": 0.556,
+    "phrase_all_words": 0
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.292,
+    "exact_acc": 0.033,
+    "edit_rate": 0.602
+   },
+   "checkpoint_sha256": "f6313ef86391b6553fa9d5cd74343f40ec47186bf2e3d85940ffc43c6191c44d"
+  },
+  {
+   "fold": 4,
+   "train_clips": 54,
+   "held_clips": 13,
+   "beam": {
+    "clips": 13,
+    "empty": 0.0,
+    "glosses_mean": 3.38,
+    "word_hits": 9,
+    "word_tokens": 34,
+    "word_recall": 0.265,
+    "word_hits_strict": 9,
+    "word_recall_strict": 0.265,
+    "seen_hits": 8,
+    "seen_tokens": 10,
+    "seen_recall": 0.8,
+    "phrase_all_words": 1
+   },
+   "train_greedy": {
+    "clips": 20,
+    "empty": 0.0,
+    "glosses_mean": 2.8,
+    "word_hits": 52,
+    "word_tokens": 63,
+    "word_recall": 0.825,
+    "word_hits_strict": 52,
+    "word_recall_strict": 0.825,
+    "seen_hits": 52,
+    "seen_tokens": 63,
+    "seen_recall": 0.825,
+    "phrase_all_words": 9
+   },
+   "held_greedy": {
+    "clips": 13,
+    "empty": 0.385,
+    "glosses_mean": 0.77,
+    "word_hits": 4,
+    "word_tokens": 34,
+    "word_recall": 0.118,
+    "word_hits_strict": 4,
+    "word_recall_strict": 0.118,
+    "seen_hits": 3,
+    "seen_tokens": 10,
+    "seen_recall": 0.3,
+    "phrase_all_words": 1
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.354,
+    "exact_acc": 0.033,
+    "edit_rate": 0.584
+   },
+   "checkpoint_sha256": "71d65860ec80b3781565b6d1d10368def9029824ae091f3457b8f781635bbce4"
+  }
+ ],
+ "held_beam": {
+  "clips": 67,
+  "empty": 0.0,
+  "glosses_mean": 3.54,
+  "word_hits": 39,
+  "word_tokens": 196,
+  "word_recall": 0.199,
+  "word_hits_strict": 39,
+  "word_recall_strict": 0.199,
+  "seen_hits": 35,
+  "seen_tokens": 64,
+  "seen_recall": 0.547,
+  "phrase_all_words": 3,
+  "meaning_ge1": 0.224,
+  "meaning_2": 0.09,
+  "chrf": 20.964,
+  "cost_usd": 0.0067
+ },
+ "rows": [
+  {
+   "id": "fca02bc70e883dd9314eda0899e0f348",
+   "phrase": "Вы нарушили правила",
+   "canon": "вы нарушили правила",
+   "pred": [
+    "вам",
+    "спокойной"
+   ],
+   "conf": [
+    0.101,
+    0.161
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Спокойной вам ночи.",
+   "meaning": 0,
+   "chrf": 4.902
+  },
+  {
+   "id": "fa8c6be3302e71f2ace9530be2ad5c9e",
+   "phrase": "Где это произошло?",
+   "canon": "где это произошло",
+   "pred": [
+    "где",
+    "где",
+    "это",
+    "случилось"
+   ],
+   "conf": [
+    0.957,
+    0.957,
+    0.974,
+    0.928
+   ],
+   "glosses": 4,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 3,
+   "seen_hits": 2,
+   "seen_total": 2,
+   "translation": "Где это случилось?",
+   "meaning": 2,
+   "chrf": 29.984
+  },
+  {
+   "id": "a122a6b33a16298240aa0bb4b603a793",
+   "phrase": "До следующего перекрестка",
+   "canon": "до следующего перекрестка",
+   "pred": [
+    "через",
+    "через"
+   ],
+   "conf": [
+    0.539,
+    0.539
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Пожалуйста, предоставьте глоссы (слова), которые нужно перевести. В вашем последнем сообщении содержатся только предлоги, что не образует осмысленной фразы для перевода.",
+   "meaning": 0,
+   "chrf": 17.674
+  },
+  {
+   "id": "264b94e11f413442c371c6bdf5979db6",
+   "phrase": "Как вы себя чувствуете?",
+   "canon": "как вы себя чувствуете",
+   "pred": [
+    "как",
+    "как",
+    "женат"
+   ],
+   "conf": [
+    0.561,
+    0.561,
+    0.495
+   ],
+   "glosses": 3,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 4,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Как ты женился?",
+   "meaning": 0,
+   "chrf": 10.963
+  },
+  {
+   "id": "5cb720643832d004d94ab578f6aa02aa",
+   "phrase": "Как мне пройти?",
+   "canon": "как мне пройти",
+   "pred": [
+    "как",
+    "как",
+    "Я"
+   ],
+   "conf": [
+    0.136,
+    0.136,
+    0.054
+   ],
+   "glosses": 3,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Как я, как я, как, как, как-то сбился.",
+   "meaning": 0,
+   "chrf": 9.305
+  },
+  {
+   "id": "47be7e3be2cbddd660727de26fb368db",
+   "phrase": "Кого вы подозреваете?",
+   "canon": "кого вы подозреваете",
+   "pred": [
+    "как",
+    "как",
+    "права"
+   ],
+   "conf": [
+    0.498,
+    0.498,
+    0.158
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Как получить права?",
+   "meaning": 0,
+   "chrf": 9.062
+  },
+  {
+   "id": "1bc1ee97c29426f0fb93c65d8d535afe",
+   "phrase": "Назовите Вашу фамилию",
+   "canon": "назовите вашу фамилию",
+   "pred": [
+    "имя",
+    "В",
+    "С"
+   ],
+   "conf": [
+    0.04,
+    0.303,
+    0.716
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Я не понимаю, что вы имеете в виду.",
+   "meaning": 0,
+   "chrf": 14.671
+  },
+  {
+   "id": "ed8c560f5583ca833781a18f85a0ea70",
+   "phrase": "Прошу Вас Объясните Мне",
+   "canon": "прошу вас объясните мне",
+   "pred": [
+    "всего",
+    "давать",
+    "меня"
+   ],
+   "conf": [
+    0.348,
+    0.024,
+    0.351
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 2,
+   "translation": "Я прошу всё дать мне.",
+   "meaning": 0,
+   "chrf": 28.67
+  },
+  {
+   "id": "32a59fbf8f4dbb780c34c7ea2fd7e2a9",
+   "phrase": "сержант милиции",
+   "canon": "сержант милиции",
+   "pred": [
+    "предупреждаю",
+    "Я",
+    "был",
+    "паспорт"
+   ],
+   "conf": [
+    0.105,
+    0.086,
+    0.087,
+    0.21
+   ],
+   "glosses": 4,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Предупреждаю, у меня был паспорт.",
+   "meaning": 0,
+   "chrf": 8.824
+  },
+  {
+   "id": "ea90a0d03cf96577b1b3f22e23a89e86",
+   "phrase": "Сколько Было Преступников",
+   "canon": "сколько было преступников",
+   "pred": [
+    "доставить",
+    "был",
+    "был",
+    "был",
+    "ваш",
+    "был",
+    "ваш",
+    "ваш",
+    "преступник"
+   ],
+   "conf": [
+    0.096,
+    0.303,
+    0.303,
+    0.303,
+    0.272,
+    0.303,
+    0.272,
+    0.272,
+    0.642
+   ],
+   "glosses": 9,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Вашего преступника доставили.",
+   "meaning": 0,
+   "chrf": 42.318
+  },
+  {
+   "id": "fd68b03817381656cd5ce56cb6540128",
+   "phrase": "Сколько Времени Были Знакомы",
+   "canon": "сколько времени были знакомы",
+   "pred": [
+    "права",
+    "получить",
+    "хорошего",
+    "был",
+    "представиться"
+   ],
+   "conf": [
+    0.191,
+    0.262,
+    0.102,
+    0.233,
+    0.33
+   ],
+   "glosses": 5,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Было представлено право получить хорошее.",
+   "meaning": 0,
+   "chrf": 13.545
+  },
+  {
+   "id": "46120caac2bd4e0b61adbbc1e8bbc522",
+   "phrase": "Слушаю Вас",
+   "canon": "слушаю вас",
+   "pred": [
+    "давать"
+   ],
+   "conf": [
+    0.226
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Какого вы роста? Будьте добры, скажите.",
+   "meaning": 0,
+   "chrf": 7.143
+  },
+  {
+   "id": "b5e9c7a66b0f5689ff09dce4746edb0d",
+   "phrase": "Счастливого Пути",
+   "canon": "счастливого пути",
+   "pred": [
+    "счастливого",
+    "ограничение",
+    "разрешите",
+    "пути"
+   ],
+   "conf": [
+    0.422,
+    0.112,
+    0.166,
+    0.225
+   ],
+   "glosses": 4,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 2,
+   "seen_hits": 2,
+   "seen_total": 2,
+   "translation": "Счастливого пути, ограничение разрешено.",
+   "meaning": 1,
+   "chrf": 73.833
+  },
+  {
+   "id": "ecf90eeb75eb0ffcda732e2fbac973a9",
+   "phrase": "У меня",
+   "canon": "у меня",
+   "pred": [
+    "меня",
+    "меня"
+   ],
+   "conf": [
+    0.747,
+    0.747
+   ],
+   "glosses": 2,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Меня",
+   "meaning": 2,
+   "chrf": 72.573
+  },
+  {
+   "id": "9c5a5826efbd0533319aae4442faa039",
+   "phrase": "Где вы живете?",
+   "canon": "где вы живете",
+   "pred": [
+    "где",
+    "жительства"
+   ],
+   "conf": [
+    0.951,
+    0.03
+   ],
+   "glosses": 2,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Где вы живете?",
+   "meaning": 2,
+   "chrf": 100.0
+  },
+  {
+   "id": "f85f10456545114d8e791d9023ee3db9",
+   "phrase": "До свидания",
+   "canon": "до свидания",
+   "pred": [
+    "чем"
+   ],
+   "conf": [
+    0.524
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Будьте счастливы, слушаю фиолетовый.",
+   "meaning": 0,
+   "chrf": 7.991
+  },
+  {
+   "id": "acfccad1199b648b18ec99977237aca4",
+   "phrase": "Когда это случилось?",
+   "canon": "когда это случилось",
+   "pred": [
+    "это",
+    "произошло"
+   ],
+   "conf": [
+    0.981,
+    0.962
+   ],
+   "glosses": 2,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Это произошло.",
+   "meaning": 1,
+   "chrf": 11.099
+  },
+  {
+   "id": "83875a2ae97506f931365bde01a40c6d",
+   "phrase": "Ограничение Скорости",
+   "canon": "ограничение скорости",
+   "pred": [
+    "счастливого",
+    "счастливого",
+    "счастливого"
+   ],
+   "conf": [
+    0.281,
+    0.281,
+    0.281
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Очень счастливый",
+   "meaning": 0,
+   "chrf": 12.178
+  },
+  {
+   "id": "f1e8a75fb4d4c80777b6ef4d972da2c0",
+   "phrase": "Пройдите К Начальнику",
+   "canon": "пройдите к начальнику",
+   "pred": [
+    "есть",
+    "вас",
+    "кого",
+    "главная"
+   ],
+   "conf": [
+    0.156,
+    0.859,
+    0.242,
+    0.304
+   ],
+   "glosses": 4,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Кто из вас главный?",
+   "meaning": 1,
+   "chrf": 8.152
+  },
+  {
+   "id": "9af77ba34136246c8739169a490cc6bd",
+   "phrase": "Проникнуть В комнату",
+   "canon": "проникнуть в комнату",
+   "pred": [
+    "до"
+   ],
+   "conf": [
+    0.223
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "До",
+   "meaning": 0,
+   "chrf": 3.378
+  },
+  {
+   "id": "8e718ce195d9230241b74a4348a56ba9",
+   "phrase": "разрешите представиться",
+   "canon": "разрешите представиться",
+   "pred": [
+    "выходите",
+    "знакомы"
+   ],
+   "conf": [
+    0.553,
+    0.717
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Рад знакомству",
+   "meaning": 1,
+   "chrf": 8.337
+  },
+  {
+   "id": "1b7e5a4c36e3793ea3d211408c78a0ef",
+   "phrase": "Ремонтные Работы",
+   "canon": "ремонтные работы",
+   "pred": [
+    "доброе",
+    "полета"
+   ],
+   "conf": [
+    0.526,
+    0.184
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Счастливого полета",
+   "meaning": 0,
+   "chrf": 6.494
+  },
+  {
+   "id": "e421a7b069753905c8c4094c001a4329",
+   "phrase": "Садитесь В Автомашину",
+   "canon": "садитесь в автомашину",
+   "pred": [
+    "смогу",
+    "это",
+    "название",
+    "название",
+    "из",
+    "автомобиля"
+   ],
+   "conf": [
+    0.498,
+    0.255,
+    0.465,
+    0.465,
+    0.271,
+    0.341
+   ],
+   "glosses": 6,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Смогу — это название детали автомобиля.",
+   "meaning": 0,
+   "chrf": 21.274
+  },
+  {
+   "id": "79752f97f16ee5c276079c99ea9fe635",
+   "phrase": "У Вас",
+   "canon": "у вас",
+   "pred": [
+    "У"
+   ],
+   "conf": [
+    0.713
+   ],
+   "glosses": 1,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Меня ударили.",
+   "meaning": 0,
+   "chrf": 8.929
+  },
+  {
+   "id": "b1806b529b71b2ad4a3b812ebbf37ee0",
+   "phrase": "Что Случилось",
+   "canon": "что случилось",
+   "pred": [
+    "что",
+    "что",
+    "это",
+    "произошло"
+   ],
+   "conf": [
+    0.323,
+    0.323,
+    0.434,
+    0.899
+   ],
+   "glosses": 4,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Что произошло?",
+   "meaning": 2,
+   "chrf": 14.295
+  },
+  {
+   "id": "d2ce0817e5077558359e2bbddc4e5902",
+   "phrase": "Я Должен Вас Доставить В Отделение Милиции",
+   "canon": "я должен вас доставить в отделение милиции",
+   "pred": [
+    "Я",
+    "движение",
+    "назовите",
+    "предъявите",
+    "оплатите",
+    "милиции"
+   ],
+   "conf": [
+    0.732,
+    0.03,
+    0.056,
+    0.196,
+    0.197,
+    0.193
+   ],
+   "glosses": 6,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 7,
+   "seen_hits": 2,
+   "seen_total": 4,
+   "translation": "Предъявите документы и оплатите штраф сотруднику полиции.",
+   "meaning": 0,
+   "chrf": 20.849
+  },
+  {
+   "id": "2157c2060e7d68eacef53125d10f4fe1",
+   "phrase": "Я Должен Составить Протокол",
+   "canon": "я должен составить протокол",
+   "pred": [
+    "Я",
+    "мне",
+    "Я",
+    "диета",
+    "есть",
+    "счастливого"
+   ],
+   "conf": [
+    0.899,
+    0.051,
+    0.899,
+    0.121,
+    0.32,
+    0.646
+   ],
+   "glosses": 6,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 4,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Я счастлив, что у меня есть диета.",
+   "meaning": 0,
+   "chrf": 13.582
+  },
+  {
+   "id": "c4392806d376837c451bb284a6a768b6",
+   "phrase": "Я Сбился С Пути",
+   "canon": "я сбился с пути",
+   "pred": [
+    "главная"
+   ],
+   "conf": [
+    0.364
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 2,
+   "translation": "Главный",
+   "meaning": 0,
+   "chrf": 1.515
+  },
+  {
+   "id": "4cdca0988a6a95616f7aab4fd5066180",
+   "phrase": "Выходите из автомобиля",
+   "canon": "выходите из автомобиля",
+   "pred": [
+    "проникнуть",
+    "автомашину"
+   ],
+   "conf": [
+    0.118,
+    0.062
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Проникнуть в автомашину",
+   "meaning": 0,
+   "chrf": 17.437
+  },
+  {
+   "id": "e2472a0aab1b97b1ed54ea0efe610f93",
+   "phrase": "Где можно купить сувенир?",
+   "canon": "где можно купить сувенир",
+   "pred": [
+    "где",
+    "где",
+    "можете",
+    "отделение",
+    "милиции",
+    "купить",
+    "купить",
+    "отделение"
+   ],
+   "conf": [
+    0.682,
+    0.682,
+    0.128,
+    0.816,
+    0.1,
+    0.072,
+    0.072,
+    0.816
+   ],
+   "glosses": 8,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 4,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Где находится отделение милиции?",
+   "meaning": 0,
+   "chrf": 15.994
+  },
+  {
+   "id": "a947081df0a69175da94f49710cbab55",
+   "phrase": "Главная улица",
+   "canon": "главная улица",
+   "pred": [
+    "улица"
+   ],
+   "conf": [
+    0.078
+   ],
+   "glosses": 1,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Семья на улице с начальником.",
+   "meaning": 0,
+   "chrf": 20.411
+  },
+  {
+   "id": "09a1f4bf2e16f7014d1c6c42cfeca0d3",
+   "phrase": "Движение запрещено",
+   "canon": "движение запрещено",
+   "pred": [
+    "вождение",
+    "вождение",
+    "вождение",
+    "движение",
+    "движение",
+    "движение",
+    "движение"
+   ],
+   "conf": [
+    0.387,
+    0.387,
+    0.387,
+    0.864,
+    0.864,
+    0.864,
+    0.864
+   ],
+   "glosses": 7,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Интенсивное вождение и активное движение.",
+   "meaning": 0,
+   "chrf": 34.792
+  },
+  {
+   "id": "cd56b51b8e5b3a8fc1d6eb2c64ab491f",
+   "phrase": "Как был одет?",
+   "canon": "как был одет",
+   "pred": [
+    "как",
+    "до"
+   ],
+   "conf": [
+    0.153,
+    0.595
+   ],
+   "glosses": 2,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Как до?",
+   "meaning": 0,
+   "chrf": 15.795
+  },
+  {
+   "id": "064619b3057118c247be3baba055c285",
+   "phrase": "Как доехать до центра?",
+   "canon": "как доехать до центра",
+   "pred": [
+    "как",
+    "как",
+    "как",
+    "до",
+    "центр",
+    "центр"
+   ],
+   "conf": [
+    0.405,
+    0.405,
+    0.405,
+    0.172,
+    0.322,
+    0.322
+   ],
+   "glosses": 6,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 4,
+   "seen_hits": 2,
+   "seen_total": 2,
+   "translation": "Как долго до центра?",
+   "meaning": 1,
+   "chrf": 54.248
+  },
+  {
+   "id": "e702218b9b10fd7b2c093846230d7008",
+   "phrase": "Какого роста был преступник?",
+   "canon": "какого роста был преступник",
+   "pred": [
+    "свет",
+    "солнце",
+    "было",
+    "преступников"
+   ],
+   "conf": [
+    0.189,
+    0.442,
+    0.661,
+    0.726
+   ],
+   "glosses": 4,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Свет солнца был для преступников",
+   "meaning": 0,
+   "chrf": 42.164
+  },
+  {
+   "id": "c179d389de588b66e7f9b7d0e13fef4f",
+   "phrase": "Какое название автомобиля?",
+   "canon": "какое название автомобиля",
+   "pred": [
+    "вам",
+    "управления"
+   ],
+   "conf": [
+    0.103,
+    0.19
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Вы управляете.",
+   "meaning": 0,
+   "chrf": 7.719
+  },
+  {
+   "id": "937e504a28e7f69d4557852fe6daf236",
+   "phrase": "Спокойной Ночи",
+   "canon": "спокойной ночи",
+   "pred": [
+    "спокойный",
+    "оттенок",
+    "ограничение"
+   ],
+   "conf": [
+    0.411,
+    0.087,
+    0.307
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Спокойный оттенок ограничен.",
+   "meaning": 0,
+   "chrf": 40.821
+  },
+  {
+   "id": "42a730dd03eb6e97bde576ec51e607ef",
+   "phrase": "Стоянка Запрещена",
+   "canon": "стоянка запрещена",
+   "pred": [
+    "другие",
+    "ли",
+    "другие",
+    "ли",
+    "движение",
+    "движение",
+    "запрешено"
+   ],
+   "conf": [
+    0.491,
+    0.312,
+    0.491,
+    0.312,
+    0.439,
+    0.439,
+    0.878
+   ],
+   "glosses": 7,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Любое другое движение запрещено.",
+   "meaning": 0,
+   "chrf": 35.227
+  },
+  {
+   "id": "7f12803b38efdc702bfe500b7fa81d6d",
+   "phrase": "У Вас Есть Переводчик",
+   "canon": "у вас есть переводчик",
+   "pred": [
+    "У",
+    "У",
+    "У",
+    "У",
+    "У",
+    "иметь",
+    "запрешено",
+    "К"
+   ],
+   "conf": [
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    0.076,
+    0.267,
+    0.186
+   ],
+   "glosses": 8,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 4,
+   "seen_hits": 1,
+   "seen_total": 3,
+   "translation": "Это запрещено.",
+   "meaning": 0,
+   "chrf": 7.904
+  },
+  {
+   "id": "fe6f830b73c477f7c3ace2199782e4bf",
+   "phrase": "Через Дверь",
+   "canon": "через дверь",
+   "pred": [
+    "через",
+    "до",
+    "до",
+    "до"
+   ],
+   "conf": [
+    0.017,
+    0.975,
+    0.975,
+    0.975
+   ],
+   "glosses": 4,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Пожалуйста, предоставьте глоссы (слова), которые нужно перевести. В вашем последнем сообщении указаны только предлоги и повторы слов «до», что не является полноценной фразой на РЖЯ.",
+   "meaning": 0,
+   "chrf": 5.982
+  },
+  {
+   "id": "395776c19a023f224d89ac78b8e50e04",
+   "phrase": "Я сделаю все что смогу",
+   "canon": "я сделаю все что смогу",
+   "pred": [
+    "Я",
+    "Я",
+    "делать",
+    "вас",
+    "можете",
+    "садитесь"
+   ],
+   "conf": [
+    0.817,
+    0.817,
+    0.028,
+    0.107,
+    0.337,
+    0.23
+   ],
+   "glosses": 6,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 5,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Я предлагаю вам присесть.",
+   "meaning": 0,
+   "chrf": 16.262
+  },
+  {
+   "id": "89c5179147b8b7541691f297a30c7d26",
+   "phrase": "В обратном направлении",
+   "canon": "в обратном направлении",
+   "pred": [
+    "через",
+    "главная"
+   ],
+   "conf": [
+    0.086,
+    0.15
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Через главную",
+   "meaning": 0,
+   "chrf": 6.393
+  },
+  {
+   "id": "c1247e68fb40bf3e8426dc2452367dc4",
+   "phrase": "Добрый день",
+   "canon": "добрый день",
+   "pred": [
+    "добрый",
+    "доброе",
+    "день"
+   ],
+   "conf": [
+    0.74,
+    0.171,
+    0.195
+   ],
+   "glosses": 3,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Добрый день",
+   "meaning": 2,
+   "chrf": 100.0
+  },
+  {
+   "id": "a53fc8ec399010c4f2c00471e1d36987",
+   "phrase": "Есть ли у вас другие документы?",
+   "canon": "есть ли у вас другие документы",
+   "pred": [
+    "вас",
+    "вас",
+    "У",
+    "стоянка"
+   ],
+   "conf": [
+    0.472,
+    0.472,
+    0.642,
+    0.447
+   ],
+   "glosses": 4,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 6,
+   "seen_hits": 2,
+   "seen_total": 3,
+   "translation": "Вы у стоянки.",
+   "meaning": 0,
+   "chrf": 7.279
+  },
+  {
+   "id": "1520e6e2d763df265cbae87f88916ac5",
+   "phrase": "Желаю вам успехов",
+   "canon": "желаю вам успехов",
+   "pred": [
+    "сбился",
+    "вы",
+    "вы",
+    "вы"
+   ],
+   "conf": [
+    0.044,
+    0.649,
+    0.649,
+    0.649
+   ],
+   "glosses": 4,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Я сбился, когда говорил о вас.",
+   "meaning": 0,
+   "chrf": 8.946
+  },
+  {
+   "id": "35b0eab06883a680af23ff9a6bd28b4f",
+   "phrase": "Место жительства",
+   "canon": "место жительства",
+   "pred": [
+    "остаться",
+    "какого",
+    "живете"
+   ],
+   "conf": [
+    0.04,
+    0.069,
+    0.42
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Где вы живете?",
+   "meaning": 1,
+   "chrf": 9.432
+  },
+  {
+   "id": "51c921ee956059eced7f91c6632c8e62",
+   "phrase": "Можете Ли Давать Показания",
+   "canon": "можете ли давать показания",
+   "pred": [
+    "из",
+    "вы",
+    "В"
+   ],
+   "conf": [
+    0.263,
+    0.719,
+    0.375
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Вы вышли",
+   "meaning": 0,
+   "chrf": 3.412
+  },
+  {
+   "id": "53c93e8e9eaa3e8e9935b16b7f0ec131",
+   "phrase": "Оплатите Штраф",
+   "canon": "оплатите штраф",
+   "pred": [
+    "доставить",
+    "доставить",
+    "живете"
+   ],
+   "conf": [
+    0.387,
+    0.387,
+    0.102
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Доставить туда, где вы живете.",
+   "meaning": 0,
+   "chrf": 10.831
+  },
+  {
+   "id": "93a77d516ab32697ab166922d3fcfbde",
+   "phrase": "Пешеходное Движение Запрешено",
+   "canon": "пешеходное движение запрешено",
+   "pred": [
+    "пройти",
+    "пройти",
+    "запрещена"
+   ],
+   "conf": [
+    0.557,
+    0.557,
+    0.554
+   ],
+   "glosses": 3,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Проход запрещен.",
+   "meaning": 2,
+   "chrf": 18.379
+  },
+  {
+   "id": "135c44fe177731a5f0ae6b9cfb9307e7",
+   "phrase": "Предъявите Ваш паспорт",
+   "canon": "предъявите ваш паспорт",
+   "pred": [
+    "прошу",
+    "милиции"
+   ],
+   "conf": [
+    0.125,
+    0.572
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 3,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Прошу сотрудников вашей милиции пройти.",
+   "meaning": 0,
+   "chrf": 13.936
+  },
+  {
+   "id": "d13a300890d6898da0eeec7cd592b25c",
+   "phrase": "Прошу Следовать Со Мной",
+   "canon": "прошу следовать со мной",
+   "pred": [
+    "главная",
+    "меня"
+   ],
+   "conf": [
+    0.274,
+    0.693
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Я главный",
+   "meaning": 0,
+   "chrf": 4.735
+  },
+  {
+   "id": "469694e1d6795d7ab0d494c01f83d6e8",
+   "phrase": "Светлые волосы",
+   "canon": "светлые волосы",
+   "pred": [
+    "прошу",
+    "вспомнить"
+   ],
+   "conf": [
+    0.074,
+    0.601
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Прошу вспомнить",
+   "meaning": 0,
+   "chrf": 6.313
+  },
+  {
+   "id": "945e2edb8f2fb6088399e992fb1f6d68",
+   "phrase": "Счастливого Полета",
+   "canon": "счастливого полета",
+   "pred": [
+    "счастливого"
+   ],
+   "conf": [
+    0.737
+   ],
+   "glosses": 1,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Составить график работы для счастливого отделения.",
+   "meaning": 0,
+   "chrf": 47.167
+  },
+  {
+   "id": "7c2711904f4373bc391a908e19c532cd",
+   "phrase": "Чем Вас Ударили",
+   "canon": "чем вас ударили",
+   "pred": [
+    "как",
+    "вы",
+    "вы",
+    "вас",
+    "вы",
+    "вас",
+    "вы",
+    "вас",
+    "вы",
+    "вас",
+    "вы",
+    "вас"
+   ],
+   "conf": [
+    0.231,
+    0.358,
+    0.358,
+    0.365,
+    0.358,
+    0.365,
+    0.358,
+    0.365,
+    0.358,
+    0.365,
+    0.358,
+    0.365
+   ],
+   "glosses": 12,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Как вы себя чувствуете?",
+   "meaning": 0,
+   "chrf": 6.944
+  },
+  {
+   "id": "a99a602c90df6a8c6819698c89ff2c76",
+   "phrase": "Будьте внимательны",
+   "canon": "будьте внимательны",
+   "pred": [
+    "слушаю",
+    "слушаю",
+    "слушаю",
+    "Я"
+   ],
+   "conf": [
+    0.541,
+    0.541,
+    0.541,
+    0.344
+   ],
+   "glosses": 4,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Я очень внимательно слушаю.",
+   "meaning": 1,
+   "chrf": 49.28
+  },
+  {
+   "id": "4a732944707feb4a3f875ac50481a5a7",
+   "phrase": "Всего хорошего",
+   "canon": "всего хорошего",
+   "pred": [
+    "прошу",
+    "вас"
+   ],
+   "conf": [
+    0.331,
+    0.144
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Я прошу вас.",
+   "meaning": 0,
+   "chrf": 11.248
+  },
+  {
+   "id": "68bbbd74498de41ba6530e883dd8c1b3",
+   "phrase": "Вы меня понимаете?",
+   "canon": "вы меня понимаете",
+   "pred": [
+    "вы",
+    "вы",
+    "меня"
+   ],
+   "conf": [
+    0.151,
+    0.151,
+    0.089
+   ],
+   "glosses": 3,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 3,
+   "seen_hits": 2,
+   "seen_total": 2,
+   "translation": "Вы видите меня?",
+   "meaning": 1,
+   "chrf": 20.442
+  },
+  {
+   "id": "bdec82bdeaa92109dcda7283a2498287",
+   "phrase": "Доброе утро",
+   "canon": "доброе утро",
+   "pred": [
+    "добрый",
+    "добрый",
+    "добрый",
+    "добрый",
+    "В"
+   ],
+   "conf": [
+    0.862,
+    0.862,
+    0.862,
+    0.862,
+    0.08
+   ],
+   "glosses": 5,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Пожалуйста, предоставьте глоссы (слова), которые нужно перевести. В вашем последнем сообщении повторяется только одно слово «добрый».",
+   "meaning": 0,
+   "chrf": 8.633
+  },
+  {
+   "id": "8dfa0aeb0383895426f7b88ba04df085",
+   "phrase": "Добрый вечер",
+   "canon": "добрый вечер",
+   "pred": [
+    "под",
+    "добрый",
+    "под",
+    "вечер"
+   ],
+   "conf": [
+    0.27,
+    0.348,
+    0.27,
+    0.313
+   ],
+   "glosses": 4,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Под добрый вечер",
+   "meaning": 1,
+   "chrf": 93.214
+  },
+  {
+   "id": "12b8ba9b6c708837a8f7fbb2d5b83edf",
+   "phrase": "Особые приметы",
+   "canon": "особые приметы",
+   "pred": [
+    "это",
+    "что",
+    "что",
+    "это",
+    "другие",
+    "ваш"
+   ],
+   "conf": [
+    0.171,
+    0.124,
+    0.124,
+    0.171,
+    0.252,
+    0.388
+   ],
+   "glosses": 6,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Что это такое? Это чьё-то другое, ваше?",
+   "meaning": 0,
+   "chrf": 5.882
+  },
+  {
+   "id": "9759554b45ed7c3b41bcc0d7682e3982",
+   "phrase": "очная ставка",
+   "canon": "очная ставка",
+   "pred": [
+    "волосы"
+   ],
+   "conf": [
+    0.242
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "У преступника сбились жесткие красные волосы.",
+   "meaning": 0,
+   "chrf": 10.048
+  },
+  {
+   "id": "edff30c0dbe70c965bcda13c1ed687fc",
+   "phrase": "Права На Вождение Автомобиля",
+   "canon": "права на вождение автомобиля",
+   "pred": [
+    "вас",
+    "из"
+   ],
+   "conf": [
+    0.168,
+    0.064
+   ],
+   "glosses": 2,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 4,
+   "seen_hits": 0,
+   "seen_total": 1,
+   "translation": "Извините вас",
+   "meaning": 0,
+   "chrf": 7.579
+  },
+  {
+   "id": "ac7e2e554e93eb2c167cd1e781e02e9c",
+   "phrase": "Центр Города",
+   "canon": "центр города",
+   "pred": [
+    "запрещено"
+   ],
+   "conf": [
+    0.153
+   ],
+   "glosses": 1,
+   "hits": 0,
+   "hits_strict": 0,
+   "total": 2,
+   "seen_hits": 0,
+   "seen_total": 0,
+   "translation": "Запрещено.",
+   "meaning": 0,
+   "chrf": 9.417
+  },
+  {
+   "id": "2fa10a7b9ba9fe46e1f91d6e20ad88c7",
+   "phrase": "Через Окно",
+   "canon": "через окно",
+   "pred": [
+    "через",
+    "это",
+    "что"
+   ],
+   "conf": [
+    0.115,
+    0.152,
+    0.223
+   ],
+   "glosses": 3,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Что это за минимальная оплата в рублях за работу?",
+   "meaning": 0,
+   "chrf": 6.494
+  },
+  {
+   "id": "4f6636b795b1f3cddc887efbf46b489f",
+   "phrase": "Что Похищено",
+   "canon": "что похищено",
+   "pred": [
+    "что",
+    "что",
+    "что",
+    "центра",
+    "движение",
+    "милиции"
+   ],
+   "conf": [
+    0.48,
+    0.48,
+    0.48,
+    0.132,
+    0.109,
+    0.265
+   ],
+   "glosses": 6,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 2,
+   "seen_hits": 1,
+   "seen_total": 1,
+   "translation": "Что за движение милиции в центре?",
+   "meaning": 0,
+   "chrf": 12.025
+  },
+  {
+   "id": "1b955598ed37b728299e788623b5c2a1",
+   "phrase": "Я отстраняю вас от управления автомобилем",
+   "canon": "я отстраняю вас от управления автомобилем",
+   "pred": [
+    "Я",
+    "сержант",
+    "вас",
+    "автомобиля"
+   ],
+   "conf": [
+    0.874,
+    0.059,
+    0.027,
+    0.048
+   ],
+   "glosses": 4,
+   "hits": 2,
+   "hits_strict": 2,
+   "total": 6,
+   "seen_hits": 2,
+   "seen_total": 2,
+   "translation": "Я сержант, забирайте автомобиль.",
+   "meaning": 0,
+   "chrf": 27.277
+  },
+  {
+   "id": "9e4e7b907b6ee4d5734f7ecb76058155",
+   "phrase": "Я Предупреждаю Вас",
+   "canon": "я предупреждаю вас",
+   "pred": [
+    "мне",
+    "Я",
+    "ли"
+   ],
+   "conf": [
+    0.198,
+    0.532,
+    0.206
+   ],
+   "glosses": 3,
+   "hits": 1,
+   "hits_strict": 1,
+   "total": 3,
+   "seen_hits": 1,
+   "seen_total": 2,
+   "translation": "Я сбился, я ли это или вы?",
+   "meaning": 0,
+   "chrf": 2.976
+  }
+ ]
+}

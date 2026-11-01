@@ -1,0 +1,61 @@
+{
+ "tool": "fresh_eval",
+ "date": "2026-10-27",
+ "video": "D:/hfdata/demo_frases/mama_love.mp4",
+ "phrase": "Мама я тебя очень люблю",
+ "fps": 25.0,
+ "summary": {
+  "prod": {
+   "segments": 1,
+   "meaning_ge1": 0.0,
+   "best_meaning": 0,
+   "best_translation": "Мать, я выбрал оттенок.",
+   "chrf_mean": 12.3,
+   "chrf_best": 12.296
+  },
+  "dict": {
+   "segments": 1,
+   "meaning_ge1": 0.0,
+   "best_meaning": 0,
+   "best_translation": "Утром я узнал новости.",
+   "chrf_mean": 6.14,
+   "chrf_best": 6.14
+  }
+ },
+ "cost_usd": 0.0,
+ "seconds": 12.5,
+ "rows": [
+  {
+   "model": "prod",
+   "span": [
+    139,
+    317
+   ],
+   "pred": [
+    "мать",
+    "я",
+    "вы",
+    "оттенок"
+   ],
+   "translation": "Мать, я выбрал оттенок.",
+   "meaning": 0,
+   "chrf": 12.296
+  },
+  {
+   "model": "dict",
+   "span": [
+    139,
+    317
+   ],
+   "pred": [
+    "утро",
+    "я",
+    "вы",
+    "новости"
+   ],
+   "translation": "Утром я узнал новости.",
+   "meaning": 0,
+   "chrf": 6.14
+  }
+ ]
+}

@@ -60,6 +60,10 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 4
 | `python summarize.py sessions --by-gesture` | сводка; «не жест» по умолчанию отдельно |
 | `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam) |
 | `python tools/finetune_ctc_phrases.py --train-all` | production-чекпойнт на всех фразовых клипах (CV-метрик у него нет, B54) |
+| `python tools/centroid_eval.py --chunk 32 --topk 5` | one-shot центроиды по эмбеддингам энкодера: 893 клипа словаря → recall на фразах без обучения (этап 21) |
+| `python tools/rerank_eval.py` | фьюжн: n-best цепочки фолдов + центроидная близость, перебор λ офлайн (этап 21 §7) |
+| `python tools/finetune_dict.py` | словарная адаптация: голова + энкодер на 893 клипах канала, 5 фолдов по фразам (этап 21 §9) |
+| `python tools/fusion_translate.py` | LLM-перевод с судьёй: production-контекст против контекста с центроидами ($≈0.02/прогон) |
 
 ## Решения, которые за Вадимом (не принимать самому)
 

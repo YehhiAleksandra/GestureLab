@@ -1,0 +1,146 @@
+{
+ "method": "2-fold paired held-out; train_ids применён только к filtered train",
+ "identical_held_ids": true,
+ "paired_hit_changes": {
+  "clips": 2000,
+  "improved": 97,
+  "worse": 143,
+  "same": 1760
+ },
+ "by_source": {
+  "VOGinfo": {
+   "baseline": {
+    "clips": 750,
+    "hits": 245,
+    "tokens": 6415,
+    "predicted_tokens": 2844,
+    "recall": 0.038192,
+    "precision": 0.086146,
+    "f1": 0.052921,
+    "empty": 0.004
+   },
+   "filtered": {
+    "clips": 750,
+    "hits": 216,
+    "tokens": 6415,
+    "predicted_tokens": 2677,
+    "recall": 0.033671,
+    "precision": 0.080687,
+    "f1": 0.047514,
+    "empty": 0.005333
+   },
+   "delta": {
+    "hits": -29,
+    "recall": -0.004521,
+    "precision": -0.005459,
+    "f1": -0.005407,
+    "empty": 0.001333
+   }
+  },
+  "rutube": {
+   "baseline": {
+    "clips": 67,
+    "hits": 94,
+    "tokens": 196,
+    "predicted_tokens": 262,
+    "recall": 0.479592,
+    "precision": 0.358779,
+    "f1": 0.41048,
+    "empty": 0.0
+   },
+   "filtered": {
+    "clips": 67,
+    "hits": 85,
+    "tokens": 196,
+    "predicted_tokens": 233,
+    "recall": 0.433673,
+    "precision": 0.364807,
+    "f1": 0.39627,
+    "empty": 0.0
+   },
+   "delta": {
+    "hits": -9,
+    "recall": -0.045919,
+    "precision": 0.006028,
+    "f1": -0.01421,
+    "empty": 0.0
+   }
+  },
+  "SP-10": {
+   "baseline": {
+    "clips": 1183,
+    "hits": 497,
+    "tokens": 4627,
+    "predicted_tokens": 3343,
+    "recall": 0.107413,
+    "precision": 0.148669,
+    "f1": 0.124718,
+    "empty": 0.010144
+   },
+   "filtered": {
+    "clips": 1183,
+    "hits": 491,
+    "tokens": 4627,
+    "predicted_tokens": 3277,
+    "recall": 0.106116,
+    "precision": 0.149832,
+    "f1": 0.124241,
+    "empty": 0.005917
+   },
+   "delta": {
+    "hits": -6,
+    "recall": -0.001297,
+    "precision": 0.001163,
+    "f1": -0.000477,
+    "empty": -0.004227
+   }
+  },
+  "all": {
+   "baseline": {
+    "clips": 2000,
+    "hits": 836,
+    "tokens": 11238,
+    "predicted_tokens": 6449,
+    "recall": 0.07439,
+    "precision": 0.129633,
+    "f1": 0.094533,
+    "empty": 0.0075
+   },
+   "filtered": {
+    "clips": 2000,
+    "hits": 792,
+    "tokens": 11238,
+    "predicted_tokens": 6187,
+    "recall": 0.070475,
+    "precision": 0.12801,
+    "f1": 0.090904,
+    "empty": 0.0055
+   },
+   "delta": {
+    "hits": -44,
+    "recall": -0.003915,
+    "precision": -0.001623,
+    "f1": -0.003629,
+    "empty": -0.002
+   }
+  }
+ },
+ "slovo_clean": {
+  "baseline": {
+   "gloss_acc": 0.288,
+   "exact_acc": 0.05,
+   "edit_rate": 0.6195
+  },
+  "filtered": {
+   "gloss_acc": 0.3185,
+   "exact_acc": 0.05,
+   "edit_rate": 0.606
+  },
+  "delta": {
+   "gloss_acc": 0.0305,
+   "exact_acc": 0.0,
+   "edit_rate": -0.0135
+  }
+ },
+ "note": "Эксплораторный эксперимент на 2000 клипов; production автоматически не меняется."
+}

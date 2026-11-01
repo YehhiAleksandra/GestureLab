@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "kind": "ctc_holistic_phrases",
+ "init": "models/slovo_ctc_motion_head_all.pt",
+ "init_sha256": "1a741081792c7ab43558367d69f1bbfdf661d2fe6c22c55d11e1446b4bc56a53",
+ "expanded_classes": 3242,
+ "folds": 5,
+ "seed": 2026,
+ "git_commit": null,
+ "created_utc": "2026-10-29T09:35:24+00:00",
+ "checkpoints": [
+  "5428c67a2cf950dbe0d4e2d3ee4f5b3a5d511c611dbb4763143858ec43234897",
+  "7f0ddcc5a8bb8bc7c951b8ba62d5017998bdd3cd82b28d085e94eb3162d451f1",
+  "96448266c5e76d49b32d146ed76b8cf3b17beee10de92b7880364a3976f0c222",
+  "1f2fff9bced402f5f200c2df4b8461067b684e38664b29969825f6497ce4e4bb",
+  "1cc6dd17c020841e5b2a4705733676a224f4d31357828f68c5e32b97ed3aafd4"
+ ]
+}

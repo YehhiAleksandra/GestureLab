@@ -119,6 +119,18 @@ def folds(n, k, seed):
     return [sorted(order[i::k].tolist()) for i in range(k)]
 
 
+def training_clips(clips, held_idx, allowed_ids=None):
+    """Отфильтровать только train; held всегда остаётся полным для честного CV."""
+    held = set(held_idx)
+    return [c for i, c in enumerate(clips)
+            if i not in held and (allowed_ids is None or c['id'] in allowed_ids)]
+
+
+def production_counts(clips, prod_clips):
+    """Раздельные счётчики загруженного набора и реально обучавшихся клипов."""
+    return {'clips': len(clips), 'train_clips': len(prod_clips), 'held_clips': 0}
+
+
 def matched(pred, phrase):
     """Совпавшие слова как мешок: Counter пересечения предсказания и эталона."""
     p = Counter(words(' '.join(pred)))
@@ -313,6 +325,11 @@ def train_fold(names, init, arch, feat, train_clips, seqs_by_class, classes, cor
                                                 pct_start=0.1)
     ctc = torch.nn.CTCLoss(blank=0, zero_infinity=True)
     pool = [(c['span'], c['labels']) for c in train_clips]
+    if a.dup_times > 0 and a.dup_ids:
+        dup = [(c['span'], c['labels']) for c in train_clips if c['id'] in a.dup_ids]
+        pool += dup * a.dup_times
+        print(f'  оверсэмплинг: {len(dup)} клипов ×{a.dup_times} '
+              f'(доля в пуле {len(dup) * a.dup_times}/{len(pool)})', flush=True)
     corpus_frac = a.corpus_frac if corpus else 0.0
     phrase_frac = a.phrase_frac + (a.corpus_frac if not corpus else 0.0)
     seg_pool = None
@@ -324,11 +341,50 @@ def train_fold(names, init, arch, feat, train_clips, seqs_by_class, classes, cor
         if seed != a.seed:
             sys.exit(f'выравнивание из {apath} обучено с seed {seed}, а фолды с {a.seed}: '
                      f'отложенные клипы могли попасть в обучение')
-        seg_pool = build_pool(align_clips(apath, train_clips, dev))
+        # голова выравнивания должна покрывать все классы новых меток: тёплый старт
+        # старого фолда на расширенную голову (иначе ctc_align падает с IndexError)
+        align_exp = Path(a.work) / f'align{fold}_expanded.pt'
+        if not align_exp.exists():
+            m = CTCSignNet(len(names), d=arch['d'], layers=arch['layers'],
+                           dropout=arch['dropout'], feat=feat, aux=0)
+            warm_start(m, str(apath), names)
+            torch.save({'model': m.state_dict(), 'names': names, 'feat': feat,
+                        'arch': arch, 'aux': 0, 'kind': 'ctc_holistic',
+                        'config': {'seed': seed, 'from': str(apath)}}, align_exp)
+        apath = align_exp
+        import hashlib
+        pool_key = hashlib.sha256(json.dumps(
+            [c['id'] for c in train_clips], ensure_ascii=False).encode()).hexdigest()[:16]
+        pool_path = Path(a.work) / f'fold{fold}_pool_{pool_key}.npz'
+        if pool_path.exists():
+            with np.load(pool_path, allow_pickle=True) as d:
+                seg_pool = {int(k): list(d[k]) for k in d.files}
+        else:
+            seg_pool = build_pool(align_clips(apath, train_clips, dev))
+            np.savez(pool_path, **{str(k): np.array(v, dtype=object)
+                                   for k, v in seg_pool.items()})
         print(f'  пересборка фраз: слов в пуле {len(seg_pool)}, '
               f'отрезков {sum(len(v) for v in seg_pool.values())}', flush=True)
 
-    for ep in range(1, a.epochs + 1):
+    # Докачка на уровне эпох: с --resume продолжаем с last-чекпойнта фолда,
+    # если конфиг совпал; без --resume обучение начинается с нуля.
+    last_path = Path(a.work) / f'fold{fold}_last.pt'
+    start_ep = 1
+    if a.resume and last_path.exists():
+        st = torch.load(last_path, map_location='cpu', weights_only=False)
+        want = {'epochs': a.epochs, 'steps': a.steps, 'bs': a.bs, 'lr': a.lr,
+                'seed': a.seed, 'aug': a.aug, 'recombine_frac': a.recombine_frac,
+                'freeze_encoder': a.freeze_encoder, 'train_clips': len(train_clips),
+                'classes': len(names)}
+        if st.get('resume_cfg') == want:
+            model.load_state_dict(st['model'])
+            opt.load_state_dict(st['opt'])
+            sched.load_state_dict(st['sched'])
+            start_ep = st['epoch'] + 1
+            print(f'  фолд {fold}: докачка с эпохи {start_ep}', flush=True)
+        else:
+            print(f'  фолд {fold}: last-чекпойнт от другого конфига — с нуля', flush=True)
+    for ep in range(start_ep, a.epochs + 1):
         model.train()
         total = 0.0
         for _ in range(a.steps):
@@ -356,6 +412,14 @@ def train_fold(names, init, arch, feat, train_clips, seqs_by_class, classes, cor
             total += float(loss)
         if ep % a.eval_every == 0 or ep == a.epochs:
             print(f'  фолд {fold} ep {ep:3d} loss {total / a.steps:.3f}', flush=True)
+        torch.save({'model': model.state_dict(), 'opt': opt.state_dict(),
+                    'sched': sched.state_dict(), 'epoch': ep,
+                    'resume_cfg': {'epochs': a.epochs, 'steps': a.steps,
+                                   'bs': a.bs, 'lr': a.lr, 'seed': a.seed,
+                                   'aug': a.aug, 'recombine_frac': a.recombine_frac,
+                                   'freeze_encoder': a.freeze_encoder,
+                                   'train_clips': len(train_clips),
+                                   'classes': len(names)}}, last_path)
     return model
 
 
@@ -374,6 +438,45 @@ def beam_rows(path, clips, nbest=20, lm_weight=0.0, word_bonus=3.0, beam=24):
                      'hits': hits(pred, c['canon'])[0],
                      'hits_strict': hits(pred, c['phrase'])[0],
                      'total': len(c['words']), 'seen_hits': 0, 'seen_total': 0})
+    return rows
+
+
+def beam_rows_resume(path, clips, state_path, **kw):
+    """beam_rows с инкрементальным кэшем: убитый вызов продолжается с недекодированных."""
+    state_path = Path(state_path)
+    done_rows = {}
+    if state_path.exists():
+        try:
+            done_rows = {r['id']: r for r in
+                         json.loads(state_path.read_text(encoding='utf-8'))}
+        except json.JSONDecodeError:
+            done_rows = {}
+    from dialogue_translator import Recognizer
+    rec = Recognizer(str(path), decoder='beam', beam=kw.get('beam', 24),
+                     lm_weight=kw.get('lm_weight', 0.0),
+                     word_bonus=kw.get('word_bonus', 3.0), smooth=1,
+                     nbest=kw.get('nbest', 20))
+    rows = []
+    n_new = 0
+    for c in clips:
+        if c['id'] in done_rows:
+            rows.append(done_rows[c['id']])
+            continue
+        glosses, chains = rec.decode(c['span'])
+        pred = [g for g, _ in glosses]
+        rows.append({'id': c['id'], 'phrase': c['phrase'], 'canon': c['canon'],
+                     'pred': pred, 'conf': [round(float(v), 3) for _, v in glosses],
+                     'glosses': len(pred), 'chains': chains[:5] if chains else None,
+                     'hits': hits(pred, c['canon'])[0],
+                     'hits_strict': hits(pred, c['phrase'])[0],
+                     'total': len(c['words']), 'seen_hits': 0, 'seen_total': 0})
+        done_rows[c['id']] = rows[-1]
+        n_new += 1
+        if n_new % 10 == 0:
+            state_path.write_text(json.dumps(list(done_rows.values()),
+                                             ensure_ascii=False), encoding='utf-8')
+    state_path.write_text(json.dumps(list(done_rows.values()),
+                                     ensure_ascii=False), encoding='utf-8')
     return rows
 
 
@@ -419,6 +522,10 @@ def run(a):
           f'слов фраз {len(set(all_words))}', flush=True)
 
     clips, skipped = load_phrase_clips(a.cache, a.inventory, names, canon)
+    a.dup_ids = (set(json.loads(Path(a.dup_ids).read_text(encoding='utf-8')))
+                 if a.dup_ids else set())
+    a.train_ids = (set(json.loads(Path(a.train_ids).read_text(encoding='utf-8')))
+                   if a.train_ids else None)
     if a.limit:
         clips = clips[:a.limit]
     if len(clips) < a.folds:
@@ -431,39 +538,72 @@ def run(a):
     index = {n.lower(): i for i, n in enumerate(names)}
     try:
         corpus = corpus_phrases(index, 'train')
+        # поток корпуса собирается из Slovo-последовательностей: классы без
+        # последовательностей (новые слова вне словаря Slovo) туда не идут
+        before = len(corpus)
+        corpus = [p for p in corpus if all(c in seqs_by_class for c in p)]
+        print(f'корпус: {before} цепочек, после фильтра классов {len(corpus)}', flush=True)
     except Exception as e:  # noqa: BLE001 — внешний кэш HF: без корпуса остаётся Slovo
         print(f'корпус недоступен ({e}) — без потоков корпуса', flush=True)
         corpus = []
     print(f'Slovo train {d["n_train"]}, test {d["n_test"]}, корпус {len(corpus)} фраз',
           flush=True)
 
+    prog_path = work / 'progress.json'
+    progress = {'meta': None, 'base_beam': None, 'folds': {}}
+    if (a.resume or a.train_all) and prog_path.exists():
+        try:
+            loaded = json.loads(prog_path.read_text(encoding='utf-8'))
+        except json.JSONDecodeError:
+            loaded = {}
+        meta = loaded.get('meta')
+        want = {'seed': a.seed, 'folds': a.folds, 'clips': len(clips),
+                'classes': len(names)}
+        if meta == want:
+            progress.update({k: v for k, v in loaded.items() if k in progress})
+            print(f'прогресс: фолдов готово {len(progress["folds"])}', flush=True)
+        else:
+            print('прогресс из другого запуска — игнорируется', flush=True)
+    progress['meta'] = {'seed': a.seed, 'folds': a.folds, 'clips': len(clips),
+                        'classes': len(names)}
+
+    def save_progress():
+        prog_path.write_text(json.dumps(progress, ensure_ascii=False), encoding='utf-8')
+
     base_path = work / 'init_expanded_eval.pt'
     torch.save(expanded, base_path)
-    base = beam_rows(base_path, clips, lm_weight=a.lm_weight,
-                     word_bonus=a.word_bonus, beam=a.beam)
-    base_sum = summarize(base)
+    if progress['base_beam'] is None:
+        base = beam_rows_resume(base_path, clips, work / 'base_rows.json',
+                                lm_weight=a.lm_weight,
+                                word_bonus=a.word_bonus, beam=a.beam)
+        progress['base_beam'] = summarize(base)
+        save_progress()
+    base_sum = progress['base_beam']
     print('база (без обучения):', json.dumps(base_sum, ensure_ascii=False), flush=True)
 
     parts = folds(len(clips), a.folds, a.seed)
-    held_rows, fold_report, t0 = [], [], time.time()
+    t0 = time.time()
     if a.train_all:
-        # production-чекпойнт: все 67 клипов в обучении → качество на них не измеримо (B54),
+        # production-чекпойнт: все разрешённые клипы в обучении, CV-метрик нет (B54),
         # поэтому здесь только Slovo clean как контроль забывания
-        model = train_fold(names, str(init_path), arch, feat, clips, seqs_by_class, classes,
-                           corpus, a, 0, dev)
+        prod_clips = training_clips(clips, [], a.train_ids)
+        counts = production_counts(clips, prod_clips)
+        model = train_fold(names, str(init_path), arch, feat, prod_clips,
+                           seqs_by_class, classes, corpus, a, 0, dev)
         prod = Path(a.work) / 'prod.pt'
         torch.save({'model': model.state_dict(), 'names': names, 'feat': feat,
                     'arch': arch, 'aux': 0, 'kind': 'ctc_holistic',
                     'config': {'init': a.init, 'epochs': a.epochs, 'steps': a.steps,
                                'bs': a.bs, 'lr': a.lr, 'seed': a.seed, 'aug': a.aug,
                                'freeze_encoder': a.freeze_encoder, 'canon': a.canon,
-                               'train_clips': len(clips), 'held_clips': 0}}, prod)
+                               'train_clips': counts['train_clips'],
+                               'held_clips': counts['held_clips']}}, prod)
         slovo = evaluate(model, te_by_class, te_classes, np.random.default_rng(1234),
                          n=200, dev=dev)
         result = {'tool': 'finetune_ctc_phrases', 'date': time.strftime('%Y-%m-%d'),
                   'init': Path(a.init).name, 'init_sha256': file_sha256(a.init),
                   'expanded_classes': len(names), 'expanded_added': expanded['expanded_added'],
-                  'train_all': True, 'clips': len(clips), 'skipped': skipped,
+                  'train_all': True, **counts, 'skipped': skipped,
                   'seconds': round(time.time() - t0, 1), 'base_beam': base_sum,
                   'slovo_clean': {k: round(slovo[k], 3) for k in
                                   ('gloss_acc', 'exact_acc', 'edit_rate')},
@@ -481,7 +621,7 @@ def run(a):
         manifest = {'schema_version': 1, 'kind': 'ctc_holistic_phrases_prod',
                     'init': a.init, 'init_sha256': file_sha256(a.init),
                     'expanded_classes': len(names), 'canon': a.canon,
-                    'train_clips': len(clips), 'git_commit': git_commit(),
+                    'train_clips': counts['train_clips'], 'git_commit': git_commit(),
                     'created_utc': datetime.now(timezone.utc).isoformat(timespec='seconds'),
                     'checkpoints': [result['prod_sha256']]}
         Path(a.out).with_suffix('.manifest.json').write_text(
@@ -490,8 +630,14 @@ def run(a):
         print(f'→ {a.out} (+{prod})', flush=True)
         return result
     for k, held_idx in enumerate(parts):
+        if a.only_fold >= 0 and k != a.only_fold:
+            continue
+        key = str(k)
+        if a.resume and key in progress['folds'] and (work / f'fold{k}.pt').exists():
+            print(f'фолд {k}: есть в прогрессе — пропуск обучения', flush=True)
+            continue
         held = [clips[i] for i in held_idx]
-        train = [c for i, c in enumerate(clips) if i not in set(held_idx)]
+        train = training_clips(clips, held_idx, a.train_ids)
         vocab = {w for c in train for w in c['canon_words']}
         model = train_fold(names, str(init_path), arch, feat, train, seqs_by_class, classes,
                            corpus, a, k, dev)
@@ -502,23 +648,41 @@ def run(a):
                                'steps': a.steps, 'bs': a.bs, 'lr': a.lr, 'seed': a.seed,
                                'aug': a.aug, 'freeze_encoder': a.freeze_encoder,
                                'train_clips': len(train), 'held_clips': len(held)}}, path)
-        rows = beam_rows(path, held, lm_weight=a.lm_weight,
-                         word_bonus=a.word_bonus, beam=a.beam)
+        rows = beam_rows_resume(path, held, work / f'fold{k}_rows.json',
+                                lm_weight=a.lm_weight,
+                                word_bonus=a.word_bonus, beam=a.beam)
+        (work / f'fold{k}_last.pt').unlink(missing_ok=True)
         attach_seen(rows, held, vocab)
-        held_rows += rows
         tr_g = summarize(greedy_rows(model, train[:20], names, vocab, dev))
         held_g = summarize(greedy_rows(model, held, names, vocab, dev))
         slovo = evaluate(model, te_by_class, te_classes, np.random.default_rng(1234),
                          n=30, dev=dev)
-        fold_report.append({'fold': k, 'train_clips': len(train), 'held_clips': len(held),
+        progress['folds'][key] = {
+            'fold_report': {'fold': k, 'train_clips': len(train),
+                            'held_clips': len(held),
                             'beam': summarize(rows), 'train_greedy': tr_g,
                             'held_greedy': held_g,
                             'slovo_clean': {kk: round(slovo[kk], 3)
                                             for kk in ('gloss_acc', 'exact_acc', 'edit_rate')},
-                            'checkpoint_sha256': file_sha256(path)})
+                            'checkpoint_sha256': file_sha256(path)},
+            'rows': rows}
+        save_progress()
         print(f'фолд {k}: beam {json.dumps(summarize(rows), ensure_ascii=False)} '
               f'[{time.time() - t0:.0f} с]', flush=True)
 
+    missing = [k for k in range(a.folds) if str(k) not in progress['folds']]
+    fold_report = [progress['folds'][str(k)]['fold_report'] for k in range(a.folds)
+                   if str(k) in progress['folds']]
+    held_rows = [r for k in range(a.folds) if str(k) in progress['folds']
+                 for r in progress['folds'][str(k)]['rows']]
+    if missing:
+        Path(a.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(a.out).write_text(json.dumps(
+            {'partial': True, 'missing_folds': missing, 'fold_report': fold_report},
+            ensure_ascii=False, indent=1), encoding='utf-8')
+        print(f'не все фолды готовы, не хватает {missing} — → {a.out} (partial)',
+              flush=True)
+        return {'partial': True, 'missing_folds': missing}
     cost = 0.0 if a.no_llm else translate(held_rows)
     judged = [r for r in held_rows if r.get('meaning') is not None]
     final = summarize(held_rows)
@@ -648,6 +812,17 @@ def main():
     ap.add_argument('--word-bonus', type=float, default=3.0)
     ap.add_argument('--beam', type=int, default=24)
     ap.add_argument('--no-llm', action='store_true')
+    ap.add_argument('--resume', action='store_true',
+                    help='не переобучать фолд, если чекпойнт и прогресс есть; '
+                         'прогресс хранится в <work>/progress.json')
+    ap.add_argument('--dup-times', type=int, default=0,
+                    help='сколько раз продублировать клипы из --dup-ids в пуле фраз')
+    ap.add_argument('--dup-ids', default='',
+                    help='JSON-файл со списком id клипов для оверсэмплинга')
+    ap.add_argument('--train-ids', default='',
+                    help='JSON со списком разрешённых id только для train; held не фильтруется')
+    ap.add_argument('--only-fold', type=int, default=-1,
+                    help='обработать только этот фолд (вместе с --resume)')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()
     if a.selftest:

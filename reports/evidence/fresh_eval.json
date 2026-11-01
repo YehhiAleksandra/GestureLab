@@ -1,0 +1,61 @@
+{
+ "tool": "fresh_eval",
+ "date": "2026-10-28",
+ "video": "D:/hfdata/demo_frases/mama_love.mp4",
+ "phrase": "Мама я тебя очень люблю",
+ "fps": 25.0,
+ "summary": {
+  "old": {
+   "segments": 1,
+   "meaning_ge1": 0.0,
+   "best_meaning": 0,
+   "best_translation": "Мать, я выбрал оттенок.",
+   "chrf_mean": 12.3,
+   "chrf_best": 12.296
+  },
+  "new": {
+   "segments": 1,
+   "meaning_ge1": 0.0,
+   "best_meaning": 0,
+   "best_translation": "Утром я увидел их цветовой оттенок.",
+   "chrf_mean": 7.94,
+   "chrf_best": 7.94
+  }
+ },
+ "cost_usd": 0.0002,
+ "seconds": 13.5,
+ "rows": [
+  {
+   "model": "old",
+   "span": [
+    139,
+    317
+   ],
+   "pred": [
+    "мать",
+    "я",
+    "вы",
+    "оттенок"
+   ],
+   "translation": "Мать, я выбрал оттенок.",
+   "meaning": 0,
+   "chrf": 12.296
+  },
+  {
+   "model": "new",
+   "span": [
+    139,
+    317
+   ],
+   "pred": [
+    "утро",
+    "я",
+    "их",
+    "цветовой оттенок"
+   ],
+   "translation": "Утром я увидел их цветовой оттенок.",
+   "meaning": 0,
+   "chrf": 7.94
+  }
+ ]
+}
