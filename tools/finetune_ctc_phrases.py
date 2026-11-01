@@ -573,7 +573,14 @@ def run(a):
     base_path = work / 'init_expanded_eval.pt'
     torch.save(expanded, base_path)
     if progress['base_beam'] is None:
-        base = beam_rows_resume(base_path, clips, work / 'base_rows.json',
+        # Базовый decode нужен как ориентир, а не как второй полный CV: на большом
+        # корпусе оценка всех клипов откладывает обучение на часы. Равномерная
+        # выборка покрывает весь отсортированный корпус и остаётся воспроизводимой.
+        base_limit = min(len(clips), 2000)
+        base_idx = np.linspace(0, len(clips) - 1, base_limit, dtype=int)
+        base_clips = [clips[i] for i in base_idx]
+        print(f'базовая выборка: {len(base_clips)} из {len(clips)} клипов', flush=True)
+        base = beam_rows_resume(base_path, base_clips, work / 'base_rows.json',
                                 lm_weight=a.lm_weight,
                                 word_bonus=a.word_bonus, beam=a.beam)
         progress['base_beam'] = summarize(base)
