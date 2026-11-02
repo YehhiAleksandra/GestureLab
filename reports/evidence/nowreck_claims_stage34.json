@@ -1,0 +1,33 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "build_train_canon",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "этап 34: канон для обучения — непокрытая форма получает имя класса по лемме, а не свою падежную форму"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "caller_name": "build_train_canon",
+   "called_name": "build_canon",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.9,
+   "explanation": "новый канон надстраивается над прогоночным: база та же, новые имена добавляются только при режиме «лемма»"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_train_canon_gives_new_classes_lemma_names",
+   "file_path": "tests/test_finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "новый класс именуется леммой, уже покрытая форма не трогается, неоднозначная лемма остаётся как есть"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_train_canon_without_lemma_stays_on_stem",
+   "file_path": "tests/test_finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "без pymorphy3 расширение не заводит новых имён — режим «основа» возвращает пустую карту"
+  }
+ ]
+}

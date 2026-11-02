@@ -1,4 +1,5 @@
 import json
+from types import SimpleNamespace
 
 import numpy as np
 
@@ -131,3 +132,30 @@ def test_beam_rows_resume_decodes_only_new_clips(tmp_path, monkeypatch):
     assert calls == ['new-span']
     assert rows[0] == saved and rows[1]['pred'] == ['я']
     assert len(json.loads(state.read_text(encoding='utf-8'))) == 2
+
+
+def test_train_canon_gives_new_classes_lemma_names(monkeypatch):
+    """Непокрытая форма получает класс по лемме, а не свою случайную форму.
+
+    Без этого «жили» расширил бы голову как «жили», хотя тот же жест в словаре живёт
+    под «жить»: метки одного жеста делятся между двумя классами вместо одного.
+    """
+    from test_vocab_gap import StubMorph
+
+    monkeypatch.setattr(fp, 'load_morph',
+                        lambda: StubMorph({'дома': 'дом', 'код': 'код', 'кода': 'код',
+                                           'жили': 'жить', 'коду': 'код'}))
+    vocab = {'дом', 'код', 'кода'}
+    canon, mode = fp.build_train_canon(['дома', 'коду', 'жили'], vocab,
+                                       SimpleNamespace(canon=True, lemma=True))
+    assert mode == 'лемма'
+    assert canon['дома'] == 'дом', 'уже покрытая форма не трогается'
+    assert canon['жили'] == 'жить', 'новый класс именуется словарной формой'
+    assert 'коду' not in canon, 'под леммой два класса головы — не гадаем'
+
+
+def test_train_canon_without_lemma_stays_on_stem(monkeypatch):
+    monkeypatch.setattr(fp, 'load_morph', lambda: None)
+    canon, mode = fp.build_train_canon(['жили'], {'дом'},
+                                       SimpleNamespace(canon=True, lemma=True))
+    assert (canon, mode) == ({}, 'основа'), 'без pymorphy3 новых имён не заводим'

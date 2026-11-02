@@ -103,6 +103,27 @@ def build_canon(plain, vocab, a):
     return canon_map(plain, vocab, morph), ('лемма' if morph else 'основа')
 
 
+def build_train_canon(plain, vocab, a):
+    """Канон для обучения: каждая форма получает имя класса — готовый или новый по лемме.
+
+    canon_map возвращает только уже выученные классы, поэтому необработанная форма шла в
+    расширение как есть: «моющих» становилось классом рядом с «мыть», и один жест учился
+    по одной случайной форме вместо всех её падежей. Здесь недостающие формы закрываются
+    леммой. Неоднозначную (под ней уже два класса головы) не трогаем — как lemma_index.
+    """
+    canon, mode = build_canon(plain, vocab, a)
+    if mode != 'лемма':
+        return canon, mode
+    morph = load_morph()
+    for w in plain:
+        if canon.get(w, w) in vocab:
+            continue
+        lem = morph.parse(w)[0].normal_form.lower().replace('ё', 'е')
+        if lem not in vocab:
+            canon[w] = lem
+    return canon, mode
+
+
 def canon_map(plain, vocab, morph=None):
     """Слово фразы → уже обученный класс по общей основе (знак не склоняется).
 
@@ -572,11 +593,12 @@ def run(a):
     ck = torch.load(a.init, map_location='cpu', weights_only=False)
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon, mode = build_canon(plain, head_names(ck['names']), a)
+    canon, mode = build_train_canon(plain, head_names(ck['names']), a)
     all_words = [canon.get(w, w) for w in plain]
     print(f'канонизация ({mode}): '
           f'{sum(1 for w in plain if canon.get(w, w) != w)} из {len(plain)} '
-          f'токенов → обученный класс', flush=True)
+          f'токенов → класс головы, новых имён {len(set(all_words) - head_names(ck["names"]))}',
+          flush=True)
     expanded = expand_checkpoint(ck, all_words)
     names, arch, feat = list(expanded['names']), ck['arch'], ck['feat']
     init_path = work / 'init_expanded.pt'
