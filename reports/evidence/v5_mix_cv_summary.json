@@ -1,0 +1,177 @@
+{
+ "tool": "finetune_ctc_phrases",
+ "stage": "v5 (SP-10 + YTSL-25 mix, 39 081 классов)",
+ "date": "2026-11-02",
+ "init": "prod_v4.pt",
+ "init_sha256": "cb6b1a0a329b43723061a78fb30c4051f5151fc0c2acb0069b0fa5daa55fe742",
+ "expanded_classes": 39081,
+ "folds": [
+  {
+   "fold": 0,
+   "held_beam": {
+    "clips": 7520,
+    "empty": 0.019,
+    "word_hits": 2932,
+    "word_tokens": 55777,
+    "word_recall": 0.053,
+    "seen_recall": 0.058,
+    "phrase_all_words": 15
+   },
+   "held_greedy": {
+    "clips": 7520,
+    "empty": 0.988,
+    "word_hits": 9,
+    "word_tokens": 55777,
+    "word_recall": 0.0,
+    "seen_recall": 0.0,
+    "phrase_all_words": 2
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.345,
+    "exact_acc": 0.033,
+    "edit_rate": 0.575
+   }
+  },
+  {
+   "fold": 1,
+   "held_beam": {
+    "clips": 7520,
+    "empty": 0.01,
+    "word_hits": 2949,
+    "word_tokens": 55180,
+    "word_recall": 0.053,
+    "seen_recall": 0.058,
+    "phrase_all_words": 17
+   },
+   "held_greedy": {
+    "clips": 7520,
+    "empty": 0.968,
+    "word_hits": 18,
+    "word_tokens": 55180,
+    "word_recall": 0.0,
+    "seen_recall": 0.0,
+    "phrase_all_words": 1
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.319,
+    "exact_acc": 0.067,
+    "edit_rate": 0.602
+   }
+  },
+  {
+   "fold": 2,
+   "held_beam": {
+    "clips": 7520,
+    "empty": 0.011,
+    "word_hits": 2772,
+    "word_tokens": 55824,
+    "word_recall": 0.05,
+    "seen_recall": 0.054,
+    "phrase_all_words": 16
+   },
+   "held_greedy": {
+    "clips": 7520,
+    "empty": 0.984,
+    "word_hits": 18,
+    "word_tokens": 55824,
+    "word_recall": 0.0,
+    "seen_recall": 0.0,
+    "phrase_all_words": 3
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.292,
+    "exact_acc": 0.067,
+    "edit_rate": 0.593
+   }
+  },
+  {
+   "fold": 3,
+   "held_beam": {
+    "clips": 7520,
+    "empty": 0.013,
+    "word_hits": 2915,
+    "word_tokens": 55498,
+    "word_recall": 0.053,
+    "seen_recall": 0.057,
+    "phrase_all_words": 20
+   },
+   "held_greedy": {
+    "clips": 7520,
+    "empty": 0.987,
+    "word_hits": 14,
+    "word_tokens": 55498,
+    "word_recall": 0.0,
+    "seen_recall": 0.0,
+    "phrase_all_words": 2
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.336,
+    "exact_acc": 0.067,
+    "edit_rate": 0.584
+   }
+  },
+  {
+   "fold": 4,
+   "held_beam": {
+    "clips": 7520,
+    "empty": 0.014,
+    "word_hits": 2964,
+    "word_tokens": 55680,
+    "word_recall": 0.053,
+    "seen_recall": 0.058,
+    "phrase_all_words": 7
+   },
+   "held_greedy": {
+    "clips": 7520,
+    "empty": 0.987,
+    "word_hits": 15,
+    "word_tokens": 55680,
+    "word_recall": 0.0,
+    "seen_recall": 0.0,
+    "phrase_all_words": 2
+   },
+   "slovo_clean": {
+    "gloss_acc": 0.292,
+    "exact_acc": 0.033,
+    "edit_rate": 0.619
+   }
+  }
+ ],
+ "seed": 2026,
+ "source": "D:/hfdata/v5_mix/v5_cv.json (полный прогон локально, веса и данные в репозиторий не входят)",
+ "config": {
+  "epochs": 30,
+  "steps": 60,
+  "bs": 24,
+  "lr": 0.0001,
+  "corpus_frac": 0.3,
+  "phrase_frac": 0.45,
+  "single_frac": 0.1,
+  "aug": "hard",
+  "recombine_frac": 0.25,
+  "freeze_encoder": false,
+  "beam": 24,
+  "lm_weight": 0.0,
+  "word_bonus": 3.0,
+  "nbest": 20
+ },
+ "note": "Метка held-клипов — русские субтитры, а не глоссы: порядок слов не совпадает с жестовой последовательностью, поэтому word_recall ниже, чем на 67 клипах канала, и с этими цифрами несопоставима. Утечка (B62): init prod_v4 обучен на клипах, входящих в смесь.",
+ "held_beam": {
+  "clips": 37600,
+  "empty": 0.013,
+  "word_hits": 14532,
+  "word_tokens": 277959,
+  "word_recall": 0.052,
+  "seen_recall": 0.057,
+  "phrase_all_words": 75
+ },
+ "base_beam_2000": {
+  "clips": 2000,
+  "empty": 0.011,
+  "word_hits": 764,
+  "word_tokens": 14906,
+  "word_recall": 0.051,
+  "seen_recall": 0.0,
+  "phrase_all_words": 4
+ }
+}

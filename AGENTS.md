@@ -20,7 +20,7 @@
 ## Гейт перед коммитом и пушем
 
 ```
-PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 40 passed
+PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 158 passed (замер 2026-11-02)
 ```
 
 - Тесты — часть контракта: новый баг сначала воспроизводится тестом, потом чинится.
