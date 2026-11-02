@@ -32,7 +32,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
 
 from dialogue_state import translate_in_context  # noqa: E402
-from dialogue_translator import Recognizer, frame_of  # noqa: E402
+from dialogue_translator import Recognizer, TUNED_DECODER, frame_of  # noqa: E402
 from eval_phrase_clips import hits  # noqa: E402
 from gl_capture import fps_of, open_video  # noqa: E402
 from gloss_to_text import SYSTEM, Translator, chrf  # noqa: E402
@@ -161,8 +161,7 @@ def run(video, reference, out, model, beam=24, nbest=20, no_tts=False, no_transl
     arr, fps, (w, h) = draw_source(video, tmp / 'skeleton.mp4', pause, max_len)
     spans = split_utterances(arr, fps, pause=pause, max_len=max_len)
     refs = [r.strip() for r in reference.split('|')] if reference else []
-    rec = Recognizer(model, decoder='beam', beam=beam, lm_weight=0.1, word_bonus=2.0,
-                     smooth=1, nbest=nbest)
+    rec = Recognizer(model, **{**TUNED_DECODER, 'beam': beam, 'nbest': nbest})
     tr = None if no_translate else Translator()
 
     preds, texts, rows = [], [], []
@@ -220,6 +219,8 @@ def run(video, reference, out, model, beam=24, nbest=20, no_tts=False, no_transl
 
     result = {'video': Path(video).name, 'model': Path(model).name,
               'config': {'beam': beam, 'nbest': nbest, 'pause': pause, 'fps': round(fps, 2),
+                         'decoder': {k: v for k, v in TUNED_DECODER.items()
+                                     if k not in ('beam', 'nbest')},
                          'tts': not no_tts, 'translate': not no_translate},
               'frames': int(len(arr)), 'hands_ratio': round(edges(arr, fps), 3),
               'spans': rows, 'cost_usd': round(tr.cost, 4) if tr else 0.0, 'out': str(out)}

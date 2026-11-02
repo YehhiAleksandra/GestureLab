@@ -1,0 +1,24 @@
+{
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_decoder_defaults.py",
+   "confidence": 0.95,
+   "explanation": "этап 33: тесты на зафиксированный дефолт декодера и единый источник"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_tuned_decoder_is_the_candidate_frozen_by_meaning",
+   "file_path": "tests/test_decoder_defaults.py",
+   "confidence": 0.95,
+   "explanation": "боевой конфиг = замороженный по смыслу кандидат"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_no_second_copy_of_the_pair",
+   "file_path": "tests/test_decoder_defaults.py",
+   "confidence": 0.95,
+   "explanation": "check_translation и eval_phrase_clips делят один словарь TUNED_DECODER"
+  }
+ ]
+}

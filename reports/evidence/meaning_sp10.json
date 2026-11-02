@@ -1,0 +1,3826 @@
+{
+ "tool": "meaning_compare",
+ "date": "2026-11-02",
+ "inventory": "D:/hfdata/sp10_eval.json",
+ "work": "D:\\hfdata\\dict_folds_honest",
+ "folds": 5,
+ "seed": 2026,
+ "canon": "lemma",
+ "base": {
+  "lm_src": "corpus",
+  "lm_weight": 0.1,
+  "word_bonus": 2.0,
+  "smooth": 1
+ },
+ "seconds": 2287.3,
+ "results": [
+  {
+   "lm_src": "corpus",
+   "lm_weight": 0.1,
+   "word_bonus": 2.0,
+   "smooth": 1,
+   "config_index": 0,
+   "clips": 111,
+   "empty": 0.45,
+   "glosses_mean": 0.62,
+   "word_hits_canon": 8,
+   "word_tokens": 352,
+   "meaning_scored": 110,
+   "llm_errors": 1,
+   "meaning_ge1": 0.009,
+   "meaning_2": 0.009,
+   "chrf": 5.288,
+   "cost_usd": 0.0019
+  },
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 4.0,
+   "smooth": 3,
+   "config_index": 1,
+   "clips": 111,
+   "empty": 0.009,
+   "glosses_mean": 3.5,
+   "word_hits_canon": 19,
+   "word_tokens": 352,
+   "meaning_scored": 109,
+   "llm_errors": 2,
+   "meaning_ge1": 0.064,
+   "meaning_2": 0.018,
+   "chrf": 11.756,
+   "cost_usd": 0.0019,
+   "vs_base": {
+    "meaning": {
+     "mean_diff": 0.0631,
+     "lo95": 0.009,
+     "hi95": 0.1351,
+     "a_wins": 6,
+     "b_wins": 1,
+     "distinguishable": true
+    },
+    "hits_canon": {
+     "mean_diff": 0.0991,
+     "lo95": 0.045,
+     "hi95": 0.1622,
+     "a_wins": 11,
+     "b_wins": 0,
+     "distinguishable": true
+    },
+    "chrf": {
+     "mean_diff": 6.3035,
+     "lo95": 4.096,
+     "hi95": 8.9622,
+     "a_wins": 86,
+     "b_wins": 23,
+     "distinguishable": true
+    }
+   }
+  }
+ ],
+ "rows": {
+  "0": [
+   {
+    "id": "dev_3650",
+    "fold": 0,
+    "phrase": "был несчастный случай",
+    "pred": [
+     "угрюмый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 4.081,
+    "translation": "Угрюмый"
+   },
+   {
+    "id": "dev_9825",
+    "fold": 0,
+    "phrase": "Я бы не хотел ее работу",
+    "pred": [
+     "вина",
+     "принуждение"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 5,
+    "meaning": 0,
+    "chrf": 13.456,
+    "translation": "Вина была принудительной."
+   },
+   {
+    "id": "dev_9927",
+    "fold": 0,
+    "phrase": "У меня простуда",
+    "pred": [
+     "новый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.908,
+    "translation": "Я чувствую новое вдохновение и возбуждение, я восхищен и живу в этом состоянии; обезьяна стала новой, я ощущаю новую слабость, я вдохновляю и возбуждаю, но снова сбился."
+   },
+   {
+    "id": "dev_14580",
+    "fold": 0,
+    "phrase": "Сколько?",
+    "pred": [
+     "ваш"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 3.883,
+    "translation": "Пожалуйста, предоставьте глоссы в виде последовательности слов для перевода. Вы прислали список слов, но не составили из них предложение."
+   },
+   {
+    "id": "dev_14581",
+    "fold": 0,
+    "phrase": "Как?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_14612",
+    "fold": 0,
+    "phrase": "Переводи!",
+    "pred": [
+     "дешёвый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 9.118,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в предложение. Вы прислали список слов, но не составили из них фразу."
+   },
+   {
+    "id": "dev_22003",
+    "fold": 0,
+    "phrase": "Сколько времени мы должны здесь ждать?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_22405",
+    "fold": 0,
+    "phrase": "У меня сыпь.",
+    "pred": [
+     "вечер"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.15,
+    "translation": "Пожалуйста, предоставьте глоссы в виде последовательности жестов для перевода в предложение. Список слов, который вы прислали, является словарем или перечнем отдельных понятий, а не фразой."
+   },
+   {
+    "id": "dev_23159",
+    "fold": 0,
+    "phrase": "Это десять минут на автобусе.",
+    "pred": [
+     "самопроверка"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.704,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в предложение. Ваш последний список выглядит как словарь или перечень слов, а не как фраза на РЖЯ."
+   },
+   {
+    "id": "test_3673",
+    "fold": 0,
+    "phrase": "я не глухая",
+    "pred": [
+     "невиновный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 4.275,
+    "translation": "Невиновны вы, вас восемьдесят, презрение женщины навсегда будет непрозрачным, никто не верный, сарказм невиновного серый, сильное ранение, расстрел, приговор, ли добропорядочность."
+   },
+   {
+    "id": "test_3674",
+    "fold": 0,
+    "phrase": "я не слышащий",
+    "pred": [
+     "Я",
+     "невиновный"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 7.971,
+    "translation": "Я невиновен. Я навсегда люблю. Я терпеть не могу непрозрачность. Я серый. Вы навсегда агрессивны и невыносимы."
+   },
+   {
+    "id": "test_8853",
+    "fold": 0,
+    "phrase": "Какой у тебя адрес?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_8864",
+    "fold": 0,
+    "phrase": "Откуда вы?",
+    "pred": [
+     "первый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.512,
+    "translation": "Первый, один, одиннадцать. Почему ребёнок тринадцать? Друг сто оказался оскорблён. Следующий всегда что триста возникло никогда. Плохо Ц двести думать."
+   },
+   {
+    "id": "test_9733",
+    "fold": 0,
+    "phrase": "Проверишь масло?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9839",
+    "fold": 0,
+    "phrase": "Мне больше всего нравится осень",
+    "pred": [
+     "мужчина",
+     "жаждущий"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 2.71,
+    "translation": "Жаждущий мужчина"
+   },
+   {
+    "id": "test_9841",
+    "fold": 0,
+    "phrase": "Мне больше всего нравится лето",
+    "pred": [
+     "любовь"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 17.626,
+    "translation": "Любовь, любить, жаждущий, довольный, приятный, наш красивый любовный, мой нравится, пятьдесят, страшный, активный, восхищаюсь любовью, цвет, доволен, ранний, рано, восхищаюсь любовью."
+   },
+   {
+    "id": "test_9902",
+    "fold": 0,
+    "phrase": "Радость миру!",
+    "pred": [
+     "больше"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 9.611,
+    "translation": "Больше, радости больше, восхищаюсь, радость восхищает, ваш, продолжить, возбужденный, легкий, возбуждение, радость продолжается, радостный, легкая радость, облегчение, вдохновение, приходит больше, семьи больше, вдохновлять, больше радости, весна, сколько."
+   },
+   {
+    "id": "test_9998",
+    "fold": 0,
+    "phrase": "Я потерял(-а) карандаш.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_10126",
+    "fold": 0,
+    "phrase": "Как Вы потеряли слух?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_14557",
+    "fold": 0,
+    "phrase": "Плохо!",
+    "pred": [
+     "У"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 9.29,
+    "translation": "В одиннадцать плохо, неделя их миленький, вас лить еще напряжение желтый держать получить еда твой интересно четыреста тринадцать жёлтый."
+   },
+   {
+    "id": "test_21758",
+    "fold": 0,
+    "phrase": "До встречи дома.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_21807",
+    "fold": 0,
+    "phrase": "Что бы вы хотели?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_22886",
+    "fold": 0,
+    "phrase": "Что вас беспокоит?",
+    "pred": [
+     "возбужденный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 15.25,
+    "translation": "Это список слов."
+   },
+   {
+    "id": "dev_3664",
+    "fold": 1,
+    "phrase": "для меня это слишком сложно",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_3695",
+    "fold": 1,
+    "phrase": "Потрясающе!",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_8807",
+    "fold": 1,
+    "phrase": "Ты любишь смотреть телевизор?",
+    "pred": [
+     "дочь"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 19.227,
+    "translation": "Дочь не льет, дочь испугана, но она хорошая и веселая. Подруга дочери, сестра, дочь смотрят телевизор. У дочери аппетит. Ей двадцать, она веселая и не испугана. Дочь совпала по цвету. Испуганно льет, испуганно двадцать, испуганно хорошо, ис"
+   },
+   {
+    "id": "dev_8856",
+    "fold": 1,
+    "phrase": "Что?",
+    "pred": [
+     "что"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 5.073,
+    "translation": "Что ребенок, кто, стул, сто, краткий, один, короткий, почему, первый, ожидающий, слышать, особо, синий, понедельник, временно, уехать, ресторан, карандаш."
+   },
+   {
+    "id": "dev_9606",
+    "fold": 1,
+    "phrase": "Время летит.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_9957",
+    "fold": 1,
+    "phrase": "Где болит?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10164",
+    "fold": 1,
+    "phrase": "Красно-синие цвета заката красивые.",
+    "pred": [
+     "петух"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 2.286,
+    "translation": "Петух"
+   },
+   {
+    "id": "dev_21695",
+    "fold": 1,
+    "phrase": "Ты спешишь?",
+    "pred": [
+     "расстроенный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 5.395,
+    "translation": "Расстроенный, разочарованный, печальный, горюющий, жёлтый, спешащий, грустный, беспокойный, жёлтый, голодный, в спешке, беспокоящийся, воротник, обеспокоен, восхищающийся, отношение, вероятность, торопящийся, одежда, обеспокоенный."
+   },
+   {
+    "id": "dev_22109",
+    "fold": 1,
+    "phrase": "Вы бледны.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_22434",
+    "fold": 1,
+    "phrase": "Меня рвет.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_3108",
+    "fold": 1,
+    "phrase": "я его сто лет не видела",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_3659",
+    "fold": 1,
+    "phrase": "мне он нравится",
+    "pred": [
+     "цвет",
+     "любить"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 6.838,
+    "translation": "Любить цвет"
+   },
+   {
+    "id": "test_8832",
+    "fold": 1,
+    "phrase": "У меня есть вопрос",
+    "pred": [
+     "вопрос",
+     "есть"
+    ],
+    "glosses": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3,
+    "meaning": 2,
+    "chrf": 63.344,
+    "translation": "Есть вопрос."
+   },
+   {
+    "id": "test_8863",
+    "fold": 1,
+    "phrase": "Где вы живете?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9595",
+    "fold": 1,
+    "phrase": "Я закончу через два года",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9946",
+    "fold": 1,
+    "phrase": "У меня голова болит",
+    "pred": [
+     "жираф"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 8.419,
+    "translation": "Жираф, дом, лицо страшное, рыба веселая, одаренный талант, много, мне жираф, покраснеть, высокий, солнце, мурашки, мудрый, жираф, сверху, Гродно, старший."
+   },
+   {
+    "id": "test_10035",
+    "fold": 1,
+    "phrase": "Простите.",
+    "pred": [
+     "уверенный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 9.034,
+    "translation": "Это список слов, а не глоссы для перевода в предложение. Пожалуйста, введите последовательность жестов (глосс), чтобы я мог восстановить фразу."
+   },
+   {
+    "id": "test_10083",
+    "fold": 1,
+    "phrase": "Я буду горячий чай",
+    "pred": [
+     "девочка"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 5.096,
+    "translation": "Девочка, воздух, женщина, время, терпение, девочка, акула, розовый, мать, мама, розовая девочка, опытный, предусмотрительный, девочка воздуха, девочка терпения, ненавидеть, дочка, оранжевый, девочка-женщина."
+   },
+   {
+    "id": "test_14598",
+    "fold": 1,
+    "phrase": "Вспомни!",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_14621",
+    "fold": 1,
+    "phrase": "Где?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_21755",
+    "fold": 1,
+    "phrase": "Это очень вкусно.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23154",
+    "fold": 1,
+    "phrase": "Далеко ли от школы до вокзала?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_635",
+    "fold": 2,
+    "phrase": "Куда?",
+    "pred": [
+     "суббота"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 5.123,
+    "translation": "В субботу озорной друг зашел одолжить соль, но в октябре спекулянт ничего не дал за серебро и золото, хотя нога болела."
+   },
+   {
+    "id": "dev_3656",
+    "fold": 2,
+    "phrase": "Вы хотите пиво?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_9729",
+    "fold": 2,
+    "phrase": "Где метро?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10046",
+    "fold": 2,
+    "phrase": "Какой у тебя адрес?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10105",
+    "fold": 2,
+    "phrase": "Что вы хотите заказать?",
+    "pred": [
+     "что"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 7.326,
+    "translation": "Что очень вкусный карандаш, очень вкусный, очень что, очень карандаш, короткий, желаю вкусное, желаю что, кто? Временно желаю карандаш, очень-очень зелёный, очень желаю вкусное, лучший, очень желаю что, молодой."
+   },
+   {
+    "id": "dev_14569",
+    "fold": 2,
+    "phrase": "Ты понял?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_23132",
+    "fold": 2,
+    "phrase": "Я хочу рассказать тебе кое-что о своей семье",
+    "pred": [
+     "одежда"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 9,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 15.625,
+    "translation": "Одежда ни у кого не была, семья не проверяла, никто в семье не глотал, сестра уже не глотала одновременно, теряла, никто не терял, получала удовольствие от новой одежды, но одежда оказалась несчастной."
+   },
+   {
+    "id": "dev_23823",
+    "fold": 2,
+    "phrase": "Куда идет этот поезд?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_3107",
+    "fold": 2,
+    "phrase": "Я люблю путешествовать",
+    "pred": [
+     "черный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 8.992,
+    "translation": "Черный талант, одаренный, но кроме черного, без него неизвестно. Лицо вызывает сомнение, мудрый черный человек. Вспомнить много вины, без таланта, черный виноват, веселый, высокий, голова."
+   },
+   {
+    "id": "test_8809",
+    "fold": 2,
+    "phrase": "Хотите молоко и сахар?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9831",
+    "fold": 2,
+    "phrase": "Где ты работаешь?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9846",
+    "fold": 2,
+    "phrase": "Идет дождь",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_9884",
+    "fold": 2,
+    "phrase": "Я заплатил(а) меньше, чем ты.",
+    "pred": [
+     "гнев"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.388,
+    "translation": "Гнев, одновременность, подробно обучать, ничего, ребяческий собачий домик, картина, особенный, причина, никто, большой, жадно есть, птица, несчастье, одежда, рассердиться быстро, горюющий."
+   },
+   {
+    "id": "test_10009",
+    "fold": 2,
+    "phrase": "Это девочка!",
+    "pred": [
+     "К"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 5.79,
+    "translation": "К кому время, воздух, к ней, терпение, зарплата, женщина, волк, к тебе, кто, время, воздух, мать, время, воздух полный."
+   },
+   {
+    "id": "test_14604",
+    "fold": 2,
+    "phrase": "Забери!",
+    "pred": [
+     "высокий"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 2.958,
+    "translation": "Высокое сочувствие, сочувствие высокое, высокий вниз, высокий минимум, миллиард, соль, разъяренный, им, затем бутылка много вниз, высокая соль, завтра минимум, высокая бутылка, отвратительный."
+   },
+   {
+    "id": "test_20110",
+    "fold": 2,
+    "phrase": "О Господи!",
+    "pred": [
+     "вечер"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 4.724,
+    "translation": "Вечером бабочка получала удовольствие, помогая около опоздавшего нового члена семьи, который запутался и был грустным и горюющим; в воздухе был тигр, обстоятельства сложились так, что домашнее животное устроило беспорядок в селе, из-за чего возникли подозрения, но всё было оживленно, как в"
+   },
+   {
+    "id": "test_22016",
+    "fold": 2,
+    "phrase": "Я закончил частную школу",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_22027",
+    "fold": 2,
+    "phrase": "В поезде есть вагон-ресторан?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23065",
+    "fold": 2,
+    "phrase": "У вас есть свободные номера?",
+    "pred": [
+     "одновременность"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 13.068,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в предложение. Вы прислали список слов, но не саму фразу для перевода."
+   },
+   {
+    "id": "test_23107",
+    "fold": 2,
+    "phrase": "Здравствуйте, вам помочь?",
+    "pred": [
+     "необходимый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.823,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в предложение. Вы прислали список отдельных слов, но для перевода мне нужна фраза."
+   },
+   {
+    "id": "test_23807",
+    "fold": 2,
+    "phrase": "Посмотрим.",
+    "pred": [
+     "ненавидеть"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 12.503,
+    "translation": "Это список слов."
+   },
+   {
+    "id": "test_23814",
+    "fold": 2,
+    "phrase": "Какой счет?",
+    "pred": [
+     "особенный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.319,
+    "translation": "Особенный продолжил неверие, особенно дорогой, особенная нога возбуждает, кроме 7:45, пятнадцать верить, крыса, гнев, правило без налога, третий продолжительность презирать."
+   },
+   {
+    "id": "dev_8806",
+    "fold": 3,
+    "phrase": "У вас есть дети?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_9665",
+    "fold": 3,
+    "phrase": "Где здание администрации?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_9742",
+    "fold": 3,
+    "phrase": "Я ищу работу",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_9774",
+    "fold": 3,
+    "phrase": "Я просто зашел",
+    "pred": [
+     "козел",
+     "вина"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.848,
+    "translation": "Козёл виноват"
+   },
+   {
+    "id": "dev_9955",
+    "fold": 3,
+    "phrase": "Где мне найти врача?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10158",
+    "fold": 3,
+    "phrase": "Я люблю рисовать цветными карандашами",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_22038",
+    "fold": 3,
+    "phrase": "Можно закрыть окно?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_22101",
+    "fold": 3,
+    "phrase": "Где ближайшая почта?",
+    "pred": [
+     "вопрос"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.557,
+    "translation": "Вопрос. 2. Лучший. 3. Рыдающий вопрос. 4. Лицо-вопрос. 5. Аниматор-вопрос. 6. Дочь. 7. Верхний вопрос. 8. Вкус-вопрос. 9. Обещать. 10. Динозавр-вопрос. 1"
+   },
+   {
+    "id": "dev_22364",
+    "fold": 3,
+    "phrase": "Он еще жив",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_3661",
+    "fold": 3,
+    "phrase": "у меня температура",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_3675",
+    "fold": 3,
+    "phrase": "я боюсь",
+    "pred": [
+     "заяц"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.386,
+    "translation": "Это список слов."
+   },
+   {
+    "id": "test_8840",
+    "fold": 3,
+    "phrase": "Я вернусь",
+    "pred": [
+     "буду"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 10.62,
+    "translation": "Я буду терпеливым."
+   },
+   {
+    "id": "test_8867",
+    "fold": 3,
+    "phrase": "Зачем ты так говоришь?",
+    "pred": [
+     "вы"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 16.824,
+    "translation": "Вы говорите на иностранном языке, но говорить на нем страшно. Как правильно говорить? Я предупреждаю: вы можете обидеться, когда вас спросят или когда вы увидите, как говорят другие."
+   },
+   {
+    "id": "test_9840",
+    "fold": 3,
+    "phrase": "Мне больше всего нравится весна",
+    "pred": [
+     "приятный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 12.105,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в предложение. Вы прислали список слов, но не составили из них фразу."
+   },
+   {
+    "id": "test_9976",
+    "fold": 3,
+    "phrase": "Ее  дочь здесь работает",
+    "pred": [
+     "правша"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 10.016,
+    "translation": "Правша, декабрь, много, декабрь правша, следующий белый сзади, золото, высокий, ранее предложил тост, декабрь, несколько копыт, отвратительное гнездо, ребёнок везде, белый декабрь."
+   },
+   {
+    "id": "test_10147",
+    "fold": 3,
+    "phrase": "Пожалуйста, говорите на жестах медленно.",
+    "pred": [
+     "спокойный",
+     "дом"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "error": "TimeoutError: The read operation timed out",
+    "translation": ""
+   },
+   {
+    "id": "test_21722",
+    "fold": 3,
+    "phrase": "Вы не против дыма?",
+    "pred": [
+     "предусмотрительный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 7.92,
+    "translation": "Предусмотрительный, красивый, воздух, стыдно, ароматный, одаренный, читать, народ, веселый, весёлый, кроме, в, нравится, зима, борода, павлин, рыба, высокомерный, погода."
+   },
+   {
+    "id": "test_22102",
+    "fold": 3,
+    "phrase": "Где вагон ресторана?",
+    "pred": [
+     "из-за"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 8.4,
+    "translation": "Из-за шума возник гнев, из-за чего всё стало чистым. Из-за моста что-то уронили в понедельник. Из-за странного отделения была причина, поэтому он сердитый и красный в четверг. Кроме шума, из-за одновременности на даче из-за картины стало шумно."
+   },
+   {
+    "id": "test_22910",
+    "fold": 3,
+    "phrase": "Вам ничего нельзя есть.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23140",
+    "fold": 3,
+    "phrase": "Я болею.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23394",
+    "fold": 3,
+    "phrase": "Играть в футбол весело.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23825",
+    "fold": 3,
+    "phrase": "Где следующая остановка автобуса?",
+    "pred": [
+     "особенный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 13.342,
+    "translation": "Особенное удовольствие обещать быстро сфотографировать такого, кто получает удовольствие от презрения к наследству и обещает презирать одновременно с восемнадцатью радующимися в департаменте птиц, которые обещают мужественно брюзжать в отделении, потрясающе презирая особенное."
+   },
+   {
+    "id": "dev_2791",
+    "fold": 4,
+    "phrase": "я люблю тебя",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_3110",
+    "fold": 4,
+    "phrase": "ничего нового",
+    "pred": [
+     "новый"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 10.385,
+    "translation": "Новые новости: новый приличный, новый близко, новый красивый, новый аккуратный. Хочу нового попугая. Новый плачет. Новое лицо красивое и аккуратное. Новый скрыт. Бабочка. Новая неделя. Выигрыш. Лицо. Новый сильный близко."
+   },
+   {
+    "id": "dev_3651",
+    "fold": 4,
+    "phrase": "Это дорога в город?",
+    "pred": [
+     "рыба"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 4.125,
+    "translation": "Рыба, летающая рыба, мурашки, воздух, рыба-мурашка, золотая рыбка, та рыба, воздушные мурашки, рыба-мурашка, слабая рыба, те, большая рыба, золото, дельфин, показать рыбу, акула, летающая рыба-мурашка, рыба с копытами, женщина."
+   },
+   {
+    "id": "dev_3690",
+    "fold": 4,
+    "phrase": "Правда?",
+    "pred": [
+     "разрешить"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 4.54,
+    "translation": "Пожалуйста, предоставьте глоссы (последовательность жестов), которые нужно перевести в одну фразу. Вы прислали список слов, но не составили из них предложение."
+   },
+   {
+    "id": "dev_9816",
+    "fold": 4,
+    "phrase": "Я адвокат.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10007",
+    "fold": 4,
+    "phrase": "ОК",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_10082",
+    "fold": 4,
+    "phrase": "Я буду кофе после еды",
+    "pred": [
+     "делать"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 3.378,
+    "translation": "делать"
+   },
+   {
+    "id": "dev_12077",
+    "fold": 4,
+    "phrase": "ответить на звонок телефона",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "dev_14570",
+    "fold": 4,
+    "phrase": "Рисуй!",
+    "pred": [
+     "прийти"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 2.487,
+    "translation": "Прийти дорогой расслабление, дорогой прийти новости, расслабиться конечно особенный, прийти-прийти гипотеза, труп, неверие, аппетит, цена, беспокоиться, дорогой-дорогой жёлтый, оплатите, закончить."
+   },
+   {
+    "id": "dev_19937",
+    "fold": 4,
+    "phrase": "Ты готов?",
+    "pred": [
+     "билет"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 2.71,
+    "translation": "Билет согласно, ошибка согласно, ошибка в билете, согласно билету, билет согласно. Ошибка согласно билету, горький согласно, ошибка, змея согласно, вежливый согласно, вежливый, горький билет, ошибка в билете согласно, вежливый билет, что-нибудь согласно, зоопарк согласно, змея-би"
+   },
+   {
+    "id": "dev_21984",
+    "fold": 4,
+    "phrase": "Свидетели есть?",
+    "pred": [
+     "крыло"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 7.143,
+    "translation": "Это список слов."
+   },
+   {
+    "id": "dev_22435",
+    "fold": 4,
+    "phrase": "Я сделаю тебе укол.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_2784",
+    "fold": 4,
+    "phrase": "С Новым годом!",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_8804",
+    "fold": 4,
+    "phrase": "Ты его спрашивал?",
+    "pred": [
+     "мальчик",
+     "вопрос"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 45.321,
+    "translation": "Мальчик спрашивает."
+   },
+   {
+    "id": "test_10140",
+    "fold": 4,
+    "phrase": "Я немного говорю",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_10200",
+    "fold": 4,
+    "phrase": "Кто взял мой...?",
+    "pred": [
+     "мой"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 9.088,
+    "translation": "Мой друг, наш друг, я доволен вами, наш друг, всё хорошо, я люблю вас, мой друг любит нас, я горжусь этим, кто это? я доволен вами, мой друг активен."
+   },
+   {
+    "id": "test_10245",
+    "fold": 4,
+    "phrase": "У меня есть собака",
+    "pred": [
+     "слон"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 6.28,
+    "translation": "Слон невиновен, никто не знает, слон везде, везде слон виновник, виновник — слон, слон невиновен, слон — никто, слон — миллион, миллион, бутылка, слон, слон к, к, слон такой же, мне везде, слон и бутылка, я виновник."
+   },
+   {
+    "id": "test_14575",
+    "fold": 4,
+    "phrase": "Хорошо!",
+    "pred": [
+     "хорошо"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 13.423,
+    "translation": "Хорошо лить гордый час скрыть билет где зима терпение согласно из-за хороший госпожа спокойный вопрос главный апрель секрет дорога."
+   },
+   {
+    "id": "test_21759",
+    "fold": 4,
+    "phrase": "Я возьму это.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_21836",
+    "fold": 4,
+    "phrase": "Вы можете поменять мне колесо?",
+    "pred": [
+     "голод"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 3.715,
+    "translation": "Голод"
+   },
+   {
+    "id": "test_22440",
+    "fold": 4,
+    "phrase": "У меня голова болит.",
+    "pred": [
+     "отец"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 9.37,
+    "translation": "Отец, лицо, забыть, дом, одаренный, козел, рыба, слон, много, сверху, талант, черный, мудрый, свет, Гродно, мурашки, папа, веселый, гений."
+   },
+   {
+    "id": "test_22791",
+    "fold": 4,
+    "phrase": "Покажи язык.",
+    "pred": [
+     "красный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 8.845,
+    "translation": "Красный, привык плакать, трудный один язык, вкус триста, лицо близко, аппетит, когда красивый, оскорбить, аккуратный, приличный, смотреть, милый, госпожа, наслаждайся."
+   }
+  ],
+  "1": [
+   {
+    "id": "dev_3650",
+    "fold": 0,
+    "phrase": "был несчастный случай",
+    "pred": [
+     "миллион",
+     "шум",
+     "уронить",
+     "шум",
+     "угрюмый",
+     "беда",
+     "угрюмый"
+    ],
+    "glosses": 7,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 10.541,
+    "translation": "Миллион шумов обрушился, и наступила угрюмая беда."
+   },
+   {
+    "id": "dev_9825",
+    "fold": 0,
+    "phrase": "Я бы не хотел ее работу",
+    "pred": [
+     "вина",
+     "успеть",
+     "вина",
+     "без",
+     "принуждение",
+     "любить",
+     "принуждение"
+    ],
+    "glosses": 7,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 5,
+    "meaning": 0,
+    "chrf": 9.524,
+    "translation": "Вина заставляет любить принуждением."
+   },
+   {
+    "id": "dev_9927",
+    "fold": 0,
+    "phrase": "У меня простуда",
+    "pred": [
+     "Я",
+     "Я",
+     "слабость",
+     "новый",
+     "вдохновение",
+     "новый"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 12.952,
+    "translation": "Я чувствую новую слабость и новое вдохновение."
+   },
+   {
+    "id": "dev_14580",
+    "fold": 0,
+    "phrase": "Сколько?",
+    "pred": [
+     "ваш",
+     "вам",
+     "ваш"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": "Ваш, вам, ваш"
+   },
+   {
+    "id": "dev_14581",
+    "fold": 0,
+    "phrase": "Как?",
+    "pred": [
+     "сюрприз",
+     "лить",
+     "сюрприз"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": "Сюрприз лить сюрприз"
+   },
+   {
+    "id": "dev_14612",
+    "fold": 0,
+    "phrase": "Переводи!",
+    "pred": [
+     "дешёвый",
+     "опасный",
+     "дешёвый"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 7.716,
+    "translation": "Дешёвый, но опасный."
+   },
+   {
+    "id": "dev_22003",
+    "fold": 0,
+    "phrase": "Сколько времени мы должны здесь ждать?",
+    "pred": [
+     "милиция",
+     "двадцать один",
+     "один"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 1.736,
+    "translation": "Милиция 21:01"
+   },
+   {
+    "id": "dev_22405",
+    "fold": 0,
+    "phrase": "У меня сыпь.",
+    "pred": [
+     "одежда",
+     "самопроверка",
+     "одежда"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.061,
+    "translation": "Проверить одежду"
+   },
+   {
+    "id": "dev_23159",
+    "fold": 0,
+    "phrase": "Это десять минут на автобусе.",
+    "pred": [
+     "самопроверка",
+     "отвращение",
+     "самопроверка"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.366,
+    "translation": "Самопроверка вызывает отвращение к самопроверке"
+   },
+   {
+    "id": "test_3673",
+    "fold": 0,
+    "phrase": "я не глухая",
+    "pred": [
+     "сарказм",
+     "невиновный",
+     "вас"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.213,
+    "translation": "Ваш сарказм невиновен"
+   },
+   {
+    "id": "test_3674",
+    "fold": 0,
+    "phrase": "я не слышащий",
+    "pred": [
+     "Я",
+     "брест",
+     "Я",
+     "брест",
+     "невиновный",
+     "навсегда"
+    ],
+    "glosses": 6,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 10.528,
+    "translation": "Я из Бреста, я навсегда невиновен."
+   },
+   {
+    "id": "test_8853",
+    "fold": 0,
+    "phrase": "Какой у тебя адрес?",
+    "pred": [
+     "улица",
+     "легкий"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 7.857,
+    "translation": "Улица легкая"
+   },
+   {
+    "id": "test_8864",
+    "fold": 0,
+    "phrase": "Откуда вы?",
+    "pred": [
+     "первый",
+     "один",
+     "первый"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 8.184,
+    "translation": "Первый один первый"
+   },
+   {
+    "id": "test_9733",
+    "fold": 0,
+    "phrase": "Проверишь масло?",
+    "pred": [
+     "желтый",
+     "Футбол",
+     "Футбол",
+     "копыто",
+     "Футбол"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 10.089,
+    "translation": "Поскольку предоставленные глоссы состоят из повторяющихся слов («Футбол», «копыто», «знать»), которые в данном контексте не образуют осмысленных русских предложений, перевод невозможен. Пожалуйста, проверьте правильность глосс."
+   },
+   {
+    "id": "test_9839",
+    "fold": 0,
+    "phrase": "Мне больше всего нравится осень",
+    "pred": [
+     "мужчина",
+     "вчера",
+     "мужчина",
+     "жаждущий",
+     "мой",
+     "жаждущий"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 9.307,
+    "translation": "Вчера этот мужчина жаждал меня."
+   },
+   {
+    "id": "test_9841",
+    "fold": 0,
+    "phrase": "Мне больше всего нравится лето",
+    "pred": [
+     "любовь",
+     "любить",
+     "любовь"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": null,
+    "chrf": null,
+    "error": "TimeoutError: The read operation timed out",
+    "translation": ""
+   },
+   {
+    "id": "test_9902",
+    "fold": 0,
+    "phrase": "Радость миру!",
+    "pred": [
+     "радость",
+     "больше",
+     "восхищаться",
+     "больше"
+    ],
+    "glosses": 4,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 2,
+    "chrf": 40.702,
+    "translation": "Огромная радость и восторг"
+   },
+   {
+    "id": "test_9998",
+    "fold": 0,
+    "phrase": "Я потерял(-а) карандаш.",
+    "pred": [
+     "дом",
+     "вилка"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 5.428,
+    "translation": "Дом и вилка"
+   },
+   {
+    "id": "test_10126",
+    "fold": 0,
+    "phrase": "Как Вы потеряли слух?",
+    "pred": [
+     "сто",
+     "карандаш"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 7.904,
+    "translation": "Сто карандашей"
+   },
+   {
+    "id": "test_14557",
+    "fold": 0,
+    "phrase": "Плохо!",
+    "pred": [
+     "У",
+     "неделя",
+     "У"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 2.222,
+    "translation": "Пожалуйста, предоставьте глоссы в виде последовательности слов для перевода. Список из 20 пунктов выглядит как набор упражнений или тестовых комбинаций, а не как одна фраза. Если вам нужно перевести конкретную строку, укажите её номер."
+   },
+   {
+    "id": "test_21758",
+    "fold": 0,
+    "phrase": "До встречи дома.",
+    "pred": [
+     "В",
+     "время от 0 ночи до 12 дня",
+     "воздух"
+    ],
+    "glosses": 3,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 15.957,
+    "translation": "С полуночи до полудня в воздухе"
+   },
+   {
+    "id": "test_21807",
+    "fold": 0,
+    "phrase": "Что бы вы хотели?",
+    "pred": [
+     "новый"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 6.706,
+    "translation": "Новый"
+   },
+   {
+    "id": "test_22886",
+    "fold": 0,
+    "phrase": "Что вас беспокоит?",
+    "pred": [
+     "возбужденный",
+     "восхищаться",
+     "возбужденный"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "error": "TimeoutError: The read operation timed out",
+    "translation": ""
+   },
+   {
+    "id": "dev_3664",
+    "fold": 1,
+    "phrase": "для меня это слишком сложно",
+    "pred": [
+     "это",
+     "человек",
+     "логичный",
+     "до",
+     "логичный",
+     "ноль",
+     "логичный"
+    ],
+    "glosses": 7,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 13.725,
+    "translation": "Этот человек абсолютно нелогичный."
+   },
+   {
+    "id": "dev_3695",
+    "fold": 1,
+    "phrase": "Потрясающе!",
+    "pred": [
+     "согласно",
+     "согласно"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 6.41,
+    "translation": "Согласен"
+   },
+   {
+    "id": "dev_8807",
+    "fold": 1,
+    "phrase": "Ты любишь смотреть телевизор?",
+    "pred": [
+     "испуганный",
+     "телевизор",
+     "веселый",
+     "весёлый",
+     "дочь",
+     "отрицательный",
+     "дочь"
+    ],
+    "glosses": 7,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 32.171,
+    "translation": "Дочь не весёлая, она испугалась телевизора."
+   },
+   {
+    "id": "dev_8856",
+    "fold": 1,
+    "phrase": "Что?",
+    "pred": [
+     "что",
+     "что"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.235,
+    "translation": "Что за стул? Кратко, особенно первый ребенок слышал, кто временно стоял у синего, когда уехали со стула? Кратко, стул, особенно первый ребенок слышал."
+   },
+   {
+    "id": "dev_9606",
+    "fold": 1,
+    "phrase": "Время летит.",
+    "pred": [
+     "красивый",
+     "ответить"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 14.939,
+    "translation": "Красиво ответил"
+   },
+   {
+    "id": "dev_9957",
+    "fold": 1,
+    "phrase": "Где болит?",
+    "pred": [
+     "спекулянт",
+     "эксперт"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 4.63,
+    "translation": "Спекулянт — эксперт."
+   },
+   {
+    "id": "dev_10164",
+    "fold": 1,
+    "phrase": "Красно-синие цвета заката красивые.",
+    "pred": [
+     "орша",
+     "петух",
+     "орша",
+     "Лицо",
+     "близко",
+     "Лицо",
+     "доход",
+     "питьевая вода",
+     "Религия",
+     "чистый",
+     "продолжительность",
+     "чистый"
+    ],
+    "glosses": 12,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 11.258,
+    "translation": "В Орше петух, лицо близко, доход от питьевой воды, религия чистая, продолжительность чистая."
+   },
+   {
+    "id": "dev_21695",
+    "fold": 1,
+    "phrase": "Ты спешишь?",
+    "pred": [
+     "расстроенный",
+     "печаль",
+     "расстроенный"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.061,
+    "translation": "Очень расстроен."
+   },
+   {
+    "id": "dev_22109",
+    "fold": 1,
+    "phrase": "Вы бледны.",
+    "pred": [
+     "рычание"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.422,
+    "translation": "Рычание, я, дом, я рычу, рычание в доме, дом рычит, лицо нравится, мой дом, я дома, рычание лица, лицо рычит, рычание нравится, голос, рычание, беспокоиться, красивый, достаточно."
+   },
+   {
+    "id": "dev_22434",
+    "fold": 1,
+    "phrase": "Меня рвет.",
+    "pred": [
+     "мать",
+     "везде"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 11.343,
+    "translation": "Мать везде"
+   },
+   {
+    "id": "test_3108",
+    "fold": 1,
+    "phrase": "я его сто лет не видела",
+    "pred": [
+     "рвеность",
+     "розовый"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 12.752,
+    "translation": "Розовая ревность"
+   },
+   {
+    "id": "test_3659",
+    "fold": 1,
+    "phrase": "мне он нравится",
+    "pred": [
+     "цвет",
+     "вода",
+     "цвет",
+     "витебская область",
+     "любить",
+     "витебская область"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 1,
+    "chrf": 43.416,
+    "translation": "Мне очень нравится цвет воды в Витебской области."
+   },
+   {
+    "id": "test_8832",
+    "fold": 1,
+    "phrase": "У меня есть вопрос",
+    "pred": [
+     "мне",
+     "вопрос",
+     "тебя",
+     "вопрос",
+     "есть",
+     "помочь",
+     "есть"
+    ],
+    "glosses": 7,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3,
+    "meaning": 1,
+    "chrf": 62.125,
+    "translation": "У меня к тебе есть вопрос, помоги мне."
+   },
+   {
+    "id": "test_8863",
+    "fold": 1,
+    "phrase": "Где вы живете?",
+    "pred": [
+     "жизнь",
+     "где",
+     "август",
+     "где"
+    ],
+    "glosses": 4,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 17.5,
+    "translation": "Где август в жизни?"
+   },
+   {
+    "id": "test_9595",
+    "fold": 1,
+    "phrase": "Я закончу через два года",
+    "pred": [
+     "постепенно",
+     "гнев",
+     "В"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.656,
+    "translation": "Постепенно нарастает гнев."
+   },
+   {
+    "id": "test_9946",
+    "fold": 1,
+    "phrase": "У меня голова болит",
+    "pred": [
+     "жираф",
+     "одаренный",
+     "жираф"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 6.4,
+    "translation": "Одаренный жираф."
+   },
+   {
+    "id": "test_10035",
+    "fold": 1,
+    "phrase": "Простите.",
+    "pred": [
+     "уверенный",
+     "извиниться",
+     "уверенный"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 1,
+    "chrf": 12.274,
+    "translation": "Уверенно извиниться."
+   },
+   {
+    "id": "test_10083",
+    "fold": 1,
+    "phrase": "Я буду горячий чай",
+    "pred": [
+     "девочка",
+     "розовый",
+     "девочка",
+     "розовый",
+     "девочка"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.667,
+    "translation": "Розовая девочка."
+   },
+   {
+    "id": "test_14598",
+    "fold": 1,
+    "phrase": "Вспомни!",
+    "pred": [
+     "талант",
+     "одаренный"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 3.546,
+    "translation": "Одарённый талант"
+   },
+   {
+    "id": "test_14621",
+    "fold": 1,
+    "phrase": "Где?",
+    "pred": [
+     "где"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": 2,
+    "chrf": 100.0,
+    "translation": "Где?"
+   },
+   {
+    "id": "test_21755",
+    "fold": 1,
+    "phrase": "Это очень вкусно.",
+    "pred": [
+     "много",
+     "нравиться"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 1,
+    "chrf": 23.591,
+    "translation": "Очень нравится"
+   },
+   {
+    "id": "test_23154",
+    "fold": 1,
+    "phrase": "Далеко ли от школы до вокзала?",
+    "pred": [
+     "немедленно",
+     "немедленно"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 3.789,
+    "translation": "Немедленно!"
+   },
+   {
+    "id": "dev_635",
+    "fold": 2,
+    "phrase": "Куда?",
+    "pred": [
+     "суббота",
+     "У",
+     "суббота"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 2.116,
+    "translation": "Пожалуйста, уточните контекст или предоставьте глоссы, которые нужно перевести в одну фразу. Приведенный список выглядит как набор упражнений или повторяющихся слов, а не как единое предложение."
+   },
+   {
+    "id": "dev_3656",
+    "fold": 2,
+    "phrase": "Вы хотите пиво?",
+    "pred": [
+     "вопрос",
+     "суббота",
+     "вопрос",
+     "ужас",
+     "хотеть"
+    ],
+    "glosses": 5,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 9.762,
+    "translation": "Очень хочу узнать про субботу."
+   },
+   {
+    "id": "dev_9729",
+    "fold": 2,
+    "phrase": "Где метро?",
+    "pred": [
+     "аллергия на еду",
+     "инспектор"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.563,
+    "translation": "У инспектора аллергия на еду."
+   },
+   {
+    "id": "dev_10046",
+    "fold": 2,
+    "phrase": "Какой у тебя адрес?",
+    "pred": [
+     "спросить",
+     "пустой",
+     "легкий"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 9.211,
+    "translation": "Спросить, пустой ли он и легкий?"
+   },
+   {
+    "id": "dev_10105",
+    "fold": 2,
+    "phrase": "Что вы хотите заказать?",
+    "pred": [
+     "очень",
+     "желать",
+     "что",
+     "вкусный",
+     "что"
+    ],
+    "glosses": 5,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 10.994,
+    "translation": "Очень хочется чего-то вкусного."
+   },
+   {
+    "id": "dev_14569",
+    "fold": 2,
+    "phrase": "Ты понял?",
+    "pred": [
+     "непрозрачность",
+     "смущенный",
+     "непрозрачность"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.72,
+    "translation": "Смущение вызывает непрозрачность"
+   },
+   {
+    "id": "dev_23132",
+    "fold": 2,
+    "phrase": "Я хочу рассказать тебе кое-что о своей семье",
+    "pred": [
+     "никто",
+     "одежда",
+     "самопроверка",
+     "одежда"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 9,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 8.214,
+    "translation": "Никто не проверил свою одежду."
+   },
+   {
+    "id": "dev_23823",
+    "fold": 2,
+    "phrase": "Куда идет этот поезд?",
+    "pred": [
+     "отложить",
+     "У",
+     "плохой",
+     "У"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 8.738,
+    "translation": "Отложить плохое."
+   },
+   {
+    "id": "test_3107",
+    "fold": 2,
+    "phrase": "Я люблю путешествовать",
+    "pred": [
+     "изучить",
+     "талант",
+     "черный",
+     "талант",
+     "без",
+     "Лицо"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 10.259,
+    "translation": "Изучить черный талант безлико"
+   },
+   {
+    "id": "test_8809",
+    "fold": 2,
+    "phrase": "Хотите молоко и сахар?",
+    "pred": [
+     "наверно"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.095,
+    "translation": "Наверное, неудобно. Наверное, конфликт. Неудобно, наверное. Конфликт неудобен. Положить. Конфликт, наверное, неудобен. Наверное, положить. Наверное, ссора. Ясно. Ссора неудобна. Цыган. Конфликт. Положить конец конфликту. По"
+   },
+   {
+    "id": "test_9831",
+    "fold": 2,
+    "phrase": "Где ты работаешь?",
+    "pred": [
+     "тысяча",
+     "четверг",
+     "вопрос",
+     "четверг"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 11.173,
+    "translation": "Тысяча вопросов в четверг."
+   },
+   {
+    "id": "test_9846",
+    "fold": 2,
+    "phrase": "Идет дождь",
+    "pred": [
+     "сдаться",
+     "сдаться"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 5.814,
+    "translation": "Сдаться"
+   },
+   {
+    "id": "test_9884",
+    "fold": 2,
+    "phrase": "Я заплатил(а) меньше, чем ты.",
+    "pred": [
+     "гнев",
+     "обучать",
+     "гнев"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 4.425,
+    "translation": "Гнев учит гневу"
+   },
+   {
+    "id": "test_10009",
+    "fold": 2,
+    "phrase": "Это девочка!",
+    "pred": [
+     "К",
+     "К",
+     "кто?",
+     "К"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 7.504,
+    "translation": "Пожалуйста, предоставьте глоссы в текстовом виде (словами), так как текущий ввод состоит из повторяющихся символов и не содержит понятных жестов для перевода."
+   },
+   {
+    "id": "test_14604",
+    "fold": 2,
+    "phrase": "Забери!",
+    "pred": [
+     "высокий",
+     "сочувствие",
+     "высокий"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 5.0,
+    "translation": "Очень большое сочувствие"
+   },
+   {
+    "id": "test_20110",
+    "fold": 2,
+    "phrase": "О Господи!",
+    "pred": [
+     "вечер",
+     "бабочка",
+     "вечер"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 2.924,
+    "translation": "Вечером бабочка летает."
+   },
+   {
+    "id": "test_22016",
+    "fold": 2,
+    "phrase": "Я закончил частную школу",
+    "pred": [
+     "стойкость",
+     "одежда"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 7.779,
+    "translation": "Стойкая одежда"
+   },
+   {
+    "id": "test_22027",
+    "fold": 2,
+    "phrase": "В поезде есть вагон-ресторан?",
+    "pred": [
+     "налог",
+     "прийти"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 5.072,
+    "translation": "Налог пришел"
+   },
+   {
+    "id": "test_23065",
+    "fold": 2,
+    "phrase": "У вас есть свободные номера?",
+    "pred": [
+     "причина",
+     "одновременность",
+     "причина"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 16.247,
+    "translation": "Причина в одновременности."
+   },
+   {
+    "id": "test_23107",
+    "fold": 2,
+    "phrase": "Здравствуйте, вам помочь?",
+    "pred": [
+     "необходимый",
+     "гнев",
+     "необходимый"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.717,
+    "translation": "Гнев необходим."
+   },
+   {
+    "id": "test_23807",
+    "fold": 2,
+    "phrase": "Посмотрим.",
+    "pred": [
+     "ненавидеть",
+     "Смех",
+     "ненавидеть"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 8.026,
+    "translation": "Ненавижу смех."
+   },
+   {
+    "id": "test_23814",
+    "fold": 2,
+    "phrase": "Какой счет?",
+    "pred": [
+     "особенный",
+     "особо",
+     "особенный"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.417,
+    "translation": "Очень особенный"
+   },
+   {
+    "id": "dev_8806",
+    "fold": 3,
+    "phrase": "У вас есть дети?",
+    "pred": [
+     "вопрос"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 10.203,
+    "translation": "Я сержусь, что в декабре по четвергам везде обучают работать, и задаю вопросы об этом обучении."
+   },
+   {
+    "id": "dev_9665",
+    "fold": 3,
+    "phrase": "Где здание администрации?",
+    "pred": [
+     "собирать",
+     "вопрос"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.711,
+    "translation": "Собирать вопросы"
+   },
+   {
+    "id": "dev_9742",
+    "fold": 3,
+    "phrase": "Я ищу работу",
+    "pred": [
+     "который",
+     "специалист",
+     "который"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 8.32,
+    "translation": "Специалист, который..."
+   },
+   {
+    "id": "dev_9774",
+    "fold": 3,
+    "phrase": "Я просто зашел",
+    "pred": [
+     "вина",
+     "козел",
+     "козел",
+     "вина",
+     "вина"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.685,
+    "translation": "Козёл виноват."
+   },
+   {
+    "id": "dev_9955",
+    "fold": 3,
+    "phrase": "Где мне найти врача?",
+    "pred": [
+     "редко",
+     "почему"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 8.403,
+    "translation": "Почему редко?"
+   },
+   {
+    "id": "dev_10158",
+    "fold": 3,
+    "phrase": "Я люблю рисовать цветными карандашами",
+    "pred": [
+     "есть",
+     "хорошо",
+     "хорошо",
+     "любить"
+    ],
+    "glosses": 4,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 8.809,
+    "translation": "Мне очень нравится есть"
+   },
+   {
+    "id": "dev_22038",
+    "fold": 3,
+    "phrase": "Можно закрыть окно?",
+    "pred": [
+     "возможно",
+     "смущенный",
+     "инициатива"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 19.325,
+    "translation": "Возможно, смущенная инициатива"
+   },
+   {
+    "id": "dev_22101",
+    "fold": 3,
+    "phrase": "Где ближайшая почта?",
+    "pred": [
+     "рыдать",
+     "вопрос",
+     "лучший",
+     "вопрос"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.803,
+    "translation": "Первый вопрос — лучший вопрос."
+   },
+   {
+    "id": "dev_22364",
+    "fold": 3,
+    "phrase": "Он еще жив",
+    "pred": [
+     "белка"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.187,
+    "translation": "Белка, сильная белка, белка шутит, живет, белка живет, приходит, белка, белка приходит, количество белок, белки играют, подруга белки, никогда белка, почки, им белка, сильный, шутит, сильная шутящая белка, живет белка."
+   },
+   {
+    "id": "test_3661",
+    "fold": 3,
+    "phrase": "у меня температура",
+    "pred": [
+     "сожаление",
+     "спать",
+     "презирать"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 11.6,
+    "translation": "Сожалеть, спать и презирать"
+   },
+   {
+    "id": "test_3675",
+    "fold": 3,
+    "phrase": "я боюсь",
+    "pred": [
+     "милиция",
+     "трус",
+     "милиция"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 4.167,
+    "translation": "Милиционер — трус."
+   },
+   {
+    "id": "test_8840",
+    "fold": 3,
+    "phrase": "Я вернусь",
+    "pred": [
+     "голос",
+     "аниматор",
+     "буду",
+     "терпение",
+     "буду"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 11.433,
+    "translation": "Я буду терпеть голос аниматора."
+   },
+   {
+    "id": "test_8867",
+    "fold": 3,
+    "phrase": "Зачем ты так говоришь?",
+    "pred": [
+     "говорить",
+     "язык",
+     "говорить",
+     "вы",
+     "иностранный"
+    ],
+    "glosses": 5,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 26.16,
+    "translation": "Вы говорите на иностранном языке?"
+   },
+   {
+    "id": "test_9840",
+    "fold": 3,
+    "phrase": "Мне больше всего нравится весна",
+    "pred": [
+     "восхищаться",
+     "страсть",
+     "цвет",
+     "страсть"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 10.254,
+    "translation": "Я в восторге от этого цвета."
+   },
+   {
+    "id": "test_9976",
+    "fold": 3,
+    "phrase": "Ее  дочь здесь работает",
+    "pred": [
+     "декабрь",
+     "правша",
+     "декабрь",
+     "правша",
+     "успеть"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.475,
+    "translation": "Декабрь успел."
+   },
+   {
+    "id": "test_10147",
+    "fold": 3,
+    "phrase": "Пожалуйста, говорите на жестах медленно.",
+    "pred": [
+     "спокойный",
+     "вежливый",
+     "спокойный",
+     "дом",
+     "В",
+     "дом"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 8.959,
+    "translation": "Спокойный и вежливый в доме."
+   },
+   {
+    "id": "test_21722",
+    "fold": 3,
+    "phrase": "Вы не против дыма?",
+    "pred": [
+     "стыдно",
+     "предусмотрительный",
+     "воздух",
+     "предусмотрительный"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 11.109,
+    "translation": "Мне стыдно, воздух чистый."
+   },
+   {
+    "id": "test_22102",
+    "fold": 3,
+    "phrase": "Где вагон ресторана?",
+    "pred": [
+     "мост",
+     "чистый",
+     "из-за",
+     "четверг",
+     "из-за"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 9.596,
+    "translation": "Мост чистый из-за четверга."
+   },
+   {
+    "id": "test_22910",
+    "fold": 3,
+    "phrase": "Вам ничего нельзя есть.",
+    "pred": [
+     "зима",
+     "прийти",
+     "между"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 8.251,
+    "translation": "Зима пришла в промежутке"
+   },
+   {
+    "id": "test_23140",
+    "fold": 3,
+    "phrase": "Я болею.",
+    "pred": [
+     "боль",
+     "логичный",
+     "боль"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 24.41,
+    "translation": "Логичная боль"
+   },
+   {
+    "id": "test_23394",
+    "fold": 3,
+    "phrase": "Играть в футбол весело.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 0.0,
+    "translation": ""
+   },
+   {
+    "id": "test_23825",
+    "fold": 3,
+    "phrase": "Где следующая остановка автобуса?",
+    "pred": [
+     "презирать",
+     "доставлять удовольствие",
+     "обещать",
+     "доставлять удовольствие"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 13.19,
+    "translation": "Презирать приносит удовольствие, обещает приносить удовольствие"
+   },
+   {
+    "id": "dev_2791",
+    "fold": 4,
+    "phrase": "я люблю тебя",
+    "pred": [
+     "любить",
+     "вопрос",
+     "вопрос"
+    ],
+    "glosses": 3,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 11.542,
+    "translation": "Любишь?"
+   },
+   {
+    "id": "dev_3110",
+    "fold": 4,
+    "phrase": "ничего нового",
+    "pred": [
+     "новый",
+     "новый"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 11.849,
+    "translation": "Совсем новый"
+   },
+   {
+    "id": "dev_3651",
+    "fold": 4,
+    "phrase": "Это дорога в город?",
+    "pred": [
+     "слабый",
+     "Золото",
+     "воздух",
+     "рыба",
+     "мурашки",
+     "рыба"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 9.944,
+    "translation": "Слабое золото, воздух, рыба, мурашки, рыба"
+   },
+   {
+    "id": "dev_3690",
+    "fold": 4,
+    "phrase": "Правда?",
+    "pred": [
+     "разрешить",
+     "объективно",
+     "разрешить"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 7.15,
+    "translation": "Объективно разрешить."
+   },
+   {
+    "id": "dev_9816",
+    "fold": 4,
+    "phrase": "Я адвокат.",
+    "pred": [
+     "сбился",
+     "смело"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 33.736,
+    "translation": "Тактичный адвокат смело сбился, тормозя на скорости."
+   },
+   {
+    "id": "dev_10007",
+    "fold": 4,
+    "phrase": "ОК",
+    "pred": [
+     "гордый",
+     "билет"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 13.158,
+    "translation": "Гордый билет"
+   },
+   {
+    "id": "dev_10082",
+    "fold": 4,
+    "phrase": "Я буду кофе после еды",
+    "pred": [
+     "желаю",
+     "делать",
+     "делать",
+     "зверь"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 6.863,
+    "translation": "Желаю создать зверя"
+   },
+   {
+    "id": "dev_12077",
+    "fold": 4,
+    "phrase": "ответить на звонок телефона",
+    "pred": [
+     "беспокоиться",
+     "Лицо",
+     "я"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 7.475,
+    "translation": "Я беспокоюсь о лице"
+   },
+   {
+    "id": "dev_14570",
+    "fold": 4,
+    "phrase": "Рисуй!",
+    "pred": [
+     "дорогой",
+     "прийти",
+     "дорогой",
+     "прийти"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 6.72,
+    "translation": "Дорогой пришёл, дорогой пришёл"
+   },
+   {
+    "id": "dev_19937",
+    "fold": 4,
+    "phrase": "Ты готов?",
+    "pred": [
+     "ошибка",
+     "согласно",
+     "билет",
+     "согласно",
+     "билет"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 5.435,
+    "translation": "Ошибка в билете."
+   },
+   {
+    "id": "dev_21984",
+    "fold": 4,
+    "phrase": "Свидетели есть?",
+    "pred": [
+     "тот же самый (одинаковый)",
+     "крыло",
+     "везде",
+     "крыло"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 9.689,
+    "translation": "Везде одинаковые крылья."
+   },
+   {
+    "id": "dev_22435",
+    "fold": 4,
+    "phrase": "Я сделаю тебе укол.",
+    "pred": [
+     "дать"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 7.132,
+    "translation": "Дать навсегда, беспокоиться, белка, подать невиновный голос днем, подпись, весна, тридцать, спрашивать, голос навсегда, страшный, оба голоса, самомнение, дать навсегда, навсегда дать чуть-чуть."
+   },
+   {
+    "id": "test_2784",
+    "fold": 4,
+    "phrase": "С Новым годом!",
+    "pred": [
+     "год"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": 0,
+    "chrf": 21.219,
+    "translation": "Год"
+   },
+   {
+    "id": "test_8804",
+    "fold": 4,
+    "phrase": "Ты его спрашивал?",
+    "pred": [
+     "мальчик",
+     "дом",
+     "мальчик",
+     "везде",
+     "быть",
+     "вопрос",
+     "слон",
+     "вопрос"
+    ],
+    "glosses": 8,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 9.802,
+    "translation": "Мальчик дома, мальчик везде есть? Слон?"
+   },
+   {
+    "id": "test_10140",
+    "fold": 4,
+    "phrase": "Я немного говорю",
+    "pred": [
+     "время 11 часов",
+     "мама",
+     "время 11 часов",
+     "мама"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 5.873,
+    "translation": "Мама, уже 11 часов."
+   },
+   {
+    "id": "test_10200",
+    "fold": 4,
+    "phrase": "Кто взял мой...?",
+    "pred": [
+     "К",
+     "К",
+     "друг",
+     "мой",
+     "наш",
+     "мой"
+    ],
+    "glosses": 6,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 4.65,
+    "translation": "К моему нашему другу"
+   },
+   {
+    "id": "test_10245",
+    "fold": 4,
+    "phrase": "У меня есть собака",
+    "pred": [
+     "мне",
+     "слон",
+     "виновник",
+     "везде",
+     "виновник"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": 0,
+    "chrf": 15.556,
+    "translation": "Для меня слон везде виноват."
+   },
+   {
+    "id": "test_14575",
+    "fold": 4,
+    "phrase": "Хорошо!",
+    "pred": [
+     "хорошо",
+     "лить",
+     "хорошо"
+    ],
+    "glosses": 3,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 1,
+    "chrf": 52.669,
+    "translation": "Хорошо лить хорошо"
+   },
+   {
+    "id": "test_21759",
+    "fold": 4,
+    "phrase": "Я возьму это.",
+    "pred": [
+     "деньги",
+     "получить"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 5.747,
+    "translation": "Получить деньги"
+   },
+   {
+    "id": "test_21836",
+    "fold": 4,
+    "phrase": "Вы можете поменять мне колесо?",
+    "pred": [
+     "самопроверка",
+     "ревнивый",
+     "голод",
+     "ревнивый",
+     "голод"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": 0,
+    "chrf": 10.386,
+    "translation": "Проверяю себя: ревнивый голод, ревнивый голод."
+   },
+   {
+    "id": "test_22440",
+    "fold": 4,
+    "phrase": "У меня голова болит.",
+    "pred": [
+     "забыть",
+     "одаренный",
+     "забыть"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4,
+    "meaning": 0,
+    "chrf": 13.886,
+    "translation": "Забыл, что был одарён, и снова забыл"
+   },
+   {
+    "id": "test_22791",
+    "fold": 4,
+    "phrase": "Покажи язык.",
+    "pred": [
+     "красный",
+     "привык",
+     "красный"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": 0,
+    "chrf": 10.205,
+    "translation": "Красный привык к красному"
+   }
+  ]
+ }
+}

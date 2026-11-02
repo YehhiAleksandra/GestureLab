@@ -44,6 +44,15 @@ from sign_stream import greedy_decode, load_ctc  # noqa: E402
 from sign_utils import FEAT, features, split_utterances  # noqa: E402
 from skeleton_overlay import draw_holistic  # noqa: E402
 
+# Один источник правды для декодера. Раньше пара (lm_weight 0,1 / word_bonus 2,0) была
+# продублирована руками в трёх местах и её нельзя было поменять одним коммитом (B67).
+# Значения — конфиг, различимо лучший по переводу, а не по словам: на независимом SP-10
+# (111 фраз, честные фолды) перевод есть на 110 клипах из 111 вместо 61, смысл ≥1 — 6,4%
+# против 0,9%, chrF 11,8 против 5,3 (отчёт 33 §3). Цена: точность глосс 11,6% → 4,9%,
+# но судья смотрит на итоговую фразу, а не на список слов.
+TUNED_DECODER = {'decoder': 'beam', 'beam': 24, 'lm_weight': 0.0, 'word_bonus': 4.0,
+                 'smooth': 3, 'nbest': 20}
+
 
 def frame_of(res):
     """Результат mp Holistic → [NPTS, 3]; кадр без рук тоже нужен — по нему видна пауза."""
@@ -351,15 +360,15 @@ def main():
     ap.add_argument('--mic', action='store_true', help='слушать слышащего микрофоном')
     ap.add_argument('--whisper', default='small')
     ap.add_argument('--hearing', help='реплика слышащего до начала записи (контекст перевода)')
-    ap.add_argument('--decoder', choices=('greedy', 'beam'), default='beam')
-    ap.add_argument('--beam', type=int, default=24,
+    ap.add_argument('--decoder', choices=('greedy', 'beam'), default=TUNED_DECODER['decoder'])
+    ap.add_argument('--beam', type=int, default=TUNED_DECODER['beam'],
                     help='ширина beam: 24 даёт 20 цепочек за 0.38 с на реплику 90 кадров')
-    ap.add_argument('--lm-weight', type=float, default=0.1,
-                    help='вес LM глоссов в beam search (0 — без LM)')
-    ap.add_argument('--word-bonus', type=float, default=2.0,
-                    help='бонус за каждое слово: без него LM схлопывает короткие реплики')
-    ap.add_argument('--smooth', type=int, default=1,
-                    help='окно сглаживания логитов, кадры (1 — выключено: модель даёт пики в 1 кадр)')
+    ap.add_argument('--lm-weight', type=float, default=TUNED_DECODER['lm_weight'],
+                    help='вес LM глоссов в beam search (0 — без LM; на SP-10 LM не помогает)')
+    ap.add_argument('--word-bonus', type=float, default=TUNED_DECODER['word_bonus'],
+                    help='бонус за каждое слово: короткий вывод теряется без него')
+    ap.add_argument('--smooth', type=int, default=TUNED_DECODER['smooth'],
+                    help='окно сглаживания логитов, кадры (1 — выключено)')
     ap.add_argument('--variants', choices=('chains', 'lattice', 'none'), default='chains',
                     help='что из n-best видит переводчик: цепочки, варианты по местам или ничего')
     ap.add_argument('--nbest', type=int, default=20,

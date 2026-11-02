@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
 
-from dialogue_translator import Recognizer, frame_of  # noqa: E402
+from dialogue_translator import Recognizer, TUNED_DECODER, frame_of  # noqa: E402
 from dialogue_state import translate_in_context  # noqa: E402
 from gloss_to_text import SYSTEM, Translator, chrf  # noqa: E402
 from sign_utils import split_utterances  # noqa: E402
@@ -108,8 +108,7 @@ def run(media, inventory, cache, model, out, limit=0, no_llm=False):
         clips = clips[:limit]
     print(f'клипов: {len(clips)}', flush=True)
 
-    rec = Recognizer(str(model), decoder='beam', beam=24, lm_weight=0.1,
-                     word_bonus=2.0, smooth=1, nbest=20)
+    rec = Recognizer(str(model), **TUNED_DECODER)
     vocab = {n.lower().replace('ё', 'е') for n in rec.names}
     tr = Translator() if not no_llm else None
     started = time.time()
@@ -153,7 +152,7 @@ def run(media, inventory, cache, model, out, limit=0, no_llm=False):
               f"{row.get('pred', row.get('error'))}", flush=True)
 
     result = {'media': str(media), 'model': Path(model).name,
-              'config': {'beam': 24, 'nbest': 20, 'lm_weight': 0.1, 'word_bonus': 2.0,
+              'config': {**TUNED_DECODER,
                          'fps': 'each frame (as live)', 'split': 'longest hand span'},
               'date': time.strftime('%Y-%m-%d'), 'seconds': round(time.time() - started, 1),
               'cost_usd': round(tr.cost, 4) if tr else 0.0,
