@@ -1,0 +1,202 @@
+{
+ "stage": 32,
+ "date": "2026-11-02",
+ "canon": "lemma",
+ "sets": {
+  "sp10_train": {
+   "seconds": 511,
+   "configs": 24,
+   "f1_by_index": {
+    "5": 0.0712,
+    "11": 0.0681,
+    "17": 0.0656,
+    "4": 0.0705,
+    "10": 0.0687,
+    "23": 0.061,
+    "3": 0.0656,
+    "16": 0.0637,
+    "9": 0.0664,
+    "22": 0.0662,
+    "2": 0.0559,
+    "15": 0.0562,
+    "14": 0.0572,
+    "8": 0.0544,
+    "20": 0.0499,
+    "21": 0.0499,
+    "1": 0.0406,
+    "0": 0.0386,
+    "6": 0.0328,
+    "12": 0.0336,
+    "18": 0.034,
+    "7": 0.0294,
+    "13": 0.0226,
+    "19": 0.0103
+   },
+   "rows": [
+    {
+     "config_index": 5,
+     "clips": 252,
+     "word_tokens": 765,
+     "empty": 0.012,
+     "glosses_mean": 3.76,
+     "word_hits_canon": 61,
+     "word_recall_canon": 0.08,
+     "word_precision_canon": 0.064,
+     "phrase_all_words_canon": 10
+    },
+    {
+     "config_index": 4,
+     "clips": 252,
+     "word_tokens": 765,
+     "empty": 0.012,
+     "glosses_mean": 1.92,
+     "word_hits_canon": 44,
+     "word_recall_canon": 0.058,
+     "word_precision_canon": 0.091,
+     "phrase_all_words_canon": 7
+    },
+    {
+     "config_index": 14,
+     "clips": 252,
+     "word_tokens": 765,
+     "empty": 0.385,
+     "glosses_mean": 0.71,
+     "word_hits_canon": 27,
+     "word_recall_canon": 0.035,
+     "word_precision_canon": 0.151,
+     "phrase_all_words_canon": 4
+    }
+   ]
+  },
+  "sp10_dev_test": {
+   "seconds": 231,
+   "configs": 24,
+   "f1_by_index": {
+    "4": 0.0643,
+    "5": 0.0513,
+    "11": 0.0499,
+    "10": 0.0569,
+    "17": 0.0447,
+    "22": 0.0543,
+    "23": 0.0453,
+    "3": 0.0529,
+    "2": 0.0574,
+    "16": 0.0516,
+    "9": 0.0477,
+    "8": 0.0503,
+    "14": 0.038,
+    "15": 0.0372,
+    "20": 0.0442,
+    "21": 0.0344,
+    "1": 0.0346,
+    "0": 0.0302,
+    "6": 0.0257,
+    "7": 0.0214,
+    "12": 0.0158,
+    "18": 0.0159,
+    "13": 0.0165,
+    "19": 0.0
+   },
+   "rows": [
+    {
+     "config_index": 4,
+     "clips": 111,
+     "word_tokens": 352,
+     "empty": 0.009,
+     "glosses_mean": 1.87,
+     "word_hits_canon": 18,
+     "word_recall_canon": 0.051,
+     "word_precision_canon": 0.087,
+     "phrase_all_words_canon": 3
+    },
+    {
+     "config_index": 5,
+     "clips": 111,
+     "word_tokens": 352,
+     "empty": 0.009,
+     "glosses_mean": 3.5,
+     "word_hits_canon": 19,
+     "word_recall_canon": 0.054,
+     "word_precision_canon": 0.049,
+     "phrase_all_words_canon": 3
+    },
+    {
+     "config_index": 14,
+     "clips": 111,
+     "word_tokens": 352,
+     "empty": 0.45,
+     "glosses_mean": 0.62,
+     "word_hits_canon": 8,
+     "word_recall_canon": 0.023,
+     "word_precision_canon": 0.116,
+     "phrase_all_words_canon": 2
+    }
+   ]
+  },
+  "rutube_channel": {
+   "seconds": 236,
+   "configs": 24,
+   "f1_by_index": {
+    "5": 0.1697,
+    "11": 0.18,
+    "17": 0.1913,
+    "4": 0.2122,
+    "23": 0.2098,
+    "10": 0.2238,
+    "3": 0.2127,
+    "16": 0.2014,
+    "9": 0.2265,
+    "22": 0.2126,
+    "2": 0.2298,
+    "8": 0.2393,
+    "15": 0.2238,
+    "14": 0.2005,
+    "0": 0.209,
+    "1": 0.2061,
+    "20": 0.1884,
+    "21": 0.175,
+    "6": 0.1736,
+    "7": 0.1502,
+    "12": 0.1337,
+    "18": 0.1182,
+    "13": 0.1192,
+    "19": 0.0949
+   },
+   "rows": [
+    {
+     "config_index": 5,
+     "clips": 67,
+     "word_tokens": 196,
+     "empty": 0.0,
+     "glosses_mean": 7.1,
+     "word_hits_canon": 57,
+     "word_recall_canon": 0.291,
+     "word_precision_canon": 0.12,
+     "phrase_all_words_canon": 4
+    },
+    {
+     "config_index": 4,
+     "clips": 67,
+     "word_tokens": 196,
+     "empty": 0.0,
+     "glosses_mean": 4.25,
+     "word_hits_canon": 51,
+     "word_recall_canon": 0.26,
+     "word_precision_canon": 0.179,
+     "phrase_all_words_canon": 2
+    },
+    {
+     "config_index": 14,
+     "clips": 67,
+     "word_tokens": 196,
+     "empty": 0.104,
+     "glosses_mean": 1.84,
+     "word_hits_canon": 32,
+     "word_recall_canon": 0.163,
+     "word_precision_canon": 0.26,
+     "phrase_all_words_canon": 1
+    }
+   ]
+  }
+ }
+}

@@ -54,12 +54,45 @@ def stem(w):
     return w
 
 
-def canon_map(plain, vocab):
+def head_names(names):
+    """Словарь головы для канонизации — ровно тот же, что у гейта меток.
+
+    Гейт строит class_index(names): режет синонимы «а/б» и нормализует «ё»→«е». Если
+    канонизацию строить по `{n.lower() for n in names}`, класс «всё» ищется как «всё»,
+    а гейт его не знает — форма теряется и фраза выпадает из оценки и из обучения.
+    """
+    return set(class_index(names))
+
+
+def load_morph():
+    """pymorphy3 — то, что сводит русскую форму к лемме. Ленивая загрузка: тесты в CI
+    (ubuntu, без пакета) не должны падать на путях, где лемма не включена."""
+    import pymorphy3
+    return pymorphy3.MorphAnalyzer()
+
+
+def lemma_index(vocab, morph):
+    """Лемма → имя головы, только если лемма указывает ровно на одно имя.
+
+    Одна лемма может относиться к двум разным классам головы («код» и «кода» как
+    отдельные строки) — тогда выбор неоднозначен и мы не мапим вовсе.
+    """
+    by_lemma = {}
+    for v in vocab:
+        by_lemma.setdefault(morph.parse(v)[0].normal_form, set()).add(v)
+    return {k: next(iter(v)) for k, v in by_lemma.items() if len(v) == 1}
+
+
+def canon_map(plain, vocab, morph=None):
     """Слово фразы → уже обученный класс по общей основе (знак не склоняется).
 
     «автомобиля» и «автомобиль» — один жест, но в голове это разные классы: без
     нормализации склоняемая форма учится с нуля по одному клипу, хотя у леммы есть
     словарный клип. Неоднозначную основу не трогаем — лучше ноль, чем чужая метка.
+
+    morph (pymorphy3) добавляет второй проход — лемму: грубая основа не режет
+    окончание у коротких слов («дома» не сворачивается в «дом»), а это большинство
+    русских форм. Без morph поведение прежнее.
     """
     stems = {}
     for v in vocab:
@@ -72,6 +105,15 @@ def canon_map(plain, vocab):
         cand = stems.get(stem(w), set()) - {w}
         if len(cand) == 1:
             out[w] = next(iter(cand))
+    if morph is None:
+        return out
+    lem = lemma_index(vocab, morph)
+    for w in plain:
+        if w in vocab or out.get(w, w) in vocab:
+            continue
+        hit = lem.get(morph.parse(w)[0].normal_form)
+        if hit:
+            out[w] = hit
     return out
 
 
@@ -510,9 +552,11 @@ def run(a):
     ck = torch.load(a.init, map_location='cpu', weights_only=False)
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon = canon_map(plain, {n.lower() for n in ck['names']}) if a.canon else {}
+    canon = (canon_map(plain, head_names(ck['names']),
+                        load_morph() if a.lemma else None) if a.canon else {})
     all_words = [canon.get(w, w) for w in plain]
-    print(f'канонизация: {sum(1 for w in plain if canon.get(w, w) != w)} из {len(plain)} '
+    print(f'канонизация ({"лемма" if a.lemma else "основа"}): '
+          f'{sum(1 for w in plain if canon.get(w, w) != w)} из {len(plain)} '
           f'токенов → обученный класс', flush=True)
     expanded = expand_checkpoint(ck, all_words)
     names, arch, feat = list(expanded['names']), ck['arch'], ck['feat']
@@ -809,6 +853,8 @@ def main():
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--specaug', action=argparse.BooleanOptionalAction, default=True)
     ap.add_argument('--canon', action=argparse.BooleanOptionalAction, default=True)
+    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=False,
+                    help='сводить форму к лемме класса через pymorphy3, а не срезом окончания')
     ap.add_argument('--train-all', action='store_true',
                     help='production-чекпойнт на всех клипах; CV-метрик не будет (B54)')
     ap.add_argument('--aug', choices=('base', 'hard'), default='base')

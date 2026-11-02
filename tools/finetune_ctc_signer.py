@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
 
-from gloss_coverage import norm, split_classes  # noqa: E402
+from gloss_coverage import norm  # noqa: E402
 from sign_stream import CTCSignNet, greedy_decode, load_ctc, out_lengths  # noqa: E402
 from slovo_model import augment, resample  # noqa: E402
 from train_ctc_slovo import (  # noqa: E402
@@ -39,11 +39,19 @@ from train_ctc_slovo import (  # noqa: E402
 
 
 def class_index(names):
-    """Глосса → индекс класса: точное имя и синонимы через «/» (как в Easy_sign)."""
+    """Глосса → индекс класса: точное имя и синонимы через «/» (как в Easy_sign).
+
+    Ключ заводим в двух видах — нормализованный («ё»→«е», нижний регистр) и как
+    написано в имени класса. Иначе поиск зависит от того, кто спрашивает: `words()`
+    фраз уже режет «ё», а корпусные глоссы приходят с «ё» и на нормализованном
+    словаре теряются (этап 32: корпусная LM недосчитывалась 103 фраз из 2490).
+    """
     out = {}
     for i, n in enumerate(names):
-        for part in split_classes(n):
-            out.setdefault(part, i)
+        for part in n.replace(';', '/').split('/'):
+            for key in {norm(part), part.lower()}:
+                if key:
+                    out.setdefault(key, i)
     return out
 
 

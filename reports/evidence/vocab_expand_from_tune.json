@@ -1,0 +1,3216 @@
+{
+ "benchmark": "D:/hfdata/sp10_tune.json",
+ "canon": "lemma",
+ "classes": [
+  {
+   "word": "моя",
+   "phases": 21,
+   "clip_in_tune": true
+  },
+  {
+   "word": "специализация",
+   "phases": 15,
+   "clip_in_tune": true
+  },
+  {
+   "word": "за",
+   "phases": 14,
+   "clip_in_tune": true
+  },
+  {
+   "word": "по",
+   "phases": 13,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нибудь",
+   "phases": 13,
+   "clip_in_tune": true
+  },
+  {
+   "word": "могу",
+   "phases": 12,
+   "clip_in_tune": true
+  },
+  {
+   "word": "могли",
+   "phases": 10,
+   "clip_in_tune": true
+  },
+  {
+   "word": "стоит",
+   "phases": 9,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нужно",
+   "phases": 9,
+   "clip_in_tune": true
+  },
+  {
+   "word": "извините",
+   "phases": 6,
+   "clip_in_tune": true
+  },
+  {
+   "word": "какая",
+   "phases": 6,
+   "clip_in_tune": true
+  },
+  {
+   "word": "какие",
+   "phases": 6,
+   "clip_in_tune": true
+  },
+  {
+   "word": "то",
+   "phases": 6,
+   "clip_in_tune": true
+  },
+  {
+   "word": "жестовый",
+   "phases": 5,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чувствую",
+   "phases": 5,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пойти",
+   "phases": 5,
+   "clip_in_tune": true
+  },
+  {
+   "word": "эта",
+   "phases": 5,
+   "clip_in_tune": true
+  },
+  {
+   "word": "знаете",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нужна",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "него",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "моего",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "представить",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нужен",
+   "phases": 4,
+   "clip_in_tune": true
+  },
+  {
+   "word": "зовут",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тобой",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "парень",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "забронировать",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "2",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "письменную",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чтобы",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "двоих",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "церкви",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "раз",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "при",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поздравляю",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "помощь",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ая",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нравятся",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ваша",
+   "phases": 3,
+   "clip_in_tune": true
+  },
+  {
+   "word": "8",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "постричься",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "оглохли",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "увидимся",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "моей",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "отсюда",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "неважно",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машина",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "напиток",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "детей",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "попить",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "почистить",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машину",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "умер",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прошлом",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мобильного",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "родился",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "4",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "занимается",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "3",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учиться",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "занятия",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пропустил",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "подождите",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "принять",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "завтрак",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "10",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приходит",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "отходит",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "онлайн",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "интернет",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "монитор",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "фильм",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "полицейский",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "эту",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прошлой",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "центов",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кредитной",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "совсем",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "была",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "порядке",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "крови",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "десерт",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "родились",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "столик",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дня",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "порцию",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "меню",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ваши",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "но",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "субтитрами",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тв",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дай",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "того",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "трогай",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "парковка",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "скидки",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "билетная",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сознания",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дтп",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вами",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дыши",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ваше",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "повреждения",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вашей",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "спине",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "колющие",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пешком",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "хобби",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поверни",
+   "phases": 2,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рождества",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выходных",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "хороших",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "жестовое",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прав",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "встретимся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мобильному",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учишься",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "людьми",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "встречаться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "давид",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "грусти",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "джон",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "французкий",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "перышки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "покрасить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "понравилось",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выглядишь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "лучшие",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "припарковаться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нравишься",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бокал",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "идиот",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "покое",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "большие",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "воспользоваться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "можешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поехать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машине",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "обними",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поцелуй",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "девственница",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "начнется",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "обучение",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "лифт",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ближайшый",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "проживание",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "посоветовать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "недорогую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "туда",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нарисовать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "никакого",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "расчешись",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "жестовым",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "интернета",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "закрывается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "открывается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "потанцевать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "девушка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "симпатичная",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "макдональдс",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рулем",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ему",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "87",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "30",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "плачу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тети",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "1960",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "50",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "45",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вышло",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "боб",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "провалился",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прошел",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "болтает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "уроках",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бизнесс",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "химия",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "компьютеры",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "психотерапия",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "педагогика",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "история",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "домашняя",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "физиотерапия",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "наука",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "заканчивать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "занималась",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "всю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "указания",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "джейн",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "опаздывает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "джо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "усердный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "улучшаются",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "теста",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "доски",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тестирование",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "курсы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "семестре",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сдали",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прерывать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "почерк",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сложили",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "водить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приходи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "брошюры",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рычагом",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "переключения",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пользоваться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "французски",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "немецки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "итальянски",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "испански",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "либо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "японии",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "насколько",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "йорк",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нью",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ванну",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кончился",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "проколол",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "отвезу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чек",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "встречает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поверните",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поеду",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "африку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "отменен",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "задерживается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "борт",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приему",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "зарезервированы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "задержка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "часовая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приземлимся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "взлетает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "расчетный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "авиакомпанией",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "6",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "00",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пользуетесь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "банком",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "телетекстом",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сетевого",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учусь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поврежден",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "диск",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "соединение",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "dsl",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "фоторедактор",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "покупки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "плоский",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "спама",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "outlook",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "емайл",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вставь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дискету",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ворд",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "симпатичный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "коврик",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мышки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "христианин",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прихожанин",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "церемонию",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "проповедником",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "церковь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "молодежная",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "она",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "миссионер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "предлагаете",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "служба",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "встречается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "воскресная",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "образования",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "недельный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "раза",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "полчашки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дней",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "12",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мусоровозка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приезжает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "людей",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "150",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "свадьбе",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "32",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "замерзает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "градусах",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вакансии",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "трудится",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "этой",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пожарный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "домохозяйка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "секретарша",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "собеседование",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пилот",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "двоюрдный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дядя",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "фермер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "берлоге",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "растаял",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "землетрясении",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "случалось",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "торнадо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ветер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "утром",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "заморозки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "будут",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пойдет",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прогнозу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "водопад",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "греться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "камина",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "звезд",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "видно",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пятерку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "разменять",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "5",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сберегательный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вход",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "заявку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "оформление",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сходить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "банкомат",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вашими",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "праздник",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "халлуином",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "валентина",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "святого",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "воли",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рождеством",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бабушке",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дедушкой",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "госпитализацию",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "страховка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "удаляли",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кружится",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "медосмотр",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кашляю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "горло",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "живот",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "простудилась",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "простудился",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "закончились",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "зубному",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "померить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "желудок",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "больнице",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кровь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "симптомы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "больницу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "похудел",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "попробовать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поел",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "видеомагнитофон",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "племяница",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "разведен",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "разведена",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "повидать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "состою",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "20",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машинку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пишущую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "расческу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нужны",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "развлекаться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пошли",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "передохнем",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сходим",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "фен",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пойду",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "визитку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мою",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тетя",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "полетел",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "компьютер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "умерла",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "большая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "разрешается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "младенец",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "умой",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "калькулятор",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "похожи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "карточки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кредитные",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "майонез",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "горчицу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "несладкий",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "омлет",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прожаренный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сендвичи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "гамбургеры",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "большую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пепси",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "стандартную",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "стейк",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чаевые",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "перец",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бекон",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пережарен",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "духовке",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пирог",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кока",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кола",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "холодильнике",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "обслуживание",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "оплата",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "фирменное",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "блюдо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "будешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "порекомендовали",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сервер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "собой",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "маринованными",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "овощами",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кетчуп",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "родители",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "губ",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "аппарат",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "слуховой",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "галлодетский",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "слабослышащий",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "американского",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "жестового",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "считываю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дактилологию",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дактилировать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "лююблю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "молиться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учатся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "колледжах",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "стал",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "учить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "напишите",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "практиковался",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "маркер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выделитель",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "завоевал",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "медаль",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "серебряную",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "покрасил",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "любимый",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сад",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "планируешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "стены",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вывести",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пуговицу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пришить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "же",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "парикмахерскую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мужскую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "хорошую",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "косметики",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ремень",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пристягнуть",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "побриться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "погладить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "постирать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "примерить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "годится",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "порвались",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "размер",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "требуются",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "туфли",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "подходит",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "химчистки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "куртка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "примерочные",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "подходят",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "городского",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "совета",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "независимый",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пришлось",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "парковку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пикетировании",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "нарушишь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "принятие",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "законодательная",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "отвечает",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "квартала",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поддерживать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "правительство",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "является",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "победил",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "гоняться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "домашние",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кусается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "недоброжелательно",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выглядит",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "такая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "птичка",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "больна",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "домашнее",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ветеринара",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "зоомагазин",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "закончилось",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "продается",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "защищены",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "других",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вычеркни",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "уходи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "убери",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "подчеркни",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "молодец",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "считаешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "понимаю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "равно",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "слава",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вздор",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "аллергия",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "устал",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "преложить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "расплатиться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "приезжайте",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "снова",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пакет",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пластиковый",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "совет",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "подешевее",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бросить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "курить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кусочек",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "снимите",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "происходит",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "занимаетесь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "личный",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кем",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "автомеханика",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прислать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "начинающий",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "переслать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "потерялся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "лась",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машин",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чувствуешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рекомендовать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "терапевта",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поднять",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "болен",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "навстречу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "машиной",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "столкновение",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "обморок",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "объявлению",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "спустилось",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поставь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "заднюю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "компании",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вакансия",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "называется",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "занятости",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "хранения",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "камера",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ожидания",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "ведешь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "будь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "займи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "глубоко",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пожалуста",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "покашляйте",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "помощи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "основы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "оказания",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "прежде",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "внутренние",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кровотечение",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "промыть",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "охрип",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дальтоник",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "вдаль",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пульса",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пошевелить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "судорожные",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "животе",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дышать",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "глазу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мочи",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "укусила",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "контактные",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "линзы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тупая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "адская",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "больно",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чешется",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "потею",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "обжег",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пальцы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "бедре",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "груди",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "колющая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "чешутся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "рукав",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "закатай",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дальнозоркость",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "близорукость",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "пневмония",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тонзиллит",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "придерживатьс",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выходным",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дискотеку",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "разбудить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "позравляем",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "одолжение",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "всех",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кондиционеры",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сейф",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "минибаром",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "скорее",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "поправляйся",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "кататься",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "свого",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "сада",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "забираю",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "компьютере",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тренируюсь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "горы",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "входит",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "выпить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "понятно",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тихо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "любимое",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "мое",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "офисе",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "клерком",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "неплохо",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "гандболу",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "тренировки",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "моих",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "переписываться",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "уберите",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "объелись",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "матч",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "недалеко",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "дойти",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "роликах",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "катаюсь",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "плохая",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "горам",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "порыбачить",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "автобусная",
+   "phases": 1,
+   "clip_in_tune": true
+  },
+  {
+   "word": "этаже",
+   "phases": 1,
+   "clip_in_tune": true
+  }
+ ]
+}

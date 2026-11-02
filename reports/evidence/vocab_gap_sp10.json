@@ -1,0 +1,335 @@
+{
+ "checkpoint": "D:/hfdata/dict_folds_honest/fold0.pt",
+ "benchmark": "D:/hfdata/sp10_eval.json",
+ "head_names": 3431,
+ "phrases": 353,
+ "phrases_with_clip": 353,
+ "usable_stem": 59,
+ "share_stem": 0.1671,
+ "usable_lemma": 111,
+ "share_lemma": 0.3144,
+ "lemma_unlocked_forms": 104,
+ "with_clip_types": 120,
+ "ceiling_same_corpus": 176,
+ "ceiling_share": 0.4986,
+ "top_missing": [
+  {
+   "word": "за",
+   "phases": 7
+  },
+  {
+   "word": "могли",
+   "phases": 5
+  },
+  {
+   "word": "по",
+   "phases": 5
+  },
+  {
+   "word": "могу",
+   "phases": 5
+  },
+  {
+   "word": "моя",
+   "phases": 4
+  },
+  {
+   "word": "чувствую",
+   "phases": 4
+  },
+  {
+   "word": "то",
+   "phases": 4
+  },
+  {
+   "word": "специализация",
+   "phases": 3
+  },
+  {
+   "word": "колледж",
+   "phases": 3
+  },
+  {
+   "word": "извините",
+   "phases": 3
+  },
+  {
+   "word": "увидимся",
+   "phases": 2
+  },
+  {
+   "word": "гинеколога",
+   "phases": 2
+  },
+  {
+   "word": "мою",
+   "phases": 2
+  },
+  {
+   "word": "емайл",
+   "phases": 2
+  },
+  {
+   "word": "послать",
+   "phases": 2
+  },
+  {
+   "word": "учусь",
+   "phases": 2
+  },
+  {
+   "word": "письменную",
+   "phases": 2
+  },
+  {
+   "word": "машину",
+   "phases": 2
+  },
+  {
+   "word": "познакомиться",
+   "phases": 2
+  },
+  {
+   "word": "шторы",
+   "phases": 2
+  },
+  {
+   "word": "11",
+   "phases": 2
+  },
+  {
+   "word": "сюда",
+   "phases": 2
+  },
+  {
+   "word": "него",
+   "phases": 2
+  },
+  {
+   "word": "мило",
+   "phases": 2
+  },
+  {
+   "word": "машина",
+   "phases": 2
+  },
+  {
+   "word": "забронировать",
+   "phases": 2
+  },
+  {
+   "word": "добраться",
+   "phases": 2
+  },
+  {
+   "word": "она",
+   "phases": 2
+  },
+  {
+   "word": "порядке",
+   "phases": 2
+  },
+  {
+   "word": "сходить",
+   "phases": 2
+  },
+  {
+   "word": "нужен",
+   "phases": 2
+  },
+  {
+   "word": "детей",
+   "phases": 2
+  },
+  {
+   "word": "прошлой",
+   "phases": 2
+  },
+  {
+   "word": "домой",
+   "phases": 2
+  },
+  {
+   "word": "принял",
+   "phases": 2
+  },
+  {
+   "word": "чтобы",
+   "phases": 2
+  },
+  {
+   "word": "встретимся",
+   "phases": 1
+  },
+  {
+   "word": "дай",
+   "phases": 1
+  },
+  {
+   "word": "шанс",
+   "phases": 1
+  },
+  {
+   "word": "была",
+   "phases": 1
+  },
+  {
+   "word": "написать",
+   "phases": 1
+  },
+  {
+   "word": "отнести",
+   "phases": 1
+  },
+  {
+   "word": "нужна",
+   "phases": 1
+  },
+  {
+   "word": "нужно",
+   "phases": 1
+  },
+  {
+   "word": "колледже",
+   "phases": 1
+  },
+  {
+   "word": "неуд",
+   "phases": 1
+  },
+  {
+   "word": "задавал",
+   "phases": 1
+  },
+  {
+   "word": "зарегистрировали",
+   "phases": 1
+  },
+  {
+   "word": "оставлять",
+   "phases": 1
+  },
+  {
+   "word": "пристягните",
+   "phases": 1
+  },
+  {
+   "word": "ремни",
+   "phases": 1
+  },
+  {
+   "word": "застрял",
+   "phases": 1
+  },
+  {
+   "word": "лифт",
+   "phases": 1
+  },
+  {
+   "word": "сфотографируете",
+   "phases": 1
+  },
+  {
+   "word": "диске",
+   "phases": 1
+  },
+  {
+   "word": "сохранять",
+   "phases": 1
+  },
+  {
+   "word": "вставь",
+   "phases": 1
+  },
+  {
+   "word": "диск",
+   "phases": 1
+  },
+  {
+   "word": "cd",
+   "phases": 1
+  },
+  {
+   "word": "крещенный",
+   "phases": 1
+  }
+ ],
+ "curve": [
+  {
+   "classes": 0,
+   "phases": 111,
+   "share": 0.3144
+  },
+  {
+   "classes": 5,
+   "phases": 116,
+   "share": 0.3286
+  },
+  {
+   "classes": 10,
+   "phases": 123,
+   "share": 0.3484
+  },
+  {
+   "classes": 20,
+   "phases": 131,
+   "share": 0.3711
+  },
+  {
+   "classes": 30,
+   "phases": 140,
+   "share": 0.3966
+  },
+  {
+   "classes": 50,
+   "phases": 157,
+   "share": 0.4448
+  },
+  {
+   "classes": 75,
+   "phases": 172,
+   "share": 0.4873
+  },
+  {
+   "classes": 100,
+   "phases": 191,
+   "share": 0.5411
+  },
+  {
+   "classes": 119,
+   "phases": 206,
+   "share": 0.5836
+  },
+  {
+   "classes": 150,
+   "phases": 229,
+   "share": 0.6487
+  },
+  {
+   "classes": 200,
+   "phases": 265,
+   "share": 0.7507
+  },
+  {
+   "classes": 250,
+   "phases": 296,
+   "share": 0.8385
+  },
+  {
+   "classes": 300,
+   "phases": 333,
+   "share": 0.9433
+  },
+  {
+   "classes": 400,
+   "phases": 353,
+   "share": 1.0
+  },
+  {
+   "classes": 332,
+   "phases": 353,
+   "share": 1.0
+  }
+ ],
+ "classes_for_40pct": 32
+}

@@ -33,7 +33,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 from centroid_eval import (build_centroids, chunk_rank, embed,  # noqa: E402
                            load_dict_clips, make_chunks)
 from dialogue_translator import Recognizer  # noqa: E402
-from finetune_ctc_phrases import canon_map, folds, load_phrase_clips  # noqa: E402
+from finetune_ctc_phrases import canon_map, folds, head_names, load_phrase_clips  # noqa: E402
 from gloss_coverage import split_classes  # noqa: E402
 from sign_stream import load_ctc  # noqa: E402
 from slovo_model import resample  # noqa: E402
@@ -124,7 +124,7 @@ def run(a):
 
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon = canon_map(plain, {n.lower() for n in names}) if a.canon else {}
+    canon = canon_map(plain, head_names(names)) if a.canon else {}
     clips, skipped = load_phrase_clips(a.cache, a.inventory, names, canon)
     print(f'канонизация: {sum(1 for w in plain if canon.get(w, w) != w)} слов; '
           f'клипов {len(clips)}, пропущено {len(skipped)}', flush=True)

@@ -1,0 +1,188 @@
+{
+ "stage": 32,
+ "date": "2026-11-02",
+ "candidate": {
+  "config_index": 5,
+  "desc": "none/lm0/wb4/sm3/bm24",
+  "selection": "заморожен по канонизированному F1 на train-сплите SP-10 (tune, 252 клипа)"
+ },
+ "production": {
+  "config_index": 14,
+  "desc": "corpus/lm0.1/wb2/sm1/bm24"
+ },
+ "metric": "hits_canon (парный бутстрап по клипам, 4000 ресемплов, seed 2026)",
+ "runs": [
+  {
+   "sweep": "D:/hfdata/sp10_tune_sweep_lemma.json",
+   "metric": "hits_canon",
+   "a": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 3,
+    "beam": 24,
+    "word_recall_canon": 0.08,
+    "word_precision_canon": 0.064,
+    "word_hits_canon": 61
+   },
+   "b": {
+    "lm_src": "corpus",
+    "lm_weight": 0.1,
+    "word_bonus": 2.0,
+    "smooth": 1,
+    "beam": 24,
+    "word_recall_canon": 0.035,
+    "word_precision_canon": 0.151,
+    "word_hits_canon": 27
+   },
+   "a_desc": "none/w0.0/wb4.0/sm3/bm24",
+   "b_desc": "corpus/w0.1/wb2.0/sm1/bm24",
+   "clips": 252,
+   "mean_diff": 0.1349,
+   "lo95": 0.0913,
+   "hi95": 0.1786,
+   "p_a_better": 1.0,
+   "a_wins": 35,
+   "b_wins": 1,
+   "ties": 216
+  },
+  {
+   "sweep": "D:/hfdata/sp10_eval_sweep_lemma.json",
+   "metric": "hits_canon",
+   "a": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 3,
+    "beam": 24,
+    "word_recall_canon": 0.054,
+    "word_precision_canon": 0.049,
+    "word_hits_canon": 19
+   },
+   "b": {
+    "lm_src": "corpus",
+    "lm_weight": 0.1,
+    "word_bonus": 2.0,
+    "smooth": 1,
+    "beam": 24,
+    "word_recall_canon": 0.023,
+    "word_precision_canon": 0.116,
+    "word_hits_canon": 8
+   },
+   "a_desc": "none/w0.0/wb4.0/sm3/bm24",
+   "b_desc": "corpus/w0.1/wb2.0/sm1/bm24",
+   "clips": 111,
+   "mean_diff": 0.0991,
+   "lo95": 0.045,
+   "hi95": 0.1622,
+   "p_a_better": 1.0,
+   "a_wins": 11,
+   "b_wins": 0,
+   "ties": 100
+  },
+  {
+   "sweep": "D:/hfdata/rutube_lemma_sweep.json",
+   "metric": "hits_canon",
+   "a": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 3,
+    "beam": 24,
+    "word_recall_canon": 0.291,
+    "word_precision_canon": 0.12,
+    "word_hits_canon": 57
+   },
+   "b": {
+    "lm_src": "corpus",
+    "lm_weight": 0.1,
+    "word_bonus": 2.0,
+    "smooth": 1,
+    "beam": 24,
+    "word_recall_canon": 0.163,
+    "word_precision_canon": 0.26,
+    "word_hits_canon": 32
+   },
+   "a_desc": "none/w0.0/wb4.0/sm3/bm24",
+   "b_desc": "corpus/w0.1/wb2.0/sm1/bm24",
+   "clips": 67,
+   "mean_diff": 0.3731,
+   "lo95": 0.2388,
+   "hi95": 0.5224,
+   "p_a_better": 1.0,
+   "a_wins": 22,
+   "b_wins": 0,
+   "ties": 45
+  }
+ ],
+ "within_grid_5_vs_4": [
+  {
+   "sweep": "D:/hfdata/sp10_eval_sweep_lemma.json",
+   "metric": "hits_canon",
+   "a": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 3,
+    "beam": 24,
+    "word_recall_canon": 0.054,
+    "word_precision_canon": 0.049,
+    "word_hits_canon": 19
+   },
+   "b": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 1,
+    "beam": 24,
+    "word_recall_canon": 0.051,
+    "word_precision_canon": 0.087,
+    "word_hits_canon": 18
+   },
+   "a_desc": "none/w0.0/wb4.0/sm3/bm24",
+   "b_desc": "none/w0.0/wb4.0/sm1/bm24",
+   "clips": 111,
+   "mean_diff": 0.009,
+   "lo95": 0.0,
+   "hi95": 0.027,
+   "p_a_better": 0.634,
+   "a_wins": 1,
+   "b_wins": 0,
+   "ties": 110
+  },
+  {
+   "sweep": "D:/hfdata/sp10_tune_sweep_lemma.json",
+   "metric": "hits_canon",
+   "a": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 3,
+    "beam": 24,
+    "word_recall_canon": 0.08,
+    "word_precision_canon": 0.064,
+    "word_hits_canon": 61
+   },
+   "b": {
+    "lm_src": "none",
+    "lm_weight": 0.0,
+    "word_bonus": 4.0,
+    "smooth": 1,
+    "beam": 24,
+    "word_recall_canon": 0.058,
+    "word_precision_canon": 0.091,
+    "word_hits_canon": 44
+   },
+   "a_desc": "none/w0.0/wb4.0/sm3/bm24",
+   "b_desc": "none/w0.0/wb4.0/sm1/bm24",
+   "clips": 252,
+   "mean_diff": 0.0675,
+   "lo95": 0.0357,
+   "hi95": 0.1032,
+   "p_a_better": 1.0,
+   "a_wins": 18,
+   "b_wins": 1,
+   "ties": 233
+  }
+ ]
+}

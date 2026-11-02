@@ -1,0 +1,335 @@
+{
+ "checkpoint": "D:/hfdata/dict_folds_honest/fold0.pt",
+ "benchmark": "D:/hfdata/sp10_tune.json",
+ "head_names": 3431,
+ "phrases": 830,
+ "phrases_with_clip": 830,
+ "usable_stem": 134,
+ "share_stem": 0.1614,
+ "usable_lemma": 252,
+ "share_lemma": 0.3036,
+ "lemma_unlocked_forms": 194,
+ "with_clip_types": 642,
+ "ceiling_same_corpus": 830,
+ "ceiling_share": 1.0,
+ "top_missing": [
+  {
+   "word": "моя",
+   "phases": 21
+  },
+  {
+   "word": "специализация",
+   "phases": 15
+  },
+  {
+   "word": "за",
+   "phases": 14
+  },
+  {
+   "word": "по",
+   "phases": 13
+  },
+  {
+   "word": "нибудь",
+   "phases": 13
+  },
+  {
+   "word": "могу",
+   "phases": 12
+  },
+  {
+   "word": "могли",
+   "phases": 10
+  },
+  {
+   "word": "стоит",
+   "phases": 9
+  },
+  {
+   "word": "нужно",
+   "phases": 9
+  },
+  {
+   "word": "извините",
+   "phases": 6
+  },
+  {
+   "word": "какая",
+   "phases": 6
+  },
+  {
+   "word": "какие",
+   "phases": 6
+  },
+  {
+   "word": "то",
+   "phases": 6
+  },
+  {
+   "word": "жестовый",
+   "phases": 5
+  },
+  {
+   "word": "чувствую",
+   "phases": 5
+  },
+  {
+   "word": "пойти",
+   "phases": 5
+  },
+  {
+   "word": "эта",
+   "phases": 5
+  },
+  {
+   "word": "знаете",
+   "phases": 4
+  },
+  {
+   "word": "нужна",
+   "phases": 4
+  },
+  {
+   "word": "него",
+   "phases": 4
+  },
+  {
+   "word": "моего",
+   "phases": 4
+  },
+  {
+   "word": "представить",
+   "phases": 4
+  },
+  {
+   "word": "нужен",
+   "phases": 4
+  },
+  {
+   "word": "зовут",
+   "phases": 3
+  },
+  {
+   "word": "тобой",
+   "phases": 3
+  },
+  {
+   "word": "парень",
+   "phases": 3
+  },
+  {
+   "word": "забронировать",
+   "phases": 3
+  },
+  {
+   "word": "2",
+   "phases": 3
+  },
+  {
+   "word": "письменную",
+   "phases": 3
+  },
+  {
+   "word": "чтобы",
+   "phases": 3
+  },
+  {
+   "word": "двоих",
+   "phases": 3
+  },
+  {
+   "word": "церкви",
+   "phases": 3
+  },
+  {
+   "word": "раз",
+   "phases": 3
+  },
+  {
+   "word": "при",
+   "phases": 3
+  },
+  {
+   "word": "поздравляю",
+   "phases": 3
+  },
+  {
+   "word": "помощь",
+   "phases": 3
+  },
+  {
+   "word": "ая",
+   "phases": 3
+  },
+  {
+   "word": "нравятся",
+   "phases": 3
+  },
+  {
+   "word": "ваша",
+   "phases": 3
+  },
+  {
+   "word": "8",
+   "phases": 2
+  },
+  {
+   "word": "постричься",
+   "phases": 2
+  },
+  {
+   "word": "оглохли",
+   "phases": 2
+  },
+  {
+   "word": "увидимся",
+   "phases": 2
+  },
+  {
+   "word": "моей",
+   "phases": 2
+  },
+  {
+   "word": "отсюда",
+   "phases": 2
+  },
+  {
+   "word": "неважно",
+   "phases": 2
+  },
+  {
+   "word": "машина",
+   "phases": 2
+  },
+  {
+   "word": "напиток",
+   "phases": 2
+  },
+  {
+   "word": "детей",
+   "phases": 2
+  },
+  {
+   "word": "попить",
+   "phases": 2
+  },
+  {
+   "word": "почистить",
+   "phases": 2
+  },
+  {
+   "word": "машину",
+   "phases": 2
+  },
+  {
+   "word": "умер",
+   "phases": 2
+  },
+  {
+   "word": "прошлом",
+   "phases": 2
+  },
+  {
+   "word": "мобильного",
+   "phases": 2
+  },
+  {
+   "word": "родился",
+   "phases": 2
+  },
+  {
+   "word": "4",
+   "phases": 2
+  },
+  {
+   "word": "занимается",
+   "phases": 2
+  },
+  {
+   "word": "3",
+   "phases": 2
+  },
+  {
+   "word": "учиться",
+   "phases": 2
+  }
+ ],
+ "curve": [
+  {
+   "classes": 0,
+   "phases": 252,
+   "share": 0.3036
+  },
+  {
+   "classes": 5,
+   "phases": 267,
+   "share": 0.3217
+  },
+  {
+   "classes": 10,
+   "phases": 286,
+   "share": 0.3446
+  },
+  {
+   "classes": 20,
+   "phases": 304,
+   "share": 0.3663
+  },
+  {
+   "classes": 30,
+   "phases": 317,
+   "share": 0.3819
+  },
+  {
+   "classes": 50,
+   "phases": 345,
+   "share": 0.4157
+  },
+  {
+   "classes": 75,
+   "phases": 372,
+   "share": 0.4482
+  },
+  {
+   "classes": 100,
+   "phases": 407,
+   "share": 0.4904
+  },
+  {
+   "classes": 119,
+   "phases": 424,
+   "share": 0.5108
+  },
+  {
+   "classes": 150,
+   "phases": 449,
+   "share": 0.541
+  },
+  {
+   "classes": 200,
+   "phases": 490,
+   "share": 0.5904
+  },
+  {
+   "classes": 250,
+   "phases": 528,
+   "share": 0.6361
+  },
+  {
+   "classes": 300,
+   "phases": 566,
+   "share": 0.6819
+  },
+  {
+   "classes": 400,
+   "phases": 647,
+   "share": 0.7795
+  },
+  {
+   "classes": 642,
+   "phases": 830,
+   "share": 1.0
+  }
+ ],
+ "classes_for_40pct": 41
+}

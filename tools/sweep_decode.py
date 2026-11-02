@@ -24,7 +24,9 @@ sys.path.insert(0, str(ROOT / 'tools'))
 
 from dialogue_translator import Recognizer  # noqa: E402
 from eval_phrase_clips import hits, words  # noqa: E402
-from finetune_ctc_phrases import canon_map, folds, load_phrase_clips, matched  # noqa: E402
+from finetune_ctc_phrases import (canon_map, folds, load_morph,  # noqa: E402
+                                 load_phrase_clips, matched)
+from finetune_ctc_signer import class_index  # noqa: E402
 from gloss_to_text import load_corpus  # noqa: E402
 from expand_ctc_head import expand_checkpoint  # noqa: E402
 from sign_beam import GlossLM  # noqa: E402
@@ -82,14 +84,19 @@ def run(a):
     work = Path(a.work)
     ck = torch.load(work / 'fold0.pt', map_location='cpu', weights_only=False)
     names = list(ck['names'])
-    index = {n.lower(): i for i, n in enumerate(names)}
+    # тот же словарь, что у гейта меток: синонимы «а/б» и «ё»→«е» (head_names)
+    index = class_index(names)
 
-    vocab_all = {w.lower() for w in names}
+    vocab_all = set(index)
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon = canon_map(plain, vocab_all) if a.canon else {}
+    if not a.canon:
+        canon = {}
+    else:
+        canon = canon_map(plain, vocab_all, load_morph() if a.lemma else None)
     clips, skipped = load_phrase_clips(a.cache, a.inventory, names, canon)
-    print(f'канонизация: {sum(1 for w in plain if canon.get(w, w) != w)} слов; '
+    print(f'канонизация ({"лемма" if a.lemma else "основа"}): '
+          f'{sum(1 for w in plain if canon.get(w, w) != w)} слов; '
           f'клипов {len(clips)}, пропущено {len(skipped)}', flush=True)
     corpus = corpus_seqs(load_corpus('train'), index)
     print(f'корпус {len(corpus)} фраз', flush=True)
@@ -192,6 +199,8 @@ def main():
     ap.add_argument('--seed', type=int, default=2026)
     ap.add_argument('--folds', type=int, default=5)
     ap.add_argument('--canon', action=argparse.BooleanOptionalAction, default=True)
+    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=False,
+                    help='канонизация по лемме (pymorphy3) вместо среза окончания')
     ap.add_argument('--quick', action='store_true')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()

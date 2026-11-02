@@ -30,7 +30,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 
 from eval_phrase_clips import words  # noqa: E402
 from expand_ctc_head import expand_checkpoint  # noqa: E402
-from finetune_ctc_phrases import canon_map, folds, load_phrase_clips  # noqa: E402
+from finetune_ctc_phrases import canon_map, folds, head_names, load_phrase_clips  # noqa: E402
 from centroid_eval import load_dict_clips  # noqa: E402
 from finetune_ctc_signer import class_index  # noqa: E402
 from gloss_coverage import norm  # noqa: E402
@@ -187,7 +187,7 @@ def run(a):
 
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon = canon_map(plain, {n.lower() for n in names}) if a.canon else {}
+    canon = canon_map(plain, head_names(names)) if a.canon else {}
     clips, skipped = load_phrase_clips(a.cache, a.inventory, names, canon)
     print(f'фразовых клипов {len(clips)}, пропущено {len(skipped)}; '
           f'канонизовано {sum(1 for w in plain if canon.get(w, w) != w)}', flush=True)
