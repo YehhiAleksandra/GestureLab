@@ -1,0 +1,3788 @@
+{
+ "tool": "sweep_decode",
+ "date": "2026-11-02",
+ "folds": 5,
+ "seed": 2026,
+ "clips": 193,
+ "config": {
+  "lm_src": "none",
+  "lm_weight": "0.1",
+  "word_bonus": "4",
+  "smooth": "3",
+  "beam": "24"
+ },
+ "seconds": 15.9,
+ "results": [
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 4.0,
+   "smooth": 3,
+   "beam": 24,
+   "config_index": 0,
+   "clips": 193,
+   "empty": 0.005,
+   "glosses_mean": 7.4,
+   "word_hits": 116,
+   "word_tokens": 704,
+   "word_recall": 0.165,
+   "word_precision": 0.081,
+   "word_hits_canon": 129,
+   "word_recall_canon": 0.183,
+   "word_precision_canon": 0.09,
+   "phrase_all_words": 7,
+   "phrase_all_words_canon": 8,
+   "seen_hits": 106,
+   "seen_tokens": 443,
+   "seen_recall": 0.239
+  }
+ ],
+ "rows": {
+  "0": [
+   {
+    "id": "dev_635",
+    "fold": 0,
+    "pred": [
+     "У",
+     "У"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_3664",
+    "fold": 0,
+    "pred": [
+     "это",
+     "ты",
+     "это",
+     "ты",
+     "это",
+     "ты",
+     "это",
+     "ты",
+     "это",
+     "это",
+     "до",
+     "В",
+     "до"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_8839",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "ты",
+     "уверен",
+     "где",
+     "есть",
+     "на",
+     "В"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_8841",
+    "fold": 0,
+    "pred": [
+     "поздний",
+     "вы",
+     "поздний"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9605",
+    "fold": 0,
+    "pred": [
+     "надо",
+     "взять",
+     "время",
+     "мать",
+     "время",
+     "время"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9644",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "вдохновлять",
+     "Я",
+     "Я",
+     "мне",
+     "Я",
+     "В",
+     "моя",
+     "В",
+     "моя"
+    ],
+    "glosses": 16,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_9887",
+    "fold": 0,
+    "pred": [
+     "это",
+     "ты",
+     "это",
+     "ты",
+     "это",
+     "ты",
+     "вы",
+     "мать",
+     "любить",
+     "хотеть",
+     "любить",
+     "хотеть"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9967",
+    "fold": 0,
+    "pred": [
+     "вы",
+     "В",
+     "когда",
+     "тебя",
+     "когда"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10007",
+    "fold": 0,
+    "pred": [
+     "хорошо",
+     "где",
+     "хорошо",
+     "где",
+     "хорошо",
+     "где"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_14581",
+    "fold": 0,
+    "pred": [
+     "У",
+     "где",
+     "как",
+     "где",
+     "есть"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_14612",
+    "fold": 0,
+    "pred": [
+     "не",
+     "странный",
+     "ты",
+     "странный"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_21801",
+    "fold": 0,
+    "pred": [
+     "что",
+     "что",
+     "помочь",
+     "что",
+     "помочь",
+     "что"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_22435",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "мне",
+     "беспокоиться"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3666",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "говорить",
+     "самоосознание",
+     "говорить",
+     "язык",
+     "говорить"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8831",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "безумно",
+     "жить",
+     "безумно",
+     "жить"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8832",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "У",
+     "мне",
+     "мне",
+     "ты",
+     "мне",
+     "ты",
+     "есть",
+     "иметь",
+     "есть"
+    ],
+    "glosses": 10,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "test_8851",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "добрый",
+     "добрый",
+     "добрый",
+     "добрый",
+     "поздний",
+     "добрый"
+    ],
+    "glosses": 10,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_9708",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "вам",
+     "не",
+     "вы",
+     "выходные",
+     "нас"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9884",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "Я",
+     "что",
+     "Я",
+     "что",
+     "обучать",
+     "С"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10083",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "ты",
+     "Я",
+     "ты",
+     "когда",
+     "В",
+     "В",
+     "В",
+     "вы",
+     "В",
+     "В",
+     "вы",
+     "В"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_10148",
+    "fold": 0,
+    "pred": [
+     "В",
+     "В",
+     "хотеть",
+     "чудесный",
+     "чудесный",
+     "моя",
+     "вас",
+     "не",
+     "любить",
+     "меня",
+     "любить"
+    ],
+    "glosses": 11,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_10222",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "вас",
+     "моя",
+     "В",
+     "В"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10240",
+    "fold": 0,
+    "pred": [
+     "не",
+     "это",
+     "ресторан",
+     "слабость",
+     "ресторан"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_10245",
+    "fold": 0,
+    "pred": [
+     "У",
+     "мне",
+     "У",
+     "мне",
+     "У",
+     "мне",
+     "мне",
+     "мне",
+     "заказывать",
+     "К",
+     "заказывать"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_14575",
+    "fold": 0,
+    "pred": [
+     "хорошо",
+     "час",
+     "хорошо"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_14621",
+    "fold": 0,
+    "pred": [
+     "У",
+     "где",
+     "мне",
+     "где"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_21742",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "вы",
+     "Я",
+     "где",
+     "где",
+     "где",
+     "не",
+     "вы",
+     "хотеть"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22005",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "вы",
+     "Я",
+     "вы",
+     "вас",
+     "вы",
+     "моя",
+     "специализация",
+     "моя"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_22015",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "кто?",
+     "рвеность",
+     "искать",
+     "стойкость",
+     "искать"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22027",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "В",
+     "вам",
+     "моя",
+     "С",
+     "на",
+     "В",
+     "на",
+     "В"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_22425",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "дважды",
+     "мне",
+     "говорить",
+     "деньги",
+     "говорить"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22440",
+    "fold": 0,
+    "pred": [
+     "забыть",
+     "отец",
+     "забыть"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_22910",
+    "fold": 0,
+    "pred": [
+     "вам",
+     "Я",
+     "вам",
+     "еще",
+     "вам",
+     "не",
+     "вам"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_23032",
+    "fold": 0,
+    "pred": [
+     "У",
+     "вы",
+     "У",
+     "вы",
+     "вы",
+     "У",
+     "У",
+     "где",
+     "У",
+     "где",
+     "вы"
+    ],
+    "glosses": 11,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_23124",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "мне",
+     "Я",
+     "ночь",
+     "здесь",
+     "хотеть",
+     "позволить",
+     "Й",
+     "позволить",
+     "здесь"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_23137",
+    "fold": 0,
+    "pred": [
+     "Я",
+     "что",
+     "Я",
+     "вас",
+     "Я",
+     "вы",
+     "Я",
+     "вы",
+     "Я"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_23154",
+    "fold": 0,
+    "pred": [
+     "этот",
+     "скоро",
+     "немедленно",
+     "скоро",
+     "искать"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_23701",
+    "fold": 0,
+    "pred": [
+     "острый",
+     "это",
+     "который",
+     "который",
+     "острый"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 5
+   },
+   {
+    "id": "test_23825",
+    "fold": 0,
+    "pred": [
+     "что",
+     "этот",
+     "что",
+     "слишком",
+     "У",
+     "где",
+     "не",
+     "где"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_2791",
+    "fold": 1,
+    "pred": [
+     "хотеть",
+     "вы",
+     "хотеть",
+     "вы",
+     "любить",
+     "любить",
+     "любить",
+     "хотеть",
+     "любить",
+     "тебя",
+     "тебя"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_3115",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "В",
+     "Я",
+     "язык",
+     "Я",
+     "есть",
+     "В",
+     "В",
+     "вам"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_3702",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "комната",
+     "комната",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "С",
+     "В"
+    ],
+    "glosses": 13,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_8856",
+    "fold": 1,
+    "pred": [
+     "что",
+     "что",
+     "должен",
+     "что"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9606",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "время",
+     "Я",
+     "время",
+     "ответить",
+     "ответить",
+     "хорошо",
+     "ответить"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9633",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мой",
+     "меня",
+     "моя",
+     "чудесный",
+     "не",
+     "чудесный",
+     "моя",
+     "специализация",
+     "моя"
+    ],
+    "glosses": 10,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9710",
+    "fold": 1,
+    "pred": [
+     "две тысячи",
+     "тысяча",
+     "мне",
+     "тысяча",
+     "надо",
+     "нуждаться",
+     "надо"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9729",
+    "fold": 1,
+    "pred": [
+     "У",
+     "У",
+     "где",
+     "Я",
+     "где"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9816",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "Я",
+     "У",
+     "одолжить",
+     "У"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_9927",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "новый",
+     "Я",
+     "новый"
+    ],
+    "glosses": 8,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10046",
+    "fold": 1,
+    "pred": [
+     "сколько",
+     "вам",
+     "сколько",
+     "сколько",
+     "читать",
+     "вечер",
+     "встать",
+     "сегодня",
+     "встать"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_14569",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "В",
+     "В"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_14570",
+    "fold": 1,
+    "pred": [
+     "сколько",
+     "еще",
+     "прийти",
+     "книга",
+     "прийти"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_21743",
+    "fold": 1,
+    "pred": [
+     "отвратительный",
+     "сегодня",
+     "отвратительный",
+     "сегодня",
+     "часы",
+     "какой",
+     "что",
+     "пожалуйста",
+     "что"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_22087",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "У",
+     "здесь",
+     "У",
+     "вам"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_22109",
+    "fold": 1,
+    "pred": [
+     "достаточно",
+     "достаточно",
+     "достаточно",
+     "не",
+     "достаточно"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_22434",
+    "fold": 1,
+    "pred": [
+     "вы",
+     "нахальный",
+     "мурашки",
+     "нахальный",
+     "вы",
+     "вас",
+     "вы"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_23132",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "мне",
+     "Я",
+     "не",
+     "Я",
+     "вас",
+     "меня",
+     "мне",
+     "меня",
+     "Я"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 9,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_23823",
+    "fold": 1,
+    "pred": [
+     "вы",
+     "срочный",
+     "вы",
+     "У",
+     "У",
+     "У",
+     "где",
+     "У",
+     "где",
+     "У"
+    ],
+    "glosses": 10,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_3107",
+    "fold": 1,
+    "pred": [
+     "В",
+     "без",
+     "В",
+     "В",
+     "комната",
+     "В",
+     "В",
+     "вы",
+     "В",
+     "вы",
+     "есть",
+     "В",
+     "есть"
+    ],
+    "glosses": 13,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3108",
+    "fold": 1,
+    "pred": [
+     "проверить",
+     "проверить",
+     "Я",
+     "В",
+     "Я",
+     "мы",
+     "Я",
+     "С",
+     "В",
+     "С",
+     "В"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_3661",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "сожалеть",
+     "хотеть",
+     "Я",
+     "шесть",
+     "хотеть",
+     "шесть"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3675",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "мне",
+     "Я",
+     "боюсь",
+     "бояться",
+     "есть"
+    ],
+    "glosses": 8,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_9595",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "В",
+     "Я"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_9733",
+    "fold": 1,
+    "pred": [
+     "У",
+     "У",
+     "хорошо",
+     "У",
+     "получить",
+     "У",
+     "получить",
+     "У",
+     "получить",
+     "Футбол",
+     "Футбол",
+     "Футбол",
+     "Футбол",
+     "здесь",
+     "Футбол"
+    ],
+    "glosses": 15,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_9745",
+    "fold": 1,
+    "pred": [
+     "сколько",
+     "быть",
+     "сколько",
+     "получить",
+     "взять",
+     "получить",
+     "где",
+     "хорошо",
+     "В",
+     "В",
+     "утро",
+     "продолжить",
+     "вас",
+     "продолжить"
+    ],
+    "glosses": 14,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 5
+   },
+   {
+    "id": "test_9841",
+    "fold": 1,
+    "pred": [
+     "мне",
+     "не",
+     "мне",
+     "меня",
+     "любить",
+     "меня",
+     "любить"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_9921",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "В",
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "моя",
+     "Я",
+     "В",
+     "Я",
+     "В",
+     "пожалуйста",
+     "В"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_9981",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "терять",
+     "одежда"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10006",
+    "fold": 1,
+    "pred": [
+     "У",
+     "вы",
+     "он",
+     "вы",
+     "У",
+     "У",
+     "Я",
+     "У",
+     "хотеть",
+     "Я",
+     "хотеть",
+     "Я",
+     "У",
+     "В",
+     "В",
+     "он"
+    ],
+    "glosses": 16,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_10140",
+    "fold": 1,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "когда",
+     "Я",
+     "когда"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_10147",
+    "fold": 1,
+    "pred": [
+     "В",
+     "Я",
+     "В",
+     "пожалуйста",
+     "В",
+     "пожалуйста",
+     "В"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_20110",
+    "fold": 1,
+    "pred": [
+     "получающий удовольствие",
+     "бабочка",
+     "получающий удовольствие"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_21722",
+    "fold": 1,
+    "pred": [
+     "не",
+     "предусмотрительный",
+     "погода",
+     "предусмотрительный"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_21806",
+    "fold": 1,
+    "pred": [
+     "не",
+     "магазин",
+     "счастливый",
+     "магазин",
+     "здесь",
+     "ты",
+     "вы"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22791",
+    "fold": 1,
+    "pred": [
+     "привык",
+     "язык",
+     "привык",
+     "язык"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_23807",
+    "fold": 1,
+    "pred": [
+     "видеть",
+     "смотреть",
+     "видеть",
+     "смотреть"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_23814",
+    "fold": 1,
+    "pred": [
+     "маленький",
+     "вы",
+     "особенный",
+     "вы"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_23835",
+    "fold": 1,
+    "pred": [
+     "ты",
+     "ты",
+     "где",
+     "где",
+     "не",
+     "где",
+     "не"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_1746",
+    "fold": 2,
+    "pred": [
+     "который",
+     "маленький",
+     "который"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_3110",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "новый",
+     "хотеть",
+     "меня",
+     "мне",
+     "меня",
+     "меня"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_3650",
+    "fold": 2,
+    "pred": [
+     "это",
+     "Я",
+     "это",
+     "быть",
+     "миллион",
+     "быть",
+     "закрыть",
+     "несчастный",
+     "видеть"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_3690",
+    "fold": 2,
+    "pred": [
+     "правда",
+     "не",
+     "правда"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_8807",
+    "fold": 2,
+    "pred": [
+     "предложить тост",
+     "говорить",
+     "меня",
+     "говорить"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_9665",
+    "fold": 2,
+    "pred": [
+     "наружу",
+     "В",
+     "В",
+     "где",
+     "не",
+     "где",
+     "А",
+     "где",
+     "меня",
+     "где"
+    ],
+    "glosses": 10,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9742",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Я",
+     "Я",
+     "Я",
+     "меня",
+     "не",
+     "меня",
+     "не"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_9914",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "не",
+     "на",
+     "не"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_9945",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "свет",
+     "мой",
+     "хорошо",
+     "хорошо",
+     "час",
+     "мне",
+     "свет",
+     "год"
+    ],
+    "glosses": 11,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9957",
+    "fold": 2,
+    "pred": [
+     "У",
+     "где",
+     "где",
+     "меня",
+     "где",
+     "здесь",
+     "где",
+     "У"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10055",
+    "fold": 2,
+    "pred": [
+     "твой",
+     "спасибо",
+     "пятьдесят",
+     "любить",
+     "пятьдесят"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_10082",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "В",
+     "сколько",
+     "делать",
+     "делать"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10117",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "вы",
+     "вы",
+     "большой",
+     "больше",
+     "большой",
+     "В",
+     "вы"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_12077",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "У",
+     "У",
+     "мне",
+     "мне"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_19937",
+    "fold": 2,
+    "pred": [
+     "тебя",
+     "билет",
+     "где",
+     "билет"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_20414",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "должен",
+     "спасибо",
+     "должен"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_21695",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "мне",
+     "печаль",
+     "грустный",
+     "печаль"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_21703",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "сегодня",
+     "есть",
+     "вам",
+     "есть",
+     "вам",
+     "меня",
+     "Я",
+     "меня",
+     "есть",
+     "новый"
+    ],
+    "glosses": 11,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 2,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_21724",
+    "fold": 2,
+    "pred": [
+     "ты",
+     "У",
+     "ты",
+     "ты"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_21984",
+    "fold": 2,
+    "pred": [
+     "удача",
+     "тот же самый (одинаковый)",
+     "минута",
+     "принести",
+     "сейчас",
+     "принести"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_22003",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "вам",
+     "вы",
+     "мне",
+     "вас",
+     "не",
+     "что",
+     "не"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_22364",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "это",
+     "вы",
+     "не",
+     "вы",
+     "вам",
+     "сегодня",
+     "Я"
+    ],
+    "glosses": 8,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_22405",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "вечер",
+     "потерять",
+     "вечер",
+     "потерять"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_23135",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "мне",
+     "Я",
+     "на",
+     "где",
+     "на",
+     "где",
+     "У",
+     "где",
+     "У"
+    ],
+    "glosses": 12,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 8,
+    "seen_hits": 2,
+    "seen_total": 7
+   },
+   {
+    "id": "dev_23159",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "десять",
+     "как",
+     "В",
+     "хотеть"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_3659",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "Золото",
+     "Даже",
+     "занятый",
+     "страна",
+     "глотать жадно"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3673",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "мне",
+     "не",
+     "мне",
+     "мне",
+     "меня"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "test_8863",
+    "fold": 2,
+    "pred": [
+     "где",
+     "где",
+     "меня",
+     "где"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9687",
+    "fold": 2,
+    "pred": [
+     "вы",
+     "он",
+     "вы"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9754",
+    "fold": 2,
+    "pred": [
+     "сегодня",
+     "сегодня",
+     "в настоящее время",
+     "сегодня",
+     "В",
+     "вы",
+     "В",
+     "начало",
+     "начало",
+     "В",
+     "место",
+     "остаться",
+     "место"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 2,
+    "total": 7,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_9980",
+    "fold": 2,
+    "pred": [
+     "обучать",
+     "чудесный",
+     "обучать",
+     "какой",
+     "вас",
+     "какой"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9998",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "лучше",
+     "мне",
+     "Я",
+     "который",
+     "Я",
+     "А",
+     "где",
+     "Я",
+     "У",
+     "В",
+     "У"
+    ],
+    "glosses": 14,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 4
+   },
+   {
+    "id": "test_10077",
+    "fold": 2,
+    "pred": [
+     "У",
+     "мне",
+     "У",
+     "мне",
+     "как",
+     "мне",
+     "И",
+     "мне"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_14557",
+    "fold": 2,
+    "pred": [
+     "У",
+     "еще",
+     "У"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_14598",
+    "fold": 2,
+    "pred": [
+     "забыть",
+     "мудрый",
+     "забыть"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_22016",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "этот",
+     "где",
+     "где",
+     "на",
+     "Я",
+     "У"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22102",
+    "fold": 2,
+    "pred": [
+     "шум",
+     "шум",
+     "бы",
+     "не",
+     "У",
+     "не",
+     "где",
+     "не",
+     "где",
+     "не"
+    ],
+    "glosses": 10,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_22108",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "ты",
+     "ответить",
+     "хорошо"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_23817",
+    "fold": 2,
+    "pred": [
+     "Я",
+     "мне",
+     "свой",
+     "новый",
+     "свой",
+     "новый",
+     "новый"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_3656",
+    "fold": 3,
+    "pred": [
+     "У",
+     "тебя",
+     "хотеть",
+     "хотеть"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_3692",
+    "fold": 3,
+    "pred": [
+     "хотеть",
+     "не",
+     "хотеть",
+     "хотеть",
+     "купить",
+     "писать",
+     "купить"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 8,
+    "seen_hits": 1,
+    "seen_total": 7
+   },
+   {
+    "id": "dev_3695",
+    "fold": 3,
+    "pred": [],
+    "glosses": 0,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_9825",
+    "fold": 3,
+    "pred": [
+     "У",
+     "Я",
+     "У",
+     "А",
+     "год",
+     "когда",
+     "много",
+     "без",
+     "без",
+     "Я",
+     "говорить",
+     "У",
+     "В",
+     "У"
+    ],
+    "glosses": 14,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_9955",
+    "fold": 3,
+    "pred": [
+     "У",
+     "Я",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "вас",
+     "вы",
+     "У"
+    ],
+    "glosses": 10,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10105",
+    "fold": 3,
+    "pred": [
+     "хотеть",
+     "хотеть",
+     "хотеть",
+     "что",
+     "вы",
+     "что"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 3,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_10179",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "вы",
+     "невозможно",
+     "уехать",
+     "невозможно"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10247",
+    "fold": 3,
+    "pred": [
+     "это",
+     "не",
+     "твой",
+     "не",
+     "твой",
+     "не"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_14580",
+    "fold": 3,
+    "pred": [
+     "сколько",
+     "какой",
+     "сколько"
+    ],
+    "glosses": 3,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_21524",
+    "fold": 3,
+    "pred": [
+     "это",
+     "забыть"
+    ],
+    "glosses": 2,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_21696",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "кто?",
+     "что",
+     "кто?"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_22038",
+    "fold": 3,
+    "pred": [
+     "невозможно",
+     "плавник",
+     "неверие",
+     "плавник"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_22101",
+    "fold": 3,
+    "pred": [
+     "мне",
+     "мне",
+     "где",
+     "год",
+     "где"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3660",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "Я",
+     "меня",
+     "В"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 3
+   },
+   {
+    "id": "test_3674",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "мне",
+     "говорить",
+     "мне",
+     "говорить"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8828",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "меня",
+     "Я",
+     "меня",
+     "Я",
+     "Я",
+     "отложенный"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_8853",
+    "fold": 3,
+    "pred": [
+     "сегодня",
+     "читать",
+     "сколько",
+     "читать",
+     "вечер",
+     "встать",
+     "сегодня"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_8864",
+    "fold": 3,
+    "pred": [
+     "что",
+     "вы",
+     "что",
+     "вы"
+    ],
+    "glosses": 4,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_8867",
+    "fold": 3,
+    "pred": [
+     "говорить",
+     "Я",
+     "говорить",
+     "говорить",
+     "язык",
+     "говорить",
+     "вы",
+     "вас"
+    ],
+    "glosses": 8,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9946",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "жираф",
+     "лучше",
+     "жираф"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_9976",
+    "fold": 3,
+    "pred": [
+     "В",
+     "Я",
+     "В",
+     "вы",
+     "вы",
+     "где",
+     "вы",
+     "вы",
+     "вы",
+     "все",
+     "У",
+     "мне",
+     "вы",
+     "идти",
+     "вы"
+    ],
+    "glosses": 15,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_9982",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "говорить",
+     "мне",
+     "говорить",
+     "солнце",
+     "разумный",
+     "мудрый",
+     "разумный"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10009",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "ты",
+     "ты",
+     "В",
+     "кто?"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_10023",
+    "fold": 3,
+    "pred": [
+     "У",
+     "не",
+     "мне",
+     "не",
+     "мой",
+     "вас",
+     "открыть",
+     "вас",
+     "открыть"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_10126",
+    "fold": 3,
+    "pred": [
+     "что",
+     "кто?",
+     "что"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10131",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "В",
+     "В",
+     "В",
+     "странный",
+     "встреча",
+     "странный",
+     "В",
+     "В"
+    ],
+    "glosses": 14,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_10141",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "потерять",
+     "по",
+     "А",
+     "хотеть",
+     "есть",
+     "вы",
+     "есть",
+     "У",
+     "есть",
+     "ты",
+     "вина"
+    ],
+    "glosses": 12,
+    "hits": 1,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_10219",
+    "fold": 3,
+    "pred": [
+     "где",
+     "В",
+     "вас",
+     "В",
+     "ты",
+     "У",
+     "ты",
+     "тебя",
+     "ты",
+     "вы",
+     "У",
+     "мне",
+     "У",
+     "где",
+     "вы",
+     "где",
+     "вы"
+    ],
+    "glosses": 17,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 10,
+    "seen_hits": 1,
+    "seen_total": 5
+   },
+   {
+    "id": "test_14604",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "много",
+     "не",
+     "много"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_21758",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "что",
+     "очень",
+     "очень",
+     "очень",
+     "или"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_21807",
+    "fold": 3,
+    "pred": [
+     "что",
+     "Я",
+     "мне",
+     "меня",
+     "что"
+    ],
+    "glosses": 5,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_21836",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "Я",
+     "меня",
+     "меня",
+     "голод",
+     "меня",
+     "голод"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_21874",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "не",
+     "сколько",
+     "нас",
+     "сколько",
+     "кормить",
+     "с",
+     "кормить"
+    ],
+    "glosses": 8,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_22045",
+    "fold": 3,
+    "pred": [
+     "сегодня",
+     "В",
+     "Я",
+     "пожалуйста",
+     "меня",
+     "пожалуйста"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_22094",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "моя",
+     "где",
+     "здесь",
+     "где",
+     "здесь"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_23065",
+    "fold": 3,
+    "pred": [
+     "У",
+     "ты",
+     "У",
+     "одолжить",
+     "У",
+     "одновременность",
+     "без",
+     "одновременность"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_23140",
+    "fold": 3,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "болит",
+     "боль",
+     "болит",
+     "боль"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 2,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 2
+   },
+   {
+    "id": "test_23746",
+    "fold": 3,
+    "pred": [
+     "бы",
+     "С",
+     "причина",
+     "адрес",
+     "причина",
+     "плавник",
+     "адрес",
+     "С"
+    ],
+    "glosses": 8,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_3651",
+    "fold": 4,
+    "pred": [
+     "В",
+     "отложить",
+     "уверен",
+     "ты",
+     "это",
+     "ты",
+     "это",
+     "поезд",
+     "в восемь пятнадцать",
+     "поезд",
+     "мурашки",
+     "дельфин",
+     "мурашки",
+     "дельфин"
+    ],
+    "glosses": 14,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 4,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_8806",
+    "fold": 4,
+    "pred": [
+     "не",
+     "невозможно",
+     "есть",
+     "что",
+     "это",
+     "ты",
+     "это"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_9640",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "он",
+     "Я",
+     "где",
+     "меня",
+     "где",
+     "новый"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_9774",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вы",
+     "Я",
+     "вы",
+     "Я",
+     "козел",
+     "смотреть",
+     "козел",
+     "У",
+     "бы",
+     "вина",
+     "бы",
+     "вина"
+    ],
+    "glosses": 13,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_9829",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "И",
+     "вы",
+     "время",
+     "И",
+     "У",
+     "И",
+     "вы",
+     "какой",
+     "вы"
+    ],
+    "glosses": 10,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "dev_9990",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "меня",
+     "Я",
+     "меня",
+     "Я",
+     "меня",
+     "Я",
+     "желтый",
+     "грустный",
+     "желтый"
+    ],
+    "glosses": 10,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_10113",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "твой",
+     "вы",
+     "твой",
+     "вы",
+     "мне",
+     "где",
+     "глухой",
+     "где"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_10158",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "хорошо",
+     "хорошо",
+     "хорошо",
+     "хорошо",
+     "сколько",
+     "любить",
+     "сколько",
+     "любить"
+    ],
+    "glosses": 9,
+    "hits": 1,
+    "hits_canon": 2,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "dev_10164",
+    "fold": 4,
+    "pred": [
+     "петух",
+     "утро",
+     "петух",
+     "видеть",
+     "вы",
+     "питьевая вода",
+     "мужчина",
+     "питьевая вода",
+     "мужчина",
+     "Религия",
+     "много",
+     "вы"
+    ],
+    "glosses": 12,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_20037",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "что",
+     "Я",
+     "Я",
+     "что",
+     "поезд",
+     "вас",
+     "В"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "dev_21792",
+    "fold": 4,
+    "pred": [
+     "не",
+     "Я",
+     "не"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "dev_22023",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "У",
+     "или",
+     "В",
+     "Я"
+    ],
+    "glosses": 7,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 5
+   },
+   {
+    "id": "dev_22058",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "вас",
+     "Я",
+     "вас",
+     "Я"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "dev_23677",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "много",
+     "Я",
+     "вы",
+     "есть",
+     "истерик",
+     "есть"
+    ],
+    "glosses": 7,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_1296",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "час",
+     "мой",
+     "час",
+     "нам",
+     "час"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_2784",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "В",
+     "мне",
+     "год",
+     "мне",
+     "год"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_3105",
+    "fold": 4,
+    "pred": [
+     "уже",
+     "возбуждать",
+     "возбуждать"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_3669",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "У",
+     "Я",
+     "слишком",
+     "ты",
+     "Я",
+     "поздравлять",
+     "В",
+     "В",
+     "С"
+    ],
+    "glosses": 10,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8804",
+    "fold": 4,
+    "pred": [
+     "остроумие",
+     "много",
+     "взять",
+     "когда"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8809",
+    "fold": 4,
+    "pred": [
+     "когда",
+     "слышать",
+     "удача",
+     "где",
+     "есть",
+     "есть",
+     "неудобно"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_8840",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "меня",
+     "Я",
+     "этот",
+     "скоро",
+     "этот",
+     "В",
+     "буду",
+     "В",
+     "буду"
+    ],
+    "glosses": 10,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_9831",
+    "fold": 4,
+    "pred": [
+     "вы",
+     "вы",
+     "где",
+     "вы",
+     "где",
+     "вы",
+     "где",
+     "вы"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 3
+   },
+   {
+    "id": "test_9839",
+    "fold": 4,
+    "pred": [
+     "не",
+     "У",
+     "мужчина",
+     "У",
+     "не",
+     "вас",
+     "не"
+    ],
+    "glosses": 7,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_9840",
+    "fold": 4,
+    "pred": [
+     "не",
+     "меня",
+     "не",
+     "меня"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 4
+   },
+   {
+    "id": "test_9846",
+    "fold": 4,
+    "pred": [
+     "неожиданный"
+    ],
+    "glosses": 1,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_9902",
+    "fold": 4,
+    "pred": [
+     "мы",
+     "позволить",
+     "больше",
+     "позволить"
+    ],
+    "glosses": 4,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_10035",
+    "fold": 4,
+    "pred": [
+     "не",
+     "мы",
+     "не"
+    ],
+    "glosses": 3,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0
+   },
+   {
+    "id": "test_10200",
+    "fold": 4,
+    "pred": [
+     "В",
+     "друг",
+     "друг",
+     "мой",
+     "любить",
+     "мой"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_21755",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "У",
+     "мне",
+     "вы",
+     "много",
+     "вам",
+     "много",
+     "вам",
+     "У",
+     "вам",
+     "У"
+    ],
+    "glosses": 11,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_21759",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "это",
+     "Я",
+     "это",
+     "Я",
+     "это"
+    ],
+    "glosses": 6,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 2,
+    "seen_total": 2
+   },
+   {
+    "id": "test_21876",
+    "fold": 4,
+    "pred": [
+     "не",
+     "обед",
+     "не",
+     "без",
+     "не",
+     "видеть",
+     "не",
+     "видеть",
+     "не"
+    ],
+    "glosses": 9,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3
+   },
+   {
+    "id": "test_21881",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "вы",
+     "Я",
+     "или",
+     "Я",
+     "В",
+     "поезд",
+     "В"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 4
+   },
+   {
+    "id": "test_22006",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "не",
+     "У",
+     "только",
+     "У"
+    ],
+    "glosses": 8,
+    "hits": 2,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 2,
+    "seen_total": 5
+   },
+   {
+    "id": "test_22212",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "поезд",
+     "комната",
+     "поезд",
+     "есть"
+    ],
+    "glosses": 5,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1
+   },
+   {
+    "id": "test_22399",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "не",
+     "сейчас",
+     "сегодня",
+     "неудобно",
+     "сегодня"
+    ],
+    "glosses": 8,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 2,
+    "seen_hits": 1,
+    "seen_total": 1
+   },
+   {
+    "id": "test_22886",
+    "fold": 4,
+    "pred": [
+     "не",
+     "Я",
+     "мне",
+     "не",
+     "беспокоиться",
+     "не"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_23107",
+    "fold": 4,
+    "pred": [
+     "У",
+     "необходимый",
+     "обнимать",
+     "необходимый",
+     "новый",
+     "найти"
+    ],
+    "glosses": 6,
+    "hits": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 2
+   },
+   {
+    "id": "test_23394",
+    "fold": 4,
+    "pred": [
+     "Я",
+     "Футбол",
+     "Я",
+     "Футбол",
+     "Футбол",
+     "предложить тост"
+    ],
+    "glosses": 6,
+    "hits": 1,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1
+   }
+  ]
+ }
+}

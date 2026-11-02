@@ -1,0 +1,335 @@
+{
+ "checkpoint": "D:/hfdata/sp10_expanded/fold0.pt",
+ "benchmark": "D:/hfdata/sp10_eval.json",
+ "head_names": 4011,
+ "phrases": 353,
+ "phrases_with_clip": 353,
+ "usable_stem": 91,
+ "share_stem": 0.2578,
+ "usable_lemma": 193,
+ "share_lemma": 0.5467,
+ "lemma_unlocked_forms": 147,
+ "with_clip_types": 2,
+ "ceiling_same_corpus": 194,
+ "ceiling_share": 0.5496,
+ "top_missing": [
+  {
+   "word": "гинеколога",
+   "phases": 2
+  },
+  {
+   "word": "познакомиться",
+   "phases": 2
+  },
+  {
+   "word": "шторы",
+   "phases": 2
+  },
+  {
+   "word": "11",
+   "phases": 2
+  },
+  {
+   "word": "сюда",
+   "phases": 2
+  },
+  {
+   "word": "мило",
+   "phases": 2
+  },
+  {
+   "word": "добраться",
+   "phases": 2
+  },
+  {
+   "word": "домой",
+   "phases": 2
+  },
+  {
+   "word": "шанс",
+   "phases": 1
+  },
+  {
+   "word": "отнести",
+   "phases": 1
+  },
+  {
+   "word": "неуд",
+   "phases": 1
+  },
+  {
+   "word": "задавал",
+   "phases": 1
+  },
+  {
+   "word": "зарегистрировали",
+   "phases": 1
+  },
+  {
+   "word": "оставлять",
+   "phases": 1
+  },
+  {
+   "word": "застрял",
+   "phases": 1
+  },
+  {
+   "word": "сфотографируете",
+   "phases": 1
+  },
+  {
+   "word": "сохранять",
+   "phases": 1
+  },
+  {
+   "word": "cd",
+   "phases": 1
+  },
+  {
+   "word": "крещенный",
+   "phases": 1
+  },
+  {
+   "word": "пастор",
+   "phases": 1
+  },
+  {
+   "word": "относитесь",
+   "phases": 1
+  },
+  {
+   "word": "съем",
+   "phases": 1
+  },
+  {
+   "word": "моем",
+   "phases": 1
+  },
+  {
+   "word": "76",
+   "phases": 1
+  },
+  {
+   "word": "ураганов",
+   "phases": 1
+  },
+  {
+   "word": "пляже",
+   "phases": 1
+  },
+  {
+   "word": "нуля",
+   "phases": 1
+  },
+  {
+   "word": "ниже",
+   "phases": 1
+  },
+  {
+   "word": "тропинка",
+   "phases": 1
+  },
+  {
+   "word": "валентинкой",
+   "phases": 1
+  },
+  {
+   "word": "аспирин",
+   "phases": 1
+  },
+  {
+   "word": "выпала",
+   "phases": 1
+  },
+  {
+   "word": "плащ",
+   "phases": 1
+  },
+  {
+   "word": "уставшей",
+   "phases": 1
+  },
+  {
+   "word": "подписаться",
+   "phases": 1
+  },
+  {
+   "word": "младше",
+   "phases": 1
+  },
+  {
+   "word": "задерни",
+   "phases": 1
+  },
+  {
+   "word": "ней",
+   "phases": 1
+  },
+  {
+   "word": "обсуждала",
+   "phases": 1
+  },
+  {
+   "word": "помой",
+   "phases": 1
+  },
+  {
+   "word": "члены",
+   "phases": 1
+  },
+  {
+   "word": "сервируем",
+   "phases": 1
+  },
+  {
+   "word": "суп",
+   "phases": 1
+  },
+  {
+   "word": "повязать",
+   "phases": 1
+  },
+  {
+   "word": "собираться",
+   "phases": 1
+  },
+  {
+   "word": "переезду",
+   "phases": 1
+  },
+  {
+   "word": "момент",
+   "phases": 1
+  },
+  {
+   "word": "сядь",
+   "phases": 1
+  },
+  {
+   "word": "разочарование",
+   "phases": 1
+  },
+  {
+   "word": "дорого",
+   "phases": 1
+  },
+  {
+   "word": "вуз",
+   "phases": 1
+  },
+  {
+   "word": "ремонт",
+   "phases": 1
+  },
+  {
+   "word": "сломалась",
+   "phases": 1
+  },
+  {
+   "word": "прохода",
+   "phases": 1
+  },
+  {
+   "word": "безработный",
+   "phases": 1
+  },
+  {
+   "word": "задерну",
+   "phases": 1
+  },
+  {
+   "word": "вышлите",
+   "phases": 1
+  },
+  {
+   "word": "резюме",
+   "phases": 1
+  },
+  {
+   "word": "поиграть",
+   "phases": 1
+  },
+  {
+   "word": "7",
+   "phases": 1
+  }
+ ],
+ "curve": [
+  {
+   "classes": 0,
+   "phases": 193,
+   "share": 0.5467
+  },
+  {
+   "classes": 5,
+   "phases": 198,
+   "share": 0.5609
+  },
+  {
+   "classes": 10,
+   "phases": 206,
+   "share": 0.5836
+  },
+  {
+   "classes": 20,
+   "phases": 216,
+   "share": 0.6119
+  },
+  {
+   "classes": 30,
+   "phases": 225,
+   "share": 0.6374
+  },
+  {
+   "classes": 50,
+   "phases": 243,
+   "share": 0.6884
+  },
+  {
+   "classes": 75,
+   "phases": 266,
+   "share": 0.7535
+  },
+  {
+   "classes": 100,
+   "phases": 287,
+   "share": 0.813
+  },
+  {
+   "classes": 119,
+   "phases": 300,
+   "share": 0.8499
+  },
+  {
+   "classes": 150,
+   "phases": 325,
+   "share": 0.9207
+  },
+  {
+   "classes": 200,
+   "phases": 353,
+   "share": 1.0
+  },
+  {
+   "classes": 250,
+   "phases": 353,
+   "share": 1.0
+  },
+  {
+   "classes": 300,
+   "phases": 353,
+   "share": 1.0
+  },
+  {
+   "classes": 400,
+   "phases": 353,
+   "share": 1.0
+  },
+  {
+   "classes": 191,
+   "phases": 353,
+   "share": 1.0
+  }
+ ],
+ "classes_for_40pct": 0
+}

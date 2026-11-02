@@ -1,0 +1,47 @@
+{
+ "tool": "head_expand_compare",
+ "old": "reports/evidence/meaning_sp10.json",
+ "new": "reports/evidence/meaning_sp10_expanded.json",
+ "config": 1,
+ "clips_old": 111,
+ "clips_new": 193,
+ "common": 111,
+ "unlocked": 82,
+ "unlock_word_hits": 57,
+ "unlock_word_tokens": 352,
+ "words_common": 352,
+ "hits_old": 19,
+ "hits_new": 72,
+ "vs_old": {
+  "meaning": {
+   "mean_diff": -0.027,
+   "lo95": -0.0991,
+   "hi95": 0.045,
+   "a_wins": 4,
+   "b_wins": 7,
+   "distinguishable": false,
+   "wins": 4,
+   "losses": 7
+  },
+  "chrf": {
+   "mean_diff": 1.1808,
+   "lo95": -1.7328,
+   "hi95": 4.3365,
+   "a_wins": 57,
+   "b_wins": 54,
+   "distinguishable": false,
+   "wins": 57,
+   "losses": 54
+  },
+  "hits_canon": {
+   "mean_diff": 0.4775,
+   "lo95": 0.3514,
+   "hi95": 0.6036,
+   "a_wins": 49,
+   "b_wins": 3,
+   "distinguishable": true,
+   "wins": 49,
+   "losses": 3
+  }
+ }
+}
