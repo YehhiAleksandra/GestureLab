@@ -20,7 +20,7 @@
 ## Гейт перед коммитом и пушем
 
 ```
-PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 166 passed (замер 2026-11-02)
+PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 196 passed (замер 2026-11-02)
 ```
 
 - Тесты — часть контракта: новый баг сначала воспроизводится тестом, потом чинится.
@@ -61,6 +61,8 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 1
 | `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam); канон по лемме по умолчанию, `--no-lemma` — грубая основа |
 | `python tools/boot_compare.py --sweep <sweep.json> --a 5 --b 8` | парный бутстрап по клипам: различим ли один декодер от другого, или разница — шум (этап 31) |
 | `python tools/check_dict_disjoint.py` | гейт утечки: клипы авторазмеченного словаря ∩ оценочные фразы, по байтам и 4-кадровым окнам |
+| `python tools/check_split_disjoint.py --a <tune.json> --b <eval.json>` | гейт утечки для сплитов одного бенчмарка: общие id и 4-кадровые окна между обучением и оценкой (обучать и мерить одним и тем же — не замер) |
+| `python tools/head_expand_compare.py --old <a.json> --new <b.json> --config 1` | сравнение двух `meaning_compare`-прогонов по головам разного размера: покрытие отдельно, качество парным бутстрапом только по общим клипам |
 | `python tools/vocab_gap.py --list <list.json>` | сколько фраз бенчмарка доходит до оценки и ценой каких классов: разрыв покрывается канонизацией (основа → лемма) и расширением головы |
 | `python tools/meaning_compare.py --lemma` | тот же честный фолд-прогон, но до конца: глоссы → LLM → судья 0/1/2 + chrF, парный бутстрап по клипам. Решает споры о декодере по смыслу, а не по словам |
 | `python tools/finetune_ctc_phrases.py --train-all` | production-чекпойнт на всех фразовых клипах (CV-метрик у него нет, B54) |

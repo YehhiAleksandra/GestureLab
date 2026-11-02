@@ -1,0 +1,87 @@
+{
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "этап 34: гейт утечки между сплитами одного бенчмарка (tune против dev+test)"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_check_split_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "тесты гейта: утечка по кадрам, чистые записи, общий id, пропущенные npz"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/head_expand_compare.py",
+   "confidence": 0.95,
+   "explanation": "этап 34: сравнение двух прогонов по головам разного размера — покрытие отдельно, качество по общим клипам"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_head_expand_compare.py",
+   "confidence": 0.95,
+   "explanation": "тесты сравнения: индексация по id, отказ на дубле, пустой перевод как ноль"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "ids",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "клипы инвентаря с длительностью"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "windows",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "отпечатки 4-кадровых окон по id клипов, недостающие npz считаются отдельно"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "пересечение id и окон → код возврата гейта"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "caller_name": "run",
+   "called_name": "windows",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.9,
+   "explanation": "гейт строит окна для обоих сплитов и сравнивает множества"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "caller_name": "windows",
+   "called_name": "_h",
+   "file_path": "tools/check_split_disjoint.py",
+   "confidence": 0.9,
+   "explanation": "хэш окна переиспользуется из гейта словаря — одна схема на два гейта"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "pick",
+   "file_path": "tools/head_expand_compare.py",
+   "confidence": 0.95,
+   "explanation": "ряды одного конфига прогона → словарь по id клипа"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "compare",
+   "file_path": "tools/head_expand_compare.py",
+   "confidence": 0.95,
+   "explanation": "покрытие отдельно от качества: бутстрап только по общим клипам"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "caller_name": "compare",
+   "called_name": "boot_diff",
+   "file_path": "tools/head_expand_compare.py",
+   "confidence": 0.9,
+   "explanation": "тот же парный бутстрап, что у замера смысла"
+  }
+ ]
+}

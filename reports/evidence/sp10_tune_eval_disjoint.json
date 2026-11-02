@@ -1,0 +1,18 @@
+{
+ "tool": "check_split_disjoint",
+ "date": "2026-11-02",
+ "a": "D:/hfdata/sp10_tune.json",
+ "b": "D:/hfdata/sp10_eval.json",
+ "cache": "D:/hfdata/sp10_rsl/landmarks",
+ "window": 4,
+ "ids_a": 830,
+ "ids_b": 353,
+ "ids_shared": 0,
+ "windows_a": 71037,
+ "windows_b": 29900,
+ "windows_shared": 0,
+ "no_cache_a": 0,
+ "no_cache_b": 0,
+ "examples": [],
+ "disjoint": true
+}
