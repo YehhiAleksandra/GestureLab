@@ -1,0 +1,12 @@
+{
+ "tool": "check_dict_disjoint",
+ "date": "2026-11-02",
+ "dict": "D:/hfdata/ark_all.npz",
+ "dict_clips": 4476,
+ "eval_clips": 67,
+ "window": 4,
+ "overlap_exact": 0,
+ "overlap_window": 0,
+ "disjoint": true,
+ "examples": []
+}

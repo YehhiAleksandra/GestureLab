@@ -20,7 +20,7 @@
 ## Гейт перед коммитом и пушем
 
 ```
-PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 158 passed (замер 2026-11-02)
+PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 166 passed (замер 2026-11-02)
 ```
 
 - Тесты — часть контракта: новый баг сначала воспроизводится тестом, потом чинится.
@@ -59,6 +59,8 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 1
 | `python gesturelab.py --calibrate sessions` | статистика положений по записям |
 | `python summarize.py sessions --by-gesture` | сводка; «не жест» по умолчанию отдельно |
 | `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam) |
+| `python tools/boot_compare.py --sweep <sweep.json> --a 5 --b 8` | парный бутстрап по клипам: различим ли один декодер от другого, или разница — шум (этап 31) |
+| `python tools/check_dict_disjoint.py` | гейт утечки: клипы авторазмеченного словаря ∩ оценочные фразы, по байтам и 4-кадровым окнам |
 | `python tools/finetune_ctc_phrases.py --train-all` | production-чекпойнт на всех фразовых клипах (CV-метрик у него нет, B54) |
 | `python tools/centroid_eval.py --chunk 32 --topk 5` | one-shot центроиды по эмбеддингам энкодера: 893 клипа словаря → recall на фразах без обучения (этап 21) |
 | `python tools/rerank_eval.py` | фьюжн: n-best цепочки фолдов + центроидная близость, перебор λ офлайн (этап 21 §7) |

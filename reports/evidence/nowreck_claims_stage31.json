@@ -1,0 +1,67 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "dict_clips",
+   "file_path": "tools/check_dict_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "этап 31: гейт утечки словарь/оценка"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "evalfingerprints",
+   "file_path": "tools/check_dict_disjoint.py",
+   "confidence": 0.95,
+   "explanation": "этап 31: отпечатки 4-кадровых окон оценки"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/check_dict_disjoint.py",
+   "confidence": 0.9,
+   "explanation": "этап 31: точка входа гейта"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/check_dict_disjoint.py",
+   "confidence": 0.9,
+   "explanation": "этап 31: самотест гейта"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "per_clip",
+   "file_path": "tools/boot_compare.py",
+   "confidence": 0.95,
+   "explanation": "этап 31: поклиповые попадания из рядов свипа"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "paired_bootstrap",
+   "file_path": "tools/boot_compare.py",
+   "confidence": 0.95,
+   "explanation": "этап 31: парный бутстрап разницы по клипам"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "describe",
+   "file_path": "tools/boot_compare.py",
+   "confidence": 0.9,
+   "explanation": "этап 31: подпись конфига декодера"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/boot_compare.py",
+   "confidence": 0.9,
+   "explanation": "этап 31: сравнение двух конфигов свипа"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/boot_compare.py",
+   "confidence": 0.9,
+   "explanation": "этап 31: самотест бутстрапа"
+  }
+ ]
+}
