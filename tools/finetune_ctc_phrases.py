@@ -65,9 +65,17 @@ def head_names(names):
 
 
 def load_morph():
-    """pymorphy3 — то, что сводит русскую форму к лемме. Ленивая загрузка: тесты в CI
-    (ubuntu, без пакета) не должны падать на путях, где лемма не включена."""
-    import pymorphy3
+    """pymorphy3 — то, что сводит русскую форму к лемме.
+
+    Без пакета возвращаем None, а не падаем: канонизация тогда работает по грубой основе
+    (прежнее поведение), а не роняет прогон. Так дефолт «лемма» безопасен на машине без
+    requirements.txt.
+    """
+    try:
+        import pymorphy3
+    except ImportError:
+        print('pymorphy3 не установлен — канонизация по основе вместо леммы', flush=True)
+        return None
     return pymorphy3.MorphAnalyzer()
 
 
@@ -81,6 +89,18 @@ def lemma_index(vocab, morph):
     for v in vocab:
         by_lemma.setdefault(morph.parse(v)[0].normal_form, set()).add(v)
     return {k: next(iter(v)) for k, v in by_lemma.items() if len(v) == 1}
+
+
+def build_canon(plain, vocab, a):
+    """Канонизация по флагам прогона → (карта, режим для отчёта).
+
+    режим — факт, а не намерение: без pymorphy3 лемма превращается в основу, и печать
+    должна это показывать, иначе два прогона с разными машинами сравниваются как равные.
+    """
+    if not a.canon:
+        return {}, 'нет'
+    morph = load_morph() if a.lemma else None
+    return canon_map(plain, vocab, morph), ('лемма' if morph else 'основа')
 
 
 def canon_map(plain, vocab, morph=None):
@@ -552,10 +572,9 @@ def run(a):
     ck = torch.load(a.init, map_location='cpu', weights_only=False)
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    canon = (canon_map(plain, head_names(ck['names']),
-                        load_morph() if a.lemma else None) if a.canon else {})
+    canon, mode = build_canon(plain, head_names(ck['names']), a)
     all_words = [canon.get(w, w) for w in plain]
-    print(f'канонизация ({"лемма" if a.lemma else "основа"}): '
+    print(f'канонизация ({mode}): '
           f'{sum(1 for w in plain if canon.get(w, w) != w)} из {len(plain)} '
           f'токенов → обученный класс', flush=True)
     expanded = expand_checkpoint(ck, all_words)
@@ -853,8 +872,9 @@ def main():
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--specaug', action=argparse.BooleanOptionalAction, default=True)
     ap.add_argument('--canon', action=argparse.BooleanOptionalAction, default=True)
-    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=False,
-                    help='сводить форму к лемме класса через pymorphy3, а не срезом окончания')
+    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=True,
+                    help='сводить форму к лемме класса через pymorphy3, а не срезом окончания '
+                         '(без пакета — откат к основе, см. load_morph)')
     ap.add_argument('--train-all', action='store_true',
                     help='production-чекпойнт на всех клипах; CV-метрик не будет (B54)')
     ap.add_argument('--aug', choices=('base', 'hard'), default='base')

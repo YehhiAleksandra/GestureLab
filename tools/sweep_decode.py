@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 
 from dialogue_translator import Recognizer  # noqa: E402
 from eval_phrase_clips import hits, words  # noqa: E402
-from finetune_ctc_phrases import (canon_map, folds, load_morph,  # noqa: E402
+from finetune_ctc_phrases import (build_canon, folds,  # noqa: E402
                                  load_phrase_clips, matched)
 from finetune_ctc_signer import class_index  # noqa: E402
 from gloss_to_text import load_corpus  # noqa: E402
@@ -90,12 +90,9 @@ def run(a):
     vocab_all = set(index)
     inv = json.loads(Path(a.inventory).read_text(encoding='utf-8'))
     plain = [w for p in inv['phrases'] if p.get('duration') for w in words(p['phrase'])]
-    if not a.canon:
-        canon = {}
-    else:
-        canon = canon_map(plain, vocab_all, load_morph() if a.lemma else None)
+    canon, mode = build_canon(plain, vocab_all, a)
     clips, skipped = load_phrase_clips(a.cache, a.inventory, names, canon)
-    print(f'канонизация ({"лемма" if a.lemma else "основа"}): '
+    print(f'канонизация ({mode}): '
           f'{sum(1 for w in plain if canon.get(w, w) != w)} слов; '
           f'клипов {len(clips)}, пропущено {len(skipped)}', flush=True)
     corpus = corpus_seqs(load_corpus('train'), index)
@@ -199,7 +196,7 @@ def main():
     ap.add_argument('--seed', type=int, default=2026)
     ap.add_argument('--folds', type=int, default=5)
     ap.add_argument('--canon', action=argparse.BooleanOptionalAction, default=True)
-    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=False,
+    ap.add_argument('--lemma', action=argparse.BooleanOptionalAction, default=True,
                     help='канонизация по лемме (pymorphy3) вместо среза окончания')
     ap.add_argument('--quick', action='store_true')
     ap.add_argument('--selftest', action='store_true')

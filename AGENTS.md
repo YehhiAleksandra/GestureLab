@@ -58,10 +58,11 @@ PYTHONIOENCODING=utf-8 /d/venvs/gesturelab/Scripts/python.exe -m pytest -q   # 1
 | `python tools/demo_run.py --image фото.jpg` | детекция на одном кадре (своё фото, не коммитить) |
 | `python gesturelab.py --calibrate sessions` | статистика положений по записям |
 | `python summarize.py sessions --by-gesture` | сводка; «не жест» по умолчанию отдельно |
-| `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam) |
+| `python tools/sweep_decode.py --work D:/hfdata/phrase_folds` | перебор декодера на готовых фолдах без обучения (LM, word_bonus, beam); канон по лемме по умолчанию, `--no-lemma` — грубая основа |
 | `python tools/boot_compare.py --sweep <sweep.json> --a 5 --b 8` | парный бутстрап по клипам: различим ли один декодер от другого, или разница — шум (этап 31) |
 | `python tools/check_dict_disjoint.py` | гейт утечки: клипы авторазмеченного словаря ∩ оценочные фразы, по байтам и 4-кадровым окнам |
 | `python tools/vocab_gap.py --list <list.json>` | сколько фраз бенчмарка доходит до оценки и ценой каких классов: разрыв покрывается канонизацией (основа → лемма) и расширением головы |
+| `python tools/meaning_compare.py --lemma` | тот же честный фолд-прогон, но до конца: глоссы → LLM → судья 0/1/2 + chrF, парный бутстрап по клипам. Решает споры о декодере по смыслу, а не по словам |
 | `python tools/finetune_ctc_phrases.py --train-all` | production-чекпойнт на всех фразовых клипах (CV-метрик у него нет, B54) |
 | `python tools/centroid_eval.py --chunk 32 --topk 5` | one-shot центроиды по эмбеддингам энкодера: 893 клипа словаря → recall на фразах без обучения (этап 21) |
 | `python tools/rerank_eval.py` | фьюжн: n-best цепочки фолдов + центроидная близость, перебор λ офлайн (этап 21 §7) |

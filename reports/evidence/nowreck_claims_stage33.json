@@ -1,0 +1,108 @@
+{
+ "claims": [
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.95,
+   "explanation": "этап 33: сквозной замер смысла и chrF для спорных конфигов декодера"
+  },
+  {
+   "type": "FILE_CREATED",
+   "file_path": "tests/test_meaning_compare.py",
+   "confidence": 0.95,
+   "explanation": "этап 33: тесты парсера конфигов, парного бутстрапа и агрегата"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "parse_decoders",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.95,
+   "explanation": "строка спецификации → конфигурации декодера, вес обнуляется без LM"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "boot_diff",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.95,
+   "explanation": "парный бутстрап разности средних по клипам"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "aggregate",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.95,
+   "explanation": "смысл >=1, смысл ==2, chrF, пустые, ошибки LLM, стоимость"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.9,
+   "explanation": "один фолд-прогон: декод → LLM → судья для каждого конфига"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.9,
+   "explanation": "самопровека без модели и сети"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/meaning_compare.py",
+   "confidence": 0.9,
+   "explanation": "CLI сравнения смыслов"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "run",
+   "called_name": "parse_decoders",
+   "file_path": "tools/meaning_compare.py",
+   "caller_name": "run",
+   "confidence": 0.9,
+   "explanation": "прогон разбирает спецификацию конфигов"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "run",
+   "called_name": "aggregate",
+   "file_path": "tools/meaning_compare.py",
+   "caller_name": "run",
+   "confidence": 0.9,
+   "explanation": "итоги по каждому конфигу"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "run",
+   "called_name": "boot_diff",
+   "file_path": "tools/meaning_compare.py",
+   "caller_name": "run",
+   "confidence": 0.9,
+   "explanation": "сравнение с базой парным бутстрапом"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "build_canon",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "confidence": 0.95,
+   "explanation": "общий сборщик канонизации для трёх инструментов"
+  },
+  {
+   "type": "CALLS_FUNCTION",
+   "symbol_name": "run",
+   "called_name": "build_canon",
+   "file_path": "tools/finetune_ctc_phrases.py",
+   "caller_name": "run",
+   "confidence": 0.9,
+   "explanation": "прогон берёт канон из общего хелпера"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_boot_diff_is_deterministic_and_paired",
+   "file_path": "tests/test_meaning_compare.py",
+   "confidence": 0.9,
+   "explanation": "бутстрап считает по парам и воспроизводим по seed"
+  }
+ ]
+}
