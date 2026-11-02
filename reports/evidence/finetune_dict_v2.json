@@ -1,0 +1,57 @@
+{
+ "tool": "finetune_dict",
+ "date": "2026-10-27",
+ "init": "prod.pt",
+ "init_sha256": "c70bc08b93852f67051c73af8e7971c70c57a132b1e8cc6612503f6873d07815",
+ "classes": 3413,
+ "expanded_added": 1651,
+ "dict_clips": 5256,
+ "clips": 67,
+ "skipped": [],
+ "folds": 5,
+ "seed": 2026,
+ "seconds": 630.6,
+ "folds_report": [
+  {
+   "fold": 0,
+   "pt": "D:\\hfdata\\dict_folds_v2\\fold0.pt",
+   "sha256": "c77b63b5e4b4fe47c3d5fd31e0cc3834e89f9fc1c79c9776ac235e2055198c7b",
+   "slovo_clean_gloss": 0.31
+  },
+  {
+   "fold": 1,
+   "pt": "D:\\hfdata\\dict_folds_v2\\fold1.pt",
+   "sha256": "e47f46acf6ea6740f7240987a024809492ed57e1beef04e981aa47a063aed974",
+   "slovo_clean_gloss": 0.363
+  },
+  {
+   "fold": 2,
+   "pt": "D:\\hfdata\\dict_folds_v2\\fold2.pt",
+   "sha256": "20936f59923ec8ea22f9e3f5e92150a2321f69378bd595c67067524339526917",
+   "slovo_clean_gloss": 0.31
+  },
+  {
+   "fold": 3,
+   "pt": "D:\\hfdata\\dict_folds_v2\\fold3.pt",
+   "sha256": "fbe0010cc3387bab1ed16dee803df54bf67896be4c2e80afa54341b6fda6e414",
+   "slovo_clean_gloss": 0.319
+  },
+  {
+   "fold": 4,
+   "pt": "D:\\hfdata\\dict_folds_v2\\fold4.pt",
+   "sha256": "4de10e3336ec1663e8b23d019e73c2582c2865b3a34b9e19847aa5d1776a5121",
+   "slovo_clean_gloss": 0.319
+  }
+ ],
+ "config": {
+  "epochs": 20,
+  "steps": 60,
+  "bs": 24,
+  "lr": 0.0001,
+  "dict_frac": 0.3,
+  "corpus_frac": 0.2,
+  "phrase_frac": 0.25,
+  "single_frac": 0.15,
+  "specaug": true
+ }
+}

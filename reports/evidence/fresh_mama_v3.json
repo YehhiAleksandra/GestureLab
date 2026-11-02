@@ -1,0 +1,38 @@
+{
+ "tool": "fresh_eval",
+ "date": "2026-10-27",
+ "video": "D:/hfdata/demo_frases/mama_love.mp4",
+ "phrase": "Мама я тебя очень люблю",
+ "fps": 25.0,
+ "summary": {
+  "dict_v3": {
+   "segments": 1,
+   "meaning_ge1": 0.0,
+   "best_meaning": 0,
+   "best_translation": "Спите спокойно, я ваш цветовой оттенок.",
+   "chrf_mean": 6.89,
+   "chrf_best": 6.89
+  }
+ },
+ "cost_usd": 0.0,
+ "seconds": 6.9,
+ "rows": [
+  {
+   "model": "dict_v3",
+   "span": [
+    139,
+    317
+   ],
+   "pred": [
+    "спать",
+    "акула",
+    "я",
+    "ваш",
+    "цветовой оттенок"
+   ],
+   "translation": "Спите спокойно, я ваш цветовой оттенок.",
+   "meaning": 0,
+   "chrf": 6.89
+  }
+ ]
+}

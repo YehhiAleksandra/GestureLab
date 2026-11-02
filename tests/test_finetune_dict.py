@@ -1,6 +1,6 @@
 import numpy as np
 
-from tools.finetune_dict import build_dict_pool, mix_dict, recombine_dict
+from tools.finetune_dict import build_dict_pool, load_extra_dict, mix_dict, recombine_dict
 
 
 def test_build_dict_pool_normalizes_and_maps_by_class():
@@ -37,3 +37,21 @@ def test_mix_dict_returns_valid_examples_for_all_sources():
         s, lab = mix_dict(pool, [0, 1, 2], slovo_pool, [0, 1, 2] * 3, [],
                           phrases, np.random.default_rng(i))
         assert s.ndim == 3 and s.shape[1] == 59 and lab
+
+
+def test_load_extra_dict_cleans_labels_and_filters_junk(tmp_path):
+    f = np.zeros((30, 59, 3), np.float32)
+    p = tmp_path / 'extra.npz'
+    np.savez(p, frames=f, offsets=np.array([0, 10, 20, 30]),
+             words=np.array(['- Абрикос', 'Вариант 1', 'абрикос']))
+    ex = load_extra_dict(p)
+    # «- Абрикос» и «абрикос» сливаются, «Вариант 1» с цифрой отфильтрован
+    assert [w for w, _ in ex] == ['абрикос', 'абрикос']
+
+
+def test_load_extra_dict_caps_clips_per_word(tmp_path):
+    f = np.zeros((60, 59, 3), np.float32)
+    p = tmp_path / 'extra.npz'
+    np.savez(p, frames=f, offsets=np.array([0, 10, 20, 30, 40, 50, 60]),
+             words=np.array(['мать'] * 6))
+    assert len(load_extra_dict(p, cap=4)) == 4

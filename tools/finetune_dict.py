@@ -5,9 +5,9 @@
 фраз существуют в одной записи (этапы 19–20). Здесь все слова словаря становятся
 классами, и CTC учится выдавать их цепочки на синтетике из клипов того же
 исполнителя: recombine 2–5 клипов словаря + корпус РЖЯ + фразовые клипы обучающей
-части фолда + одиночные Slovo. Словарь и фразы — разные ролики канала, поэтому
-фолд-протокол по фразам остаётся честным: клип оценивает модель, которая его
-не видела, а клипы словаря в обоих случаях одни и те же.
+части фолда + одиночные Slovo. Фолд-протокол честен только относительно данных,
+исключённых из обучения: --init обязан быть чекпойнтом, который не видел фразовых
+клипов (дефолт phrase20/prod/prod.pt обучен на всех 67 — B62, см. отчёт 27 §15).
 
   python tools/finetune_dict.py --selftest
   python tools/finetune_dict.py                     # 5 фолдов, ~8 мин на GPU
@@ -196,7 +196,10 @@ def run(a):
     seqs_by_class, classes = d['seqs_by_class'], d['classes']
     index = {n.lower(): i for i, n in enumerate(names)}
     try:
-        corpus = corpus_phrases(index, 'train')
+        # только фразы, целиком покрытые классами Slovo: make_corpus_stream
+        # берёт клипы из seqs_by_class, расширенные id словаря там отсутствуют
+        corpus = [p for p in corpus_phrases(index, 'train')
+                  if all(i in seqs_by_class for i in p)]
     except Exception as e:  # noqa: BLE001 — без корпуса остаются словарь и Slovo
         print(f'корпус недоступен ({e})', flush=True)
         corpus = []

@@ -1,0 +1,472 @@
+{
+ "claims": [
+  {
+   "type": "ADD_FILE",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "load_dict_clips",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "embed",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "build_centroids",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "rank",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "make_chunks",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "chunk_rank",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "match_bag",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "load_phrase_spans",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "greedy_words",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "chain_bag",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "votes_bag",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "bag_hits",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "word_affinity",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "rerank",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "merge_bags",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "tta_chains",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "chunk_affinities",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "mix_dict",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "recombine_dict",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "build_dict_pool",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "load_extra_dict",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "train_fold",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "fusion_chains",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "summarize",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/fusion_translate.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tools/fresh_eval.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "parse_models",
+   "file_path": "tools/fresh_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "run",
+   "file_path": "tools/fresh_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "selftest",
+   "file_path": "tools/fresh_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "main",
+   "file_path": "tools/fresh_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_build_centroids_averages_clips_of_same_word",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_rank_returns_nearest_first",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_match_bag_counts_with_multiplicity",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_load_dict_clips_slices_frames_by_lens",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_load_phrase_spans_uses_longest_span",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_make_chunks_covers_long_clip_with_overlap",
+   "file_path": "tests/test_centroid_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_chain_bag_takes_max_multiplicity_not_sum",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_votes_bag_needs_min_votes",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_bag_hits_counts_with_multiplicity",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_rerank_prefers_affinity_without_lambda_and_rank_with_big_lambda",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_word_affinity_uses_max_over_synonyms_and_default_for_unknown",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_merge_bags_takes_max",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_fusion_chains_appends_candidates_as_one_pseudo_chain",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_summarize_counts_meaning_and_exact",
+   "file_path": "tests/test_rerank_eval.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FILE",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.99,
+   "explanation": "этап 21: новый инструмент/тест"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_build_dict_pool_normalizes_and_maps_by_class",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_recombine_dict_unique_labels_and_valid_length",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_recombine_dict_caps_k_by_pool_size",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_mix_dict_returns_valid_examples_for_all_sources",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_load_extra_dict_cleans_labels_and_filters_junk",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  },
+  {
+   "type": "ADD_FUNCTION",
+   "symbol_name": "test_load_extra_dict_caps_clips_per_word",
+   "file_path": "tests/test_finetune_dict.py",
+   "confidence": 0.95,
+   "explanation": "этап 21"
+  }
+ ]
+}

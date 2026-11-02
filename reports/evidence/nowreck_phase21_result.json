@@ -1,0 +1,3789 @@
+{
+  "version": "0.12.0",
+  "success": false,
+  "summary": {
+    "total_claims": 60,
+    "confirmed": 60,
+    "contradicted": 0,
+    "unverifiable": 0,
+    "unexplained_count": 266
+  },
+  "results": [
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "load_dict_clips",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "load_dict_clips",
+        "parent_class": null,
+        "line_number": 42,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "embed",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "embed",
+        "parent_class": null,
+        "line_number": 52,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "build_centroids",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "build_centroids",
+        "parent_class": null,
+        "line_number": 69,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "rank",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "rank",
+        "parent_class": null,
+        "line_number": 77,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "make_chunks",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "make_chunks",
+        "parent_class": null,
+        "line_number": 84,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "chunk_rank",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "chunk_rank",
+        "parent_class": null,
+        "line_number": 95,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "match_bag",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "match_bag",
+        "parent_class": null,
+        "line_number": 104,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "load_phrase_spans",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "load_phrase_spans",
+        "parent_class": null,
+        "line_number": 109,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "greedy_words",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "greedy_words",
+        "parent_class": null,
+        "line_number": 135,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 147,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 221,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\centroid_eval.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 247,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "chain_bag",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "chain_bag",
+        "parent_class": null,
+        "line_number": 42,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "votes_bag",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "votes_bag",
+        "parent_class": null,
+        "line_number": 52,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "bag_hits",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "bag_hits",
+        "parent_class": null,
+        "line_number": 61,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "word_affinity",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "word_affinity",
+        "parent_class": null,
+        "line_number": 66,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "rerank",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "rerank",
+        "parent_class": null,
+        "line_number": 76,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "merge_bags",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "merge_bags",
+        "parent_class": null,
+        "line_number": 82,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "tta_chains",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "tta_chains",
+        "parent_class": null,
+        "line_number": 91,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "chunk_affinities",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "chunk_affinities",
+        "parent_class": null,
+        "line_number": 109,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 118,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 209,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\rerank_eval.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 227,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "mix_dict",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "mix_dict",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "recombine_dict",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "recombine_dict",
+        "parent_class": null,
+        "line_number": 64,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "build_dict_pool",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "build_dict_pool",
+        "parent_class": null,
+        "line_number": 80,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "load_extra_dict",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "load_extra_dict",
+        "parent_class": null,
+        "line_number": 93,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "train_fold",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "train_fold",
+        "parent_class": null,
+        "line_number": 120,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 165,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 266,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\finetune_dict.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 308,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "fusion_chains",
+        "file_path": "tools/fusion_translate.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fusion_translate.py",
+        "symbol_name": "fusion_chains",
+        "parent_class": null,
+        "line_number": 29,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "summarize",
+        "file_path": "tools/fusion_translate.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fusion_translate.py",
+        "symbol_name": "summarize",
+        "parent_class": null,
+        "line_number": 35,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/fusion_translate.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fusion_translate.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 47,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/fusion_translate.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fusion_translate.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 90,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/fusion_translate.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fusion_translate.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 103,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "parse_models",
+        "file_path": "tools/fresh_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fresh_eval.py",
+        "symbol_name": "parse_models",
+        "parent_class": null,
+        "line_number": 34,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "run",
+        "file_path": "tools/fresh_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fresh_eval.py",
+        "symbol_name": "run",
+        "parent_class": null,
+        "line_number": 44,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "selftest",
+        "file_path": "tools/fresh_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fresh_eval.py",
+        "symbol_name": "selftest",
+        "parent_class": null,
+        "line_number": 89,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "main",
+        "file_path": "tools/fresh_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tools\\fresh_eval.py",
+        "symbol_name": "main",
+        "parent_class": null,
+        "line_number": 99,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_build_centroids_averages_clips_of_same_word",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_build_centroids_averages_clips_of_same_word",
+        "parent_class": null,
+        "line_number": 8,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_rank_returns_nearest_first",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_rank_returns_nearest_first",
+        "parent_class": null,
+        "line_number": 16,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_match_bag_counts_with_multiplicity",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_match_bag_counts_with_multiplicity",
+        "parent_class": null,
+        "line_number": 25,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_load_dict_clips_slices_frames_by_lens",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_load_dict_clips_slices_frames_by_lens",
+        "parent_class": null,
+        "line_number": 31,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_load_phrase_spans_uses_longest_span",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_load_phrase_spans_uses_longest_span",
+        "parent_class": null,
+        "line_number": 41,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_make_chunks_covers_long_clip_with_overlap",
+        "file_path": "tests/test_centroid_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_centroid_eval.py",
+        "symbol_name": "test_make_chunks_covers_long_clip_with_overlap",
+        "parent_class": null,
+        "line_number": 51,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_chain_bag_takes_max_multiplicity_not_sum",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_chain_bag_takes_max_multiplicity_not_sum",
+        "parent_class": null,
+        "line_number": 7,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_votes_bag_needs_min_votes",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_votes_bag_needs_min_votes",
+        "parent_class": null,
+        "line_number": 13,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_bag_hits_counts_with_multiplicity",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_bag_hits_counts_with_multiplicity",
+        "parent_class": null,
+        "line_number": 19,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_rerank_prefers_affinity_without_lambda_and_rank_with_big_lambda",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_rerank_prefers_affinity_without_lambda_and_rank_with_big_lambda",
+        "parent_class": null,
+        "line_number": 24,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_word_affinity_uses_max_over_synonyms_and_default_for_unknown",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_word_affinity_uses_max_over_synonyms_and_default_for_unknown",
+        "parent_class": null,
+        "line_number": 31,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_merge_bags_takes_max",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_merge_bags_takes_max",
+        "parent_class": null,
+        "line_number": 37,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_fusion_chains_appends_candidates_as_one_pseudo_chain",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_fusion_chains_appends_candidates_as_one_pseudo_chain",
+        "parent_class": null,
+        "line_number": 42,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_summarize_counts_meaning_and_exact",
+        "file_path": "tests/test_rerank_eval.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_rerank_eval.py",
+        "symbol_name": "test_summarize_counts_meaning_and_exact",
+        "parent_class": null,
+        "line_number": 47,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_build_dict_pool_normalizes_and_maps_by_class",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_build_dict_pool_normalizes_and_maps_by_class",
+        "parent_class": null,
+        "line_number": 6,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_recombine_dict_unique_labels_and_valid_length",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_recombine_dict_unique_labels_and_valid_length",
+        "parent_class": null,
+        "line_number": 16,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_recombine_dict_caps_k_by_pool_size",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_recombine_dict_caps_k_by_pool_size",
+        "parent_class": null,
+        "line_number": 25,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_mix_dict_returns_valid_examples_for_all_sources",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_mix_dict_returns_valid_examples_for_all_sources",
+        "parent_class": null,
+        "line_number": 32,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_load_extra_dict_cleans_labels_and_filters_junk",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_load_extra_dict_cleans_labels_and_filters_junk",
+        "parent_class": null,
+        "line_number": 42,
+        "caller_name": null,
+        "called_name": null
+      }
+    },
+    {
+      "claim": {
+        "type": "ADD_FUNCTION",
+        "symbol_name": "test_load_extra_dict_caps_clips_per_word",
+        "file_path": "tests/test_finetune_dict.py",
+        "parent_class": null,
+        "line_number": null,
+        "caller_name": null,
+        "called_name": null,
+        "confidence": 0.95
+      },
+      "verdict": "CONFIRMED",
+      "verifier_confidence": 1.0,
+      "matched_change": {
+        "change_type": "ADD_FUNCTION",
+        "file_path": "tests\\test_finetune_dict.py",
+        "symbol_name": "test_load_extra_dict_caps_clips_per_word",
+        "parent_class": null,
+        "line_number": 52,
+        "caller_name": null,
+        "called_name": null
+      }
+    }
+  ],
+  "unexplained_changes": [
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tests\\test_centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tests\\test_rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "FILE_CREATED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": null,
+      "called_name": null
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_build_centroids_averages_clips_of_same_word",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_load_dict_clips_slices_frames_by_lens",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_make_chunks_covers_long_clip_with_overlap",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_rank_returns_nearest_first",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_build_dict_pool_normalizes_and_maps_by_class",
+      "called_name": "build_dict_pool"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_build_dict_pool_normalizes_and_maps_by_class",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_load_extra_dict_caps_clips_per_word",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_load_extra_dict_caps_clips_per_word",
+      "called_name": "load_extra_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_load_extra_dict_cleans_labels_and_filters_junk",
+      "called_name": "load_extra_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_mix_dict_returns_valid_examples_for_all_sources",
+      "called_name": "mix_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_mix_dict_returns_valid_examples_for_all_sources",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_caps_k_by_pool_size",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_caps_k_by_pool_size",
+      "called_name": "recombine_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_unique_labels_and_valid_length",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_unique_labels_and_valid_length",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_unique_labels_and_valid_length",
+      "called_name": "recombine_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_recombine_dict_unique_labels_and_valid_length",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_bag_hits_counts_with_multiplicity",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tests\\test_rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "test_merge_bags_takes_max",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_rank",
+      "called_name": "embed"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_rank",
+      "called_name": "make_chunks"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "embed",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "embed",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "embed",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "embed",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "embed",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "greedy_decode"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "greedy_words",
+      "called_name": "split_classes"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_dict_clips",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_dict_clips",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_dict_clips",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_dict_clips",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_phrase_spans",
+      "called_name": "words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_chunks",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_chunks",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "make_chunks",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "match_bag",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "match_bag",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "build_centroids"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "canon_map"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chunk_rank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "embed"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "greedy_words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_dict_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_phrase_spans"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "match_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "rank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "type"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "build_centroids"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "canon_map"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "make_chunks"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "match_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "rank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\centroid_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "build_dict_pool",
+      "called_name": "class_index"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "build_dict_pool",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "build_dict_pool",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_extra_dict",
+      "called_name": "any"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_extra_dict",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_extra_dict",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_extra_dict",
+      "called_name": "norm"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "load_extra_dict",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "make_corpus_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "make_stream"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "recombine_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "mix_dict",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine_dict",
+      "called_name": "augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine_dict",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine_dict",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine_dict",
+      "called_name": "min"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "recombine_dict",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "all"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "build_dict_pool"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "canon_map"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "corpus_phrases"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "evaluate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "expand_checkpoint"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "file_sha256"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "folds"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "git_commit"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_dict_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_extra_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_phrase_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "prepare_slovo"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "train_fold"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "build_dict_pool"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "load_extra_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "mix_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "recombine_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "set"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "CTCSignNet"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "batch_features"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "mix_dict"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "model"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "range"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "spec_augment"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\finetune_dict.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "train_fold",
+      "called_name": "warm_start"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "parse_models",
+      "called_name": "ValueError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Recognizer"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chrf"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_frames"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "parse_models"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "split_utterances"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "AssertionError"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "parse_models"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fresh_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "fusion_chains",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Translator"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chrf"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "fusion_chains"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "summarize"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "translate_in_context"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "fusion_chains"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "summarize"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\fusion_translate.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "summarize",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bag_hits",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "bag_hits",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chain_bag",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chain_bag",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_affinities",
+      "called_name": "embed"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_affinities",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_affinities",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "chunk_affinities",
+      "called_name": "make_chunks"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "run"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "main",
+      "called_name": "selftest"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge_bags",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "merge_bags",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rerank",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rerank",
+      "called_name": "int"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "rerank",
+      "called_name": "word_affinity"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Path"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "Recognizer"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "bag_hits"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "build_centroids"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "canon_map"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chain_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chunk_affinities"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "chunk_rank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "embed"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "folds"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "list"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_ctc"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_dict_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "load_phrase_clips"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "merge_bags"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "rerank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sorted"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "str"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "sum"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "tta_chains"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "votes_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "run",
+      "called_name": "words"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "bag_hits"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "chain_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "merge_bags"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "print"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "rerank"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "votes_bag"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "selftest",
+      "called_name": "word_affinity"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "tta_chains",
+      "called_name": "enumerate"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "tta_chains",
+      "called_name": "len"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "tta_chains",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "tta_chains",
+      "called_name": "resample"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "tta_chains",
+      "called_name": "round"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "votes_bag",
+      "called_name": "Counter"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "word_affinity",
+      "called_name": "float"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "word_affinity",
+      "called_name": "max"
+    },
+    {
+      "change_type": "CALL_DETECTED",
+      "file_path": "tools\\rerank_eval.py",
+      "symbol_name": null,
+      "parent_class": null,
+      "line_number": null,
+      "caller_name": "word_affinity",
+      "called_name": "split_classes"
+    }
+  ]
+}

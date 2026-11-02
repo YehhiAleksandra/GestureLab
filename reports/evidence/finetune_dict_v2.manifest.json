@@ -1,0 +1,10 @@
+{
+ "schema_version": 1,
+ "kind": "ctc_holistic_dict_folds",
+ "init": "D:/hfdata/phrase20/prod/prod.pt",
+ "init_sha256": "c70bc08b93852f67051c73af8e7971c70c57a132b1e8cc6612503f6873d07815",
+ "classes": 3413,
+ "dict_clips": 5256,
+ "git_commit": "ff049a91d8ca81af7ea03a1062f69df61309aa41",
+ "created_utc": "2026-10-27T12:36:54+00:00"
+}
