@@ -1,15 +1,17 @@
 import json
 
-from dialogue_state import DIALOGUE, Dialogue, clean_reply, translate_in_context
+from dialogue_state import (DIALOGUE, NO_QUESTIONS, Dialogue, clean_reply, refusal_like,
+                            render_glosses, translate_in_context)
 
 
 class FakeTranslator:
-    def __init__(self):
+    def __init__(self, answers=None):
         self.calls = []
+        self.answers = list(answers or [])
 
     def __call__(self, glosses, system=None, query=None):
         self.calls.append(('plain', glosses, system, query))
-        return 'без контекста'
+        return self.answers.pop(0) if self.answers else 'без контекста'
 
     def examples(self, glosses):
         self.calls.append(('examples', glosses))
@@ -17,7 +19,7 @@ class FakeTranslator:
 
     def chat(self, messages, max_tokens, model=None):
         self.calls.append(('chat', messages, max_tokens))
-        return 'С контекстом.'
+        return self.answers.pop(0) if self.answers else 'С контекстом.'
 
 
 def test_clean_reply_strips_list_markers():
@@ -111,3 +113,65 @@ def test_history_goes_into_prompt_with_speakers():
     tail = messages[-1]['content']
     assert 'Слышащий: Ты придёшь?' in tail and 'Глухой (перевод): Приду.' in tail
     assert 'Текущие глоссы: завтра' in tail
+
+
+# —— B71: переводчик на несвязной цепочке переспрашивает вместо перевода (этап 34) ——
+
+REFUSAL = ('Пожалуйста, уточните контекст или предоставьте глоссы в другом формате. '
+           'Данный список выглядит как набор повторяющихся служебных знаков')
+
+
+def test_refusal_like_finds_meta_answer_but_not_a_real_phrase():
+    assert refusal_like(REFUSAL)
+    assert refusal_like('Поскольку предоставленные глоссы состоят из одного повторяющегося '
+                        'слова «где», они не складываются во фразу.')
+    # настоящий перевод, где «уточнить» — часть фразы, а не просьба к входу
+    assert not refusal_like('Уточните расписание.')
+    assert not refusal_like('Мне невозможно уехать.')
+    assert not refusal_like('')
+
+
+def test_render_glosses_collapses_adjacent_repeats():
+    assert render_glosses([('я', 0.9), ('я', 0.8), ('вы', 0.7)]) == 'Я вы.'
+    assert render_glosses([('порядок', 0.9), ('быть', 0.8)]) == 'Порядок быть.'
+    assert render_glosses([]) == ''
+
+
+def test_refusal_retried_once_with_stricter_system():
+    fake = FakeTranslator([REFUSAL, 'Я в порядке, спасибо.'])
+    out = translate_in_context(fake, [('я', 0.9), ('спасибо', 0.8)], [], 'СИСТЕМА')
+    assert out == 'Я в порядке, спасибо.'
+    assert [c[2] for c in fake.calls] == ['СИСТЕМА', 'СИСТЕМА' + NO_QUESTIONS]
+
+
+def test_persistent_refusal_ends_with_literal_glosses():
+    fake = FakeTranslator([REFUSAL, REFUSAL])
+    out = translate_in_context(fake, [('я', 0.9), ('что', 0.5), ('я', 0.6), ('вы', 0.4)], [], 'СИСТЕМА')
+    assert out == 'Я что я вы.'
+    assert len(fake.calls) == 2
+    assert not refusal_like(out)
+
+
+def test_empty_answer_is_treated_like_refusal():
+    """Smoke-прогон этапа 35: на «Увидимся попозже» модель ответила пустотой — то же окном."""
+    fake = FakeTranslator(['', ''])
+    assert translate_in_context(fake, [('увидимся', 0.9), ('позже', 0.8)], [], 'СИСТЕМА') == \
+        'Увидимся позже.'
+    fake2 = FakeTranslator(['', 'Увидимся позже.'])
+    assert translate_in_context(fake2, [('у', 0.9)], [], 'СИСТЕМА') == 'Увидимся позже.'
+
+
+def test_refusal_gate_applies_with_history_too():
+    fake = FakeTranslator([REFUSAL, 'Приду завтра.'])
+    history = [{'speaker': 'hearing', 'text': 'Когда?'}]
+    out = translate_in_context(fake, [('завтра', 0.8)], history, 'СИСТЕМА')
+    assert out == 'Приду завтра.'
+    assert fake.calls[1][1][0]['content'] == 'СИСТЕМА' + DIALOGUE
+    assert fake.calls[2][1][0]['content'] == 'СИСТЕМА' + DIALOGUE + NO_QUESTIONS
+    assert fake.calls[2][1][1:] == fake.calls[1][1][1:]
+
+
+def test_empty_top1_still_never_reaches_llm():
+    fake = FakeTranslator([REFUSAL])
+    assert translate_in_context(fake, [], [], 'СИСТЕМА', chains=[['мама']]) == ''
+    assert fake.calls == []

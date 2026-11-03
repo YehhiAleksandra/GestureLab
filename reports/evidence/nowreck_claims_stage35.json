@@ -1,0 +1,15 @@
+{"claims": [
+{"type": "ADD_FUNCTION", "symbol_name": "refusal_like", "file_path": "dialogue_state.py", "confidence": 0.99, "explanation": "этап 35A: детектор отказа переводчика (B71)"},
+{"type": "ADD_FUNCTION", "symbol_name": "render_glosses", "file_path": "dialogue_state.py", "confidence": 0.99, "explanation": "этап 35A: буквальное чтение цепочки как фолбэк отказа"},
+{"type": "ADD_FUNCTION", "symbol_name": "_no_refusal", "file_path": "dialogue_state.py", "confidence": 0.99, "explanation": "этап 35A: гейт отказ -> строгий повтор -> фолбэк"},
+{"type": "CALLS_FUNCTION", "symbol_name": "translate_in_context", "file_path": "dialogue_state.py", "caller_name": "translate_in_context", "called_name": "_no_refusal", "confidence": 0.95, "explanation": "обе ветки (без контекста и с контекстом) идут через гейт"},
+{"type": "CALLS_FUNCTION", "symbol_name": "_no_refusal", "file_path": "dialogue_state.py", "caller_name": "_no_refusal", "called_name": "refusal_like", "confidence": 0.95, "explanation": "проверка первого и второго ответа"},
+{"type": "CALLS_FUNCTION", "symbol_name": "_no_refusal", "file_path": "dialogue_state.py", "caller_name": "_no_refusal", "called_name": "render_glosses", "confidence": 0.95, "explanation": "фолбэк после упорного отказа"},
+{"type": "CALLS_FUNCTION", "symbol_name": "_no_refusal", "file_path": "dialogue_state.py", "caller_name": "_no_refusal", "called_name": "clean_reply", "confidence": 0.95, "explanation": "нормализация ответа до проверки на отказ"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_refusal_like_finds_meta_answer_but_not_a_real_phrase", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "точный детектор не съедает настоящие переводы"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_render_glosses_collapses_adjacent_repeats", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "формат буквального фолбэка"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_refusal_retried_once_with_stricter_system", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "второй заход с NO_QUESTIONS, дефолтный промпт не меняется"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_persistent_refusal_ends_with_literal_glosses", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "пустого окна не остаётся"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_empty_answer_is_treated_like_refusal", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "пустой ответ модели = тот же провал"},
+{"type": "ADD_FUNCTION", "symbol_name": "test_refusal_gate_applies_with_history_too", "file_path": "tests/test_dialogue_state.py", "confidence": 0.99, "explanation": "ветка с контекстом диалога тоже под гейтом"}
+]}

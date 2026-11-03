@@ -14,6 +14,16 @@ DIALOGUE = (' Ниже — предыдущие реплики диалога. �
 
 _LIST = re.compile(r'^\s*(?:\d+[.)]|[-•*])\s+')
 
+# B71: на несвязной цепочке глосс модель отвечает переспрашиванием («Пожалуйста, уточните
+# контекст или предоставьте глоссы…») вместо перевода. Детектор строит признак по паре
+# «просят вход» + «говорят о самом входе», а не по одному слову: ложный флаг выбросил бы
+# настоящий перевод, а пропущенный лишь оставляет поведение как было.
+_ASK = ('уточн', 'предостав', 'пришл', 'перешл', 'прошу вас')
+_ABOUT_INPUT = ('глосс', 'список', 'формат', 'ввод', 'последовательност', 'набор',
+                'текст', 'данный', 'данные')
+NO_QUESTIONS = (' Не переспрашивай и не объясняй, что вход неполный: переведи глоссы как есть, '
+                'пропустив то, что не читается. Ответ — одна бытовая фраза без пояснений.')
+
 
 def clean_reply(text):
     """Одна реплика — одна строка: LLM иногда отвечает «1. Мама…» или списком (B42)."""
@@ -21,6 +31,40 @@ def clean_reply(text):
     if not lines:
         return ''
     return ' '.join(_LIST.sub('', l).strip() for l in lines)
+
+
+def refusal_like(text):
+    """Ответ не перевод, а просьба дать другой вход."""
+    t = str(text).lower()
+    return any(a in t for a in _ASK) and any(m in t for m in _ABOUT_INPUT)
+
+
+def render_glosses(glosses):
+    """Буквальное чтение цепочки: склеить top-1, схлопнув соседние повторы.
+
+    Фолбэк для B71 — пустой экран или переспрашивание глухому бесполезны, а слова глосс
+    он прочитает сам; сравнение с «глоссы как есть» уже есть базовой линией в оценке.
+    """
+    out = []
+    for g, _ in glosses:
+        if not out or out[-1].lower() != str(g).lower():
+            out.append(str(g))
+    if not out:
+        return ''
+    text = ' '.join(out)
+    return (text[0].upper() + text[1:]).rstrip('.!?) ') + '.'
+
+
+def _no_refusal(first, retry, glosses):
+    """Отказ или пустой ответ → одна повторная попытка со строгим запретом вопросов → цепочка.
+
+    Пустой ответ языковой модель (в smoke-прогоне этапа 35 такие были) — тот же провал,
+    что и переспрашивание: глухой видит пустое окно.
+    """
+    text = clean_reply(first)
+    if not text or refusal_like(text):
+        text = clean_reply(retry())
+    return render_glosses(glosses) if not text or refusal_like(text) else text
 
 
 class Dialogue:
@@ -74,7 +118,8 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
     else:
         flat, query = gloss_text, gloss_text
     if not history:
-        return clean_reply(translator(flat, system, query))
+        return _no_refusal(translator(flat, system, query),
+                           lambda: translator(flat, system + NO_QUESTIONS, query), glosses)
     ctx = '\n'.join(f"{'Слышащий' if t['speaker'] == 'hearing' else 'Глухой (перевод)'}: {t['text']}"
                     for t in history)
     messages = [{'role': 'system', 'content': system + DIALOGUE}]
@@ -83,4 +128,10 @@ def translate_in_context(translator, glosses, history, system, shots=6, candidat
                      {'role': 'assistant', 'content': ex['russian']}]
     messages.append({'role': 'user',
                      'content': f'Контекст диалога:\n{ctx}\n\nТекущие глоссы: {query}'})
-    return clean_reply(translator.chat(messages, 80))
+
+    def stricter():
+        # дефолтный промпт остаётся дефолтным: строгий запрет вопросов — только второй заход
+        head = dict(messages[0], content=messages[0]['content'] + NO_QUESTIONS)
+        return translator.chat([head, *messages[1:]], 80)
+
+    return _no_refusal(translator.chat(messages, 80), stricter, glosses)

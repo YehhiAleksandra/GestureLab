@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'tools'))
 
-from dialogue_state import translate_in_context  # noqa: E402
+from dialogue_state import refusal_like, translate_in_context  # noqa: E402
 from dialogue_translator import Recognizer  # noqa: E402
 from eval_phrase_clips import words  # noqa: E402
 from finetune_ctc_phrases import (build_canon, folds, head_names,  # noqa: E402
@@ -74,6 +74,8 @@ def aggregate(rows, tr):
             'word_tokens': sum(r['total'] for r in rows),
             'meaning_scored': len(judged),
             'llm_errors': sum(bool(r.get('error')) for r in rows),
+            # B71: что реально увидел бы глухой — отказ переводить, а не перевод
+            'refusals': round(sum(bool(r.get('refusal')) for r in rows) / n, 3),
             'meaning_ge1': round(sum(r['meaning'] >= 1 for r in judged) / m, 3),
             'meaning_2': round(sum(r['meaning'] == 2 for r in judged) / m, 3),
             'chrf': round(float(np.mean([r['chrf'] for r in judged])), 3) if judged else 0.0,
@@ -140,6 +142,7 @@ def run(a):
                     row['meaning'] = 0
                     row['chrf'] = round(chrf('', c['phrase']), 3)
                 row['translation'] = text
+                row['refusal'] = bool(text and refusal_like(text))
                 acc[ci].append(row)
         print(f'фолд {k} готов [{time.time() - t0:.0f} с, ${tr.cost if tr else 0:.4f}]',
               flush=True)
@@ -183,10 +186,12 @@ def selftest():
     same = boot_diff([1, 1, 0, 0], [1, 1, 0, 0])
     assert same['mean_diff'] == 0.0 and not same['distinguishable'], same
     rows = [{'glosses': 0, 'hits_canon': 0, 'total': 2, 'meaning': 0, 'chrf': 0.0},
-            {'glosses': 3, 'hits_canon': 1, 'total': 2, 'meaning': 2, 'chrf': 40.0}]
+            {'glosses': 3, 'hits_canon': 1, 'total': 2, 'meaning': 2, 'chrf': 40.0,
+             'refusal': True}]
     s = aggregate(rows, None)
     assert s['empty'] == 0.5 and s['meaning_ge1'] == 0.5 and s['meaning_2'] == 0.5, s
     assert s['word_hits_canon'] == 1 and s['word_tokens'] == 4, s
+    assert s['refusals'] == 0.5, s
     print('selftest ok')
     return 0
 
