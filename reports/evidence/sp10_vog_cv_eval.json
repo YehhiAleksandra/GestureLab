@@ -1,0 +1,3713 @@
+{
+ "tool": "meaning_compare",
+ "date": "2026-11-04",
+ "inventory": "D:/hfdata/sp10_vog_eval_honest.json",
+ "work": "D:\\hfdata\\sp10_vog_cv",
+ "folds": 5,
+ "seed": 2026,
+ "canon": "лемма",
+ "base": {
+  "lm_src": "corpus",
+  "lm_weight": 0.1,
+  "word_bonus": 2.0,
+  "smooth": 1
+ },
+ "seconds": 26.4,
+ "results": [
+  {
+   "lm_src": "corpus",
+   "lm_weight": 0.1,
+   "word_bonus": 2.0,
+   "smooth": 1,
+   "config_index": 0,
+   "clips": 100,
+   "empty": 0.35,
+   "glosses_mean": 0.85,
+   "word_hits_canon": 14,
+   "word_tokens": 191,
+   "meaning_scored": 0,
+   "llm_errors": 0,
+   "refusals": 0.0,
+   "meaning_ge1": 0.0,
+   "meaning_2": 0.0,
+   "chrf": 0.0,
+   "cost_usd": 0.0
+  },
+  {
+   "lm_src": "none",
+   "lm_weight": 0.0,
+   "word_bonus": 4.0,
+   "smooth": 3,
+   "config_index": 1,
+   "clips": 100,
+   "empty": 0.01,
+   "glosses_mean": 3.76,
+   "word_hits_canon": 39,
+   "word_tokens": 191,
+   "meaning_scored": 0,
+   "llm_errors": 0,
+   "refusals": 0.0,
+   "meaning_ge1": 0.0,
+   "meaning_2": 0.0,
+   "chrf": 0.0,
+   "cost_usd": 0.0,
+   "vs_base": {
+    "meaning": {
+     "mean_diff": 0.0,
+     "lo95": 0.0,
+     "hi95": 0.0,
+     "a_wins": 0,
+     "b_wins": 0,
+     "distinguishable": false
+    },
+    "hits_canon": {
+     "mean_diff": 0.25,
+     "lo95": 0.16,
+     "hi95": 0.34,
+     "a_wins": 24,
+     "b_wins": 0,
+     "distinguishable": true
+    },
+    "chrf": {
+     "mean_diff": 0.0,
+     "lo95": 0.0,
+     "hi95": 0.0,
+     "a_wins": 0,
+     "b_wins": 0,
+     "distinguishable": false
+    }
+   }
+  }
+ ],
+ "rows": {
+  "0": [
+   {
+    "id": "rZVBZZy15ZM_002",
+    "fold": 0,
+    "phrase": "линию",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "LSuqZ2xPmJg_001",
+    "fold": 0,
+    "phrase": "перевода",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10168",
+    "fold": 0,
+    "phrase": "Не могли бы Вы пришить мне пуговицу?",
+    "pred": [
+     "меня"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "PjB_FzAyCqU_002",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "0yiJ2uCOTus_001",
+    "fold": 0,
+    "phrase": "моим",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "MXwg3E_wDiI_001",
+    "fold": 0,
+    "phrase": "большое",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_020",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "OaksmsXkCmY_001",
+    "fold": 0,
+    "phrase": "нее",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9879",
+    "fold": 0,
+    "phrase": "Сколько стоит книга?",
+    "pred": [
+     "стоить"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21714",
+    "fold": 0,
+    "phrase": "Вы не могли бы дать мне совет?",
+    "pred": [
+     "зоопарк"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9607",
+    "fold": 0,
+    "phrase": "Время вышло.",
+    "pred": [
+     "ты",
+     "уже"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "auwwwZUIxfU_001",
+    "fold": 0,
+    "phrase": "них",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "WTescIPYOGE_001",
+    "fold": 0,
+    "phrase": "нами",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Wkg1pHjUwXk_003",
+    "fold": 0,
+    "phrase": "ней",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3678",
+    "fold": 0,
+    "phrase": "идите за мной",
+    "pred": [
+     "Я",
+     "не"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vE6PZMbn1kI_003",
+    "fold": 0,
+    "phrase": "большое",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7nE44xSWJHQ_001",
+    "fold": 0,
+    "phrase": "гости",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "qTGOy8v7Nq4_002",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_003",
+    "fold": 0,
+    "phrase": "нами",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_14599",
+    "fold": 0,
+    "phrase": "Повтори!",
+    "pred": [
+     "мыть"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "pYfWR6xvchg_001",
+    "fold": 1,
+    "phrase": "члены",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Kl8OYp3Y6dg_001",
+    "fold": 1,
+    "phrase": "момент",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GO-nLpmgwC8_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22098",
+    "fold": 1,
+    "phrase": "Где комната ожидания?",
+    "pred": [
+     "ожидающий",
+     "где"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Ge2ntTBUKkY_002",
+    "fold": 1,
+    "phrase": "перевода",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9723",
+    "fold": 1,
+    "phrase": "В какое время самолет взлетает?",
+    "pred": [
+     "В"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10171",
+    "fold": 1,
+    "phrase": "Вы знаете хорошую мужскую парикмахерскую?",
+    "pred": [
+     "твой",
+     "где"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23048",
+    "fold": 1,
+    "phrase": "Позравляем!",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "OGlWMoz5wUs_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "использования"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ukWq-5x2OFA_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21809",
+    "fold": 1,
+    "phrase": "Чем вы занимаетесь?",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Tnq6HjCbktc_003",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "qTGOy8v7Nq4_001",
+    "fold": 1,
+    "phrase": "ней",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vKLaaeneIsI_001",
+    "fold": 1,
+    "phrase": "домой",
+    "pred": [
+     "использования"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GCAU6ZDj8kQ_001",
+    "fold": 1,
+    "phrase": "нее",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vVzb96MUO94_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "QTdD-MeFZK4_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "XdzfDnHU5x0_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "JQL-pPFap6w_001",
+    "fold": 1,
+    "phrase": "моем",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "j_bzukylBWg_001",
+    "fold": 2,
+    "phrase": "сюда",
+    "pred": [
+     "нее"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "wYCMv9iHYjM_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IVK-xLbNsqM_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9758",
+    "fold": 2,
+    "phrase": "Вставь дискету",
+    "pred": [
+     "маленький"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9634",
+    "fold": 2,
+    "phrase": "Моя специализация - философия",
+    "pred": [
+     "моя",
+     "моя",
+     "гений"
+    ],
+    "glosses": 3,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21997",
+    "fold": 2,
+    "phrase": "Не беспокойся",
+    "pred": [
+     "Я"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7e_i1mubdX0_002",
+    "fold": 2,
+    "phrase": "нее",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "SCS5xS_vhRk_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22442",
+    "fold": 2,
+    "phrase": "У меня колющие боли в бедре.",
+    "pred": [
+     "не"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IGbi1xidgeE_001",
+    "fold": 2,
+    "phrase": "сдача",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9922",
+    "fold": 2,
+    "phrase": "У меня голова кружится",
+    "pred": [
+     "один"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9855",
+    "fold": 2,
+    "phrase": "Буря на море.",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "E7RUmeVqoCI_001",
+    "fold": 2,
+    "phrase": "съезд",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VrPTtiKS5DQ_002",
+    "fold": 2,
+    "phrase": "них",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "CY9xEWi5ja4_001",
+    "fold": 2,
+    "phrase": "момент",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_001",
+    "fold": 2,
+    "phrase": "степени",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "rw-NuO3_7dg_002",
+    "fold": 2,
+    "phrase": "сюда",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23094",
+    "fold": 2,
+    "phrase": "Удачи!",
+    "pred": [
+     "проверить"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21812",
+    "fold": 2,
+    "phrase": "Когда вы родились?",
+    "pred": [
+     "Я"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2MQERJyXExU_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "cDqYceuSzVM_001",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "td9NRaPwRxc_001",
+    "fold": 3,
+    "phrase": "нуля",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GuF51MKsUNw_001",
+    "fold": 3,
+    "phrase": "дорого",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VuCfamcZ01I_001",
+    "fold": 3,
+    "phrase": "нее",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "hKU65D4V3dQ_001",
+    "fold": 3,
+    "phrase": "обмена",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_011",
+    "fold": 3,
+    "phrase": "них",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "mBbeoxfz0b4_001",
+    "fold": 3,
+    "phrase": "ней",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9794",
+    "fold": 3,
+    "phrase": "Этот фильм я видел(а) три раза",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ystjTomJGTU_001",
+    "fold": 3,
+    "phrase": "перевода",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_625",
+    "fold": 3,
+    "phrase": "Который час?",
+    "pred": [
+     "мой",
+     "ранний"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "1yhpXFUTjTk_001",
+    "fold": 3,
+    "phrase": "нами",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_001",
+    "fold": 3,
+    "phrase": "основную",
+    "pred": [
+     "нее"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VrPTtiKS5DQ_001",
+    "fold": 3,
+    "phrase": "хорошая",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_011",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10233",
+    "fold": 3,
+    "phrase": "Осторожно, собака!",
+    "pred": [
+     "моя",
+     "он"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ZQFgcSUVbPg_002",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2FOnZBx-xbE_001",
+    "fold": 3,
+    "phrase": "члены",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9662",
+    "fold": 3,
+    "phrase": "У нас завтра тестирование.",
+    "pred": [
+     "когда",
+     "тебя"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9940",
+    "fold": 3,
+    "phrase": "Мне нужно к врачу",
+    "pred": [
+     "Я",
+     "надо"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3705",
+    "fold": 3,
+    "phrase": "Как туда попасть?",
+    "pred": [
+     "верный"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2z8llzd0cOM_001",
+    "fold": 4,
+    "phrase": "большое",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23106",
+    "fold": 4,
+    "phrase": "Он любит кататься на велосипеде",
+    "pred": [
+     "Я"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9721",
+    "fold": 4,
+    "phrase": "Мы приземлимся через 10 минут.",
+    "pred": [
+     "Я",
+     "любить",
+     "закончить"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10078",
+    "fold": 4,
+    "phrase": "Мне большой стакан молока",
+    "pred": [
+     "Я",
+     "мне",
+     "И"
+    ],
+    "glosses": 3,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "sHjJQFDSwpI_001",
+    "fold": 4,
+    "phrase": "них",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3676",
+    "fold": 4,
+    "phrase": "это не важно",
+    "pred": [
+     "Я",
+     "не"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IBeed1Vp-fU_001",
+    "fold": 4,
+    "phrase": "мелочи",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ozYfbMVCqTE_001",
+    "fold": 4,
+    "phrase": "том",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_001",
+    "fold": 4,
+    "phrase": "них",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9939",
+    "fold": 4,
+    "phrase": "Мне надо пойти к зубному врачу",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 6,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22393",
+    "fold": 4,
+    "phrase": "Я немного охрип.",
+    "pred": [
+     "еще",
+     "мой"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "5XGyxZgv94s_001",
+    "fold": 4,
+    "phrase": "ниже",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7oXm3k8AjNk_001",
+    "fold": 4,
+    "phrase": "нами",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3643",
+    "fold": 4,
+    "phrase": "позвони мне позднее",
+    "pred": [
+     "мотивировать"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "CO93q1r02YU_001",
+    "fold": 4,
+    "phrase": "моем",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "jUxA3pz8Y5s_001",
+    "fold": 4,
+    "phrase": "сюда",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "TGzkeCxgP8s_001",
+    "fold": 4,
+    "phrase": "оборудование",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10063",
+    "fold": 4,
+    "phrase": "Ты хочешь обычный напиток или без сахара?",
+    "pred": [
+     "Я",
+     "хотеть",
+     "вы",
+     "есть"
+    ],
+    "glosses": 4,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "rw-NuO3_7dg_004",
+    "fold": 4,
+    "phrase": "нее",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10040",
+    "fold": 4,
+    "phrase": "Курение не разрешается.",
+    "pred": [
+     "У",
+     "отважиться"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   }
+  ],
+  "1": [
+   {
+    "id": "rZVBZZy15ZM_002",
+    "fold": 0,
+    "phrase": "линию",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "LSuqZ2xPmJg_001",
+    "fold": 0,
+    "phrase": "перевода",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10168",
+    "fold": 0,
+    "phrase": "Не могли бы Вы пришить мне пуговицу?",
+    "pred": [
+     "У",
+     "чек",
+     "В",
+     "меня",
+     "делать мелкий глоток"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "PjB_FzAyCqU_002",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "0yiJ2uCOTus_001",
+    "fold": 0,
+    "phrase": "моим",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "MXwg3E_wDiI_001",
+    "fold": 0,
+    "phrase": "большое",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_020",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "OaksmsXkCmY_001",
+    "fold": 0,
+    "phrase": "нее",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9879",
+    "fold": 0,
+    "phrase": "Сколько стоит книга?",
+    "pred": [
+     "У",
+     "на",
+     "стоить",
+     "бояться",
+     "стоить",
+     "на",
+     "стоить",
+     "стоить"
+    ],
+    "glosses": 8,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21714",
+    "fold": 0,
+    "phrase": "Вы не могли бы дать мне совет?",
+    "pred": [
+     "У",
+     "над",
+     "тебя",
+     "зоопарк",
+     "тебя"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9607",
+    "fold": 0,
+    "phrase": "Время вышло.",
+    "pred": [
+     "ты",
+     "У",
+     "уже",
+     "прекратить",
+     "уже"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "auwwwZUIxfU_001",
+    "fold": 0,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "WTescIPYOGE_001",
+    "fold": 0,
+    "phrase": "нами",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Wkg1pHjUwXk_003",
+    "fold": 0,
+    "phrase": "ней",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3678",
+    "fold": 0,
+    "phrase": "идите за мной",
+    "pred": [
+     "Я",
+     "не",
+     "Я",
+     "говорить",
+     "не",
+     "Я",
+     "не",
+     "моей",
+     "восемнадцать"
+    ],
+    "glosses": 9,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vE6PZMbn1kI_003",
+    "fold": 0,
+    "phrase": "большое",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7nE44xSWJHQ_001",
+    "fold": 0,
+    "phrase": "гости",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "qTGOy8v7Nq4_002",
+    "fold": 0,
+    "phrase": "том",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_003",
+    "fold": 0,
+    "phrase": "нами",
+    "pred": [
+     "них",
+     "ней"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_14599",
+    "fold": 0,
+    "phrase": "Повтори!",
+    "pred": [
+     "как",
+     "мыть",
+     "какие",
+     "мыть"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "pYfWR6xvchg_001",
+    "fold": 1,
+    "phrase": "члены",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Kl8OYp3Y6dg_001",
+    "fold": 1,
+    "phrase": "момент",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GO-nLpmgwC8_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22098",
+    "fold": 1,
+    "phrase": "Где комната ожидания?",
+    "pred": [
+     "У",
+     "ждать",
+     "ждать",
+     "ожидающий",
+     "что",
+     "ожидающий",
+     "где",
+     "информация",
+     "где",
+     "информация"
+    ],
+    "glosses": 10,
+    "hits_canon": 1,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Ge2ntTBUKkY_002",
+    "fold": 1,
+    "phrase": "перевода",
+    "pred": [
+     "использования",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9723",
+    "fold": 1,
+    "phrase": "В какое время самолет взлетает?",
+    "pred": [
+     "В",
+     "аллергия на еду",
+     "очень",
+     "какой",
+     "В",
+     "без",
+     "В",
+     "В",
+     "В"
+    ],
+    "glosses": 9,
+    "hits_canon": 2,
+    "total": 5,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10171",
+    "fold": 1,
+    "phrase": "Вы знаете хорошую мужскую парикмахерскую?",
+    "pred": [
+     "шум",
+     "С",
+     "В",
+     "правша",
+     "твой",
+     "правша",
+     "твой",
+     "где",
+     "А",
+     "где",
+     "слышать",
+     "где",
+     "по",
+     "где"
+    ],
+    "glosses": 14,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23048",
+    "fold": 1,
+    "phrase": "Позравляем!",
+    "pred": [
+     "суматоха",
+     "закрыть"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "OGlWMoz5wUs_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "использования",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ukWq-5x2OFA_001",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "том"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21809",
+    "fold": 1,
+    "phrase": "Чем вы занимаетесь?",
+    "pred": [
+     "ты",
+     "что",
+     "найти"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Tnq6HjCbktc_003",
+    "fold": 1,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "qTGOy8v7Nq4_001",
+    "fold": 1,
+    "phrase": "ней",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "нее"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vKLaaeneIsI_001",
+    "fold": 1,
+    "phrase": "домой",
+    "pred": [
+     "том",
+     "использования"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GCAU6ZDj8kQ_001",
+    "fold": 1,
+    "phrase": "нее",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "vVzb96MUO94_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "QTdD-MeFZK4_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "XdzfDnHU5x0_001",
+    "fold": 1,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "нее"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "JQL-pPFap6w_001",
+    "fold": 1,
+    "phrase": "моем",
+    "pred": [],
+    "glosses": 0,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "j_bzukylBWg_001",
+    "fold": 2,
+    "phrase": "сюда",
+    "pred": [
+     "них",
+     "нее"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "wYCMv9iHYjM_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "том",
+     "использования"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IVK-xLbNsqM_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9758",
+    "fold": 2,
+    "phrase": "Вставь дискету",
+    "pred": [
+     "маленький",
+     "билет",
+     "маленький",
+     "билет"
+    ],
+    "glosses": 4,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9634",
+    "fold": 2,
+    "phrase": "Моя специализация - философия",
+    "pred": [
+     "моя",
+     "специализация",
+     "специализация",
+     "купить",
+     "специализация",
+     "моя",
+     "специализация",
+     "моя",
+     "раньше",
+     "гений",
+     "раньше"
+    ],
+    "glosses": 11,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21997",
+    "fold": 2,
+    "phrase": "Не беспокойся",
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "рубашка"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7e_i1mubdX0_002",
+    "fold": 2,
+    "phrase": "нее",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "SCS5xS_vhRk_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "том",
+     "использования"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22442",
+    "fold": 2,
+    "phrase": "У меня колющие боли в бедре.",
+    "pred": [
+     "не",
+     "болит",
+     "болит",
+     "болит",
+     "не",
+     "В",
+     "не",
+     "В",
+     "В"
+    ],
+    "glosses": 9,
+    "hits_canon": 1,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 2,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IGbi1xidgeE_001",
+    "fold": 2,
+    "phrase": "сдача",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9922",
+    "fold": 2,
+    "phrase": "У меня голова кружится",
+    "pred": [
+     "он",
+     "один",
+     "по",
+     "один",
+     "должен"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9855",
+    "fold": 2,
+    "phrase": "Буря на море.",
+    "pred": [
+     "место",
+     "плавник",
+     "доверять"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "E7RUmeVqoCI_001",
+    "fold": 2,
+    "phrase": "съезд",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VrPTtiKS5DQ_002",
+    "fold": 2,
+    "phrase": "них",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "CY9xEWi5ja4_001",
+    "fold": 2,
+    "phrase": "момент",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_001",
+    "fold": 2,
+    "phrase": "степени",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "rw-NuO3_7dg_002",
+    "fold": 2,
+    "phrase": "сюда",
+    "pred": [
+     "том",
+     "них"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23094",
+    "fold": 2,
+    "phrase": "Удачи!",
+    "pred": [
+     "проверить",
+     "счастье",
+     "проверить"
+    ],
+    "glosses": 3,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_21812",
+    "fold": 2,
+    "phrase": "Когда вы родились?",
+    "pred": [
+     "Я",
+     "В",
+     "жестовый",
+     "нибыть",
+     "жестовый",
+     "В",
+     "могу",
+     "В"
+    ],
+    "glosses": 8,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2MQERJyXExU_001",
+    "fold": 2,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "cDqYceuSzVM_001",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "td9NRaPwRxc_001",
+    "fold": 3,
+    "phrase": "нуля",
+    "pred": [
+     "них",
+     "использования"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GuF51MKsUNw_001",
+    "fold": 3,
+    "phrase": "дорого",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VuCfamcZ01I_001",
+    "fold": 3,
+    "phrase": "нее",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "hKU65D4V3dQ_001",
+    "fold": 3,
+    "phrase": "обмена",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_011",
+    "fold": 3,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "mBbeoxfz0b4_001",
+    "fold": 3,
+    "phrase": "ней",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9794",
+    "fold": 3,
+    "phrase": "Этот фильм я видел(а) три раза",
+    "pred": [
+     "очень",
+     "плач",
+     "три",
+     "три",
+     "догадаться"
+    ],
+    "glosses": 5,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ystjTomJGTU_001",
+    "fold": 3,
+    "phrase": "перевода",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_625",
+    "fold": 3,
+    "phrase": "Который час?",
+    "pred": [
+     "вы",
+     "мой",
+     "ранний",
+     "мой",
+     "ранний"
+    ],
+    "glosses": 5,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "1yhpXFUTjTk_001",
+    "fold": 3,
+    "phrase": "нами",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "Vcn_aGBq29k_001",
+    "fold": 3,
+    "phrase": "основную",
+    "pred": [
+     "них",
+     "нее"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "VrPTtiKS5DQ_001",
+    "fold": 3,
+    "phrase": "хорошая",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_011",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10233",
+    "fold": 3,
+    "phrase": "Осторожно, собака!",
+    "pred": [
+     "моя",
+     "как",
+     "моя",
+     "много",
+     "В",
+     "он",
+     "это",
+     "он"
+    ],
+    "glosses": 8,
+    "hits_canon": 0,
+    "total": 2,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ZQFgcSUVbPg_002",
+    "fold": 3,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2FOnZBx-xbE_001",
+    "fold": 3,
+    "phrase": "члены",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9662",
+    "fold": 3,
+    "phrase": "У нас завтра тестирование.",
+    "pred": [
+     "В",
+     "когда",
+     "когда",
+     "В",
+     "В",
+     "В",
+     "несладкий",
+     "тебя",
+     "несладкий",
+     "В"
+    ],
+    "glosses": 10,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9940",
+    "fold": 3,
+    "phrase": "Мне нужно к врачу",
+    "pred": [
+     "Я",
+     "жена",
+     "жена",
+     "надо",
+     "надо",
+     "надо",
+     "на",
+     "надо",
+     "на",
+     "это"
+    ],
+    "glosses": 10,
+    "hits_canon": 0,
+    "total": 4,
+    "seen_hits": 0,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3705",
+    "fold": 3,
+    "phrase": "Как туда попасть?",
+    "pred": [
+     "можно",
+     "забронировать",
+     "мыть",
+     "забронировать",
+     "есть",
+     "верный",
+     "есть"
+    ],
+    "glosses": 7,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "2z8llzd0cOM_001",
+    "fold": 4,
+    "phrase": "большое",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_23106",
+    "fold": 4,
+    "phrase": "Он любит кататься на велосипеде",
+    "pred": [
+     "Я",
+     "У",
+     "меня",
+     "любить",
+     "меня",
+     "нужный",
+     "мне",
+     "нужный",
+     "нужный",
+     "это",
+     "вам"
+    ],
+    "glosses": 11,
+    "hits_canon": 1,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9721",
+    "fold": 4,
+    "phrase": "Мы приземлимся через 10 минут.",
+    "pred": [
+     "Я",
+     "мне",
+     "Я",
+     "мне",
+     "был",
+     "вкусный",
+     "был",
+     "закончить",
+     "была",
+     "закончить",
+     "была"
+    ],
+    "glosses": 11,
+    "hits_canon": 0,
+    "total": 5,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10078",
+    "fold": 4,
+    "phrase": "Мне большой стакан молока",
+    "pred": [
+     "Я",
+     "У",
+     "мне",
+     "меня",
+     "мне",
+     "вы",
+     "И",
+     "В",
+     "И"
+    ],
+    "glosses": 9,
+    "hits_canon": 1,
+    "total": 4,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "sHjJQFDSwpI_001",
+    "fold": 4,
+    "phrase": "них",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3676",
+    "fold": 4,
+    "phrase": "это не важно",
+    "pred": [
+     "это",
+     "Я",
+     "это",
+     "мне",
+     "меня",
+     "мне",
+     "меня",
+     "не",
+     "меня",
+     "не"
+    ],
+    "glosses": 10,
+    "hits_canon": 2,
+    "total": 3,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "IBeed1Vp-fU_001",
+    "fold": 4,
+    "phrase": "мелочи",
+    "pred": [
+     "них",
+     "использования"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "ozYfbMVCqTE_001",
+    "fold": 4,
+    "phrase": "том",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "GV6ckeIyZJg_001",
+    "fold": 4,
+    "phrase": "них",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 1,
+    "total": 1,
+    "seen_hits": 1,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_9939",
+    "fold": 4,
+    "phrase": "Мне надо пойти к зубному врачу",
+    "pred": [
+     "надо",
+     "он",
+     "мне",
+     "надо",
+     "он",
+     "тот",
+     "он"
+    ],
+    "glosses": 7,
+    "hits_canon": 2,
+    "total": 6,
+    "seen_hits": 1,
+    "seen_total": 3,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_22393",
+    "fold": 4,
+    "phrase": "Я немного охрип.",
+    "pred": [
+     "вы",
+     "еще",
+     "еще",
+     "мой",
+     "ранний",
+     "мой"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "5XGyxZgv94s_001",
+    "fold": 4,
+    "phrase": "ниже",
+    "pred": [
+     "них",
+     "английский"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "7oXm3k8AjNk_001",
+    "fold": 4,
+    "phrase": "нами",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_3643",
+    "fold": 4,
+    "phrase": "позвони мне позднее",
+    "pred": [
+     "дай",
+     "выглядеть",
+     "дай",
+     "мотивировать",
+     "вам",
+     "мотивировать"
+    ],
+    "glosses": 6,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "CO93q1r02YU_001",
+    "fold": 4,
+    "phrase": "моем",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "jUxA3pz8Y5s_001",
+    "fold": 4,
+    "phrase": "сюда",
+    "pred": [
+     "них",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "TGzkeCxgP8s_001",
+    "fold": 4,
+    "phrase": "оборудование",
+    "pred": [
+     "использования",
+     "том"
+    ],
+    "glosses": 2,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10063",
+    "fold": 4,
+    "phrase": "Ты хочешь обычный напиток или без сахара?",
+    "pred": [
+     "вы",
+     "Я",
+     "вы",
+     "хотеть",
+     "хотеть",
+     "вы",
+     "вы",
+     "сколько",
+     "вы",
+     "сколько",
+     "вы",
+     "есть",
+     "есть",
+     "где",
+     "есть",
+     "где",
+     "вы"
+    ],
+    "glosses": 17,
+    "hits_canon": 1,
+    "total": 7,
+    "seen_hits": 0,
+    "seen_total": 0,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "rw-NuO3_7dg_004",
+    "fold": 4,
+    "phrase": "нее",
+    "pred": [
+     "них"
+    ],
+    "glosses": 1,
+    "hits_canon": 0,
+    "total": 1,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   },
+   {
+    "id": "train_10040",
+    "fold": 4,
+    "phrase": "Курение не разрешается.",
+    "pred": [
+     "У",
+     "пристягнуть",
+     "выходные",
+     "отважиться",
+     "смелость",
+     "отважиться",
+     "детей",
+     "птица",
+     "детей"
+    ],
+    "glosses": 9,
+    "hits_canon": 0,
+    "total": 3,
+    "seen_hits": 0,
+    "seen_total": 1,
+    "meaning": null,
+    "chrf": null,
+    "translation": "",
+    "refusal": false
+   }
+  ]
+ }
+}
