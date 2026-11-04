@@ -8,7 +8,15 @@ import asyncio
 import logging
 import os
 import random
+from pathlib import Path
 from typing import Dict, Set
+
+from dotenv import load_dotenv
+
+# Загружаем .env файл
+env_path = Path(__file__).parent / '.env'
+if env_path.exists():
+    load_dotenv(env_path)
 
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import Command
