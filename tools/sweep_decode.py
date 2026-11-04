@@ -95,7 +95,7 @@ def run(a):
     print(f'канонизация ({mode}): '
           f'{sum(1 for w in plain if canon.get(w, w) != w)} слов; '
           f'клипов {len(clips)}, пропущено {len(skipped)}', flush=True)
-    corpus = corpus_seqs(load_corpus('train'), index)
+    corpus = corpus_seqs(load_corpus('train', extended=True), index)
     print(f'корпус {len(corpus)} фраз', flush=True)
 
     parts = folds(len(clips), a.folds, a.seed)

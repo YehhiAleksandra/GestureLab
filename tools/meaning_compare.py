@@ -96,7 +96,7 @@ def run(a):
     cfgs = parse_decoders(a.decoder)
     print(f'канонизация ({mode}): клипов {len(clips)}, '
           f'пропущено {len(skipped)}; конфигураций {len(cfgs)}', flush=True)
-    corpus = corpus_seqs(load_corpus('train'), index)
+    corpus = corpus_seqs(load_corpus('train', extended=True), index)
     tr = None if a.no_llm else Translator()
     parts = folds(len(clips), a.folds, a.seed)
     acc = {i: [] for i in range(len(cfgs))}

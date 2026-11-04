@@ -79,7 +79,7 @@ class Recognizer:
                 index = {n.lower(): i for i, n in enumerate(self.names)}
                 if lm_seqs is None:
                     from gloss_to_text import load_corpus
-                    lm_seqs = [p['rsl'].split() for p in load_corpus('train')]
+                    lm_seqs = [p['rsl'].split() for p in load_corpus('train', extended=True)]
                 seqs = [[index[w.lower()] for w in words] for words in lm_seqs
                         if all(w.lower() in index for w in words)]
                 self.lm = GlossLM(seqs, len(self.names))

@@ -58,7 +58,18 @@ JUDGE = ('Сравни перевод с эталоном. Ответь одно
          '1 — суть угадывается, но есть искажения, 0 — смысл не передан или искажён.')
 
 
-def load_corpus(split):
+def load_corpus(split, extended=False):
+    """Загрузить корпус глоссов.
+    
+    Args:
+        split: 'train' или 'test'
+        extended: если True, загрузить расширенную версию с словами VOGinfo
+    """
+    if extended and split == 'train':
+        extended_path = Path(__file__).resolve().parent.parent / 'datasets' / 'corpus_train_extended.json'
+        if extended_path.exists():
+            with open(extended_path, encoding='utf-8') as f:
+                return json.load(f)
     with open(hf_hub_download(REPO, f'corpus_{split}.json', repo_type='dataset'), encoding='utf-8') as f:
         return json.load(f)
 
